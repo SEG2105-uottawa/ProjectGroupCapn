@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TutronApp</string>
+    <string name="welcome_title">Welcome to Tutron \n Bienvenue à Tutron</string>
+    <string name="support">Having Issues? Contact Support</string>
 </resources>

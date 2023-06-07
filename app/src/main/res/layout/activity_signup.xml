@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/btnSignUp2"
+        android:id="@+id/btnLoginLoginPage"
         android:layout_width="127dp"
         android:layout_height="47dp"
         android:text="SignUp"

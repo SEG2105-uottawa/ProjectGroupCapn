@@ -35,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         verifyPassword = findViewById(R.id.verifyPassword);
         rolePicker = findViewById(R.id.rolePicker);
-        btnSignUp2 = findViewById(R.id.btnSignUp2);
+        btnSignUp2 = findViewById(R.id.btnLoginLoginPage);
 
         firstNameString = firstName.getText().toString();
         lastNameString = lastName.getText().toString();

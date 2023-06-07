@@ -7,20 +7,19 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/enterUsername"
+        android:id="@+id/enterEmailAddress"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="EmailAddress"
         android:inputType="text"
-        android:text="UserName"
         app:layout_constraintBottom_toTopOf="@+id/enterPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937"
-        tools:text="UserName" />
+        app:layout_constraintVertical_bias="0.937" />
 
     <EditText
         android:id="@+id/enterPassword"
@@ -28,13 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="256dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPassword"
-        android:text="Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Password" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
@@ -51,10 +49,11 @@
         android:id="@+id/titleText"
         android:layout_width="127dp"
         android:layout_height="38dp"
+        android:text="Login"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/enterUsername"
+        app:layout_constraintBottom_toTopOf="@+id/enterEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,9 +62,9 @@
         tools:text="Login" />
 
     <Button
-        android:id="@+id/btnSignUp2"
+        android:id="@+id/btnLoginLoginPage"
         android:layout_width="127dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

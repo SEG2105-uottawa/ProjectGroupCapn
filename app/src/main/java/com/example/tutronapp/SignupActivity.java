@@ -12,15 +12,21 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+
 
 public class SignupActivity extends AppCompatActivity {
 
-    ImageView logo;
-    TextView signUp,signUpPicker;
-    EditText firstName, lastName, emailAddress, password, verifyPassword;
-    Spinner rolePicker;
-    String firstNameString, lastNameString, emailAddressString, passwordString, verifyPasswordString,role;
-    Button btnSignUp2;
+    private ImageView logo;
+    private TextView signUp,signUpPicker;
+    private EditText firstName, lastName, emailAddress, password, verifyPassword;
+    private Spinner rolePicker;
+    private String firstNameString, lastNameString, emailAddressString, passwordString, verifyPasswordString,role;
+    private Button btnSignUp2;
+    private User user;
+    private DatabaseReference dataToCheck;
 
 
 
@@ -36,6 +42,7 @@ public class SignupActivity extends AppCompatActivity {
         verifyPassword = findViewById(R.id.verifyPassword);
         rolePicker = findViewById(R.id.rolePicker);
         btnSignUp2 = findViewById(R.id.btnLoginLoginPage);
+        dataToCheck = FirebaseDatabase.getInstance().getReference();
 
         firstNameString = firstName.getText().toString();
         lastNameString = lastName.getText().toString();
@@ -67,19 +74,20 @@ public class SignupActivity extends AppCompatActivity {
             if (passwordString.equals(verifyPasswordString)) {
                 switch (role) {
                     case "Student":
-                        User student = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
+                        user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
                         Bundle bundleForStudent = new Bundle();
-                        bundleForStudent.putSerializable("Student", student);
+                        bundleForStudent.putSerializable("Student", user);
                         callIntent(bundleForStudent);
                         break;
 
                     case "Tutor":
-                        User tutor = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+                        user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
                         Bundle bundleForTutor = new Bundle();
-                        bundleForTutor.putSerializable("Tutor", tutor);
+                        bundleForTutor.putSerializable("Tutor", user);
                         callIntent(bundleForTutor);
                         break;
                 }
+
 
             }
             else{

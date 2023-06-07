@@ -67,21 +67,17 @@ public class SignupActivity extends AppCompatActivity {
             if (passwordString.equals(verifyPasswordString)) {
                 switch (role) {
                     case "Student":
-                        Student student = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
-                        Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putSerializable("Student", student);
-                        intent.putExtras(bundle);
-                        startActivity(intent);
+                        User student = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
+                        Bundle bundleForStudent = new Bundle();
+                        bundleForStudent.putSerializable("Student", student);
+                        callIntent(bundleForStudent);
                         break;
 
                     case "Tutor":
-                        Tutor tutor = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-                        Intent intent2 = new Intent(SignupActivity.this, WelcomeActivity.class);
-                        Bundle bundle2 = new Bundle();
-                        bundle2.putSerializable("Tutor", tutor);
-                        intent2.putExtras(bundle2);
-                        startActivity(intent2);
+                        User tutor = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+                        Bundle bundleForTutor = new Bundle();
+                        bundleForTutor.putSerializable("Tutor", tutor);
+                        callIntent(bundleForTutor);
                         break;
                 }
 
@@ -93,6 +89,12 @@ public class SignupActivity extends AppCompatActivity {
 
         });
 
+    }
+
+    public void callIntent(Bundle bundle){
+        Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
 

@@ -1,6 +1,6 @@
 package com.example.tutronapp;
 
-public class User extends Person{
+public abstract class User extends Person{
 
     private String emailAddress;
     private String password;

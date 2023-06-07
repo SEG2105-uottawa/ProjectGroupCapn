@@ -68,15 +68,20 @@ public class SignupActivity extends AppCompatActivity {
                 switch (role) {
                     case "Student":
                         Student student = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
-                        Intent intent = new Intent(SignupActivity.this, WelcomeActivty.class);
+                        Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
                         Bundle bundle = new Bundle();
-                        bundle.putSerializable("student", student);
-
-
+                        bundle.putSerializable("Student", student);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                         break;
 
                     case "Tutor":
-                        //Tutor tutor = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+                        Tutor tutor = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+                        Intent intent2 = new Intent(SignupActivity.this, WelcomeActivity.class);
+                        Bundle bundle2 = new Bundle();
+                        bundle2.putSerializable("Tutor", tutor);
+                        intent2.putExtras(bundle2);
+                        startActivity(intent2);
                         break;
                 }
 

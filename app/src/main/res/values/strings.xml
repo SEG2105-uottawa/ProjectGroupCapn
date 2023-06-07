@@ -7,5 +7,6 @@
         <item>Student</item>
         <item>Tutor</item>
     </string-array>
+    <string name="welcome_page_title"> Welcome to Tutron</string>
 
 </resources>

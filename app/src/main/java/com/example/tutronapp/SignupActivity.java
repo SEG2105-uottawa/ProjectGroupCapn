@@ -42,7 +42,7 @@ public class SignupActivity extends AppCompatActivity {
         verifyPassword = findViewById(R.id.verifyPassword);
         rolePicker = findViewById(R.id.rolePicker);
         btnSignUp2 = findViewById(R.id.btnLoginLoginPage);
-        dataToCheck = FirebaseDatabase.getInstance().getReference();
+        dataToCheck = FirebaseDatabase.getInstance().getReference("users");
 
         firstNameString = firstName.getText().toString();
         lastNameString = lastName.getText().toString();
@@ -77,6 +77,7 @@ public class SignupActivity extends AppCompatActivity {
                         user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
                         Bundle bundleForStudent = new Bundle();
                         bundleForStudent.putSerializable("Student", user);
+                        addToDatabase(user);
                         callIntent(bundleForStudent);
                         break;
 
@@ -84,6 +85,7 @@ public class SignupActivity extends AppCompatActivity {
                         user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
                         Bundle bundleForTutor = new Bundle();
                         bundleForTutor.putSerializable("Tutor", user);
+                        addToDatabase(user);
                         callIntent(bundleForTutor);
                         break;
                 }
@@ -103,6 +105,12 @@ public class SignupActivity extends AppCompatActivity {
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
+    }
+
+    public void addToDatabase(User user){
+        DatabaseReference newNode = dataToCheck.push();
+        String nodeKey = newNode.getKey();
+        newNode.setValue(user);
     }
 
 

@@ -6,4 +6,8 @@ public class Student extends User{
         super(firstName,lastName,emailAddress,password);
     }
 
+    public void welcome(){
+
+    }
+
 }

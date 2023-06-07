@@ -37,7 +37,7 @@
         tools:text="Password" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="210dp"
         android:layout_height="164dp"
         android:layout_marginTop="72dp"
@@ -58,12 +58,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.881"
         tools:text="Login" />
 
     <Button
-        android:id="@+id/signUpButton"
+        android:id="@+id/btnSignUp2"
         android:layout_width="127dp"
         android:layout_height="47dp"
         android:text="Login"

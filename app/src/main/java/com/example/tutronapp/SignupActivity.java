@@ -55,6 +55,16 @@ public class SignupActivity extends AppCompatActivity {
         passwordString = password.getText().toString();
         verifyPasswordString = verifyPassword.getText().toString();
 
+
+        //this is kind of what would work for the calls and passing intents.
+        Student newStudent = new Student("test","test","test","test",new CreditCard(),new Address());
+        User newUser = (User) newStudent;
+        Bundle testBundle = new Bundle();
+        testBundle.putSerializable("test", newUser);
+        User retriving = (User) testBundle.getSerializable("test");
+        Student test = (Student) retriving;
+        test.getLastName();
+
         rolePicker.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {

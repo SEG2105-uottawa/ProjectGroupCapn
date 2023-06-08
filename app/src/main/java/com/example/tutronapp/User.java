@@ -1,14 +1,27 @@
 package com.example.tutronapp;
 
-public abstract class User extends Person{
+public class User extends Person {
 
     private String emailAddress;
     private String password;
+    private String role;
 
-    public User(String firstName, String lastName, String emailAddress, String password){
-        super(firstName,lastName);
+    public User(String firstName, String lastName, String emailAddress, String password, String role) {
+        super(firstName, lastName);
         this.emailAddress = emailAddress;
         this.password = password;
+        this.role = role;
+    }
+
+    public User() {
+        // Default constructor required by Firebase
+    }
+
+    public Student toStudent(){
+        return new Student(this.getFirstName(), this.getLastName(), this.getEmailAddress(), this.getPassword());
+    }
+    public Tutor toTutor(){
+        return new Tutor(this.getFirstName(), this.getLastName(), this.getEmailAddress(), this.getPassword());
     }
 
     public String getEmailAddress() {
@@ -25,5 +38,13 @@ public abstract class User extends Person{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

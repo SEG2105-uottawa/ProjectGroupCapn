@@ -28,7 +28,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
         }
         else if (bundle != null && bundle.containsKey("Tutor")) {
-            Tutor tutor = (Tutor) bundle.getSerializable("Tutor");
+            User tutor = (Tutor) bundle.getSerializable("Tutor");
             String toDisplay = tutor.getFirstName() + " " + tutor.getLastName();
             detailsText.setText(toDisplay);
             String roleMention = "Logged in as a Tutor";

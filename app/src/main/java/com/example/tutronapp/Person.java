@@ -12,6 +12,10 @@ public class Person implements Serializable {
         this.lastName = lastName;
     }
 
+    public Person(){
+
+    }
+
     public String getFirstName() {
         return firstName;
     }

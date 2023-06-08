@@ -85,7 +85,9 @@ public class SignupActivity extends AppCompatActivity {
                         if (passwordString.equals(verifyPasswordString)) {
                             switch (role) {
                                 case "Student":
-                                    user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
+                                    //add a credit card call
+                                    //add address call
+                                    User user = new Student(firstNameString, lastNameString, emailAddressString, passwordString, null, null);
                                     Bundle bundleForStudent = new Bundle();
                                     bundleForStudent.putSerializable("Student", user);
                                     addToDatabase(user);

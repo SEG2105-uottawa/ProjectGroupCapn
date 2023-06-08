@@ -1,5 +1,6 @@
 package com.example.tutronapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,9 +13,13 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 
 public class SignupActivity extends AppCompatActivity {
@@ -71,43 +76,60 @@ public class SignupActivity extends AppCompatActivity {
             passwordString = password.getText().toString();
             verifyPasswordString = verifyPassword.getText().toString();
 
-            if (passwordString.equals(verifyPasswordString)) {
-                switch (role) {
-                    case "Student":
-                        user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
-                        Bundle bundleForStudent = new Bundle();
-                        bundleForStudent.putSerializable("Student", user);
-                        addToDatabase(user);
-                        callIntent(bundleForStudent);
-                        break;
+            Query getEmail = dataToCheck.orderByChild("emailAddress").equalTo(emailAddressString);
 
-                    case "Tutor":
-                        user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-                        Bundle bundleForTutor = new Bundle();
-                        bundleForTutor.putSerializable("Tutor", user);
-                        addToDatabase(user);
-                        callIntent(bundleForTutor);
-                        break;
+            getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if (! dataSnapshot.exists()) {
+                        if (passwordString.equals(verifyPasswordString)) {
+                            switch (role) {
+                                case "Student":
+                                    user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
+                                    Bundle bundleForStudent = new Bundle();
+                                    bundleForStudent.putSerializable("Student", user);
+                                    addToDatabase(user);
+                                    callIntent(bundleForStudent);
+                                    break;
+
+                                case "Tutor":
+                                    user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+                                    Bundle bundleForTutor = new Bundle();
+                                    bundleForTutor.putSerializable("Tutor", user);
+                                    addToDatabase(user);
+                                    callIntent(bundleForTutor);
+                                    break;
+                            }
+
+
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Passwords don't match",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(), "Account already exists",
+                                Toast.LENGTH_SHORT).show();
+                    }
                 }
 
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
 
-            }
-            else{
-                Toast.makeText(getApplicationContext(), "Passwords don't match",
-                        Toast.LENGTH_SHORT).show();
-            }
+                }
+            });
 
         });
 
     }
 
-    public void callIntent(Bundle bundle){
+    private void callIntent(Bundle bundle){
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
-    public void addToDatabase(User user){
+    private void addToDatabase(User user){
         DatabaseReference newNode = dataToCheck.push();
         String nodeKey = newNode.getKey();
         newNode.setValue(user);

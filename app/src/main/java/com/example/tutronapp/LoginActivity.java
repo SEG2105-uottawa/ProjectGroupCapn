@@ -42,29 +42,33 @@ public class LoginActivity extends AppCompatActivity {
             getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot userSample : dataSnapshot.getChildren()) {
-                        User user = userSample.getValue(User.class);
-                        if (user.getPassword().equals(password)) {
-                            switch (user.getRole()) {
-                                case "Student":
-                                    Student student = user.toStudent();
-                                    Bundle bundleForStudent = new Bundle();
-                                    bundleForStudent.putSerializable("Student", student);
-                                    callIntent(bundleForStudent);
-                                    break;
-                                case "Tutor":
-                                    Tutor tutor = user.toTutor();
-                                    Bundle bundleForTutor = new Bundle();
-                                    bundleForTutor.putSerializable("Tutor", tutor);
-                                    callIntent(bundleForTutor);
-                                    break;
+                    if (dataSnapshot.exists()) {
+                        for (DataSnapshot userSample : dataSnapshot.getChildren()) {
+                            User user = userSample.getValue(User.class);
+                            if (user.getPassword().equals(password)) {
+                                switch (user.getRole()) {
+                                    case "Student":
+                                        Student student = user.toStudent();
+                                        Bundle bundleForStudent = new Bundle();
+                                        bundleForStudent.putSerializable("Student", student);
+                                        callIntent(bundleForStudent);
+                                        break;
+                                    case "Tutor":
+                                        Tutor tutor = user.toTutor();
+                                        Bundle bundleForTutor = new Bundle();
+                                        bundleForTutor.putSerializable("Tutor", tutor);
+                                        callIntent(bundleForTutor);
+                                        break;
+                                }
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Incorrect Password",
+                                        Toast.LENGTH_SHORT).show();
                             }
                         }
-                        else {
-                            Toast.makeText(getApplicationContext(), "Incorrect Username or Password",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-
+                    }
+                    else {
+                        Toast.makeText(getApplicationContext(), "No such account found",
+                                Toast.LENGTH_SHORT).show();
                     }
                 }
 
@@ -78,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void callIntent(Bundle bundle){
+    private void callIntent(Bundle bundle){
         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);

@@ -78,6 +78,11 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
+        switch (role){
+            case "Student":
+
+        }
+
         btnSignUp2.setOnClickListener(v -> {
 
             firstNameString = firstName.getText().toString();

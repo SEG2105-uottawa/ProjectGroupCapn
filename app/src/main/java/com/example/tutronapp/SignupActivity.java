@@ -49,6 +49,7 @@ public class SignupActivity extends AppCompatActivity {
         btnSignUp2 = findViewById(R.id.btnLoginLoginPage);
         dataToCheck = FirebaseDatabase.getInstance().getReference("users");
 
+        //converting input to strings
         firstNameString = firstName.getText().toString();
         lastNameString = lastName.getText().toString();
         emailAddressString = emailAddress.getText().toString();
@@ -56,6 +57,7 @@ public class SignupActivity extends AppCompatActivity {
         verifyPasswordString = verifyPassword.getText().toString();
 
 
+        //only exists as a test case, no real purpose
         //this is kind of what would work for the calls and passing intents.
         Student newStudent = new Student("test","test","test","test",new CreditCard(),new Address());
         User newUser = (User) newStudent;
@@ -65,6 +67,7 @@ public class SignupActivity extends AppCompatActivity {
         Student test = (Student) retriving;
         test.getLastName();
 
+        //the role selection drop down menu input acquisition
         rolePicker.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -78,11 +81,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        switch (role){
-            case "Student":
-
-        }
-
+        //when SignUp button is clicked, the values of the strings at that point are taken
         btnSignUp2.setOnClickListener(v -> {
 
             firstNameString = firstName.getText().toString();
@@ -91,21 +90,32 @@ public class SignupActivity extends AppCompatActivity {
             passwordString = password.getText().toString();
             verifyPasswordString = verifyPassword.getText().toString();
 
+            //Query is sent to the database
+            //Purpose : get a copy of all things in database with the same emailAddress
+            //to make sure no duplicate accounts
             Query getEmail = dataToCheck.orderByChild("emailAddress").equalTo(emailAddressString);
 
             getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    //makes sure the provided email is not on the database
                     if (! dataSnapshot.exists()) {
+
+                        //checks if verifyPassword and password match
                         if (passwordString.equals(verifyPasswordString)) {
+
+                            //switch case scenarios for Student and teacher
                             switch (role) {
                                 case "Student":
+
                                     //add a credit card call
                                     //add address call
                                     User user = new Student(firstNameString, lastNameString, emailAddressString, passwordString, null, null);
                                     Bundle bundleForStudent = new Bundle();
                                     bundleForStudent.putSerializable("Student", user);
                                     addToDatabase(user);
+
+                                    //callIntent starts a new Actvity to the Welcome Screen
                                     callIntent(bundleForStudent);
                                     break;
 
@@ -116,6 +126,8 @@ public class SignupActivity extends AppCompatActivity {
                                     addToDatabase(user);
                                     callIntent(bundleForTutor);
                                     break;
+
+                                //add the Admin case and implement stuff for it
                             }
 
 
@@ -140,12 +152,14 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
+    //takes the info of the Student/tutor and takes it to the welcome page
     private void callIntent(Bundle bundle){
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
     }
 
+    //adds user to database
     private void addToDatabase(User user){
         DatabaseReference newNode = dataToCheck.push();
         String nodeKey = newNode.getKey();

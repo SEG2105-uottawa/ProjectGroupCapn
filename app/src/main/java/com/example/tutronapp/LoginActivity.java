@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // reference to Firebase Realtime Database ("users)
+        // reference to Firebase Realtime Database (users)
         dataToCheck = FirebaseDatabase.getInstance().getReference("users");
 
         TextView enterEmailAddress = findViewById(R.id.enterEmailAddress);
@@ -52,9 +52,11 @@ public class LoginActivity extends AppCompatActivity {
             getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // Check user email exists
                     if (dataSnapshot.exists()) {
                         for (DataSnapshot userSample : dataSnapshot.getChildren()) {
                             User user = userSample.getValue(User.class);
+                            // Check user password
                             if (user.getPassword().equals(password)) {
                                 switch (user.getRole()) {
                                     case "Student":
@@ -94,6 +96,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    // Navigate from LoginActivity to WelcomeActivity
     private void callIntent(Bundle bundle){
         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);

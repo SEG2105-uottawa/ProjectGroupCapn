@@ -52,6 +52,13 @@ public class LoginActivity extends AppCompatActivity {
             getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    // Empty error handling
+                    if (emailAddress.isEmpty() || password.isEmpty()) {
+                        Toast.makeText(getApplicationContext(), "Please enter email and " +
+                                "password", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
                     // Check user email exists
                     if (dataSnapshot.exists()) {
                         for (DataSnapshot userSample : dataSnapshot.getChildren()) {

@@ -1,14 +1,4 @@
 *.iml
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.local.properties
-.build
-build/
-*.iml
 .gradle
 /local.properties
 /.idea/caches

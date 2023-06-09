@@ -97,6 +97,12 @@ public class SignupActivity extends AppCompatActivity {
                 return;
             }
 
+            // Check email valid
+            if (!isValidEmail(emailAddressString)) {
+                Toast.makeText(getApplicationContext(), "Invalid email", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
 
             //Query is sent to the database
             //Purpose : get a copy of all things in database with the same emailAddress
@@ -201,6 +207,42 @@ public class SignupActivity extends AppCompatActivity {
             callIntent(bundleForStudent);
 
         }
+    }
+
+    // Only check email by the rules
+    // limitation: not actually checking the email working
+    private boolean isValidEmail(String email) {
+        // valid character for email
+        String character = "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+        // Check email contain valid character and length for email
+        if(!email.matches(character) || email.length() > 320) {
+            return false;
+        }
+
+        // Check if there is at least one "@" and one "."
+        int atIndex = email.indexOf("@");
+        int dotIndex = email.lastIndexOf(".");
+        if (atIndex == -1 || dotIndex == -1) {
+            return false;
+        }
+
+        // Check if there is more than one "@" or "."
+        if (email.indexOf("@", atIndex + 1) != -1 || email.indexOf(".", dotIndex + 1) != -1) {
+            return false;
+        }
+
+        // Check if there is at least one character before "@" and after "."
+        if (atIndex == 0 || dotIndex <= atIndex + 1 || dotIndex == email.length() - 1) {
+            return false;
+        }
+
+        // Check if there are two dots in the domain part
+        int secondDotIndex = email.indexOf(".", atIndex + 1);
+        if (secondDotIndex != -1 && secondDotIndex < dotIndex - 1) {
+            return false;
+        }
+
+        return true;
     }
 
 

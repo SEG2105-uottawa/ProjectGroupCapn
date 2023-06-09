@@ -2610,6 +2610,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addressText
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2641,11 +2642,14 @@ id bounceEnd
 id bounceStart
 id btnLogin
 id btnLoginLoginPage
+id btnProceed
 id btnSignup
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardHolder
+id cardNumber
 id carryVelocity
 id center
 id center_horizontal
@@ -2680,6 +2684,7 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id creditCardDetailsText
 id currentState
 id custom
 id customPanel
@@ -2766,6 +2771,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imageView2
 id immediateStop
 id included
@@ -2786,6 +2792,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id linearLayout2
 id linearLayout3
 id linearLayout4
@@ -2888,6 +2895,7 @@ id peekHeight
 id percent
 id pin
 id position
+id postCode
 id postLayout
 id progress_circular
 id progress_horizontal
@@ -2923,6 +2931,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id securityCode
 id select_dialog_listview
 id selected
 id selection_type
@@ -2961,6 +2970,8 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id streetName
+id streetNumber
 id stretch
 id submenuarrow
 id submit_area
@@ -3021,6 +3032,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id validTill
 id verifyPassword
 id vertical_only
 id view_offset_helper
@@ -3133,6 +3145,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_signup
+layout activity_student_info
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item

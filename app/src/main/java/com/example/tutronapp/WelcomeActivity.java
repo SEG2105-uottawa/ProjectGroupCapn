@@ -45,7 +45,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
-                Toast.makeText(WelcomeActivity.this, "Successfully logout", Toast.LENGTH_SHORT).show();
+                Toast.makeText(WelcomeActivity.this, "Successfully logged out", Toast.LENGTH_SHORT).show();
             }
         });
 

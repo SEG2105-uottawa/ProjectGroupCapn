@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.TutronApp" >
         <activity
+            android:name="com.example.tutronapp.StudentInfoActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.tutronapp.WelcomeActivity"
             android:exported="false" />
         <activity

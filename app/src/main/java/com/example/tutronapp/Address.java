@@ -2,16 +2,16 @@ package com.example.tutronapp;
 
 public class Address {
 
-    private String postCode;
     private int streetNumber;
     private String streetName;
+    private String postCode;
     public Address() {
 
     }
-    public Address(String postCode, int streetNumber, String streetName){
-        this.postCode = postCode;
+    public Address(int streetNumber, String streetName, String postCode){
         this.streetNumber = streetNumber;
         this.streetName = streetName;
+        this.postCode = postCode;
     }
 
     public String getPostCode() {

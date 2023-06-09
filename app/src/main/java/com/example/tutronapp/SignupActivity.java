@@ -3,6 +3,7 @@ package com.example.tutronapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,14 +25,14 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SignupActivity extends AppCompatActivity {
 
-    private ImageView logo;
-    private TextView signUp,signUpPicker;
+    private User user;
     private EditText firstName, lastName, emailAddress, password, verifyPassword;
     private Spinner rolePicker;
     private String firstNameString, lastNameString, emailAddressString, passwordString, verifyPasswordString,role;
     private Button btnSignUp2;
-    private User user;
+
     private DatabaseReference dataToCheck;
+    private static final int REQUEST_CODE_STUDENT = 1;
 
 
 
@@ -108,15 +109,13 @@ public class SignupActivity extends AppCompatActivity {
                             switch (role) {
                                 case "Student":
 
-                                    //add a credit card call
-                                    //add address call
-                                    User user = new Student(firstNameString, lastNameString, emailAddressString, passwordString, null, null);
-                                    Bundle bundleForStudent = new Bundle();
-                                    bundleForStudent.putSerializable("Student", user);
-                                    addToDatabase(user);
-
-                                    //callIntent starts a new Actvity to the Welcome Screen
-                                    callIntent(bundleForStudent);
+                                    //bundles the student and turns them into a User
+                                    User tempUser = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
+                                    Bundle tempBundleForStudent = new Bundle();
+                                    tempBundleForStudent.putSerializable("Student", tempUser);
+                                    Intent intent = new Intent(SignupActivity.this, StudentInfoActivity.class);
+                                    intent.putExtras(tempBundleForStudent);
+                                    startActivityForResult(intent, REQUEST_CODE_STUDENT);
                                     break;
 
                                 case "Tutor":
@@ -129,6 +128,7 @@ public class SignupActivity extends AppCompatActivity {
 
                                 //add the Admin case and implement stuff for it
                             }
+
 
 
                         } else {
@@ -152,6 +152,9 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
+    private void getStudentInfo(Bundle bundle){
+
+    }
     //takes the info of the Student/tutor and takes it to the welcome page
     private void callIntent(Bundle bundle){
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
@@ -165,6 +168,22 @@ public class SignupActivity extends AppCompatActivity {
         DatabaseReference newNode = dataToCheck.push();
         String nodeKey = newNode.getKey();
         newNode.setValue(user);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == REQUEST_CODE_STUDENT && resultCode == Activity.RESULT_OK) {
+            Bundle bundle = data.getExtras();
+            if (bundle != null && bundle.containsKey("Student")) {
+                user = (Student) bundle.getSerializable("Student");
+                Bundle bundleForStudent = new Bundle();
+                bundleForStudent.putSerializable("Student",user);
+                //callIntent starts a new Actvity to the Welcome Screen
+                callIntent(bundleForStudent);
+            }
+        }
     }
 
 

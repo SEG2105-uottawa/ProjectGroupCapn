@@ -1,3 +1,10 @@
+/**
+ * Person is a class that represents a person in the application. The class provides constructors to
+ * initialize the person object, including first name and last name.
+ *
+ * Getting and setter methods are provided for the person object.
+ */
+
 package com.example.tutronapp;
 
 import android.os.Parcel;

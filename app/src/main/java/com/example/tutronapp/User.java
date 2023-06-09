@@ -1,3 +1,10 @@
+/**
+ * User is a subclass of Person that represents a user in the application.
+ * The class provides constructors to initialize the user object(email address, password and role).
+ *
+ * Getter method are provided for email address, password and role.
+ */
+
 package com.example.tutronapp;
 
 public class User extends Person {

@@ -1,3 +1,8 @@
+/**
+ * WelcomeActivity display welcome message after logged in, also displays full name and role.
+ * Handles logout function.
+ */
+
 package com.example.tutronapp;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,18 +23,20 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+        // UI Components
         TextView detailsText = findViewById(R.id.detailsText);
         TextView roleMentionText = findViewById(R.id.roleMentionText);
 
         Bundle bundle = getIntent().getExtras();
 
+        // Login text for Student
         if (bundle != null && bundle.containsKey("Student")) {
             Student student = (Student) bundle.getSerializable("Student");
             String toDisplay = student.getFirstName() + " " + student.getLastName();
             detailsText.setText(toDisplay);
             String roleMention = "Logged in as a Student";
             roleMentionText.setText(roleMention);
-
+        // Login text for Tutor
         }
         else if (bundle != null && bundle.containsKey("Tutor")) {
             Tutor tutor = (Tutor) bundle.getSerializable("Tutor");
@@ -39,6 +46,7 @@ public class WelcomeActivity extends AppCompatActivity {
             roleMentionText.setText(roleMention);
         }
         logout = findViewById(R.id.logout);
+        // Set Click listener to `logout` (direct to MainActivity.class if clicked)
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

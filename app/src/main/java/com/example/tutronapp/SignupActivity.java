@@ -89,6 +89,15 @@ public class SignupActivity extends AppCompatActivity {
             passwordString = password.getText().toString();
             verifyPasswordString = verifyPassword.getText().toString();
 
+            // Empty error handling
+            if (firstNameString.isEmpty() || lastNameString.isEmpty() || emailAddressString.isEmpty()
+                    || passwordString.isEmpty() || verifyPasswordString.isEmpty()) {
+                Toast.makeText(getApplicationContext(), "Please fill in all fields",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+
             //Query is sent to the database
             //Purpose : get a copy of all things in database with the same emailAddress
             //to make sure no duplicate accounts

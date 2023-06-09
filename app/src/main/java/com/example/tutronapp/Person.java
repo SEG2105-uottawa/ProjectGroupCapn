@@ -1,8 +1,13 @@
 package com.example.tutronapp;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 
-public class Person implements Serializable {
+public class Person implements Serializable{
 
     private String firstName;
     private String lastName;
@@ -31,4 +36,6 @@ public class Person implements Serializable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
 }

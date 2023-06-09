@@ -2643,6 +2643,7 @@ id bounceStart
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
+id btnSignUp2
 id btnSignup
 id buttonPanel
 id cache_measures

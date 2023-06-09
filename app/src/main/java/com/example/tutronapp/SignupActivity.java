@@ -10,9 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -47,7 +45,7 @@ public class SignupActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         verifyPassword = findViewById(R.id.verifyPassword);
         rolePicker = findViewById(R.id.rolePicker);
-        btnSignUp2 = findViewById(R.id.btnLoginLoginPage);
+        btnSignUp2 = findViewById(R.id.btnSignUp2);
         dataToCheck = FirebaseDatabase.getInstance().getReference("users");
 
         //converting input to strings
@@ -110,11 +108,8 @@ public class SignupActivity extends AppCompatActivity {
                                 case "Student":
 
                                     //bundles the student and turns them into a User
-                                    User tempUser = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
-                                    Bundle tempBundleForStudent = new Bundle();
-                                    tempBundleForStudent.putSerializable("Student", tempUser);
+                                    user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
                                     Intent intent = new Intent(SignupActivity.this, StudentInfoActivity.class);
-                                    intent.putExtras(tempBundleForStudent);
                                     startActivityForResult(intent, REQUEST_CODE_STUDENT);
                                     break;
 
@@ -170,21 +165,34 @@ public class SignupActivity extends AppCompatActivity {
         newNode.setValue(user);
     }
 
+    private void intentUnpackerStudent(Intent intent){
+        CreditCard creditCard = new CreditCard(intent.getStringExtra("CardHolder"),
+                                    intent.getIntExtra("CardNumber",0),
+                                    intent.getIntExtra("ValidTill",0),
+                                    intent.getIntExtra("SecurityCode",0));
+        Address address = new Address(intent.getIntExtra("StreetNumber",0),
+                                    intent.getStringExtra("StreetName"),
+                                    intent.getStringExtra("PostCode"));
+        Student student = (Student) user;
+        student.setAddress(address);
+        student.setCreditCard(creditCard);
+        user = (User) student;
+
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == REQUEST_CODE_STUDENT && resultCode == Activity.RESULT_OK) {
-            Bundle bundle = data.getExtras();
-            if (bundle != null && bundle.containsKey("Student")) {
-                user = (Student) bundle.getSerializable("Student");
-                Bundle bundleForStudent = new Bundle();
-                bundleForStudent.putSerializable("Student",user);
-                //callIntent starts a new Actvity to the Welcome Screen
-                callIntent(bundleForStudent);
-            }
+            intentUnpackerStudent(data);
+            Bundle bundleForStudent = new Bundle();
+            bundleForStudent.putSerializable("Student", user);
+            callIntent(bundleForStudent);
+
         }
     }
+
 
 
 }

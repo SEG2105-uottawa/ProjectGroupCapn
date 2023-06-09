@@ -38,24 +38,9 @@ public class StudentInfoActivity extends AppCompatActivity {
         }
 
         btnProceed.setOnClickListener(v -> {
-            CreditCard creditCard = new CreditCard(cardHolder.getText().toString(),
-                                    Integer.parseInt(cardNumber.getText().toString()),
-                                    Integer.parseInt(validTill.getText().toString()),
-                                    Integer.parseInt(securityCode.getText().toString()));
-            Address address = new Address(Integer.parseInt(streetNumber.getText().toString()),
-                                            streetName.getText().toString(),
-                                            postCode.getText().toString());
-
-            student.setCreditCard(creditCard);
-            student.setAddress(address);
-
-            User user = (User) student;
-
-            Intent returnIntent = new Intent();
-            Bundle newBundle = new Bundle();
-            newBundle.putSerializable("Student",user);
-            returnIntent.putExtras(newBundle);
-            setResult(RESULT_OK, returnIntent);
+            Intent resultIntent = new Intent();
+            resultIntent = intentPacker(resultIntent);
+            setResult(RESULT_OK, resultIntent);
             finish();
         });
 
@@ -63,5 +48,15 @@ public class StudentInfoActivity extends AppCompatActivity {
 
 
 
+    }
+    public Intent intentPacker(Intent resultIntent){
+        resultIntent.putExtra("CardHolder", cardHolder.getText().toString());
+        resultIntent.putExtra("CardNumber", Integer.parseInt(cardNumber.getText().toString()));
+        resultIntent.putExtra("ValidTill",Integer.parseInt(validTill.getText().toString()));
+        resultIntent.putExtra("SecurityCode",Integer.parseInt(securityCode.getText().toString()));
+        resultIntent.putExtra("StreetNumber",Integer.parseInt(streetNumber.getText().toString()));
+        resultIntent.putExtra("StreetName",streetName.getText().toString());
+        resultIntent.putExtra("PostCode",postCode.getText().toString());
+        return resultIntent;
     }
 }

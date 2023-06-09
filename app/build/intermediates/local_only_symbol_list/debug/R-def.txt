@@ -8,6 +8,7 @@ id addressText
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
+id btnSignUp2
 id btnSignup
 id cardHolder
 id cardNumber

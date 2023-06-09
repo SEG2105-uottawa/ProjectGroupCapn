@@ -157,6 +157,7 @@ public class SignupActivity extends AppCompatActivity {
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
+        finish();
     }
 
     //adds user to database

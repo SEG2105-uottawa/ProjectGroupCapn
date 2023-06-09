@@ -86,6 +86,7 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
+        finish();
     }
 
 

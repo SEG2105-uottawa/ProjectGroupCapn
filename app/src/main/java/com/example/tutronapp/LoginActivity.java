@@ -1,3 +1,10 @@
+/**
+ * LoginActivity handles login function(base on data in Firebase Realtime Database).
+ * Start WelcomeActivity if login successfully.
+ * Unknown email address -> show "No such account found"
+ * Wrong password -> show "Incorrect Password"
+ */
+
 package com.example.tutronapp;
 
 import androidx.annotation.NonNull;
@@ -26,17 +33,21 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-         dataToCheck = FirebaseDatabase.getInstance().getReference("users");
+
+        // reference to Firebase Realtime Database ("users)
+        dataToCheck = FirebaseDatabase.getInstance().getReference("users");
 
         TextView enterEmailAddress = findViewById(R.id.enterEmailAddress);
         TextView enterPassword = findViewById(R.id.enterPassword);
         btnLoginLoginPage = findViewById(R.id.btnLoginLoginPage);
+
 
         btnLoginLoginPage.setOnClickListener(v -> {
 
             String emailAddress = enterEmailAddress.getText().toString();
             String password = enterPassword.getText().toString();
 
+            // create query to get user data base on email address
             Query getEmail = dataToCheck.orderByChild("emailAddress").equalTo(emailAddress);
 
             getEmail.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -75,6 +86,8 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
                     // Handle database read error if needed
+                    Toast.makeText(getApplicationContext(), "Database Error: " +
+                            databaseError.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });
 

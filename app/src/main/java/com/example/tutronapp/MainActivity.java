@@ -15,17 +15,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        FirebaseApp.initializeApp(this);
+        FirebaseApp.initializeApp(this); // Initialize Firebase
 
 
         Button btnLogin = findViewById(R.id.btnLogin);
         Button btnSignup = findViewById(R.id.btnSignup);
 
+        // Link btnLogin to LoginActivity.class
         btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
         });
 
+        // Link btnSignUp to SignupActivity.class
         btnSignup.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SignupActivity.class);
             startActivity(intent);

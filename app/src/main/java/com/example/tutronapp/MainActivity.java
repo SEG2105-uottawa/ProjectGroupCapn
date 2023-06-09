@@ -1,3 +1,7 @@
+/**
+ * MainActivity is the entry of the application, it initialize firebase and provides two functions,
+ * login(button) and signup(button), which navigate to LoginActivity and SignupActivity respectively.
+ */
 package com.example.tutronapp;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
         Button btnLogin = findViewById(R.id.btnLogin);
         Button btnSignup = findViewById(R.id.btnSignup);
 
-        // Link btnLogin to LoginActivity.class
+        // set Click listener to `btnLogin` (direct to LoginActivity.class if clicked)
         btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
         });
 
-        // Link btnSignUp to SignupActivity.class
+        // set Click listener to `btnSignup` (direct to SignupActivity.class if clicked)
         btnSignup.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SignupActivity.class);
             startActivity(intent);

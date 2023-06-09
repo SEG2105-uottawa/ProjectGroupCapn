@@ -1,6 +1,8 @@
 package com.example.tutronapp;
 
-public class CreditCard {
+import java.io.Serializable;
+
+public class CreditCard implements Serializable {
 
     private String cardHolder;
     private int cardNumber;

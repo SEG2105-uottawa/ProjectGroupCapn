@@ -34,7 +34,13 @@
         android:theme="@style/Theme.TutronApp" >
         <activity
             android:name="com.example.tutronapp.StudentInfoActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.STUDENT_INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.tutronapp.WelcomeActivity"
             android:exported="false" />

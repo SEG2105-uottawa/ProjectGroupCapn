@@ -152,6 +152,7 @@ public class SignupActivity extends AppCompatActivity {
     }
     //takes the info of the Student/tutor and takes it to the welcome page
     private void callIntent(Bundle bundle){
+        addToDatabase(user);
         Intent intent = new Intent(SignupActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);

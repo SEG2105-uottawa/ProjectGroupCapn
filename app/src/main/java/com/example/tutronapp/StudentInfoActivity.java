@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class StudentInfoActivity extends AppCompatActivity {
 
@@ -38,6 +39,15 @@ public class StudentInfoActivity extends AppCompatActivity {
         }
 
         btnProceed.setOnClickListener(v -> {
+            // Empty error handling
+            if (cardHolder.getText().toString().isEmpty() || cardNumber.getText().toString().isEmpty()
+                    || validTill.getText().toString().isEmpty() || securityCode.getText().toString().isEmpty()
+                    || streetNumber.getText().toString().isEmpty() || streetName.getText().toString().isEmpty()
+                    || postCode.getText().toString().isEmpty()) {
+                Toast.makeText(getApplicationContext(), "Please fill in all fields",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
             Intent resultIntent = new Intent();
             resultIntent = intentPacker(resultIntent);
             setResult(RESULT_OK, resultIntent);

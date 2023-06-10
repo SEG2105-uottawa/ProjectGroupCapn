@@ -20,6 +20,10 @@ public class Student extends User{
         super(firstName,lastName,emailAddress,password, "Student");
     }
 
+    public Student(){
+
+    }
+
     public Student(String firstName, String lastName, String emailAddress, String password, CreditCard creditCard, Address address){
         super(firstName,lastName,emailAddress,password, "Student");
         this.creditCard = creditCard;

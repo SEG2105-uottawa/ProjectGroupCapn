@@ -30,10 +30,6 @@ public class Student extends User{
         this.address = address;
     }
 
-    public void welcome(){
-
-    }
-
 
     public CreditCard getCreditCard() {
         return creditCard;

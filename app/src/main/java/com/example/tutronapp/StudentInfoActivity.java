@@ -48,6 +48,14 @@ public class StudentInfoActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+
+            // Check security code
+            if (securityCode.getText().toString().length() > 4 ||
+                    securityCode.getText().toString().length() < 3) {
+                Toast.makeText(getApplicationContext(), "Invalid security code",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
             Intent resultIntent = new Intent();
             resultIntent = intentPacker(resultIntent);
             setResult(RESULT_OK, resultIntent);

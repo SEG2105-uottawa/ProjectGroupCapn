@@ -48,6 +48,26 @@ public class StudentInfoActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+            // Check validTill
+            if (validTill.getText().toString().length() != 4 ) {
+                Toast.makeText(getApplicationContext(), "Invalid validTill",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+            int validTillMonth = Integer.parseInt(validTill.getText().toString().substring(0,2));
+            int validTillYear = Integer.parseInt(validTill.getText().toString().substring(
+                    validTill.getText().toString().length()-2));
+            if (validTillMonth < 1 || validTillMonth > 12) {
+                Toast.makeText(getApplicationContext(), "Invalid validTill(Month)",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (validTillYear < 23) {
+                Toast.makeText(getApplicationContext(), "Invalid validTill(Year)",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+
 
             // Check security code
             if (securityCode.getText().toString().length() > 4 ||
@@ -56,6 +76,7 @@ public class StudentInfoActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+            
             Intent resultIntent = new Intent();
             resultIntent = intentPacker(resultIntent);
             setResult(RESULT_OK, resultIntent);

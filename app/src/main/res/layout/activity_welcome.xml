@@ -44,7 +44,7 @@
         <TextView
             android:id="@+id/roleMentionText"
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="53dp"
             android:text="TextView"
             android:textAlignment="center"
             android:textSize="20sp" />

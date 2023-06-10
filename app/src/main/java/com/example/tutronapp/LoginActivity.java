@@ -53,11 +53,11 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     // Empty error handling
-                    if (emailAddress.isEmpty() || password.isEmpty()) {
+                    /*if (emailAddress.isEmpty() || password.isEmpty()) {
                         Toast.makeText(getApplicationContext(), "Please enter email and " +
                                 "password", Toast.LENGTH_SHORT).show();
                         return;
-                    }
+                    }*/
 
                     // Check user email exists
                     if (dataSnapshot.exists()) {
@@ -67,18 +67,24 @@ public class LoginActivity extends AppCompatActivity {
                             if (user.getPassword().equals(password)) {
                                 switch (user.getRole()) {
                                     case "Student":
-                                        Student student = user.toStudent();
+                                        Student student = userSample.getValue(Student.class);
                                         Bundle bundleForStudent = new Bundle();
                                         bundleForStudent.putSerializable("Student", student);
                                         callIntent(bundleForStudent);
                                         break;
                                     case "Tutor":
-                                        Tutor tutor = user.toTutor();
+                                        Tutor tutor = userSample.getValue(Tutor.class);
                                         Bundle bundleForTutor = new Bundle();
                                         bundleForTutor.putSerializable("Tutor", tutor);
                                         callIntent(bundleForTutor);
                                         break;
-                                }
+                                    case "Administrator":
+                                        Administrator administrator = userSample.getValue(Administrator.class);
+                                        Bundle bundleForAdministrator = new Bundle();
+                                        bundleForAdministrator.putSerializable("Administrator", administrator);
+                                        callIntent(bundleForAdministrator);
+
+                                    }
                             } else {
                                 Toast.makeText(getApplicationContext(), "Incorrect Password",
                                         Toast.LENGTH_SHORT).show();

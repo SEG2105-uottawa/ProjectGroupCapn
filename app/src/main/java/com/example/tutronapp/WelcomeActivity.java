@@ -18,6 +18,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private Button logout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +27,8 @@ public class WelcomeActivity extends AppCompatActivity {
         // UI Components
         TextView detailsText = findViewById(R.id.detailsText);
         TextView roleMentionText = findViewById(R.id.roleMentionText);
+
+        logout = findViewById(R.id.logout);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -45,7 +48,15 @@ public class WelcomeActivity extends AppCompatActivity {
             String roleMention = "Logged in as a Tutor";
             roleMentionText.setText(roleMention);
         }
-        logout = findViewById(R.id.logout);
+        else if (bundle != null && bundle.containsKey("Administrator")) {
+            Administrator administrator = (Administrator) bundle.getSerializable("Administrator");
+            String toDisplay = administrator.getFirstName() + " " + administrator.getLastName();
+            detailsText.setText(toDisplay);
+            String roleMention = "Logged in as an Administrator";
+            roleMentionText.setText(roleMention);
+        }
+
+
         // Set Click listener to `logout` (direct to MainActivity.class if clicked)
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

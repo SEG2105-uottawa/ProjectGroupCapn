@@ -132,7 +132,6 @@ public class SignupActivity extends AppCompatActivity {
                                     user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
                                     Bundle bundleForTutor = new Bundle();
                                     bundleForTutor.putSerializable("Tutor", user);
-                                    addToDatabase(user);
                                     callIntent(bundleForTutor);
                                     break;
 
@@ -176,6 +175,7 @@ public class SignupActivity extends AppCompatActivity {
 
     //adds user to database
     private void addToDatabase(User user){
+
         DatabaseReference newNode = dataToCheck.push();
         String nodeKey = newNode.getKey();
         newNode.setValue(user);

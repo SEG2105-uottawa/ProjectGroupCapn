@@ -30,6 +30,10 @@ public class User extends Person {
     public Tutor toTutor(){
         return new Tutor(this.getFirstName(), this.getLastName(), this.getEmailAddress(), this.getPassword());
     }
+    public Administrator toAdministrator(){
+        return new Administrator(this.getFirstName(), this.getLastName(), this.getEmailAddress(), this.getPassword());
+
+    }
 
     public String getEmailAddress() {
         return emailAddress;

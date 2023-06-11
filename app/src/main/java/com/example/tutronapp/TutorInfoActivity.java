@@ -71,8 +71,8 @@ public class TutorInfoActivity extends AppCompatActivity {
 
     public Intent intentPacker(Intent resultIntent){
         resultIntent.putExtra("Education Level", education_options.getSelectedItem().toString());
-        resultIntent.putExtra("Native Language", Integer.parseInt(native_languages.getText().toString()));
-        resultIntent.putExtra("Short Description",Integer.parseInt(short_description1.getText().toString()));
+        resultIntent.putExtra("Native Languages", native_languages.getText().toString());
+        resultIntent.putExtra("Short Description",short_description1.getText().toString());
 
         return resultIntent;
     }

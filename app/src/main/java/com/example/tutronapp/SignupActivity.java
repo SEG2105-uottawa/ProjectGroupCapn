@@ -196,11 +196,15 @@ public class SignupActivity extends AppCompatActivity {
     }
 
     private void intentUnpackerTutor(Intent intent){
-        Tutor tutor = (Tutor) user;
-        tutor.getEducation_level().toString();
 
-        tutor.getNative_languages().toString();
-        tutor.getShortDescription().toString();
+        String educationLevel = intent.getStringExtra("Education Level");
+        String nativeLanguages = intent.getStringExtra("Native Languages");
+        String shortDescription = intent.getStringExtra("Short Description");
+
+        Tutor tutor = (Tutor) user;
+        tutor.setEducation_level(educationLevel);
+        tutor.setNative_languages(nativeLanguages);
+        tutor.setShortDescription(shortDescription);
         user = (User) tutor;
     }
 
@@ -222,6 +226,7 @@ public class SignupActivity extends AppCompatActivity {
             user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
             intentUnpackerTutor(data);
             Bundle bundleForTutor = new Bundle();
+            bundleForTutor.putSerializable("Tutor", user);
             callIntent(bundleForTutor);
         }
     }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="education_level">
+        <item>High School</item>
+        <item>College</item>
+        <item>University Undergraduate</item>
+        <item>University Graduate</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="roles">
+        <item>Student</item>
+        <item>Tutor</item>
+    </string-array>
+    <string name="app_name">TutronApp</string>
+    <string name="default_web_client_id" translatable="false">628463306450-gk3dp9bpq7dobnl3q4o7kso3o19jin8a.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">628463306450</string>
+    <string name="google_api_key" translatable="false">AIzaSyCykXIjglT_903LNXq8AYyl-30CYLrIKnY</string>
+    <string name="google_app_id" translatable="false">1:628463306450:android:7f6dffd98be1f14e860f0b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCykXIjglT_903LNXq8AYyl-30CYLrIKnY</string>
+    <string name="google_storage_bucket" translatable="false">seg-project-tutron.appspot.com</string>
+    <string name="project_id" translatable="false">seg-project-tutron</string>
+    <string name="sign_up_role_picker">Sign Up as </string>
+    <string name="support">Having Issues? Contact Support</string>
+    <string name="welcome_page_title"> Welcome to Tutron</string>
+    <string name="welcome_title">Welcome to Tutron \n Bienvenue à Tutron</string>
+    <style name="Base.Theme.TutronApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.TutronApp" parent="Base.Theme.TutronApp"/>
+</resources>

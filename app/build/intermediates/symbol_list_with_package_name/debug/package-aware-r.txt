@@ -63,6 +63,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array education_level
 array roles
 attr SharedValue
 attr SharedValueId
@@ -2539,6 +2540,7 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tutor_profile
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2646,6 +2648,7 @@ id btnProceed
 id btnSignUp2
 id btnSignup
 id buttonPanel
+id buttonTutor
 id cache_measures
 id callMeasure
 id cancel_button
@@ -2676,6 +2679,7 @@ id collapseActionView
 id compress
 id confirm_button
 id constraint
+id constraintLayout
 id contact
 id container
 id content
@@ -2726,6 +2730,8 @@ id easeInOut
 id easeOut
 id east
 id edit_query
+id education
+id education_options
 id elastic
 id emailAddress
 id end
@@ -2774,6 +2780,7 @@ id ignoreRequest
 id image
 id imageView
 id imageView2
+id imageView3
 id immediateStop
 id included
 id info
@@ -2784,6 +2791,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id languages
 id lastName
 id layout
 id left
@@ -2858,6 +2866,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id native_languages
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -2898,6 +2907,8 @@ id pin
 id position
 id postCode
 id postLayout
+id profile_photo
+id profile_photo1
 id progress_circular
 id progress_horizontal
 id radio
@@ -2938,6 +2949,8 @@ id selected
 id selection_type
 id sharedValueSet
 id sharedValueUnset
+id short_description0
+id short_description1
 id shortcut
 id showCustom
 id showHome
@@ -3147,6 +3160,7 @@ layout activity_login
 layout activity_main
 layout activity_signup
 layout activity_student_info
+layout activity_tutor_info
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item

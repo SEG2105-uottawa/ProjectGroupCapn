@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="education_level">
+        <item>High School</item>
+        <item>College</item>
+        <item>University Undergraduate</item>
+        <item>University Graduate</item>
+        <item>Other</item>
+    </string-array>
     <string-array name="roles">
         <item>Student</item>
         <item>Tutor</item>

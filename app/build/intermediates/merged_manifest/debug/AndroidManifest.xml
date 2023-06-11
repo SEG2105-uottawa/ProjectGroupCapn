@@ -42,6 +42,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.tutronapp.TutorInfoActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.TUTOR_INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.tutronapp.WelcomeActivity"
             android:exported="false" />
         <activity

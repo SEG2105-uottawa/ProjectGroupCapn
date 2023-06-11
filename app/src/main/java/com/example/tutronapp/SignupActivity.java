@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SignupActivity extends AppCompatActivity {
 
+    private static final int REQUEST_CODE_TUTOR = 2;
     private User user;
     private EditText firstName, lastName, emailAddress, password, verifyPassword;
     private Spinner rolePicker;
@@ -196,6 +197,17 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
+    private void intentUnpackerTutor(Intent intent){
+        Tutor tutor = (Tutor) user;
+        tutor.getEducation_level().toString();
+
+        tutor.getNative_languages().toString();
+        tutor.getShortdescription().toString();
+        user = (User) tutor;
+    }
+
+
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -206,6 +218,13 @@ public class SignupActivity extends AppCompatActivity {
             bundleForStudent.putSerializable("Student", user);
             callIntent(bundleForStudent);
 
+        }
+
+        if(requestCode == REQUEST_CODE_TUTOR && resultCode == Activity.RESULT_OK){
+            user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
+            intentUnpackerTutor(data);
+            Bundle bundleForTutor = new Bundle();
+            callIntent(bundleForTutor);
         }
     }
 

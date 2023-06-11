@@ -125,15 +125,14 @@ public class SignupActivity extends AppCompatActivity {
 
                                     //bundles the student and turns them into a User
                                     user = new Student(firstNameString, lastNameString, emailAddressString, passwordString);
-                                    Intent intent = new Intent(SignupActivity.this, StudentInfoActivity.class);
-                                    startActivityForResult(intent, REQUEST_CODE_STUDENT);
+                                    Intent intentStudent = new Intent(SignupActivity.this, StudentInfoActivity.class);
+                                    startActivityForResult(intentStudent, REQUEST_CODE_STUDENT);
                                     break;
 
                                 case "Tutor":
                                     user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-                                    Bundle bundleForTutor = new Bundle();
-                                    bundleForTutor.putSerializable("Tutor", user);
-                                    callIntent(bundleForTutor);
+                                    Intent intentTutor = new Intent(SignupActivity.this, TutorInfoActivity.class);
+                                    startActivityForResult(intentTutor, REQUEST_CODE_TUTOR);
                                     break;
 
                             }
@@ -201,7 +200,7 @@ public class SignupActivity extends AppCompatActivity {
         tutor.getEducation_level().toString();
 
         tutor.getNative_languages().toString();
-        tutor.getShortdescription().toString();
+        tutor.getShortDescription().toString();
         user = (User) tutor;
     }
 

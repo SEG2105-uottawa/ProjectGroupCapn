@@ -9,21 +9,25 @@ package com.example.tutronapp;
 public class Tutor extends User{
 
     private final String role = "Tutor";
-    private String shortdescription;
+    private String shortDescription;
     private String native_languages;
     private String education_level;
+
+    public Tutor(){
+
+    }
 
     public Tutor(String firstName, String lastName, String emailAddress, String password) {
         super(firstName, lastName, emailAddress, password,"Tutor");
     }
 
-    public Tutor(String firstName, String lastName, String emailAddress, String password, String education_level, String native_languages, String shortdescription){
+    public Tutor(String firstName, String lastName, String emailAddress, String password, String education_level, String native_languages, String shortDescription){
         super(firstName, lastName, emailAddress, password,"Tutor");
         this.education_level = education_level;
 
         this.native_languages = native_languages;
 
-        this.shortdescription = shortdescription;
+        this.shortDescription = shortDescription;
     }
 
     public String getRole() {
@@ -39,9 +43,9 @@ public class Tutor extends User{
 
     public void setNative_languages(String native_languages) {this.native_languages = native_languages;}
 
-    public String getShortdescription() {return shortdescription;}
+    public String getShortDescription() {return shortDescription;}
 
-    public void setShortdescription(String shortdescription) {this.shortdescription = shortdescription;}
+    public void setShortDescription(String shortDescription) {this.shortDescription = shortDescription;}
 
 
 }

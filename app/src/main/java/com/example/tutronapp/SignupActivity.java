@@ -131,9 +131,11 @@ public class SignupActivity extends AppCompatActivity {
 
                                 case "Tutor":
                                     user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-                                    Bundle bundleForTutor = new Bundle();
-                                    bundleForTutor.putSerializable("Tutor", user);
-                                    callIntent(bundleForTutor);
+                                    Intent intent1 = new Intent(SignupActivity.this, TutorInfoActivity.class);
+                                    startActivityForResult(intent1, REQUEST_CODE_TUTOR);
+                                    //Bundle bundleForTutor = new Bundle();
+                                    //bundleForTutor.putSerializable("Tutor", user);
+                                    //callIntent(bundleForTutor);
                                     break;
 
                             }

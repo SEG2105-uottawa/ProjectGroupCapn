@@ -31,7 +31,6 @@ public class SignupActivity extends AppCompatActivity {
 
     private DatabaseReference dataToCheck;
     private static final int REQUEST_CODE_STUDENT = 1;
-    private static final int REQUEST_CODE_TUTOR = 2;
 
 
 
@@ -131,11 +130,9 @@ public class SignupActivity extends AppCompatActivity {
 
                                 case "Tutor":
                                     user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-                                    Intent intent1 = new Intent(SignupActivity.this, TutorInfoActivity.class);
-                                    startActivityForResult(intent1, REQUEST_CODE_TUTOR);
-                                    //Bundle bundleForTutor = new Bundle();
-                                    //bundleForTutor.putSerializable("Tutor", user);
-                                    //callIntent(bundleForTutor);
+                                    Bundle bundleForTutor = new Bundle();
+                                    bundleForTutor.putSerializable("Tutor", user);
+                                    callIntent(bundleForTutor);
                                     break;
 
                                 //add the Admin case and implement stuff for it
@@ -199,17 +196,6 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
-    private void intentUnpackerTutor(Intent intent){
-        Tutor tutor = (Tutor) user;
-        tutor.getEducation_level().toString();
-
-        tutor.getNative_languages().toString();
-        tutor.getShortdescription().toString();
-        user = (User) tutor;
-    }
-
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -220,13 +206,6 @@ public class SignupActivity extends AppCompatActivity {
             bundleForStudent.putSerializable("Student", user);
             callIntent(bundleForStudent);
 
-        }
-
-        if(requestCode == REQUEST_CODE_TUTOR && resultCode == Activity.RESULT_OK){
-            user = new Tutor(firstNameString, lastNameString, emailAddressString, passwordString);
-            intentUnpackerTutor(data);
-            Bundle bundleForTutor = new Bundle();
-            callIntent(bundleForTutor);
         }
     }
 

@@ -9,12 +9,4 @@
     </string-array>
     <string name="welcome_page_title"> Welcome to Tutron</string>
 
-    <string-array name= "education_level">
-        <item>High School</item>
-        <item>College</item>
-        <item>University Undergraduate</item>
-        <item>University Graduate</item>
-        <item>Other</item>
-    </string-array>
-
 </resources>

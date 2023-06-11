@@ -136,7 +136,6 @@ public class SignupActivity extends AppCompatActivity {
                                     callIntent(bundleForTutor);
                                     break;
 
-                                //add the Admin case and implement stuff for it
                             }
 
 

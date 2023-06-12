@@ -182,7 +182,7 @@ public class SignupActivity extends AppCompatActivity {
 
     private void intentUnpackerStudent(Intent intent){
         CreditCard creditCard = new CreditCard(intent.getStringExtra("CardHolder"),
-                                    intent.getIntExtra("CardNumber",0),
+                                    intent.getLongExtra("CardNumber",0),
                                     intent.getIntExtra("ValidTill",0),
                                     intent.getIntExtra("SecurityCode",0));
         Address address = new Address(intent.getIntExtra("StreetNumber",0),

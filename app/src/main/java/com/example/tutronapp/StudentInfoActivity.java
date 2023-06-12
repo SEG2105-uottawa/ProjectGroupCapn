@@ -48,9 +48,15 @@ public class StudentInfoActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return;
             }
+            //check Card Number
+            if (cardNumber.getText().toString().length() > 16 ||cardNumber.getText().toString().length() < 10 ){
+                Toast.makeText(getApplicationContext(), "Invalid Card Number",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
             // Check validTill
             if (validTill.getText().toString().length() != 4 ) {
-                Toast.makeText(getApplicationContext(), "Invalid validTill",
+                Toast.makeText(getApplicationContext(), "Invalid Valid Till ",
                         Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -90,7 +96,7 @@ public class StudentInfoActivity extends AppCompatActivity {
     }
     public Intent intentPacker(Intent resultIntent){
         resultIntent.putExtra("CardHolder", cardHolder.getText().toString());
-        resultIntent.putExtra("CardNumber", Integer.parseInt(cardNumber.getText().toString()));
+        resultIntent.putExtra("CardNumber", Long.parseLong(cardNumber.getText().toString()));
         resultIntent.putExtra("ValidTill",Integer.parseInt(validTill.getText().toString()));
         resultIntent.putExtra("SecurityCode",Integer.parseInt(securityCode.getText().toString()));
         resultIntent.putExtra("StreetNumber",Integer.parseInt(streetNumber.getText().toString()));

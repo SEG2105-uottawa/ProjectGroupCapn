@@ -5,11 +5,11 @@ import java.io.Serializable;
 public class CreditCard implements Serializable {
 
     private String cardHolder;
-    private int cardNumber;
+    private Long cardNumber;
     private int validTill;
     private int securityCode;
 
-    public CreditCard(String cardHolder, int cardNumber, int validTill, int securityCode){
+    public CreditCard(String cardHolder, Long cardNumber, int validTill, int securityCode){
 
         this.cardHolder = cardHolder;
         this.cardNumber = cardNumber;
@@ -29,11 +29,11 @@ public class CreditCard implements Serializable {
         this.cardHolder = cardHolder;
     }
 
-    public int getCardNumber() {
+    public Long getCardNumber() {
         return cardNumber;
     }
 
-    public void setCardNumber(int cardNumber) {
+    public void setCardNumber(Long cardNumber) {
         this.cardNumber = cardNumber;
     }
 

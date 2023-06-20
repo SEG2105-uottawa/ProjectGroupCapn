@@ -9,7 +9,7 @@
     </string-array>
     <string name="welcome_page_title"> Welcome to Tutron</string>
 
-    <string-array name= "education_level">
+    <string-array name="education_level">
         <item>High School</item>
         <item>College</item>
         <item>University Undergraduate</item>

@@ -1,3 +1,9 @@
+/**
+ * @author Abhay Ariyappillil
+ *
+ * CreditCard is an associated class of Student that stores credit card information from a student
+ */
+
 package com.example.tutronapp;
 
 import java.io.Serializable;

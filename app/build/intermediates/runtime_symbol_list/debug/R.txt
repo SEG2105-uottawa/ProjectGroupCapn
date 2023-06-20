@@ -2780,6 +2780,7 @@ int id image 0x7f0900ec
 int id imageView 0x7f0900ed
 int id imageView2 0x7f0900ee
 int id imageView3 0x7f0900ef
+int id imgLogo 0x7f090211
 int id immediateStop 0x7f0900f0
 int id included 0x7f0900f1
 int id info 0x7f0900f2
@@ -3029,6 +3030,7 @@ int id titleDividerNoCustom 0x7f0901e5
 int id titleText 0x7f0901e6
 int id title_template 0x7f0901e7
 int id toggle 0x7f0901e8
+int id toolbar 0x7f090212
 int id top 0x7f0901e9
 int id topPanel 0x7f0901ea
 int id touch_outside 0x7f0901eb
@@ -3157,6 +3159,7 @@ int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
+int layout activity_manage_complaints 0x7f0c0079
 int layout activity_signup 0x7f0c001e
 int layout activity_student_info 0x7f0c001f
 int layout activity_tutor_info 0x7f0c0020

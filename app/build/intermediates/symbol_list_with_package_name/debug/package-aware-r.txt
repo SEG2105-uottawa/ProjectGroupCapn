@@ -2781,6 +2781,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imgLogo
 id immediateStop
 id included
 id info
@@ -3030,6 +3031,7 @@ id titleDividerNoCustom
 id titleText
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3158,6 +3160,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_manage_complaints
 layout activity_signup
 layout activity_student_info
 layout activity_tutor_info

@@ -28,6 +28,7 @@ id firstName
 id imageView
 id imageView2
 id imageView3
+id imgLogo
 id languages
 id lastName
 id linearLayout
@@ -51,6 +52,7 @@ id signUpPicker
 id streetName
 id streetNumber
 id titleText
+id toolbar
 id validTill
 id verifyPassword
 id welcomePageLogo
@@ -58,6 +60,7 @@ id welcomePageTitle
 id welcomeTitle
 layout activity_login
 layout activity_main
+layout activity_manage_complaints
 layout activity_signup
 layout activity_student_info
 layout activity_tutor_info

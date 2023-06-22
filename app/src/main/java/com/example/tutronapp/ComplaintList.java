@@ -44,22 +44,27 @@ public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintV
         return complaintList.size();
     }
 
+    public void setComplaintList(List<Complaint> complaintList) {
+        this.complaintList = complaintList;
+        notifyDataSetChanged();
+    }
+
     public class ComplaintViewHolder extends RecyclerView.ViewHolder {
 
         private TextView titleTextView;
-        private TextView detailsTextView;
+        private TextView againstTextView;
 
         public ComplaintViewHolder(@NonNull View itemView) {
             super(itemView);
             // Initialize the views
             titleTextView = itemView.findViewById(R.id.titleTextView);
-            detailsTextView = itemView.findViewById(R.id.detailsTextView);
+            againstTextView = itemView.findViewById(R.id.againstTextView);
         }
 
         public void bind(Complaint complaint) {
             // Bind the data to the views
             titleTextView.setText(complaint.getComplaintTitle());
-            detailsTextView.setText(complaint.getComplaintAgainst().getName());
+            againstTextView.setText(complaint.getComplaintAgainst().getName());
 
             // Set click listener for expanding the item
             itemView.setOnClickListener(v -> {

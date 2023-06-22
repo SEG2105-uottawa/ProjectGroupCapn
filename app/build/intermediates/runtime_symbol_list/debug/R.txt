@@ -2614,6 +2614,7 @@ int id add 0x7f090046
 int id addressText 0x7f090047
 int id adjust_height 0x7f090048
 int id adjust_width 0x7f090049
+int id againstTextView 0x7f090217
 int id alertTitle 0x7f09004a
 int id aligned 0x7f09004b
 int id all 0x7f09004c
@@ -2644,6 +2645,7 @@ int id bounceStart 0x7f090064
 int id btnLogin 0x7f090065
 int id btnLoginLoginPage 0x7f090066
 int id btnProceed 0x7f090067
+int id btnProceedHome 0x7f090213
 int id btnSignUp2 0x7f090068
 int id btnSignup 0x7f090069
 int id buttonPanel 0x7f09006a
@@ -2914,6 +2916,7 @@ int id progress_horizontal 0x7f090171
 int id radio 0x7f090172
 int id ratio 0x7f090173
 int id rectangles 0x7f090174
+int id recyclerViewComplaints 0x7f090215
 int id reverseSawtooth 0x7f090175
 int id right 0x7f090176
 int id rightToLeft 0x7f090177
@@ -3028,6 +3031,7 @@ int id time 0x7f0901e3
 int id title 0x7f0901e4
 int id titleDividerNoCustom 0x7f0901e5
 int id titleText 0x7f0901e6
+int id titleTextView 0x7f090216
 int id title_template 0x7f0901e7
 int id toggle 0x7f0901e8
 int id toolbar 0x7f090212
@@ -3180,6 +3184,7 @@ int layout design_navigation_menu 0x7f0c002e
 int layout design_navigation_menu_item 0x7f0c002f
 int layout design_text_input_end_icon 0x7f0c0030
 int layout design_text_input_start_icon 0x7f0c0031
+int layout layout_complaint_item 0x7f0c007a
 int layout m3_alert_dialog 0x7f0c0032
 int layout m3_alert_dialog_actions 0x7f0c0033
 int layout m3_alert_dialog_title 0x7f0c0034

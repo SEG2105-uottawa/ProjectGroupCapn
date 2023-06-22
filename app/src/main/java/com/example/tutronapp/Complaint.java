@@ -4,6 +4,9 @@ package com.example.tutronapp;
  * @author Abhay Ariyappillil
  */
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.io.Serializable;
 
 public class Complaint implements Serializable {
@@ -13,7 +16,7 @@ public class Complaint implements Serializable {
     private String content;
     private String status;
 
-    public Complaint(){
+    public Complaint() {
 
     }
 
@@ -65,4 +68,5 @@ public class Complaint implements Serializable {
     public void setComplaintTitle(String complaintTitle) {
         this.complaintTitle = complaintTitle;
     }
+
 }

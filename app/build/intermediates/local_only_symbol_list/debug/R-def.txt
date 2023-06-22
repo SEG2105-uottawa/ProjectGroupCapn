@@ -7,9 +7,11 @@ drawable ic_launcher_foreground
 drawable logo
 drawable tutor_profile
 id addressText
+id againstTextView
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
+id btnProceedHome
 id btnSignUp2
 id btnSignup
 id buttonTutor
@@ -43,6 +45,7 @@ id password
 id postCode
 id profile_photo
 id profile_photo1
+id recyclerViewComplaints
 id roleMentionText
 id rolePicker
 id securityCode
@@ -52,6 +55,7 @@ id signUpPicker
 id streetName
 id streetNumber
 id titleText
+id titleTextView
 id toolbar
 id validTill
 id verifyPassword
@@ -65,6 +69,7 @@ layout activity_signup
 layout activity_student_info
 layout activity_tutor_info
 layout activity_welcome
+layout layout_complaint_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

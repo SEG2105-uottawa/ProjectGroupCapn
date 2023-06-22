@@ -14,21 +14,27 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class WelcomeActivity extends AppCompatActivity {
 
-    private Button logout;
+    private Button btnLogout, btnProceedHome;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
 
         // UI Components
         TextView detailsText = findViewById(R.id.detailsText);
         TextView roleMentionText = findViewById(R.id.roleMentionText);
 
-        logout = findViewById(R.id.logout);
+        btnLogout = findViewById(R.id.logout);
+        btnProceedHome = findViewById(R.id.btnProceedHome);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -56,16 +62,20 @@ public class WelcomeActivity extends AppCompatActivity {
             roleMentionText.setText(roleMention);
         }
 
-
-        // Set Click listener to `logout` (direct to MainActivity.class if clicked)
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+        btnProceedHome.setOnClickListener(v -> {
+            if (bundle != null && bundle.containsKey("Administrator")) {
+                Intent intent = new Intent(WelcomeActivity.this, ManageComplaintsActivity.class);
                 startActivity(intent);
                 finish();
-                Toast.makeText(WelcomeActivity.this, "Successfully logged out", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        // Set Click listener to `logout` (direct to MainActivity.class if clicked)
+        btnLogout.setOnClickListener(v -> {
+            Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+            Toast.makeText(WelcomeActivity.this, "Successfully logged out", Toast.LENGTH_SHORT).show();
         });
 
     }

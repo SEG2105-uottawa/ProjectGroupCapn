@@ -9,6 +9,7 @@ import java.io.Serializable;
 public class Complaint implements Serializable {
     private Tutor complaintAgainst;
     private Student complaintBy;
+    private String complaintTitle;
     private String content;
     private String status;
 
@@ -16,9 +17,10 @@ public class Complaint implements Serializable {
 
     }
 
-    public Complaint(Tutor complaintAgainst, Student complaintBy, String content, String status) {
+    public Complaint(Tutor complaintAgainst, Student complaintBy, String complaintTitle, String content, String status) {
         this.complaintAgainst = complaintAgainst;
         this.complaintBy = complaintBy;
+        this.complaintTitle = complaintTitle;
         this.content = content;
         this.status = status;
     }
@@ -54,5 +56,13 @@ public class Complaint implements Serializable {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getComplaintTitle() {
+        return complaintTitle;
+    }
+
+    public void setComplaintTitle(String complaintTitle) {
+        this.complaintTitle = complaintTitle;
     }
 }

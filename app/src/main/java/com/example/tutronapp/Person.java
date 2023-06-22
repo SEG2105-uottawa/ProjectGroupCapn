@@ -28,6 +28,8 @@ public class Person implements Serializable{
 
     }
 
+    public String getName(){return firstName + " " + lastName; }
+
     public String getFirstName() {
         return firstName;
     }

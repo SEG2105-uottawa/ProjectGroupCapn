@@ -178,7 +178,10 @@ public class SignupActivity extends AppCompatActivity {
         finish();
     }
 
-    //adds user to database
+    /**
+     * Accepts a user instance, assigns it a DataBaseID and adds it to DataBase
+     * @param user an instance of user obtained from signup
+     */
     private void addToDatabase(User user){
 
         DatabaseReference newNode = dataToCheck.push();

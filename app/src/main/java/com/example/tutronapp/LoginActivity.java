@@ -65,26 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                             User user = userSample.getValue(User.class);
                             // Check user password
                             if (user.getPassword().equals(password)) {
-                                switch (user.getRole()) {
-                                    case "Student":
-                                        Student student = userSample.getValue(Student.class);
-                                        Bundle bundleForStudent = new Bundle();
-                                        bundleForStudent.putSerializable("Student", student);
-                                        callIntent(bundleForStudent);
-                                        break;
-                                    case "Tutor":
-                                        Tutor tutor = userSample.getValue(Tutor.class);
-                                        Bundle bundleForTutor = new Bundle();
-                                        bundleForTutor.putSerializable("Tutor", tutor);
-                                        callIntent(bundleForTutor);
-                                        break;
-                                    case "Administrator":
-                                        Administrator administrator = userSample.getValue(Administrator.class);
-                                        Bundle bundleForAdministrator = new Bundle();
-                                        bundleForAdministrator.putSerializable("Administrator", administrator);
-                                        callIntent(bundleForAdministrator);
-
-                                    }
+                                sendUser(user, userSample);
                             } else {
                                 Toast.makeText(getApplicationContext(), "Incorrect Password",
                                         Toast.LENGTH_SHORT).show();
@@ -115,6 +96,29 @@ public class LoginActivity extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
         finish();
+    }
+
+    private void sendUser(User user, DataSnapshot userSample){
+        switch (user.getRole()) {
+            case "Student":
+                Student student = userSample.getValue(Student.class);
+                Bundle bundleForStudent = new Bundle();
+                bundleForStudent.putSerializable("Student", student);
+                callIntent(bundleForStudent);
+                break;
+            case "Tutor":
+                Tutor tutor = userSample.getValue(Tutor.class);
+                Bundle bundleForTutor = new Bundle();
+                bundleForTutor.putSerializable("Tutor", tutor);
+                callIntent(bundleForTutor);
+                break;
+            case "Administrator":
+                Administrator administrator = userSample.getValue(Administrator.class);
+                Bundle bundleForAdministrator = new Bundle();
+                bundleForAdministrator.putSerializable("Administrator", administrator);
+                callIntent(bundleForAdministrator);
+
+        }
     }
 
 

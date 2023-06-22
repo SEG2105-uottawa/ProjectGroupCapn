@@ -1,9 +1,9 @@
 public class Date{
 	private int day, month, year, hour, minute;
-	public Complain(){
+	public Date(){
 			
 	}
-	public Complain(int d, int mo, int y, int h, int mi){
+	public Date(int d, int mo, int y, int h, int mi){
 			this.day = d;
 			this.month = mo;
 			this.year = y;

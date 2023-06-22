@@ -183,6 +183,7 @@ public class SignupActivity extends AppCompatActivity {
 
         DatabaseReference newNode = dataToCheck.push();
         String nodeKey = newNode.getKey();
+        user.setDataBaseID(nodeKey);
         newNode.setValue(user);
     }
 

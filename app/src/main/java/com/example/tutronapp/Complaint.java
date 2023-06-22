@@ -1,11 +1,9 @@
-
-/**
- * @author Abhay Ariyappillil
- * Complaint is a class for Complaints to be registered against tutors
- * It stores the details of the complaint as content, the complainer and the complainee as well as
- * the status of the complaint.
- */
 package com.example.tutronapp;
+/**
+ * Represents a complaint against a Tutor by a Student
+ * @author Abhay Ariyappillil
+ */
+
 import java.io.Serializable;
 
 public class Complaint implements Serializable {

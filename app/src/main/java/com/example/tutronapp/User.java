@@ -9,6 +9,7 @@ package com.example.tutronapp;
 
 public class User extends Person {
 
+    private String dataBaseID;
     private String emailAddress;
     private String password;
     private String role;
@@ -33,6 +34,14 @@ public class User extends Person {
     public Administrator toAdministrator(){
         return new Administrator(this.getFirstName(), this.getLastName(), this.getEmailAddress(), this.getPassword());
 
+    }
+
+    public String getDataBaseID(){
+        return this.dataBaseID;
+    }
+
+    public void setDataBaseID(String dataBaseID){
+        this.dataBaseID = dataBaseID;
     }
 
     public String getEmailAddress() {

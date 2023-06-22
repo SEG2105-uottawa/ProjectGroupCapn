@@ -58,7 +58,6 @@ public class LoginActivity extends AppCompatActivity {
                                 "password", Toast.LENGTH_SHORT).show();
                         return;
                     }
-
                     // Check user email exists
                     if (dataSnapshot.exists()) {
                         for (DataSnapshot userSample : dataSnapshot.getChildren()) {
@@ -90,7 +89,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    // Navigate from LoginActivity to WelcomeActivity
+    /**
+     * Accepts a bundle with a Specific User data, calls the WelcomeActivity
+     * send the bundle to it.
+     * @param bundle a bundle with user data to be sent in an intent to WelcomeActivity
+     */
     private void callIntent(Bundle bundle){
         Intent intent = new Intent(LoginActivity.this, WelcomeActivity.class);
         intent.putExtras(bundle);
@@ -98,6 +101,10 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
+    /**Sends a user from a sample of users to the WelcomeActivity
+     * @param user to be sent
+     * @param userSample to get the User's Additional attributes from
+     */
     private void sendUser(User user, DataSnapshot userSample){
         switch (user.getRole()) {
             case "Student":

@@ -19,6 +19,7 @@ public class ManageComplaintsActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewComplaints;
     private ComplaintList complaintList;
+    private DatabaseReference users = FirebaseDatabase.getInstance().getReference("users");
     private DatabaseReference complaints = FirebaseDatabase.getInstance().getReference("complaints");
 
     @Override
@@ -45,8 +46,6 @@ public class ManageComplaintsActivity extends AppCompatActivity {
 
             }
         });
-
-
 
 
     }

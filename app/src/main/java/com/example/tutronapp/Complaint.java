@@ -10,6 +10,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.io.Serializable;
 
 public class Complaint implements Serializable {
+    private String databaseID;
     private Tutor complaintAgainst;
     private Student complaintBy;
     private String complaintTitle;
@@ -28,7 +29,13 @@ public class Complaint implements Serializable {
         this.status = status;
     }
 
+    public String getDatabaseID(){
+        return this.databaseID;
+    }
 
+    public void setDatabaseID(String databaseID){
+        this.databaseID = databaseID;
+    }
     public Student getComplaintBy() {
         return complaintBy;
     }

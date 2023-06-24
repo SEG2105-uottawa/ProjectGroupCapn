@@ -78,24 +78,18 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
         AlertDialog dialog = builder.create();
         dialog.show();
 
-        btnSuspend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Suspend the complaint
-                complaints.child(complaint.getDatabaseID()).setValue(complaint);
-                Toast.makeText(ManageComplaintsActivity.this, "Complaint suspended",
-                        Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
-            }
+        btnSuspend.setOnClickListener(v -> {
+            // Suspend the complaint
+            complaints.child(complaint.getDatabaseID()).setValue(complaint);
+            Toast.makeText(ManageComplaintsActivity.this, "Complaint suspended",
+                    Toast.LENGTH_SHORT).show();
+            dialog.dismiss();
         });
 
-        btnDismiss.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Dismiss the complaint
-                complaint.setStatus("closed");
-               // dismissComplaint(complaint, dialog);
-            }
+        btnDismiss.setOnClickListener(v -> {
+            // Dismiss the complaint
+            //complaint.setStatus("closed");
+           dismissComplaint(complaint, dialog);
         });
     }
 
@@ -106,21 +100,15 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
             DatabaseReference complaintRef = complaints.child(complaintId);
 
             complaintRef.setValue(complaint)
-                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                        @Override
-                        public void onSuccess(Void aVoid) {
-                            Toast.makeText(ManageComplaintsActivity.this,
-                                    "Complaint dismissed successfully", Toast.LENGTH_SHORT).show();
-                            dialog.dismiss(); // Dismiss the dialog here
-                        }
+                    .addOnSuccessListener(aVoid -> {
+                        Toast.makeText(ManageComplaintsActivity.this,
+                                "Complaint dismissed successfully", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss(); // Dismiss the dialog here
                     })
-                    .addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(ManageComplaintsActivity.this,
-                                    "Complaint dismissal failed", Toast.LENGTH_SHORT).show();
-                            dialog.dismiss(); // Dismiss the dialog here as well
-                        }
+                    .addOnFailureListener(e -> {
+                        Toast.makeText(ManageComplaintsActivity.this,
+                                "Complaint dismissal failed", Toast.LENGTH_SHORT).show();
+                        dialog.dismiss(); // Dismiss the dialog here as well
                     });
         }
     }

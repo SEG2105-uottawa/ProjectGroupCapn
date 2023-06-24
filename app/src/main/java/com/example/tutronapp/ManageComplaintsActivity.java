@@ -1,5 +1,6 @@
 package com.example.tutronapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,9 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.tutronapp.ComplaintList;
 
-public class ManageComplaintsActivity extends AppCompatActivity implements ComplaintList.OnItemClickListener{
+public class ManageComplaintsActivity extends AppCompatActivity implements ComplaintList.OnItemClickListener {
 
     private RecyclerView recyclerViewComplaints;
     private ComplaintList complaintList;
@@ -54,6 +56,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                 complaintList = new ComplaintList(listComplaint, activity);
                 recyclerViewComplaints.setAdapter(complaintList);
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
@@ -64,7 +67,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
 
     // Handle item click
     @Override
-    public void onItemClick(Complaint complaint) { // ITEM CLICK WORKS
+    public void onItemClick(Complaint complaint) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         View optionsView = LayoutInflater.from(this).inflate(R.layout.layout_complaint_options, null);
         builder.setView(optionsView);
@@ -79,8 +82,6 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
             @Override
             public void onClick(View v) {
                 // Suspend the complaint
-                //TODO
-                complaint.setSuspend(true);
                 complaints.child(complaint.getDatabaseID()).setValue(complaint);
                 Toast.makeText(ManageComplaintsActivity.this, "Complaint suspended",
                         Toast.LENGTH_SHORT).show();
@@ -92,11 +93,35 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
             @Override
             public void onClick(View v) {
                 // Dismiss the complaint
-                complaints.child(complaint.getDatabaseID()).removeValue(); // NOT TESTED
-                Toast.makeText(ManageComplaintsActivity.this, "Complaint dismissed", Toast.LENGTH_SHORT).show();
-                dialog.dismiss();
+                complaint.setStatus("closed");
+               // dismissComplaint(complaint, dialog);
             }
         });
     }
 
+    private void dismissComplaint(Complaint complaint, AlertDialog dialog) {
+        if (complaint != null) {
+            complaint.setStatus("closed");
+            String complaintId = complaint.getDatabaseID();
+            DatabaseReference complaintRef = complaints.child(complaintId);
+
+            complaintRef.setValue(complaint)
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Toast.makeText(ManageComplaintsActivity.this,
+                                    "Complaint dismissed successfully", Toast.LENGTH_SHORT).show();
+                            dialog.dismiss(); // Dismiss the dialog here
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(ManageComplaintsActivity.this,
+                                    "Complaint dismissal failed", Toast.LENGTH_SHORT).show();
+                            dialog.dismiss(); // Dismiss the dialog here as well
+                        }
+                    });
+        }
+    }
 }

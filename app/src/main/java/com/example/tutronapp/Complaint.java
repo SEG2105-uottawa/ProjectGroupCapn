@@ -77,13 +77,4 @@ public class Complaint implements Serializable {
         this.complaintTitle = complaintTitle;
     }
 
-
-    public void setDismissed() {
-        //TODO
-
-    }
-
-    public void setSuspend(boolean b) {
-        //TODO
-    }
 }

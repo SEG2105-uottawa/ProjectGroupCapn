@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,5 +37,24 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, SignupActivity.class);
             startActivity(intent);
         });
+
+        // Add complaints to the database
+        addComplaintsToDatabase();
+    }
+
+    private void addComplaintsToDatabase() {
+        /**
+        DatabaseReference complaintsRef = FirebaseDatabase.getInstance().getReference("complaints");
+        String complaintTitle1 = "Test1(Delete)";
+        String complaintContent1 = "Test delete";
+        User tutor1 = new Tutor("testDelete", "tutor",
+                "testDelete@tutor.com", "abc");
+        User student1 = new Student("testDelete", "student",
+                "testDelete@student.com", "abc", new CreditCard(), new Address());
+        Complaint complaint1 = new Complaint((Tutor) tutor1, (Student) student1, complaintTitle1,
+                complaintContent1, "open");
+        String complaintKey1 = complaintsRef.push().getKey();
+        complaintsRef.child(complaintKey1).setValue(complaint1);
+         **/
     }
 }

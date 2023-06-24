@@ -46,7 +46,10 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                 List<Complaint> listComplaint = new ArrayList<>();
                 for (DataSnapshot complaintSnapshot : dataSnapshot.getChildren()) {
                     Complaint complaint = complaintSnapshot.getValue(Complaint.class);
-                    listComplaint.add(complaint);
+                    if (complaint.getStatus().equals("open")) {
+                        listComplaint.add(complaint);
+
+                    }
                 }
                 complaintList = new ComplaintList(listComplaint, activity);
                 recyclerViewComplaints.setAdapter(complaintList);

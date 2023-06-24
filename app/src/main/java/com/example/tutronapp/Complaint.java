@@ -2,6 +2,7 @@ package com.example.tutronapp;
 /**
  * Represents a complaint against a Tutor by a Student
  * @author Abhay Ariyappillil
+ * @author Sum Yan Wan
  */
 
 import com.google.firebase.database.DatabaseReference;
@@ -76,4 +77,13 @@ public class Complaint implements Serializable {
         this.complaintTitle = complaintTitle;
     }
 
+
+    public void setDismissed() {
+        //TODO
+
+    }
+
+    public void setSuspend(boolean b) {
+        //TODO
+    }
 }

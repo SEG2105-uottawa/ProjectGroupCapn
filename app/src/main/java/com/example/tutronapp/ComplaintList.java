@@ -3,7 +3,7 @@ package com.example.tutronapp;
  * A ComplaintList to use as the adapter for the recycler view to be used to show the admin
  * the list of complaints.
  * @author Abhay Ariyappillil
- *
+ * @author Sum Yan Wan
  */
 
 import android.view.LayoutInflater;
@@ -19,9 +19,11 @@ import java.util.List;
 public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintViewHolder> {
 
     private List<Complaint> complaintList;
+    private OnItemClickListener listener;
 
-    public ComplaintList(List<Complaint> complaintList) {
+    public ComplaintList(List<Complaint> complaintList, OnItemClickListener listener) {
         this.complaintList = complaintList;
+        this.listener = listener;
     }
 
     @NonNull
@@ -30,6 +32,10 @@ public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintV
         // Inflate the layout for each item in the RecyclerView
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_complaint_item, parent, false);
         return new ComplaintViewHolder(itemView);
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(Complaint complaint);
     }
 
     @Override
@@ -59,6 +65,18 @@ public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintV
             // Initialize the views
             titleTextView = itemView.findViewById(R.id.titleTextView);
             againstTextView = itemView.findViewById(R.id.againstTextView);
+
+            // Set click listener for the items
+            itemView.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View v) {
+                   int position = getAdapterPosition();
+                   if (position != RecyclerView.NO_POSITION && listener != null) {
+                       Complaint clickedComplaint = complaintList.get(position);
+                       listener.onItemClick(clickedComplaint);
+                   }
+               }
+            });
         }
 
         public void bind(Complaint complaint) {
@@ -66,10 +84,13 @@ public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintV
             titleTextView.setText(complaint.getComplaintTitle());
             againstTextView.setText(complaint.getComplaintAgainst().getName());
 
+            /**
             // Set click listener for expanding the item
             itemView.setOnClickListener(v -> {
                 // Implement the logic to expand the item
+
             });
+             **/
         }
     }
 }

@@ -2643,12 +2643,14 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnDismiss
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
 id btnSignUp2
 id btnSignup
+id btnSuspend
 id buttonPanel
 id buttonTutor
 id cache_measures
@@ -3186,6 +3188,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout layout_complaint_item
+layout layout_complaint_options
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

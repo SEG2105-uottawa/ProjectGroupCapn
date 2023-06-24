@@ -21,10 +21,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this); // Initialize Firebase
 
-
         Button btnLogin = findViewById(R.id.btnLogin);
         Button btnSignup = findViewById(R.id.btnSignup);
-
+        
         // set Click listener to `btnLogin` (direct to LoginActivity.class if clicked)
         btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);

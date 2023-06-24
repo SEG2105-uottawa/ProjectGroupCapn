@@ -8,12 +8,14 @@ drawable logo
 drawable tutor_profile
 id addressText
 id againstTextView
+id btnDismiss
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
 id btnSignUp2
 id btnSignup
+id btnSuspend
 id buttonTutor
 id cardHolder
 id cardNumber
@@ -70,6 +72,7 @@ layout activity_student_info
 layout activity_tutor_info
 layout activity_welcome
 layout layout_complaint_item
+layout layout_complaint_options
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

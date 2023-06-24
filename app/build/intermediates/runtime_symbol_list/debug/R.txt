@@ -2642,12 +2642,14 @@ int id bounce 0x7f090062
 int id bounceBoth 0x7f090063
 int id bounceEnd 0x7f090064
 int id bounceStart 0x7f090065
+int id btnDismiss 0x7f090217
 int id btnLogin 0x7f090066
 int id btnLoginLoginPage 0x7f090067
 int id btnProceed 0x7f090068
 int id btnProceedHome 0x7f090069
 int id btnSignUp2 0x7f09006a
 int id btnSignup 0x7f09006b
+int id btnSuspend 0x7f090218
 int id buttonPanel 0x7f09006c
 int id buttonTutor 0x7f09006d
 int id cache_measures 0x7f09006e
@@ -3185,6 +3187,7 @@ int layout design_navigation_menu_item 0x7f0c0030
 int layout design_text_input_end_icon 0x7f0c0031
 int layout design_text_input_start_icon 0x7f0c0032
 int layout layout_complaint_item 0x7f0c0033
+int layout layout_complaint_options 0x7f0c007b
 int layout m3_alert_dialog 0x7f0c0034
 int layout m3_alert_dialog_actions 0x7f0c0035
 int layout m3_alert_dialog_title 0x7f0c0036

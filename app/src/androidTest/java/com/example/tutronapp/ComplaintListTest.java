@@ -1,12 +1,11 @@
 package com.example.tutronapp;
 
-import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
+import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 import static org.junit.Assert.assertEquals;
 
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,18 +14,10 @@ import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.espresso.matcher.ViewMatchers;
-import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import androidx.test.filters.LargeTest;
-
-import com.example.tutronapp.Complaint;
-import com.example.tutronapp.ComplaintList;
-import com.example.tutronapp.R;
-import com.example.tutronapp.Tutor;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -34,11 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(AndroidJUnit4.class)
-
 public class ComplaintListTest {
-
-    @Rule
-    public ActivityScenarioRule<ManageComplaintsActivity> activityScenarioRule = new ActivityScenarioRule<>(ManageComplaintsActivity.class);
 
     private List<Complaint> complaintList;
 
@@ -51,40 +38,35 @@ public class ComplaintListTest {
 
     @Test
     public void testComplaintListRecyclerView() {
-        ActivityScenario<ManageComplaintsActivity> activityScenario = activityScenarioRule.getScenario();
-        activityScenario.onActivity(activity -> {
-            // Inflate the layout for the RecyclerView
-            View view = LayoutInflater.from(activity).inflate(R.layout.activity_manage_complaints, null);
+        ActivityScenario.launch(ManageComplaintsActivity.class);
 
-            // Set up the RecyclerView and the adapter
-            RecyclerView recyclerView = view.findViewById(R.id.recyclerViewComplaints);
-            ComplaintList adapter = new ComplaintList(complaintList, null);
-            recyclerView.setAdapter(adapter);
+        // Inflate the layout for the RecyclerView
+        View layoutView = LayoutInflater.from(getInstrumentation().getTargetContext())
+                .inflate(R.layout.activity_manage_complaints, null);
 
-            activity.setContentView(view);
-        });
+        // Set up the RecyclerView and the adapter
+        RecyclerView recyclerView = layoutView.findViewById(R.id.recyclerViewComplaints);
+        ComplaintList adapter = new ComplaintList(complaintList, null);
+        recyclerView.setAdapter(adapter);
 
         // Test RecyclerView item click
         Espresso.onView(ViewMatchers.withId(R.id.recyclerViewComplaints))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, ViewActions.click()));
 
-        // Add more assertions or actions as needed
     }
 
     @Test
     public void testComplaintListRecyclerViewItemCount() {
-        ActivityScenario<ManageComplaintsActivity> activityScenario = activityScenarioRule.getScenario();
-        activityScenario.onActivity(activity -> {
-            // Inflate the layout for the RecyclerView
-            View view = LayoutInflater.from(activity).inflate(R.layout.activity_manage_complaints, null);
+        ActivityScenario.launch(ManageComplaintsActivity.class);
 
-            // Set up the RecyclerView and the adapter
-            RecyclerView recyclerView = view.findViewById(R.id.recyclerViewComplaints);
-            ComplaintList adapter = new ComplaintList(complaintList, null);
-            recyclerView.setAdapter(adapter);
+        // Inflate the layout for the RecyclerView
+        View layoutView = LayoutInflater.from(getInstrumentation().getTargetContext())
+                .inflate(R.layout.activity_manage_complaints, null);
 
-            activity.setContentView(view);
-        });
+        // Set up the RecyclerView and the adapter
+        RecyclerView recyclerView = layoutView.findViewById(R.id.recyclerViewComplaints);
+        ComplaintList adapter = new ComplaintList(complaintList, null);
+        recyclerView.setAdapter(adapter);
 
         // Test RecyclerView item count
         Espresso.onView(ViewMatchers.withId(R.id.recyclerViewComplaints))
@@ -118,7 +100,5 @@ public class ComplaintListTest {
         TextView againstTextView = itemView.findViewById(R.id.againstTextView);
         assertEquals("Test Complaint", titleTextView.getText().toString());
         assertEquals("First Name Last Name", againstTextView.getText().toString());
-
-
     }
 }

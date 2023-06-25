@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-w480dp-port-v13/values-w480dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\daec6ad38ade12a1870b471ff3c4c374\\transformed\\material-1.5.0\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\daec6ad38ade12a1870b471ff3c4c374\\transformed\\material-1.5.0\\res\\values-w480dp-port-v13\\values-w480dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

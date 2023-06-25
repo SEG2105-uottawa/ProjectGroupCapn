@@ -1,3 +1,8 @@
+/*
+Contains JUnit Tests for Address
+@author Nalan Kurnaz
+ */
+
 package com.example.tutronapp;
 
 import static org.junit.Assert.*;

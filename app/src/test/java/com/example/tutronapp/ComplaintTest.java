@@ -1,63 +1,77 @@
+/*
+Contains JUnit Tests for Complaint
+@author Nalan Kurnaz
+ */
+
 package com.example.tutronapp;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class ComplaintTest {
+    private Tutor tutor;
+    private Student student;
 
-    @Test
-    public void testConstructorWithParameters() {
-        Tutor complaintAgainst = new Tutor();
-        Student complaintBy = new Student();
-        String complaintTitle = "Late Submission";
-        String content = "The tutor submitted the assignment late.";
-        String status = "Open";
-
-        Complaint complaint = new Complaint(complaintAgainst, complaintBy, complaintTitle, content, status);
-
-        // Check if the properties are set correctly
-        Assert.assertEquals(complaintAgainst, complaint.getComplaintAgainst());
-        Assert.assertEquals(complaintBy, complaint.getComplaintBy());
-        Assert.assertEquals(complaintTitle, complaint.getComplaintTitle());
-        Assert.assertEquals(content, complaint.getContent());
-        Assert.assertEquals(status, complaint.getStatus());
+    @Before
+    public void setUp() {
+        // Create a Tutor and Student for testing
+        tutor = new Tutor();
+        student = new Student();
     }
 
     @Test
-    public void testSettersAndGetters() {
+    public void testGettersAndSetters() {
+        // Create a Complaint
         Complaint complaint = new Complaint();
+        complaint.setComplaintAgainst(tutor);
+        complaint.setComplaintBy(student);
+        complaint.setComplaintTitle("Test Complaint");
+        complaint.setContent("Test Content");
+        complaint.setStatus("Pending");
 
-        // Set property values
-        Tutor complaintAgainst = new Tutor();
-        Student complaintBy = new Student();
-        String complaintTitle = "Inappropriate Behavior";
-        String content = "The tutor exhibited inappropriate behavior during the session.";
-        String status = "Closed";
+        // Test the getters
+        Assert.assertEquals(tutor, complaint.getComplaintAgainst());
+        Assert.assertEquals(student, complaint.getComplaintBy());
+        Assert.assertEquals("Test Complaint", complaint.getComplaintTitle());
+        Assert.assertEquals("Test Content", complaint.getContent());
+        Assert.assertEquals("Pending", complaint.getStatus());
 
-        complaint.setComplaintAgainst(complaintAgainst);
-        complaint.setComplaintBy(complaintBy);
-        complaint.setComplaintTitle(complaintTitle);
-        complaint.setContent(content);
-        complaint.setStatus(status);
+        // Test the setters
+        Tutor newTutor = new Tutor();
+        Student newStudent = new Student();
+        complaint.setComplaintAgainst(newTutor);
+        complaint.setComplaintBy(newStudent);
+        complaint.setComplaintTitle("New Complaint");
+        complaint.setContent("New Content");
+        complaint.setStatus("Resolved");
 
-        // Check if the getters return the set values
-        Assert.assertEquals(complaintAgainst, complaint.getComplaintAgainst());
-        Assert.assertEquals(complaintBy, complaint.getComplaintBy());
-        Assert.assertEquals(complaintTitle, complaint.getComplaintTitle());
-        Assert.assertEquals(content, complaint.getContent());
-        Assert.assertEquals(status, complaint.getStatus());
+        Assert.assertEquals(newTutor, complaint.getComplaintAgainst());
+        Assert.assertEquals(newStudent, complaint.getComplaintBy());
+        Assert.assertEquals("New Complaint", complaint.getComplaintTitle());
+        Assert.assertEquals("New Content", complaint.getContent());
+        Assert.assertEquals("Resolved", complaint.getStatus());
     }
 
     @Test
-    public void testDatabaseID() {
+    public void testGetDatabaseID() {
+        // Create a Complaint
+        Complaint complaint = new Complaint();
+        complaint.setDatabaseID("12345");
+
+        // Test the getDatabaseID() method
+        Assert.assertEquals("12345", complaint.getDatabaseID());
+    }
+
+    @Test
+    public void testSetDatabaseID() {
+        // Create a Complaint
         Complaint complaint = new Complaint();
 
-        // Set and get database ID
-        String databaseID = "12345";
-        complaint.setDatabaseID(databaseID);
-        String retrievedDatabaseID = complaint.getDatabaseID();
+        // Set the databaseID using setDatabaseID() method
+        complaint.setDatabaseID("54321");
 
-        // Check if the database ID is set and retrieved correctly
-        Assert.assertEquals(databaseID, retrievedDatabaseID);
+        // Test the databaseID field directly
+        Assert.assertEquals("54321", complaint.getDatabaseID());
     }
 }

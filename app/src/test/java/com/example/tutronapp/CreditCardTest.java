@@ -1,3 +1,8 @@
+/*
+Contains JUnit Tests for CreditCard
+@author Nalan Kurnaz
+ */
+
 package com.example.tutronapp;
 
 import org.junit.Test;

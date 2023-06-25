@@ -43,7 +43,7 @@ INSTRUMENTATION_STATUS: test=testComplaintListRecyclerView
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 6.177
+Time: 7.297
 
 OK (3 tests)
 

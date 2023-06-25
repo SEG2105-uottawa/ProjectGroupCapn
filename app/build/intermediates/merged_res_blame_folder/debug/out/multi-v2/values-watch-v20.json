@@ -4,7 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\8751a5349377542592293d8497fbbcb3\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\43e3d7da2550826683deaad880241c87\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

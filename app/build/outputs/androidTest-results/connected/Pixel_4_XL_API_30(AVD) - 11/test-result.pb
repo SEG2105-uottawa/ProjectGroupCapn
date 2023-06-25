@@ -1,7 +1,7 @@
 
 Ò
 n
-ComplaintListTestcom.example.tutronapp&testComplaintListRecyclerViewItemCount2—«â¤€ÌšÕ:™«â¤€Œ"‰
+ComplaintListTestcom.example.tutronapp&testComplaintListRecyclerViewItemCount2Â½â¤À¥ÈÃ:Å½â¤€ëœÉ"‰
 
 logcatandroidó
 ğC:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\outputs\androidTest-results\connected\Pixel_4_XL_API_30(AVD) - 11\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListRecyclerViewItemCount.txt"Ã
@@ -15,7 +15,7 @@ n
 device-info.cpuinfoandroid¡
 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\outputs\androidTest-results\connected\Pixel_4_XL_API_30(AVD) - 11\cpuinfoÒ
 n
-ComplaintListTestcom.example.tutronapp&testComplaintListViewHolderDataBinding2š«â¤ÀØš¦:š«â¤€®¢¯"‰
+ComplaintListTestcom.example.tutronapp&testComplaintListViewHolderDataBinding2Æ½â¤Àä•Ğ:Æ½â¤€¯Ğå"‰
 
 logcatandroidó
 ğC:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\outputs\androidTest-results\connected\Pixel_4_XL_API_30(AVD) - 11\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListViewHolderDataBinding.txt"Ã
@@ -29,7 +29,7 @@ n
 device-info.cpuinfoandroid¡
 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\outputs\androidTest-results\connected\Pixel_4_XL_API_30(AVD) - 11\cpuinfoÀ
 e
-ComplaintListTestcom.example.tutronapptestComplaintListRecyclerView2š«â¤ÀÍÍ²:›«â¤ÀÇİÔ"€
+ComplaintListTestcom.example.tutronapptestComplaintListRecyclerView2Æ½â¤€€›î:Ç½â¤€‚÷Ú"€
 
 logcatandroidê
 çC:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\outputs\androidTest-results\connected\Pixel_4_XL_API_30(AVD) - 11\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListRecyclerView.txt"Ã

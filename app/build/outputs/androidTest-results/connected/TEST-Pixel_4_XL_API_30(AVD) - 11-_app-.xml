@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.tutronapp.ComplaintListTest" tests="3" failures="0" errors="0" skipped="0" time="5.683" timestamp="2023-06-25T19:29:33" hostname="localhost">
+<testsuite name="com.example.tutronapp.ComplaintListTest" tests="3" failures="0" errors="0" skipped="0" time="7.46" timestamp="2023-06-25T20:08:42" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_4_XL_API_30(AVD) - 11" />
     <property name="flavor" value="" />
     <property name="project" value=":app" />
   </properties>
-  <testcase name="testComplaintListRecyclerViewItemCount" classname="com.example.tutronapp.ComplaintListTest" time="1.602" />
-  <testcase name="testComplaintListViewHolderDataBinding" classname="com.example.tutronapp.ComplaintListTest" time="0.03" />
-  <testcase name="testComplaintListRecyclerView" classname="com.example.tutronapp.ComplaintListTest" time="1.328" />
+  <testcase name="testComplaintListRecyclerViewItemCount" classname="com.example.tutronapp.ComplaintListTest" time="2.302" />
+  <testcase name="testComplaintListViewHolderDataBinding" classname="com.example.tutronapp.ComplaintListTest" time="0.039" />
+  <testcase name="testComplaintListRecyclerView" classname="com.example.tutronapp.ComplaintListTest" time="1.217" />
 </testsuite>

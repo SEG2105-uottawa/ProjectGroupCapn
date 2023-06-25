@@ -1,2 +1,4 @@
-06-25 15:29:30.408  4470  4492 I TestRunner: started: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)
-06-25 15:29:30.414  4470  4492 I TestRunner: finished: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)
+06-25 16:08:38.503  6999  7023 I TestRunner: started: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)
+06-25 16:08:38.518  6999  6999 D LifecycleMonitor: Lifecycle status change: com.example.tutronapp.ManageComplaintsActivity@854ae7c in: DESTROYED
+06-25 16:08:38.519  6999  6999 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+06-25 16:08:38.544  6999  7023 I TestRunner: finished: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)

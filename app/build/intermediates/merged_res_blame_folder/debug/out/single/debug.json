@@ -1,118 +1,114 @@
 [
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_manage_complaints.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_manage_complaints.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_login.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_welcome.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_welcome.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_tutor_info.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_tutor_info.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_suspend_options.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/layout_suspend_options.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_layout_suspend_options.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\layout_suspend_options.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\drawable_tutor_profile.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\tutor_profile.xml"
-    },
-    {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_signup.xml"
-    },
-    {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\logo.png"
-    },
-    {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_student_info.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_student_info.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.tutronapp-merged_res-34:/layout_activity_manage_complaints.xml.flat",
         "source": "com.example.tutronapp-main-36:/layout/activity_manage_complaints.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/drawable_logo.png.flat",
+        "source": "com.example.tutronapp-main-36:/drawable/logo.png"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_layout_complaint_item.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\layout_complaint_item.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_welcome.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_welcome.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_layout_complaint_options.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\layout_complaint_options.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_tutor_info.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_tutor_info.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/drawable_tutor_profile.xml.flat",
+        "source": "com.example.tutronapp-main-36:/drawable/tutor_profile.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_complaint_options.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/layout_complaint_options.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\xml\\backup_rules.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_student_info.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_student_info.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.tutronapp-main-36:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.tutronapp-main-36:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/xml_backup_rules.xml.flat",
+        "source": "com.example.tutronapp-main-36:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_signup.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_login.xml"
+        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_complaint_item.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/layout_complaint_item.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_main.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tutronapp-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-34:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.tutronapp-main-36:/drawable-v24/ic_launcher_foreground.xml"
     }
 ]

@@ -1,0 +1,172 @@
+# 2023-06-25T19:29:33.844Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 3
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "ComplaintListTest"
+    test_package: "com.example.tutronapp"
+    test_method: "testComplaintListRecyclerViewItemCount"
+    start_time {
+      seconds: 1687721367
+      nanos: 984000000
+    }
+    end_time {
+      seconds: 1687721369
+      nanos: 600000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListRecyclerViewItemCount.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "ComplaintListTest"
+    test_package: "com.example.tutronapp"
+    test_method: "testComplaintListViewHolderDataBinding"
+    start_time {
+      seconds: 1687721370
+      nanos: 617000000
+    }
+    end_time {
+      seconds: 1687721370
+      nanos: 636000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListViewHolderDataBinding.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "ComplaintListTest"
+    test_package: "com.example.tutronapp"
+    test_method: "testComplaintListRecyclerView"
+    start_time {
+      seconds: 1687721370
+      nanos: 643000000
+    }
+    end_time {
+      seconds: 1687721371
+      nanos: 983000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\logcat-com.example.tutronapp.ComplaintListTest-testComplaintListRecyclerView.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\16132\\OneDrive - University of Ottawa\\Desktop\\P2\\ProjectGroupCapn\\app\\build\\outputs\\androidTest-results\\connected\\Pixel_4_XL_API_30(AVD) - 11\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

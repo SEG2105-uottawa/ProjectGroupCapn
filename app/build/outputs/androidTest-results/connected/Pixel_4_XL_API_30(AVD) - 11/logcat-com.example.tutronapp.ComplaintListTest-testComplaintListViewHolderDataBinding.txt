@@ -1,0 +1,2 @@
+06-25 15:29:30.408  4470  4492 I TestRunner: started: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)
+06-25 15:29:30.414  4470  4492 I TestRunner: finished: testComplaintListViewHolderDataBinding(com.example.tutronapp.ComplaintListTest)

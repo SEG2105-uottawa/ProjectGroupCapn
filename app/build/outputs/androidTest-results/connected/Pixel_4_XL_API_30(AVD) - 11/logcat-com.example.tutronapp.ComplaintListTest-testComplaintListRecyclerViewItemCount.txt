@@ -1,0 +1,96 @@
+06-25 16:08:34.747  6999  7023 I TestRunner: started: testComplaintListRecyclerViewItemCount(com.example.tutronapp.ComplaintListTest)
+06-25 16:08:34.767  6999  7023 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+06-25 16:08:34.784   544   600 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+06-25 16:08:34.788   421   421 I perfetto: ing_service_impl.cc:758 Configured tracing session 11, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+06-25 16:08:34.789   420   420 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=11)
+06-25 16:08:34.803   544   600 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+06-25 16:08:34.814   544  6140 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.814   544  6140 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.816   544  6140 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.817   544  6140 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.818   544  6140 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.818   544  6140 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.818   544  6140 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.819   544  6140 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.819   544  6140 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.819   544  6140 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.820   544  6140 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-25 16:08:34.822   420   420 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+06-25 16:08:34.848   313   313 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f10b3000]
+06-25 16:08:34.863  6999  7031 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+06-25 16:08:34.865  6999  7031 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+06-25 16:08:34.867  6999  7031 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+06-25 16:08:35.049  6999  6999 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+06-25 16:08:35.128  6999  6999 D LifecycleMonitor: Lifecycle status change: com.example.tutronapp.ManageComplaintsActivity@854ae7c in: PRE_ON_CREATE
+06-25 16:08:35.131  6999  6999 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+06-25 16:08:35.192   219   219 W Binder:219_2: type=1400 audit(0.0:210): avc: denied { read } for name="wakeup34" dev="sysfs" ino=18950 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+06-25 16:08:35.208   219   223 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
+06-25 16:08:35.245   219   223 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+06-25 16:08:35.240   219   219 W Binder:219_2: type=1400 audit(0.0:211): avc: denied { read } for name="wakeup35" dev="sysfs" ino=19013 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+06-25 16:08:35.262  6999  6999 W ample.tutronap: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+06-25 16:08:35.264  6999  6999 W ample.tutronap: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+06-25 16:08:35.518  6999  6999 D LifecycleMonitor: Lifecycle status change: com.example.tutronapp.ManageComplaintsActivity@854ae7c in: CREATED
+06-25 16:08:35.519  6999  6999 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.example.tutronapp.ManageComplaintsActivity@854ae7c
+06-25 16:08:35.525  6999  6999 D LifecycleMonitor: Lifecycle status change: com.example.tutronapp.ManageComplaintsActivity@854ae7c in: STARTED
+06-25 16:08:35.525  6999  6999 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.example.tutronapp.ManageComplaintsActivity@854ae7c
+06-25 16:08:35.527  6999  6999 D LifecycleMonitor: Lifecycle status change: com.example.tutronapp.ManageComplaintsActivity@854ae7c in: RESUMED
+06-25 16:08:35.527  6999  6999 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.example.tutronapp.ManageComplaintsActivity@854ae7c
+06-25 16:08:35.582  6999  6999 W RecyclerView: No adapter attached; skipping layout
+06-25 16:08:35.613  6999  7030 D HostConnection: HostConnection::get() New Host Connection established 0xe955d5f0, tid 7030
+06-25 16:08:35.620  6999  7030 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+06-25 16:08:35.623   174   174 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+06-25 16:08:35.625  6999  7030 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-25 16:08:35.751  6999  7030 D EGL_emulation: eglCreateContext: 0xe955d970: maj 2 min 0 rcv 2
+06-25 16:08:35.781  6999  7030 D EGL_emulation: eglMakeCurrent: 0xe955d970: ver 2 0 (tinfo 0xe98b5570) (first time)
+06-25 16:08:35.788   313   313 D goldfish-address-space: claimShared: Ask to claim region [0x3f2166000 0x3f3219000]
+06-25 16:08:35.795   174   174 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-25 16:08:35.796  6999  7030 I Gralloc4: mapper 4.x is not supported
+06-25 16:08:35.797  6999  7030 D HostConnection: createUnique: call
+06-25 16:08:35.798  6999  7030 D HostConnection: HostConnection::get() New Host Connection established 0xe955d190, tid 7030
+06-25 16:08:35.799  6999  7030 D goldfish-address-space: allocate: Ask for block of size 0x100
+06-25 16:08:35.800  6999  7030 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3efffe000 size 0x2000
+06-25 16:08:35.808  6999  7030 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+06-25 16:08:35.850   313   313 D goldfish-address-space: claimShared: Ask to claim region [0x3f528d000 0x3f6340000]
+06-25 16:08:35.862   313   313 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f50b3000]
+06-25 16:08:36.873  6999  7030 I OpenGLRenderer: Davey! duration=1320ms; Flags=1, IntendedVsync=2683931441076, Vsync=2683931441076, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=2683934363900, AnimationStart=2683934397800, PerformTraversalsStart=2683934439400, DrawStart=2684240802500, SyncQueued=2684245801000, SyncStart=2684253792600, IssueDrawCommandsStart=2684254089900, SwapBuffers=2685115218500, FrameCompleted=2685260288100, DequeueBufferDuration=453100, QueueBufferDuration=611000, GpuCompleted=-4566144746175152924,
+06-25 16:08:36.878   544   607 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.tutronapp/1/com.example.tutronapp.ManageComplaintsActivity/compiled_traces/compiled_trace.pb doesn't exist
+06-25 16:08:36.897   544   607 I ActivityTaskManager: Displayed com.example.tutronapp/.ManageComplaintsActivity: +2s92ms
+06-25 16:08:36.922  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:36.926   544   600 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+06-25 16:08:36.940  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:36.942  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:36.942  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:36.943  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:36.943  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:36.944  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:36.944  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:36.944  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:36.960  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.012  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:37.013  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.013  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.015  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.015  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.016  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.017  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.017  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:37.018  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.019  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.020  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:37.022  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.022  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.022  6999  6999 W ClassMapper: No setter/field for dismissed found on class com.example.tutronapp.Complaint
+06-25 16:08:37.023  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.023  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.024  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Tutor (fields/setters are case sensitive!)
+06-25 16:08:37.024  6999  6999 W ClassMapper: No setter/field for name found on class com.example.tutronapp.Student (fields/setters are case sensitive!)
+06-25 16:08:37.205  6999  7023 I TestRunner: finished: testComplaintListRecyclerViewItemCount(com.example.tutronapp.ComplaintListTest)

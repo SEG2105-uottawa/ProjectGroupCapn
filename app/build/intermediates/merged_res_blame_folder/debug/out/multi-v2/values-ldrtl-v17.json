@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\0a414af4f8f11f812f0f58a8874d7f93\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\d111f4975f9b020de2f2af6faf0ecc3f\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

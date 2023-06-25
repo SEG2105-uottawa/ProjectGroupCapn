@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.tutronapp.AddressTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-06-25T14:55:12" hostname="DESKTOP-AT2FVIE" time="0.004">
+  <properties/>
+  <testcase name="testGetPostCode" classname="com.example.tutronapp.AddressTest" time="0.002"/>
+  <testcase name="getStreetName" classname="com.example.tutronapp.AddressTest" time="0.001"/>
+  <testcase name="setStreetName" classname="com.example.tutronapp.AddressTest" time="0.0"/>
+  <testcase name="getStreetNumber" classname="com.example.tutronapp.AddressTest" time="0.0"/>
+  <testcase name="setStreetNumber" classname="com.example.tutronapp.AddressTest" time="0.0"/>
+  <testcase name="testSetPostCode" classname="com.example.tutronapp.AddressTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

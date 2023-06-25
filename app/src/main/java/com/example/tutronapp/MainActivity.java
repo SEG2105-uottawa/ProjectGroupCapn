@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Add complaints to the database
-        addComplaintsToDatabase();
+        //addComplaintsToDatabase(); // uncomment if u want to add a test complain
     }
 
     private void addComplaintsToDatabase() {
-        /**
+        // Test complain
         DatabaseReference complaintsRef = FirebaseDatabase.getInstance().getReference("complaints");
         String complaintTitle1 = "Test1(Delete)";
         String complaintContent1 = "Test delete";
@@ -55,6 +55,5 @@ public class MainActivity extends AppCompatActivity {
                 complaintContent1, "open");
         String complaintKey1 = complaintsRef.push().getKey();
         complaintsRef.child(complaintKey1).setValue(complaint1);
-         **/
     }
 }

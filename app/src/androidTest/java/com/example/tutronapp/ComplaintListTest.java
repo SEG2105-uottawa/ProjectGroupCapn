@@ -2,6 +2,8 @@ package com.example.tutronapp;
 
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
+import static org.junit.Assert.assertEquals;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +34,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RunWith(AndroidJUnit4.class)
-@LargeTest
+
 public class ComplaintListTest {
 
     @Rule
@@ -91,10 +93,8 @@ public class ComplaintListTest {
                         throw noViewFoundException;
                     }
                     RecyclerView recyclerView1 = (RecyclerView) view;
-                    Assert.assertEquals(complaintList.size(), recyclerView1.getAdapter().getItemCount());
+                    assertEquals(complaintList.size(), recyclerView1.getAdapter().getItemCount());
                 });
-
-        // Add more assertions or actions as needed
     }
 
     @Test
@@ -116,8 +116,8 @@ public class ComplaintListTest {
         // Test data binding
         TextView titleTextView = itemView.findViewById(R.id.titleTextView);
         TextView againstTextView = itemView.findViewById(R.id.againstTextView);
-        Assert.assertEquals("Test Complaint", titleTextView.getText().toString());
-        Assert.assertEquals("First Name Last Name", againstTextView.getText().toString());
+        assertEquals("Test Complaint", titleTextView.getText().toString());
+        assertEquals("First Name Last Name", againstTextView.getText().toString());
 
 
     }

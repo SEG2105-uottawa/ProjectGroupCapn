@@ -2644,6 +2644,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnClose
 id btnDismiss
 id btnLogin
 id btnLoginLoginPage
@@ -3022,6 +3023,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewAgainst
+id textViewComplaintBy
+id textViewContent
+id textViewStatus
+id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon

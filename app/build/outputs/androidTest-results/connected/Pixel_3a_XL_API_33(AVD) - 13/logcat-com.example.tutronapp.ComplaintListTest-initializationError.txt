@@ -1,0 +1,38 @@
+06-24 21:38:48.292  7362  7447 I TestRunner: started: initializationError(com.example.tutronapp.ComplaintListTest)
+06-24 21:38:48.294  7362  7362 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 0
+06-24 21:38:48.296  7362  7447 I TestRunner: failed: initializationError(com.example.tutronapp.ComplaintListTest)
+06-24 21:38:48.296  7362  7447 I TestRunner: ----- begin exception -----
+06-24 21:38:48.298  7362  7447 I TestRunner: java.lang.RuntimeException: Failed to instantiate test runner class androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+06-24 21:38:48.298  7362  7447 I TestRunner:
+06-24 21:38:48.298  7362  7447 I TestRunner:
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.throwInitializationError(AndroidJUnit4.java:129)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:121)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:82)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.<init>(AndroidJUnit4.java:56)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.internal.runner.junit4.AndroidAnnotatedBuilder.runnerForClass(AndroidAnnotatedBuilder.java:63)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.internal.runner.AndroidRunnerBuilder.runnerForClass(AndroidRunnerBuilder.java:153)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.internal.runner.TestLoader.doCreateRunner(TestLoader.java:73)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.internal.runner.TestLoader.getRunnersFor(TestLoader.java:104)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.internal.runner.TestRequestBuilder.build(TestRequestBuilder.java:789)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.runner.AndroidJUnitRunner.buildRequest(AndroidJUnitRunner.java:539)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:382)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2361)
+06-24 21:38:48.298  7362  7447 I TestRunner: Caused by: java.lang.reflect.InvocationTargetException
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:112)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	... 17 more
+06-24 21:38:48.298  7362  7447 I TestRunner: Caused by: java.lang.IllegalStateException: No instrumentation registered! Must run under a registering instrumentation.
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.platform.app.InstrumentationRegistry.getInstrumentation(InstrumentationRegistry.java:45)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.createRunnerParams(AndroidJUnit4ClassRunner.java:53)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	at androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:48)
+06-24 21:38:48.298  7362  7447 I TestRunner: 	... 20 more
+06-24 21:38:48.299  7362  7447 I TestRunner: ----- end exception -----
+06-24 21:38:48.300  7362  7447 I TestRunner: finished: initializationError(com.example.tutronapp.ComplaintListTest)

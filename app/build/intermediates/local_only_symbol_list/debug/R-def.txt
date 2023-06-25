@@ -8,6 +8,7 @@ drawable logo
 drawable tutor_profile
 id addressText
 id againstTextView
+id btnClose
 id btnDismiss
 id btnLogin
 id btnLoginLoginPage
@@ -56,6 +57,11 @@ id short_description1
 id signUpPicker
 id streetName
 id streetNumber
+id textViewAgainst
+id textViewComplaintBy
+id textViewContent
+id textViewStatus
+id textViewTitle
 id titleText
 id titleTextView
 id toolbar

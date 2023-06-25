@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -72,28 +73,56 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
         View optionsView = LayoutInflater.from(this).inflate(R.layout.layout_complaint_options, null);
         builder.setView(optionsView);
 
+        TextView textViewTitle = optionsView.findViewById(R.id.textViewTitle);
+        TextView textViewContent = optionsView.findViewById(R.id.textViewContent);
+        TextView textViewComplaintBy = optionsView.findViewById(R.id.textViewComplaintBy);
+        TextView textViewAgainst = optionsView.findViewById(R.id.textViewAgainst);
+        TextView textViewStatus = optionsView.findViewById(R.id.textViewStatus);
         Button btnSuspend = optionsView.findViewById(R.id.btnSuspend);
         Button btnDismiss = optionsView.findViewById(R.id.btnDismiss);
+        Button btnClose = optionsView.findViewById(R.id.btnClose);
 
         AlertDialog dialog = builder.create();
         dialog.show();
 
+        textViewTitle.setText(complaint.getComplaintTitle());
+        textViewContent.setText(complaint.getContent());
+        textViewComplaintBy.setText("Complaint By: " + complaint.getComplaintBy().getName());
+        textViewAgainst.setText("Complaint Against: " + complaint.getComplaintAgainst().getName());
+        textViewStatus.setText("Status: " + complaint.getStatus());
+
+        // close button
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+
+        // suspend
         btnSuspend.setOnClickListener(v -> {
             // Suspend the complaint
-            complaints.child(complaint.getDatabaseID()).setValue(complaint);
+            //TODO
             Toast.makeText(ManageComplaintsActivity.this, "Complaint suspended",
                     Toast.LENGTH_SHORT).show();
             dialog.dismiss();
         });
 
+        // dismiss
         btnDismiss.setOnClickListener(v -> {
-            // Dismiss the complaint
-            //complaint.setStatus("closed");
+            // Dismiss the complain
            dismissComplaint(complaint, dialog);
         });
     }
 
-    private void dismissComplaint(Complaint complaint, AlertDialog dialog) {
+
+    private void suspendComplaint(Complaint complaint, AlertDialog dialog) {
+        if (complaint != null) {
+            // choose temp or forever suspend time
+        }
+    }
+
+    private void dismissComplaint(Complaint complaint, AlertDialog dialog) { // TESTED
         if (complaint != null) {
             complaint.setStatus("closed");
             String complaintId = complaint.getDatabaseID();

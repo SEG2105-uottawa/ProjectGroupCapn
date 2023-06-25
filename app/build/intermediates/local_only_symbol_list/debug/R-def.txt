@@ -8,6 +8,7 @@ drawable logo
 drawable tutor_profile
 id addressText
 id againstTextView
+id btnClose
 id btnDismiss
 id btnLogin
 id btnLoginLoginPage
@@ -23,6 +24,7 @@ id constraintLayout
 id contact
 id creditCardDetailsText
 id detailsText
+id editTextDuration
 id education
 id education_options
 id emailAddress
@@ -56,6 +58,11 @@ id short_description1
 id signUpPicker
 id streetName
 id streetNumber
+id textViewAgainst
+id textViewComplaintBy
+id textViewContent
+id textViewStatus
+id textViewTitle
 id titleText
 id titleTextView
 id toolbar
@@ -73,6 +80,7 @@ layout activity_tutor_info
 layout activity_welcome
 layout layout_complaint_item
 layout layout_complaint_options
+layout layout_suspend_options
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

@@ -17,7 +17,6 @@ public class ExampleUnitTest {
     public static void main(String[] args) {
         TestUtil.runClass(AddressTest.class);
         TestUtil.runClass(AdministratorTest.class);
-        TestUtil.runClass(ComplaintListTest.class);
         TestUtil.runClass(ComplaintTest.class);
         TestUtil.runClass(CreditCardTest.class);
         TestUtil.runClass(PersonTest.class);

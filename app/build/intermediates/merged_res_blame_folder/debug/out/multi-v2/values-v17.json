@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-v17/values-v17.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\f609fa221937339a486e8e90d8516ce4\\transformed\\appcompat-1.6.1\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\afcb02c013d3e43008200284e504df0e\\transformed\\appcompat-1.6.1\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

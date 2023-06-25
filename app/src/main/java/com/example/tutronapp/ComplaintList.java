@@ -18,8 +18,8 @@ import java.util.List;
 
 public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintViewHolder> {
 
-    private List<Complaint> complaintList;
-    private OnItemClickListener listener;
+    private static List<Complaint> complaintList;
+    private static OnItemClickListener listener;
 
     public ComplaintList(List<Complaint> complaintList, OnItemClickListener listener) {
         this.complaintList = complaintList;
@@ -55,7 +55,7 @@ public class ComplaintList extends RecyclerView.Adapter<ComplaintList.ComplaintV
         notifyDataSetChanged();
     }
 
-    public class ComplaintViewHolder extends RecyclerView.ViewHolder {
+    public static class ComplaintViewHolder extends RecyclerView.ViewHolder {
 
         private TextView titleTextView;
         private TextView againstTextView;

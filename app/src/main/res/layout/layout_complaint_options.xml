@@ -3,21 +3,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnSuspend"
+    <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Suspend"
-        android:layout_margin="16dp" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Complaint Title"
+        android:layout_margin="16dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnDismiss"
+    <TextView
+        android:id="@+id/textViewContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dismiss"
-        android:layout_margin="16dp" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Complaint Content"
+        android:layout_margin="16dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textViewComplaintBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Complaint By"
+        android:layout_margin="16dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewAgainst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Complaint Against"
+        android:layout_margin="16dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Status"
+        android:layout_margin="16dp"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSuspend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            android:text="Suspend"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dismiss"
+            android:layout_margin="16dp"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textSize="8sp" />
+
+    </LinearLayout>
 
 </LinearLayout>

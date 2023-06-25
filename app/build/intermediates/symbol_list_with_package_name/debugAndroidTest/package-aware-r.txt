@@ -1,0 +1,3 @@
+com.example.tutronapp.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

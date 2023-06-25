@@ -153,13 +153,13 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void suspendComplaintForDuration(Complaint complaint, int duration, AlertDialog dialog) {
-        // Implement suspension logic for the specified duration
         // TODO tutor should see a message informing them they have been suspended
         if (complaint == null) {
             return;
         }
-
         LocalDate suspensionEndDate = null;
+        LocalDate finalSuspensionEndDate = suspensionEndDate;
+
         if (duration == 0) {
             complaint.setStatus("suspended 0");
         }
@@ -172,8 +172,6 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
 
         String complaintId = complaint.getDatabaseID();
         DatabaseReference complaintRef = complaints.child(complaintId);
-
-        LocalDate finalSuspensionEndDate = suspensionEndDate;
 
         complaintRef.setValue(complaint)
                 .addOnSuccessListener(aVoid -> {

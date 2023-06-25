@@ -23,9 +23,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LoginActivity extends AppCompatActivity {
     private Button btnLoginLoginPage;
     private DatabaseReference dataToCheck;
+
+    private DatabaseReference complaints;
 
 
     @Override
@@ -35,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
         // reference to Firebase Realtime Database (users)
         dataToCheck = FirebaseDatabase.getInstance().getReference("users");
+        complaints = FirebaseDatabase.getInstance().getReference("complaints");
 
         TextView enterEmailAddress = findViewById(R.id.enterEmailAddress);
         TextView enterPassword = findViewById(R.id.enterPassword);
@@ -115,6 +121,7 @@ public class LoginActivity extends AppCompatActivity {
                 break;
             case "Tutor":
                 Tutor tutor = userSample.getValue(Tutor.class);
+                checkComplaintStatus(tutor);
                 Bundle bundleForTutor = new Bundle();
                 bundleForTutor.putSerializable("Tutor", tutor);
                 callIntent(bundleForTutor);
@@ -126,6 +133,43 @@ public class LoginActivity extends AppCompatActivity {
                 callIntent(bundleForAdministrator);
 
         }
+    }
+
+    private void checkComplaintStatus(Tutor tutor) {
+
+        String tutorEmailAddress = tutor.getEmailAddress();
+        complaints.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                for (DataSnapshot complaintSnapshot : dataSnapshot.getChildren()) {
+                    Complaint complaint = complaintSnapshot.getValue(Complaint.class);
+
+                    // Check if the complaint is suspended
+                    if (complaint.getStatus().startsWith("suspended") &&
+                            tutorEmailAddress.equals(complaint.getComplaintAgainst().getEmailAddress())) {
+                        String[] statusComponents = complaint.getStatus().split(" ");
+                        if (statusComponents[1].charAt(0) == '0') {
+                            Toast.makeText(getApplicationContext(), "Your account get permanent suspension ",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            // Haven't implement anything if the date have pass the suspend date
+                            Toast.makeText(getApplicationContext(), "Your account get suspended until " +
+                                    statusComponents[1], Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    }
+                }
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                //
+            }
+        });
+
     }
 
 

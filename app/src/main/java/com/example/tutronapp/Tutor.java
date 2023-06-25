@@ -47,5 +47,4 @@ public class Tutor extends User{
 
     public void setShortDescription(String shortDescription) {this.shortDescription = shortDescription;}
 
-
 }

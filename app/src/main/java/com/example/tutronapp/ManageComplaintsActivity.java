@@ -1,15 +1,18 @@
 package com.example.tutronapp;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +71,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
     }
 
     // Handle item click
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onItemClick(Complaint complaint) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -102,10 +107,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
         // suspend
         btnSuspend.setOnClickListener(v -> {
             // Suspend the complaint
-            //TODO
-            Toast.makeText(ManageComplaintsActivity.this, "Complaint suspended",
-                    Toast.LENGTH_SHORT).show();
-            dialog.dismiss();
+            suspendComplaint(complaint, dialog);
         });
 
         // dismiss
@@ -116,10 +118,81 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void suspendComplaint(Complaint complaint, AlertDialog dialog) {
         if (complaint != null) {
-            // choose temp or forever suspend time
+            AlertDialog.Builder suspendDialogBuilder = new AlertDialog.Builder(this);
+            suspendDialogBuilder.setTitle("Suspend Complaint");
+            suspendDialogBuilder.setView(R.layout.layout_suspend_options);
+
+            suspendDialogBuilder.setPositiveButton("Suspend", (dialogInterface, i) -> {
+                AlertDialog suspendDialog = (AlertDialog) dialogInterface;
+                EditText editTextDuration = suspendDialog.findViewById(R.id.editTextDuration);
+
+                if (editTextDuration != null) {
+                    String durationStr = editTextDuration.getText().toString().trim();
+                    if (!durationStr.isEmpty()) {
+                        int duration = Integer.parseInt(durationStr);
+                        // Suspend the complaint for the specified duration
+                        suspendComplaintForDuration(complaint, duration, dialog);
+                    } else {
+                        Toast.makeText(ManageComplaintsActivity.this,
+                                "Please fill the suspend date.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+            suspendDialogBuilder.setNegativeButton("Cancel", (dialogInterface, i) -> {
+                // Close the dialog
+                dialogInterface.dismiss();
+            });
+
+            AlertDialog suspendDialog = suspendDialogBuilder.create();
+            suspendDialog.show();
         }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void suspendComplaintForDuration(Complaint complaint, int duration, AlertDialog dialog) {
+        // Implement suspension logic for the specified duration
+        // TODO tutor should see a message informing them they have been suspended
+        if (complaint == null) {
+            return;
+        }
+
+        LocalDate suspensionEndDate = null;
+        if (duration == 0) {
+            complaint.setStatus("suspended 0");
+        }
+        else {
+            LocalDate currentDate = LocalDate.now();
+            suspensionEndDate = currentDate.plusDays(duration);
+
+            complaint.setStatus("suspended " + suspensionEndDate);
+        }
+
+        String complaintId = complaint.getDatabaseID();
+        DatabaseReference complaintRef = complaints.child(complaintId);
+
+        LocalDate finalSuspensionEndDate = suspensionEndDate;
+
+        complaintRef.setValue(complaint)
+                .addOnSuccessListener(aVoid -> {
+                    if (duration == 0) {
+                        Toast.makeText(ManageComplaintsActivity.this,
+                                "Complaint suspended for permanent", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        Toast.makeText(ManageComplaintsActivity.this,
+                                "Complaint suspended for " + duration + " days, until " +
+                                        finalSuspensionEndDate, Toast.LENGTH_SHORT).show();
+                    }
+                    dialog.dismiss();
+                })
+                .addOnFailureListener(e -> {
+                    Toast.makeText(ManageComplaintsActivity.this,
+                            "Complaint suspension failed", Toast.LENGTH_SHORT).show();
+                    dialog.dismiss();
+                });
     }
 
     private void dismissComplaint(Complaint complaint, AlertDialog dialog) { // TESTED
@@ -132,12 +205,12 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                     .addOnSuccessListener(aVoid -> {
                         Toast.makeText(ManageComplaintsActivity.this,
                                 "Complaint dismissed successfully", Toast.LENGTH_SHORT).show();
-                        dialog.dismiss(); // Dismiss the dialog here
+                        dialog.dismiss();
                     })
                     .addOnFailureListener(e -> {
                         Toast.makeText(ManageComplaintsActivity.this,
                                 "Complaint dismissal failed", Toast.LENGTH_SHORT).show();
-                        dialog.dismiss(); // Dismiss the dialog here as well
+                        dialog.dismiss();
                     });
         }
     }

@@ -20,6 +20,10 @@
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_tutor_info.xml"
     },
     {
+        "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_layout_suspend_options.xml.flat",
+        "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\layout_suspend_options.xml"
+    },
+    {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\drawable_tutor_profile.xml.flat",
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\tutor_profile.xml"
     },
@@ -32,10 +36,6 @@
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\logo.png"
     },
     {
-        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_suspend_options.xml.flat",
-        "source": "com.example.tutronapp-main-36:/layout/layout_suspend_options.xml"
-    },
-    {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_main.xml"
     },
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_student_info.xml.flat",
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_student_info.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-34:/layout_activity_manage_complaints.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/activity_manage_complaints.xml"
     },
     {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\xml_data_extraction_rules.xml.flat",

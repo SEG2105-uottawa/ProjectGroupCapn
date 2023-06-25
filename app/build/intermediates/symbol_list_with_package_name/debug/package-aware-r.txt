@@ -2621,7 +2621,6 @@ id aligned
 id all
 id allStates
 id always
-id androidx_test_espresso_contrib_drawer_layout_tag
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -4107,8 +4106,6 @@ style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

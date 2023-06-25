@@ -6,262 +6,210 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml
+8-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml
+9-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml
 10
 11    <queries>
-11-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:24:5-28:15
+11-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
 12        <package android:name="androidx.test.orchestrator" />
-12-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:25:9-62
-12-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:25:18-59
+12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
+12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
 13        <package android:name="androidx.test.services" />
-13-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:26:9-58
-13-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:26:18-55
+13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
+13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
 14        <package android:name="com.google.android.apps.common.testing.services" />
-14-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:27:9-83
-14-->[androidx.test:runner:1.5.2] C:\Users\16132\.gradle\caches\transforms-3\4108d346bd8ea3e3e8c013e3ed208962\transformed\runner-1.5.2\AndroidManifest.xml:27:18-80
+14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
+14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\25c583bc5090b6c85bb71da58a3cedfa\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
 15    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
+17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
+18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
 19
 20    <permission
-20-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+20-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 21        android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-21-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+21-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 22        android:protectionLevel="signature" />
-22-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+22-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 23
 24    <uses-permission android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-24-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-24-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-25    <uses-permission android:name="android.permission.REORDER_TASKS" />
-25-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:24:5-72
-25-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:24:22-69
-26
-27    <application
-27-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:5:5-56:19
-28        android:allowBackup="true"
-28-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:6:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.9.0] C:\Users\16132\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-30        android:dataExtractionRules="@xml/data_extraction_rules"
-30-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:7:9-65
-31        android:debuggable="true"
-32        android:extractNativeLibs="false"
-33        android:fullBackupContent="@xml/backup_rules"
-33-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:8:9-54
-34        android:icon="@mipmap/ic_launcher"
-34-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:9:9-43
-35        android:label="@string/app_name"
-35-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:10:9-41
-36        android:roundIcon="@mipmap/ic_launcher_round"
-36-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:11:9-54
-37        android:supportsRtl="true"
-37-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:12:9-35
-38        android:testOnly="true"
-39        android:theme="@style/Theme.TutronApp" >
-39-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:13:9-47
-40        <activity
-40-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:15:9-17:40
-41            android:name="com.example.tutronapp.ManageComplaintsActivity"
-41-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:16:13-53
-42            android:exported="false" />
-42-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:17:13-37
-43        <activity
-43-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:18:9-26:20
-44            android:name="com.example.tutronapp.StudentInfoActivity"
-44-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:19:13-48
-45            android:exported="true" >
-45-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:20:13-36
-46            <intent-filter>
-46-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:21:13-25:29
-47                <action android:name="android.intent.action.STUDENT_INFO" />
-47-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:22:17-77
-47-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:22:25-74
-48
-49                <category android:name="android.intent.category.DEFAULT" />
-49-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:24:17-76
-49-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:24:27-73
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:27:9-35:20
-53            android:name="com.example.tutronapp.TutorInfoActivity"
-53-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:28:13-46
-54            android:exported="true" >
-54-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:29:13-36
-55            <intent-filter>
-55-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:30:13-34:29
-56                <action android:name="android.intent.action.TUTOR_INFO" />
-56-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:31:17-75
-56-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:31:25-72
-57
-58                <category android:name="android.intent.category.DEFAULT" />
-58-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:24:17-76
-58-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:24:27-73
-59            </intent-filter>
-60        </activity>
-61        <activity
-61-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:36:9-38:40
-62            android:name="com.example.tutronapp.WelcomeActivity"
-62-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:37:13-44
-63            android:exported="false" />
-63-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:38:13-37
-64        <activity
-64-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:39:9-47:20
-65            android:name="com.example.tutronapp.MainActivity"
-65-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:40:13-41
-66            android:exported="true" >
-66-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:41:13-36
-67            <intent-filter>
-67-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:42:13-46:29
-68                <action android:name="android.intent.action.MAIN" />
-68-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:43:17-69
-68-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:43:25-66
-69
-70                <category android:name="android.intent.category.LAUNCHER" />
-70-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:17-77
-70-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:27-74
-71            </intent-filter>
-72        </activity>
-73        <activity
-73-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:48:9-51:37
-74            android:name="com.example.tutronapp.LoginActivity"
-74-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:49:13-42
-75            android:exported="true"
-75-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:50:13-36
-76            android:label="Login" />
-76-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:51:13-34
-77        <activity
-77-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:52:9-55:38
-78            android:name="com.example.tutronapp.SignupActivity"
-78-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:53:13-43
-79            android:exported="true"
-79-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:54:13-36
-80            android:label="Signup" />
-80-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:55:13-35
-81
-82        <service
-82-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
-83            android:name="com.google.firebase.components.ComponentDiscoveryService"
-83-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:29:13-84
-84            android:directBootAware="true"
-84-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
-85            android:exported="false" >
-85-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:30:13-37
-86            <meta-data
-86-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
-87                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-87-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
-88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[com.google.firebase:firebase-database:20.2.2] C:\Users\16132\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
-89        </service>
-90
-91        <provider
-91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
-92            android:name="com.google.firebase.provider.FirebaseInitProvider"
-92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
-93            android:authorities="com.example.tutronapp.firebaseinitprovider"
-93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
-94            android:directBootAware="true"
-94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
-95            android:exported="false"
-95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
-96            android:initOrder="100" />
-96-->[com.google.firebase:firebase-common:20.3.2] C:\Users\16132\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
-97
-98        <activity
-98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-100            android:exported="false"
-100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-101-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-102
-103        <meta-data
-103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-104            android:name="com.google.android.gms.version"
-104-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-105            android:value="@integer/google_play_services_version" />
-105-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\16132\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-106
-107        <provider
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-108            android:name="androidx.startup.InitializationProvider"
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-109            android:authorities="com.example.tutronapp.androidx-startup"
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-110            android:exported="false" >
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-111            <meta-data
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-112                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-113                android:value="androidx.startup" />
-113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\16132\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-114            <meta-data
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\16132\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-115                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\16132\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-116                android:value="androidx.startup" />
-116-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\16132\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-117        </provider>
+24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:5:5-57:19
+27        android:allowBackup="true"
+27-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:6:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\2ed30a9306a58db86b4daf039e5adc0b\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+29        android:dataExtractionRules="@xml/data_extraction_rules"
+29-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:7:9-65
+30        android:debuggable="true"
+31        android:extractNativeLibs="false"
+32        android:fullBackupContent="@xml/backup_rules"
+32-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:8:9-54
+33        android:icon="@mipmap/ic_launcher"
+33-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:9:9-43
+34        android:label="@string/app_name"
+34-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:10:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:11:9-54
+36        android:supportsRtl="true"
+36-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:12:9-35
+37        android:testOnly="true"
+38        android:theme="@style/Theme.TutronApp" >
+38-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:13:9-47
+39        <activity
+39-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:15:9-17:40
+40            android:name="com.example.tutronapp.ManageComplaintsActivity"
+40-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:16:13-53
+41            android:exported="false" />
+41-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:17:13-37
+42        <activity
+42-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:19:9-27:20
+43            android:name="com.example.tutronapp.StudentInfoActivity"
+43-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:20:13-48
+44            android:exported="true" >
+44-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:21:13-36
+45            <intent-filter>
+45-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:22:13-26:29
+46                <action android:name="android.intent.action.STUDENT_INFO" />
+46-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:23:17-77
+46-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:23:25-74
+47
+48                <category android:name="android.intent.category.DEFAULT" />
+48-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:17-76
+48-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:27-73
+49            </intent-filter>
+50        </activity>
+51        <activity
+51-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:28:9-36:20
+52            android:name="com.example.tutronapp.TutorInfoActivity"
+52-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:29:13-46
+53            android:exported="true" >
+53-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:30:13-36
+54            <intent-filter>
+54-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:31:13-35:29
+55                <action android:name="android.intent.action.TUTOR_INFO" />
+55-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:32:17-75
+55-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:32:25-72
+56
+57                <category android:name="android.intent.category.DEFAULT" />
+57-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:17-76
+57-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:27-73
+58            </intent-filter>
+59        </activity>
+60        <activity
+60-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:37:9-39:40
+61            android:name="com.example.tutronapp.WelcomeActivity"
+61-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:38:13-44
+62            android:exported="false" />
+62-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:39:13-37
+63        <activity
+63-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:40:9-48:20
+64            android:name="com.example.tutronapp.MainActivity"
+64-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:41:13-41
+65            android:exported="true" >
+65-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:42:13-36
+66            <intent-filter>
+66-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:43:13-47:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:44:17-69
+67-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:44:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:46:17-77
+69-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:46:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:49:9-52:37
+73            android:name="com.example.tutronapp.LoginActivity"
+73-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:50:13-42
+74            android:exported="true"
+74-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:51:13-36
+75            android:label="Login" />
+75-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:52:13-34
+76        <activity
+76-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:53:9-56:38
+77            android:name="com.example.tutronapp.SignupActivity"
+77-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:54:13-43
+78            android:exported="true"
+78-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:55:13-36
+79            android:label="Signup" />
+79-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:56:13-35
+80
+81        <service
+81-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
+82            android:name="com.google.firebase.components.ComponentDiscoveryService"
+82-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:29:13-84
+83            android:directBootAware="true"
+83-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+84            android:exported="false" >
+84-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:30:13-37
+85            <meta-data
+85-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+86                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+86-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\8333634c2bf9b44b01fad9595a69352d\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+88        </service>
+89
+90        <provider
+90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+91            android:name="com.google.firebase.provider.FirebaseInitProvider"
+91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+92            android:authorities="com.example.tutronapp.firebaseinitprovider"
+92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+93            android:directBootAware="true"
+93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+94            android:exported="false"
+94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+95            android:initOrder="100" />
+95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\ecb169b391784bc4fc828d19c55e20b6\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+96
+97        <activity
+97-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+99            android:exported="false"
+99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fee21437bdc6e1fffc711ebabee90e9b\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+101
+102        <meta-data
+102-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+103            android:name="com.google.android.gms.version"
+103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+104            android:value="@integer/google_play_services_version" />
+104-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fd99a989e0496d4995536a20d74e6077\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+105
+106        <provider
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+107            android:name="androidx.startup.InitializationProvider"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+108            android:authorities="com.example.tutronapp.androidx-startup"
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+109            android:exported="false" >
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+110            <meta-data
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+112                android:value="androidx.startup" />
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\ec78a3e19b521281526537e697beec14\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+113            <meta-data
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+115                android:value="androidx.startup" />
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\93fbe7503deee8a7eaea5566f25a649c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+116        </provider>
+117    </application>
 118
-119        <activity
-119-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:27:9-34:20
-120            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
-120-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:28:13-99
-121            android:exported="true"
-121-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:29:13-36
-122            android:theme="@style/WhiteBackgroundTheme" >
-122-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:30:13-56
-123            <intent-filter android:priority="-100" >
-123-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
-123-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
-124                <category android:name="android.intent.category.LAUNCHER" />
-124-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:17-77
-124-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:27-74
-125            </intent-filter>
-126        </activity>
-127        <activity
-127-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:35:9-42:20
-128            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
-128-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:36:13-95
-129            android:exported="true"
-129-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:37:13-36
-130            android:theme="@style/WhiteBackgroundTheme" >
-130-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:38:13-56
-131            <intent-filter android:priority="-100" >
-131-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
-131-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
-132                <category android:name="android.intent.category.LAUNCHER" />
-132-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:17-77
-132-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:27-74
-133            </intent-filter>
-134        </activity>
-135        <activity
-135-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:43:9-50:20
-136            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
-136-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:44:13-103
-137            android:exported="true"
-137-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:45:13-36
-138            android:theme="@style/WhiteBackgroundDialogTheme" >
-138-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:46:13-62
-139            <intent-filter android:priority="-100" >
-139-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:13-33:29
-139-->[androidx.test:core:1.5.0] C:\Users\16132\.gradle\caches\transforms-3\b49fc7ee6b0e860d3eca2a7b27e67af6\transformed\core-1.5.0\AndroidManifest.xml:31:28-51
-140                <category android:name="android.intent.category.LAUNCHER" />
-140-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:17-77
-140-->C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\AndroidManifest.xml:45:27-74
-141            </intent-filter>
-142        </activity>
-143    </application>
-144
-145</manifest>
+119</manifest>

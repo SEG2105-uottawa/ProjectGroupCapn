@@ -1,8 +1,6 @@
 package com.example.tutronapp;
 
-
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
-import static org.junit.Assert.assertEquals;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +51,7 @@ public class ComplaintListTest {
         Espresso.onView(ViewMatchers.withId(R.id.recyclerViewComplaints))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, ViewActions.click()));
 
+        // Add more assertions or actions as needed
     }
 
     @Test
@@ -75,7 +74,7 @@ public class ComplaintListTest {
                         throw noViewFoundException;
                     }
                     RecyclerView recyclerView1 = (RecyclerView) view;
-                    assertEquals(complaintList.size(), recyclerView1.getAdapter().getItemCount());
+                    Assert.assertEquals(complaintList.size(), recyclerView1.getAdapter().getItemCount());
                 });
     }
 
@@ -98,7 +97,7 @@ public class ComplaintListTest {
         // Test data binding
         TextView titleTextView = itemView.findViewById(R.id.titleTextView);
         TextView againstTextView = itemView.findViewById(R.id.againstTextView);
-        assertEquals("Test Complaint", titleTextView.getText().toString());
-        assertEquals("First Name Last Name", againstTextView.getText().toString());
+        Assert.assertEquals("Test Complaint", titleTextView.getText().toString());
+        Assert.assertEquals("First Name Last Name", againstTextView.getText().toString());
     }
 }

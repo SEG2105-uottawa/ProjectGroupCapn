@@ -2735,6 +2735,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextDuration
 id edit_query
 id education
 id education_options
@@ -3196,6 +3197,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout layout_complaint_item
 layout layout_complaint_options
+layout layout_suspend_options
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

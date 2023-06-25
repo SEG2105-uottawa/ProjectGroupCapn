@@ -4,7 +4,17 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\f609fa221937339a486e8e90d8516ce4\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\2ed30a9306a58db86b4daf039e5adc0b\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\afcb02c013d3e43008200284e504df0e\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\67f0b316e1656a3fe9aff13e51ef9187\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

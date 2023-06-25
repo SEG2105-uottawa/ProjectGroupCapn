@@ -32,6 +32,10 @@
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\drawable\\logo.png"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_suspend_options.xml.flat",
+        "source": "com.example.tutronapp-main-36:/layout/layout_suspend_options.xml"
+    },
+    {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\layout\\activity_main.xml"
     },
@@ -82,10 +86,6 @@
     {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-36:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "com.example.tutronapp-merged_res-34:/layout_layout_complaint_options.xml.flat",
-        "source": "com.example.tutronapp-main-36:/layout/layout_complaint_options.xml"
     },
     {
         "merged": "C:\\Users\\16132\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",

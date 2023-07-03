@@ -12,6 +12,7 @@ public class Tutor extends User{
     private String shortDescription;
     private String native_languages;
     private String education_level;
+    private Long timeSuspendedForInSeconds = null;
 
     public Tutor(){
 
@@ -47,4 +48,11 @@ public class Tutor extends User{
 
     public void setShortDescription(String shortDescription) {this.shortDescription = shortDescription;}
 
+    public Long getTimeSuspendedForInSeconds() {
+        return timeSuspendedForInSeconds;
+    }
+
+    public void setTimeSuspendedForInSeconds(Long suspendedForInSeconds) {
+        this.timeSuspendedForInSeconds = suspendedForInSeconds;
+    }
 }

@@ -23,9 +23,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LoginActivity extends AppCompatActivity {
     private Button btnLoginLoginPage;
     private DatabaseReference dataToCheck;
@@ -70,7 +67,13 @@ public class LoginActivity extends AppCompatActivity {
                             User user = userSample.getValue(User.class);
                             // Check user password
                             if (user.getPassword().equals(password)) {
-                                sendUser(user, userSample);
+                                if (user.getRole().equals("Tutor")) {
+                                    Tutor tutor = userSample.getValue(Tutor.class);
+                                    checkComplaintStatus(tutor, user, userSample);
+                                }
+                                else {
+                                    sendUser(user, userSample);
+                                }
                             } else {
                                 Toast.makeText(getApplicationContext(), "Incorrect Password",
                                         Toast.LENGTH_SHORT).show();
@@ -121,7 +124,6 @@ public class LoginActivity extends AppCompatActivity {
                 break;
             case "Tutor":
                 Tutor tutor = userSample.getValue(Tutor.class);
-                checkComplaintStatus(tutor);
                 Bundle bundleForTutor = new Bundle();
                 bundleForTutor.putSerializable("Tutor", tutor);
                 callIntent(bundleForTutor);
@@ -135,12 +137,14 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void checkComplaintStatus(Tutor tutor) {
+
+    private void checkComplaintStatus(Tutor tutor, User user, DataSnapshot userSample) {
 
         String tutorEmailAddress = tutor.getEmailAddress();
         complaints.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                boolean isSuspended = false;
 
                 for (DataSnapshot complaintSnapshot : dataSnapshot.getChildren()) {
                     Complaint complaint = complaintSnapshot.getValue(Complaint.class);
@@ -150,26 +154,30 @@ public class LoginActivity extends AppCompatActivity {
                             tutorEmailAddress.equals(complaint.getComplaintAgainst().getEmailAddress())) {
                         String[] statusComponents = complaint.getStatus().split(" ");
                         if (statusComponents[1].charAt(0) == '0') {
-                            Toast.makeText(getApplicationContext(), "Your account get permanent suspension ",
+                            Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
                                     Toast.LENGTH_SHORT).show();
-                        }
-                        else {
-                            // Haven't implement anything if the date have pass the suspend date
-                            Toast.makeText(getApplicationContext(), "Your account get suspended until " +
+                        } else {
+                            // Haven't implemented anything if the date has passed the suspension date
+                            Toast.makeText(getApplicationContext(), "Your account is suspended until " +
                                     statusComponents[1], Toast.LENGTH_SHORT).show();
                         }
+                        isSuspended = true;
                         break;
                     }
                 }
 
+                if (!isSuspended) {
+                    sendUser(user, userSample);
+                }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 //
             }
-        });
 
+
+        });
     }
 
 

@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-32:/values-v18/values-v18.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\45bee9ebdc1b87c8b9fa01c46cbdde2f\\transformed\\core-1.5.0\\res\\values-v18\\values.xml",
-                    "from": {
-                        "startLines": "4,12",
-                        "startColumns": "0,0",
-                        "startOffsets": "180,596",
-                        "endLines": "11,19",
-                        "endColumns": "8,8",
-                        "endOffsets": "595,1009"
-                    },
-                    "to": {
-                        "startLines": "3,11",
-                        "startColumns": "4,4",
-                        "startOffsets": "104,524",
-                        "endLines": "10,18",
-                        "endColumns": "8,8",
-                        "endOffsets": "519,937"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\16132\\.gradle\\caches\\transforms-3\\8751a5349377542592293d8497fbbcb3\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\8751a5349377542592293d8497fbbcb3\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

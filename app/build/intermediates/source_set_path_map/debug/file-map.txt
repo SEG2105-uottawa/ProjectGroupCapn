@@ -1,37 +1,35 @@
-com.example.tutronapp-fragment-1.3.6-0 C:\Users\16132\.gradle\caches\transforms-3\0afe90e82d47b454a9ac7a201bdf8f21\transformed\fragment-1.3.6\res
-com.example.tutronapp-espresso-contrib-3.5.1-1 C:\Users\16132\.gradle\caches\transforms-3\1954991154e90f6f7af4285c5f0eed6a\transformed\espresso-contrib-3.5.1\res
-com.example.tutronapp-savedstate-1.2.0-2 C:\Users\16132\.gradle\caches\transforms-3\1a9d17fcf261ec409ddcc43fa2f7ddf9\transformed\savedstate-1.2.0\res
-com.example.tutronapp-startup-runtime-1.1.1-3 C:\Users\16132\.gradle\caches\transforms-3\2f88997b683d4ef66ae4784b20a439d1\transformed\startup-runtime-1.1.1\res
-com.example.tutronapp-firebase-common-20.3.2-4 C:\Users\16132\.gradle\caches\transforms-3\2fa460fd829a41e0292f1253c21a3dd6\transformed\firebase-common-20.3.2\res
-com.example.tutronapp-lifecycle-process-2.4.1-5 C:\Users\16132\.gradle\caches\transforms-3\31253eeda2317bcdee5c1fe02e563b85\transformed\lifecycle-process-2.4.1\res
-com.example.tutronapp-viewpager2-1.0.0-6 C:\Users\16132\.gradle\caches\transforms-3\45a92fb057360937e425afcc3745438e\transformed\viewpager2-1.0.0\res
-com.example.tutronapp-core-1.5.0-7 C:\Users\16132\.gradle\caches\transforms-3\45bee9ebdc1b87c8b9fa01c46cbdde2f\transformed\core-1.5.0\res
-com.example.tutronapp-emoji2-1.2.0-8 C:\Users\16132\.gradle\caches\transforms-3\4da1b48bebcc1f3db20be89e54ce8668\transformed\emoji2-1.2.0\res
-com.example.tutronapp-drawerlayout-1.1.1-9 C:\Users\16132\.gradle\caches\transforms-3\5db5521ae82f715bb21ea8a82f3c5dd8\transformed\drawerlayout-1.1.1\res
-com.example.tutronapp-recyclerview-1.2.1-10 C:\Users\16132\.gradle\caches\transforms-3\662159b596759145fc1883a24882e236\transformed\recyclerview-1.2.1\res
-com.example.tutronapp-coordinatorlayout-1.1.0-11 C:\Users\16132\.gradle\caches\transforms-3\69891c06705969f1572abb040b946034\transformed\coordinatorlayout-1.1.0\res
-com.example.tutronapp-lifecycle-viewmodel-savedstate-2.5.1-12 C:\Users\16132\.gradle\caches\transforms-3\866c3f2917d5868682699cc37f3409a8\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
-com.example.tutronapp-appcompat-1.6.1-13 C:\Users\16132\.gradle\caches\transforms-3\8751a5349377542592293d8497fbbcb3\transformed\appcompat-1.6.1\res
-com.example.tutronapp-cardview-1.0.0-14 C:\Users\16132\.gradle\caches\transforms-3\acc50a9a12f35431b721ae87f8c56eaf\transformed\cardview-1.0.0\res
-com.example.tutronapp-activity-1.6.0-15 C:\Users\16132\.gradle\caches\transforms-3\b20266b7bd31659a9e373109d8d73136\transformed\activity-1.6.0\res
-com.example.tutronapp-annotation-experimental-1.3.0-16 C:\Users\16132\.gradle\caches\transforms-3\bc68bafd1edb2e0ac483583deedd4705\transformed\annotation-experimental-1.3.0\res
-com.example.tutronapp-material-1.5.0-17 C:\Users\16132\.gradle\caches\transforms-3\d111f4975f9b020de2f2af6faf0ecc3f\transformed\material-1.5.0\res
-com.example.tutronapp-core-ktx-1.9.0-18 C:\Users\16132\.gradle\caches\transforms-3\d25b737e9dc33b770f4c20d848d40e67\transformed\core-ktx-1.9.0\res
-com.example.tutronapp-play-services-base-18.1.0-19 C:\Users\16132\.gradle\caches\transforms-3\d438ad50cfb13aa24891e2b42049d58e\transformed\play-services-base-18.1.0\res
-com.example.tutronapp-lifecycle-livedata-core-2.5.1-20 C:\Users\16132\.gradle\caches\transforms-3\e209d39d98d4dbd26e6d47119c320360\transformed\lifecycle-livedata-core-2.5.1\res
-com.example.tutronapp-core-1.9.0-21 C:\Users\16132\.gradle\caches\transforms-3\e27613fe164cd3c74412da841edb220c\transformed\core-1.9.0\res
-com.example.tutronapp-constraintlayout-2.1.4-22 C:\Users\16132\.gradle\caches\transforms-3\e461fd83f699c92899f7a4751780f140\transformed\constraintlayout-2.1.4\res
-com.example.tutronapp-play-services-basement-18.1.0-23 C:\Users\16132\.gradle\caches\transforms-3\e5f544231248e4010e3095ba5cbabae7\transformed\play-services-basement-18.1.0\res
-com.example.tutronapp-appcompat-resources-1.6.1-24 C:\Users\16132\.gradle\caches\transforms-3\ea5003cb7da36a73c81bd8a32115907e\transformed\appcompat-resources-1.6.1\res
-com.example.tutronapp-lifecycle-runtime-2.5.1-25 C:\Users\16132\.gradle\caches\transforms-3\f1d1c13bb69e7ec46b32c564449c0c8e\transformed\lifecycle-runtime-2.5.1\res
-com.example.tutronapp-lifecycle-viewmodel-2.5.1-26 C:\Users\16132\.gradle\caches\transforms-3\f61ee593fd139f7822761934dd4ea2c9\transformed\lifecycle-viewmodel-2.5.1\res
-com.example.tutronapp-transition-1.2.0-27 C:\Users\16132\.gradle\caches\transforms-3\fb12f0f08997a2ab616021904f50082a\transformed\transition-1.2.0\res
-com.example.tutronapp-emoji2-views-helper-1.2.0-28 C:\Users\16132\.gradle\caches\transforms-3\ffde8561de29d6f287eed1c43aa4afc0\transformed\emoji2-views-helper-1.2.0\res
-com.example.tutronapp-google-services-29 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\generated\res\google-services\debug
-com.example.tutronapp-pngs-30 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\generated\res\pngs\debug
-com.example.tutronapp-resValues-31 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\generated\res\resValues\debug
-com.example.tutronapp-packageDebugResources-32 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
-com.example.tutronapp-packageDebugResources-33 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.example.tutronapp-merged_res-34 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\build\intermediates\merged_res\debug
-com.example.tutronapp-debug-35 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\debug\res
-com.example.tutronapp-main-36 C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn\app\src\main\res
+com.example.tutronapp-fragment-1.3.6-0 C:\Users\Abhay\.gradle\caches\transforms-3\0afe90e82d47b454a9ac7a201bdf8f21\transformed\fragment-1.3.6\res
+com.example.tutronapp-savedstate-1.2.0-1 C:\Users\Abhay\.gradle\caches\transforms-3\1a9d17fcf261ec409ddcc43fa2f7ddf9\transformed\savedstate-1.2.0\res
+com.example.tutronapp-startup-runtime-1.1.1-2 C:\Users\Abhay\.gradle\caches\transforms-3\2f88997b683d4ef66ae4784b20a439d1\transformed\startup-runtime-1.1.1\res
+com.example.tutronapp-firebase-common-20.3.2-3 C:\Users\Abhay\.gradle\caches\transforms-3\2fa460fd829a41e0292f1253c21a3dd6\transformed\firebase-common-20.3.2\res
+com.example.tutronapp-lifecycle-process-2.4.1-4 C:\Users\Abhay\.gradle\caches\transforms-3\31253eeda2317bcdee5c1fe02e563b85\transformed\lifecycle-process-2.4.1\res
+com.example.tutronapp-viewpager2-1.0.0-5 C:\Users\Abhay\.gradle\caches\transforms-3\45a92fb057360937e425afcc3745438e\transformed\viewpager2-1.0.0\res
+com.example.tutronapp-emoji2-1.2.0-6 C:\Users\Abhay\.gradle\caches\transforms-3\4da1b48bebcc1f3db20be89e54ce8668\transformed\emoji2-1.2.0\res
+com.example.tutronapp-recyclerview-1.1.0-7 C:\Users\Abhay\.gradle\caches\transforms-3\571721ee70db47f9bcce3ea1773b6523\transformed\recyclerview-1.1.0\res
+com.example.tutronapp-drawerlayout-1.1.1-8 C:\Users\Abhay\.gradle\caches\transforms-3\5db5521ae82f715bb21ea8a82f3c5dd8\transformed\drawerlayout-1.1.1\res
+com.example.tutronapp-coordinatorlayout-1.1.0-9 C:\Users\Abhay\.gradle\caches\transforms-3\69891c06705969f1572abb040b946034\transformed\coordinatorlayout-1.1.0\res
+com.example.tutronapp-lifecycle-viewmodel-savedstate-2.5.1-10 C:\Users\Abhay\.gradle\caches\transforms-3\866c3f2917d5868682699cc37f3409a8\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.example.tutronapp-appcompat-1.6.1-11 C:\Users\Abhay\.gradle\caches\transforms-3\8751a5349377542592293d8497fbbcb3\transformed\appcompat-1.6.1\res
+com.example.tutronapp-cardview-1.0.0-12 C:\Users\Abhay\.gradle\caches\transforms-3\acc50a9a12f35431b721ae87f8c56eaf\transformed\cardview-1.0.0\res
+com.example.tutronapp-activity-1.6.0-13 C:\Users\Abhay\.gradle\caches\transforms-3\b20266b7bd31659a9e373109d8d73136\transformed\activity-1.6.0\res
+com.example.tutronapp-annotation-experimental-1.3.0-14 C:\Users\Abhay\.gradle\caches\transforms-3\bc68bafd1edb2e0ac483583deedd4705\transformed\annotation-experimental-1.3.0\res
+com.example.tutronapp-material-1.5.0-15 C:\Users\Abhay\.gradle\caches\transforms-3\d111f4975f9b020de2f2af6faf0ecc3f\transformed\material-1.5.0\res
+com.example.tutronapp-core-ktx-1.9.0-16 C:\Users\Abhay\.gradle\caches\transforms-3\d25b737e9dc33b770f4c20d848d40e67\transformed\core-ktx-1.9.0\res
+com.example.tutronapp-play-services-base-18.1.0-17 C:\Users\Abhay\.gradle\caches\transforms-3\d438ad50cfb13aa24891e2b42049d58e\transformed\play-services-base-18.1.0\res
+com.example.tutronapp-lifecycle-livedata-core-2.5.1-18 C:\Users\Abhay\.gradle\caches\transforms-3\e209d39d98d4dbd26e6d47119c320360\transformed\lifecycle-livedata-core-2.5.1\res
+com.example.tutronapp-core-1.9.0-19 C:\Users\Abhay\.gradle\caches\transforms-3\e27613fe164cd3c74412da841edb220c\transformed\core-1.9.0\res
+com.example.tutronapp-constraintlayout-2.1.4-20 C:\Users\Abhay\.gradle\caches\transforms-3\e461fd83f699c92899f7a4751780f140\transformed\constraintlayout-2.1.4\res
+com.example.tutronapp-play-services-basement-18.1.0-21 C:\Users\Abhay\.gradle\caches\transforms-3\e5f544231248e4010e3095ba5cbabae7\transformed\play-services-basement-18.1.0\res
+com.example.tutronapp-appcompat-resources-1.6.1-22 C:\Users\Abhay\.gradle\caches\transforms-3\ea5003cb7da36a73c81bd8a32115907e\transformed\appcompat-resources-1.6.1\res
+com.example.tutronapp-lifecycle-runtime-2.5.1-23 C:\Users\Abhay\.gradle\caches\transforms-3\f1d1c13bb69e7ec46b32c564449c0c8e\transformed\lifecycle-runtime-2.5.1\res
+com.example.tutronapp-lifecycle-viewmodel-2.5.1-24 C:\Users\Abhay\.gradle\caches\transforms-3\f61ee593fd139f7822761934dd4ea2c9\transformed\lifecycle-viewmodel-2.5.1\res
+com.example.tutronapp-transition-1.2.0-25 C:\Users\Abhay\.gradle\caches\transforms-3\fb12f0f08997a2ab616021904f50082a\transformed\transition-1.2.0\res
+com.example.tutronapp-emoji2-views-helper-1.2.0-26 C:\Users\Abhay\.gradle\caches\transforms-3\ffde8561de29d6f287eed1c43aa4afc0\transformed\emoji2-views-helper-1.2.0\res
+com.example.tutronapp-google-services-27 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\generated\res\google-services\debug
+com.example.tutronapp-pngs-28 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\generated\res\pngs\debug
+com.example.tutronapp-resValues-29 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\generated\res\resValues\debug
+com.example.tutronapp-packageDebugResources-30 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.tutronapp-packageDebugResources-31 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.tutronapp-merged_res-32 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\build\intermediates\merged_res\debug
+com.example.tutronapp-debug-33 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\debug\res
+com.example.tutronapp-main-34 C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\res

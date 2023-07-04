@@ -4,7 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/0e339c099c49c18dfbe7b4d24fc5ca3f/transformed/material-1.5.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+                    "source": "/Users/shuail/.gradle/caches/transforms-3/f3de4c8ab8072037c051ecfe05ada2bc/transformed/material-1.5.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

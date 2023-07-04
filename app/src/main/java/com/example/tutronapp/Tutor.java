@@ -6,24 +6,26 @@
 
 package com.example.tutronapp;
 
-public class Tutor extends User{
+import java.time.LocalDate;
+
+public class Tutor extends User {
 
     private final String role = "Tutor";
     private String shortDescription;
     private String native_languages;
     private String education_level;
-    private Long timeSuspendedForInSeconds = null;
+    private LocalDate suspensionEndDate = null;
 
-    public Tutor(){
+    public Tutor() {
 
     }
 
     public Tutor(String firstName, String lastName, String emailAddress, String password) {
-        super(firstName, lastName, emailAddress, password,"Tutor");
+        super(firstName, lastName, emailAddress, password, "Tutor");
     }
 
-    public Tutor(String firstName, String lastName, String emailAddress, String password, String education_level, String native_languages, String shortDescription){
-        super(firstName, lastName, emailAddress, password,"Tutor");
+    public Tutor(String firstName, String lastName, String emailAddress, String password, String education_level, String native_languages, String shortDescription) {
+        super(firstName, lastName, emailAddress, password, "Tutor");
         this.education_level = education_level;
 
         this.native_languages = native_languages;
@@ -36,23 +38,37 @@ public class Tutor extends User{
     }
 
 
-    public String getEducation_level() {return education_level;}
-
-    public void setEducation_level(String education_level) {this.education_level = education_level;}
-
-    public String getNative_languages() {return native_languages;}
-
-    public void setNative_languages(String native_languages) {this.native_languages = native_languages;}
-
-    public String getShortDescription() {return shortDescription;}
-
-    public void setShortDescription(String shortDescription) {this.shortDescription = shortDescription;}
-
-    public Long getTimeSuspendedForInSeconds() {
-        return timeSuspendedForInSeconds;
+    public String getEducation_level() {
+        return education_level;
     }
 
-    public void setTimeSuspendedForInSeconds(Long suspendedForInSeconds) {
-        this.timeSuspendedForInSeconds = suspendedForInSeconds;
+    public void setEducation_level(String education_level) {
+        this.education_level = education_level;
+    }
+
+    public String getNative_languages() {
+        return native_languages;
+    }
+
+    public void setNative_languages(String native_languages) {
+        this.native_languages = native_languages;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
+
+    public LocalDate getSuspensionEndDate() {
+        return suspensionEndDate;
+    }
+
+    public void setSuspensionEndDate(LocalDate suspensionEndDate) {
+        this.suspensionEndDate = suspensionEndDate;
     }
 }
+
+

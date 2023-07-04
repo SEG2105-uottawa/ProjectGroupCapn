@@ -168,11 +168,14 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
             suspensionEndDate = currentDate.plusDays(duration);
 
             complaint.setStatus("suspended " + suspensionEndDate);
+
+
         }
 
         String complaintId = complaint.getDatabaseID();
         DatabaseReference complaintRef = complaints.child(complaintId);
 
+        LocalDate finalSuspensionEndDate1 = suspensionEndDate;
         complaintRef.setValue(complaint)
                 .addOnSuccessListener(aVoid -> {
                     if (duration == 0) {
@@ -182,7 +185,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                     else {
                         Toast.makeText(ManageComplaintsActivity.this,
                                 "Complaint suspended for " + duration + " days, until " +
-                                        finalSuspensionEndDate, Toast.LENGTH_SHORT).show();
+                                        finalSuspensionEndDate1, Toast.LENGTH_SHORT).show();
                     }
                     dialog.dismiss();
                 })

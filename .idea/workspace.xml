@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="CircleCI attempt 7">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="CircleCI build issue attempt 8">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -666,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688491140063</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="CircleCI build issue attempt 8">
+      <created>1688492023093</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1688492023093</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -681,7 +685,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UI Fix TutorInfoActivity" />
     <MESSAGE value="Fixed CreditCard Issue" />
     <MESSAGE value="Created New Complaint Class" />
     <MESSAGE value="Added Some java doc comments" />
@@ -706,7 +709,8 @@
     <MESSAGE value="CircleCI attempt 5" />
     <MESSAGE value="CircleCI attempt 6" />
     <MESSAGE value="CircleCI attempt 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="CircleCI attempt 7" />
+    <MESSAGE value="CircleCI build issue attempt 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="CircleCI build issue attempt 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

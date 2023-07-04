@@ -11,42 +11,42 @@
 9-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml
 10
 11    <queries>
-11-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
+11-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
 12        <package android:name="androidx.test.orchestrator" />
-12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
-12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
+12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
+12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
 13        <package android:name="androidx.test.services" />
-13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
-13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
+13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
+13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
 14        <package android:name="com.google.android.apps.common.testing.services" />
-14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
-14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\5b32dbcb6f5ed65bfe95dd13ddb0c3a1\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
+14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
+14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
 15    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
+17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
+17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
+18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
+18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
 19
 20    <permission
-20-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+20-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 21        android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-21-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+21-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 22        android:protectionLevel="signature" />
-22-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+22-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 23
 24    <uses-permission android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 25
 26    <application
 26-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:5:5-57:19
 27        android:allowBackup="true"
 27-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:6:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\9400c1d79b294e860f184709ce38b3d4\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+28-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 29        android:dataExtractionRules="@xml/data_extraction_rules"
 29-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:7:9-65
 30        android:debuggable="true"
@@ -145,70 +145,70 @@
 79-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:56:13-35
 80
 81        <service
-81-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
+81-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
 82            android:name="com.google.firebase.components.ComponentDiscoveryService"
-82-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:29:13-84
+82-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:29:13-84
 83            android:directBootAware="true"
-83-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+83-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
 84            android:exported="false" >
-84-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:30:13-37
+84-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:30:13-37
 85            <meta-data
-85-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
+85-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
 86                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-86-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
+86-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
 87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\563a26145b24aba79dd9264d580b241b\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
+87-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
 88        </service>
 89
 90        <provider
-90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
 91            android:name="com.google.firebase.provider.FirebaseInitProvider"
-91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
 92            android:authorities="com.example.tutronapp.firebaseinitprovider"
-92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
 93            android:directBootAware="true"
-93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
 94            android:exported="false"
-94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
 95            android:initOrder="100" />
-95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\7651d6d2de7eed94b325ab9849cf0515\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
 96
 97        <activity
-97-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\ef79b38e13840c856f5bdb867f914812\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+97-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\ef79b38e13840c856f5bdb867f914812\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
 99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\ef79b38e13840c856f5bdb867f914812\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
 100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\ef79b38e13840c856f5bdb867f914812\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
 101
 102        <meta-data
-102-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fa9d4621bb22375c856c7517fc8075b2\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+102-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 103            android:name="com.google.android.gms.version"
-103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fa9d4621bb22375c856c7517fc8075b2\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
 104            android:value="@integer/google_play_services_version" />
-104-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\fa9d4621bb22375c856c7517fc8075b2\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+104-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
 105
 106        <provider
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 107            android:name="androidx.startup.InitializationProvider"
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 108            android:authorities="com.example.tutronapp.androidx-startup"
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 109            android:exported="false" >
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 110            <meta-data
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 112                android:value="androidx.startup" />
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\588b01e6fda548315c759295f2840d8c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 113            <meta-data
-113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\cc5528020e8638e231fa05827cf0f869\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\cc5528020e8638e231fa05827cf0f869\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 115                android:value="androidx.startup" />
-115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\cc5528020e8638e231fa05827cf0f869\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 116        </provider>
 117    </application>
 118

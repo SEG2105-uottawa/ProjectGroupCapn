@@ -4,7 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\07fdcad7f8a87e195c240b9e40c16ed1\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\27d5c873fbf9c31f17e0b18dee0978ab\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -2,39 +2,26 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config>
-        <device id="_device_class_phone" />
-        <device id="_device_class_desktop" />
-      </config>
+      <config />
     </shared>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="CircleCI build issue attempt 10">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/Tutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-=======
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Abhay\.android\avd\Pixel_5_API_33.avd]" />
   <component name="ExternalProjectsData">
@@ -42,49 +29,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/app">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TutronApp" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="layoutResourceFile" />
-        <option value="JUnit4 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2Qx8tyGQr24C7vlMpHBjXFpKTOP" />
+  <component name="ProjectId" id="2Qsa460HLT7z0wxWzUDJoKcm8qW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -92,39 +43,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
-    "android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/button/MaterialButton.java_SELECTED": "MaterialButton",
     "android-custom-viewC:/Users/Abhay/AppData/Local/Android/Sdk/sources/android-33/android/view/View.java_SELECTED": "View",
-    "android.gradle.sync.needed": "true",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/16132/OneDrive - University of Ottawa/Desktop/lab7-group-capn",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "cidr.known.project.marker": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="android.template.1092428260">
-      <recent name="com.example.tutronapp" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\16132\OneDrive - University of Ottawa\Desktop\P2\ProjectGroupCapn" />
-    </key>
-    <key name="android.template.-1337942499">
-      <recent name="com.example.tutronapp" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.tutronapp" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="TutronApp.app.main" />
       <option name="DEPLOY" value="true" />
@@ -183,514 +109,16 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComplaintListTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
-      <module name="TutronApp.app.androidTest" />
-      <option name="TESTING_TYPE" value="2" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="com.example.tutronapp.ComplaintListTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_NAME_REGEX" value="" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="RETENTION_ENABLED" value="No" />
-      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
-      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
-        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
-        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
-      </Profilers>
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddressTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-            <option value="--tests" />
-            <option value="&quot;com.example.tutronapp.AddressTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ComplaintTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-            <option value="--tests" />
-            <option value="&quot;com.example.tutronapp.ComplaintTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ExampleUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-            <option value="--tests" />
-            <option value="&quot;com.example.tutronapp.ExampleUnitTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TutorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-            <option value="--tests" />
-            <option value="&quot;com.example.tutronapp.TutorTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Android Instrumented Tests.ComplaintListTest" />
-        <item itemvalue="Gradle.AddressTest" />
-        <item itemvalue="Gradle.ExampleUnitTest" />
-        <item itemvalue="Gradle.TutorTest" />
-        <item itemvalue="Gradle.ComplaintTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Saving these" />
-      <created>1686284090456</created>
+      <changelist id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="" />
+      <created>1686144549479</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1686284090456</updated>
+      <updated>1686144549479</updated>
     </task>
-    <task id="LOCAL-00002" summary="Put a button on the welcome activity">
-      <created>1686287959668</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1686287959668</updated>
-    </task>
-    <task id="LOCAL-00003" summary="updating gitignore">
-      <created>1686304461570</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686304461570</updated>
-    </task>
-    <task id="LOCAL-00004" summary="finished activities">
-      <created>1686304505978</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1686304505978</updated>
-    </task>
-    <task id="LOCAL-00005" summary="trying to fix the Issue Nalan mentioned in commit">
-      <created>1686318077833</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686318077833</updated>
-    </task>
-    <task id="LOCAL-00006" summary="trying to fix the Issue Nalan mentioned in commit">
-      <created>1686318241594</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686318241594</updated>
-    </task>
-    <task id="LOCAL-00007" summary="added extra student attributes">
-      <created>1686326759686</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1686326759686</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Almost done with creditcard and address registration">
-      <created>1686331674163</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1686331674163</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Finished Creditcard and Address registration for Students">
-      <created>1686331982892</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1686331982892</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Fixed Student Login Bug">
-      <created>1686434607858</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1686434607858</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Email Check Re Initiated">
-      <created>1686434928017</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1686434928017</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fixed Up to Call to TutorInfo. Working on TutorInfo to SignUp">
-      <created>1686494231520</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1686494231520</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fixed Up to Call to TutorInfo. Working on TutorInfo to SignUp">
-      <created>1686494298608</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1686494298608</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Fixed the TutorInfo-&gt; Signup Issue, Fully operational now">
-      <created>1686495231753</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1686495231753</updated>
-    </task>
-    <task id="LOCAL-00015" summary="UI Fix TutorInfoActivity">
-      <created>1686495419422</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1686495419422</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Fixed CreditCard Issue">
-      <created>1686529756113</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1686529756113</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Created New Complaint Class">
-      <created>1687276563628</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1687276563628</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Added Some java doc comments">
-      <created>1687276884559</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1687276884559</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added a new Manage complaints activity and its layout">
-      <created>1687277206863</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1687277206863</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Updated Manage Complaints Layout">
-      <created>1687278286900</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1687278286900</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Updated Manage Complaints Layout">
-      <created>1687278346455</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1687278346455</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Fixed Pierres mistake with Date and cleaning up LoginActivity">
-      <created>1687449445472</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1687449445472</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Fixed Pierres mistake with Date and cleaning up LoginActivity">
-      <created>1687449529137</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1687449529137</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added some javadoc comments to LoginActivity">
-      <created>1687449967414</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1687449967414</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Added new dataBaseID for users&#10;&#10;&#10;When signing up, any user successfully pushed to database will get their storage ID in the database as their dataBaseID. This can be used for implementing tasks later.">
-      <created>1687450666533</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1687450666533</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Added Comments">
-      <created>1687451460111</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1687451460111</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added ComplaintList class &#10;Updated ManageComplaintsActivity&#10;Added a getName method to Person&#10;Created Layout file for ComplaintList">
-      <created>1687466463268</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1687466463268</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Admin can now view complaints">
-      <created>1687473221868</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1687473221868</updated>
-    </task>
-    <task id="LOCAL-00029" summary="ComplaintListTest is done, i made some methods static in complaintList">
-      <created>1687656218712</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1687656218712</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Hope I didn't cause any trouble in gradle and other type my user name is 6132 so app changes it to that.">
-      <created>1687658179881</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1687658179883</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Hope I didn't cause any trouble in gradle and other type my user name is 6132 so app changes it to that.">
-      <created>1687659954797</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1687659954799</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Hope I didn't cause any trouble in gradle and other type my user name is 6132 so app changes it to that.">
-      <created>1687662097313</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1687662097313</updated>
-    </task>
-    <task id="LOCAL-00033" summary="testComplaintRecyclerViewItemCount and testComplaintListRecyclerView do not pass the tests">
-      <created>1687714559209</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1687714559212</updated>
-    </task>
-    <task id="LOCAL-00034" summary="it is working">
-      <created>1687721489991</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1687721489993</updated>
-    </task>
-    <task id="LOCAL-00035" summary="it is working">
-      <created>1687721684567</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1687721684568</updated>
-    </task>
-    <task id="LOCAL-00036" summary="it is working">
-      <created>1687721694255</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1687721694255</updated>
-    </task>
-    <task id="LOCAL-00037" summary="it is working">
-      <created>1687721985822</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1687721985825</updated>
-    </task>
-    <task id="LOCAL-00038" summary="it is working">
-      <created>1687723823758</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1687723823760</updated>
-    </task>
-    <task id="LOCAL-00039" summary="it is working">
-      <created>1687726608424</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1687726608425</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Added a suspension time attribute to Tutor">
-      <created>1688427986371</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1688427986371</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Changed suspension end from a Long to a LocalDate">
-      <created>1688429467087</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1688429467087</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Updated Gradle, tried some changes">
-      <created>1688485958438</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1688485958438</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Updated Gradle again, retrying">
-      <created>1688486455342</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1688486455342</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Retrying Gradle again">
-      <created>1688486594542</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1688486594542</updated>
-    </task>
-    <task id="LOCAL-00045" summary="CircleCI attempt 5">
-      <created>1688487031943</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1688487031943</updated>
-    </task>
-    <task id="LOCAL-00046" summary="CircleCI attempt 6">
-      <created>1688487547210</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1688487547210</updated>
-    </task>
-    <task id="LOCAL-00047" summary="CircleCI attempt 7">
-      <created>1688491140063</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1688491140063</updated>
-    </task>
-    <task id="LOCAL-00048" summary="CircleCI build issue attempt 8">
-      <created>1688492023093</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1688492023093</updated>
-    </task>
-    <task id="LOCAL-00049" summary="CircleCI build issue attempt 9">
-      <created>1688492115699</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1688492115699</updated>
-    </task>
-    <task id="LOCAL-00050" summary="CircleCI build issue attempt 10">
-      <created>1688492422984</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1688492422984</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -698,185 +126,106 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Some java doc comments" />
-    <MESSAGE value="Added a new Manage complaints activity and its layout" />
-    <MESSAGE value="Updated Manage Complaints Layout" />
-    <MESSAGE value="Fixed Pierres mistake with Date and cleaning up LoginActivity" />
-    <MESSAGE value="Added some javadoc comments to LoginActivity" />
-    <MESSAGE value="Added new dataBaseID for users&#10;&#10;&#10;When signing up, any user successfully pushed to database will get their storage ID in the database as their dataBaseID. This can be used for implementing tasks later." />
-    <MESSAGE value="Added Comments" />
-    <MESSAGE value="Added ComplaintList class &#10;Updated ManageComplaintsActivity&#10;Added a getName method to Person&#10;Created Layout file for ComplaintList" />
-    <MESSAGE value="Admin can now view complaints" />
-    <MESSAGE value="ComplaintListTest is done, i made some methods static in complaintList" />
-    <MESSAGE value="Hope I didn't cause any trouble in gradle and other type my user name is 6132 so app changes it to that." />
-    <MESSAGE value="testComplaintRecyclerViewItemCount and testComplaintListRecyclerView do not pass the tests" />
-    <MESSAGE value="it is working" />
-    <MESSAGE value="Commiting to Pull" />
-    <MESSAGE value="Added a suspension time attribute to Tutor" />
-    <MESSAGE value="Changed suspension end from a Long to a LocalDate" />
-    <MESSAGE value="Updated Gradle, tried some changes" />
-    <MESSAGE value="Updated Gradle again, retrying" />
-    <MESSAGE value="Retrying Gradle again" />
-    <MESSAGE value="CircleCI attempt 5" />
-    <MESSAGE value="CircleCI attempt 6" />
-    <MESSAGE value="CircleCI attempt 7" />
-    <MESSAGE value="CircleCI build issue attempt 8" />
-    <MESSAGE value="CircleCI build issue attempt 9" />
-    <MESSAGE value="CircleCI build issue attempt 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="CircleCI build issue attempt 10" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="82" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="84" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="85" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="86" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="87" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="88" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="89" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="90" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="91" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
+          <line>185</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorInfoActivity.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="92" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
           <line>78</line>
-          <option name="timeStamp" value="94" />
+          <option name="timeStamp" value="123" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="95" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="96" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="125" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentInfoActivity.java</url>
-          <line>103</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>174</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>175</line>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>154</line>
-          <properties class="com.example.tutronapp.ManageComplaintsActivity" method="suspendComplaintForDuration">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="111" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

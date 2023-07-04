@@ -14,7 +14,7 @@ public class Tutor extends User {
     private String shortDescription;
     private String native_languages;
     private String education_level;
-    private LocalDate suspensionEndDate = null;
+    private Long suspensionEndDate;
 
     public Tutor() {
 
@@ -62,11 +62,12 @@ public class Tutor extends User {
         this.shortDescription = shortDescription;
     }
 
-    public LocalDate getSuspensionEndDate() {
+
+    public Long getSuspensionEndDate() {
         return suspensionEndDate;
     }
 
-    public void setSuspensionEndDate(LocalDate suspensionEndDate) {
+    public void setSuspensionEndDate(Long suspensionEndDate) {
         this.suspensionEndDate = suspensionEndDate;
     }
 }

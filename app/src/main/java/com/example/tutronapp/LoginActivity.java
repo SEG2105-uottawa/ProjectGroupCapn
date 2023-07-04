@@ -23,6 +23,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.Date;
+
 public class LoginActivity extends AppCompatActivity {
     private Button btnLoginLoginPage;
     private DatabaseReference dataToCheck;
@@ -69,7 +71,23 @@ public class LoginActivity extends AppCompatActivity {
                             if (user.getPassword().equals(password)) {
                                 if (user.getRole().equals("Tutor")) {
                                     Tutor tutor = userSample.getValue(Tutor.class);
-                                    checkComplaintStatus(tutor, user, userSample);
+                                    if (tutor.getSuspensionEndDate() == null){
+                                        sendUser(user, userSample);
+                                    }
+                                    else if (tutor.getSuspensionEndDate() < System.currentTimeMillis()){
+                                        tutor.setSuspensionEndDate(null);
+                                        dataToCheck.child(tutor.getDataBaseID()).setValue(tutor);
+                                        sendUser(user, userSample);
+
+                                    }
+                                    else if (tutor.getSuspensionEndDate() > System.currentTimeMillis()){
+                                        Date suspensionEndDate = new Date(tutor.getSuspensionEndDate());
+                                        Toast.makeText(getApplicationContext(), "Your account is suspended until " + suspensionEndDate,Toast.LENGTH_SHORT).show();
+                                    }
+                                    else if (tutor.getSuspensionEndDate() == -1){
+                                        Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
+                                                Toast.LENGTH_SHORT).show();
+                                    }
                                 }
                                 else {
                                     sendUser(user, userSample);
@@ -140,7 +158,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void checkComplaintStatus(Tutor tutor, User user, DataSnapshot userSample) {
 
+
+
+        /*
         String tutorEmailAddress = tutor.getEmailAddress();
+
         complaints.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -178,6 +200,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         });
+        */
     }
 
 

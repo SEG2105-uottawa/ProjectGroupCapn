@@ -159,21 +159,36 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
         }
         LocalDate suspensionEndDate = null;
         LocalDate finalSuspensionEndDate = suspensionEndDate;
+        Long suspendedTillAsALongInMillis;
 
         if (duration == 0) {
             complaint.setStatus("suspended 0");
+            suspendedTillAsALongInMillis = Long.valueOf(-1);
+
         }
         else {
             LocalDate currentDate = LocalDate.now();
             suspensionEndDate = currentDate.plusDays(duration);
 
+            //max value of Long Storage
+            if (duration < 106751991167.301){
+                suspendedTillAsALongInMillis = System.currentTimeMillis() + (long) duration * 86400000;
+            }
+            else {
+                suspendedTillAsALongInMillis = Long.valueOf(-1);
+            }
+
             complaint.setStatus("suspended " + suspensionEndDate);
+            complaint.getComplaintAgainst().setSuspensionEndDate(suspendedTillAsALongInMillis);
+            
 
 
         }
 
         String complaintId = complaint.getDatabaseID();
         DatabaseReference complaintRef = complaints.child(complaintId);
+        DatabaseReference tutorInQuestion = users.child(complaint.getComplaintAgainst().getDataBaseID());
+        tutorInQuestion.setValue(complaint.getComplaintAgainst());
 
         LocalDate finalSuspensionEndDate1 = suspensionEndDate;
         complaintRef.setValue(complaint)
@@ -184,7 +199,7 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                     }
                     else {
                         Toast.makeText(ManageComplaintsActivity.this,
-                                "Complaint suspended for " + duration + " days, until " +
+                                "Tutor suspended for " + duration + " days, until " +
                                         finalSuspensionEndDate1, Toast.LENGTH_SHORT).show();
                     }
                     dialog.dismiss();

@@ -4,7 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\55acfc36536a6430324d9f0684149597\\transformed\\material-1.5.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "/Users/shuail/.gradle/caches/transforms-3/0e339c099c49c18dfbe7b4d24fc5ca3f/transformed/material-1.5.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

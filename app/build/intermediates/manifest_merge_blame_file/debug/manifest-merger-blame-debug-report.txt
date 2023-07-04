@@ -6,210 +6,209 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml
+8-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml
+9-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml
 10
 11    <queries>
-11-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:24:5-28:15
+11-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:24:5-28:15
 12        <package android:name="androidx.test.orchestrator" />
-12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:25:9-62
-12-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:25:18-59
+12-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:25:9-62
+12-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:25:18-59
 13        <package android:name="androidx.test.services" />
-13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:26:9-58
-13-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:26:18-55
+13-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:26:9-58
+13-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:26:18-55
 14        <package android:name="com.google.android.apps.common.testing.services" />
-14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:27:9-83
-14-->[androidx.test:runner:1.4.0] C:\Users\Abhay\.gradle\caches\transforms-3\9bd95ab7209846d3f4638e9924812fb1\transformed\runner-1.4.0\AndroidManifest.xml:27:18-80
+14-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:27:9-83
+14-->[androidx.test:runner:1.4.0] /Users/shuail/.gradle/caches/transforms-3/14ea2e52f1b6a6993039f720f0778cae/transformed/runner-1.4.0/AndroidManifest.xml:27:18-80
 15    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14"/> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:5-79
-17-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:24:22-76
+17-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:24:5-79
+17-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:24:22-76
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:5-67
-18-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:25:22-64
+18-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:25:5-67
+18-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:25:22-64
 19
 20    <permission
-20-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+20-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
 21        android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-21-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+21-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
 22        android:protectionLevel="signature" />
-22-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+22-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
 23
 24    <uses-permission android:name="com.example.tutronapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-24-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+24-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:5:5-57:19
+26-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:5:5-57:19
 27        android:allowBackup="true"
-27-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:6:9-35
+27-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:6:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.9.0] C:\Users\Abhay\.gradle\caches\transforms-3\71e406167e32646f17447ca2a962209c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+28-->[androidx.core:core:1.9.0] /Users/shuail/.gradle/caches/transforms-3/89bfae7af68dd9814b73a8c2eaf0eb0f/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 29        android:dataExtractionRules="@xml/data_extraction_rules"
-29-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:7:9-65
+29-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:7:9-65
 30        android:debuggable="true"
 31        android:extractNativeLibs="false"
 32        android:fullBackupContent="@xml/backup_rules"
-32-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:8:9-54
+32-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:8:9-54
 33        android:icon="@mipmap/ic_launcher"
-33-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:9:9-43
+33-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:9:9-43
 34        android:label="@string/app_name"
-34-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:10:9-41
+34-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:10:9-41
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:11:9-54
+35-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:11:9-54
 36        android:supportsRtl="true"
-36-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:12:9-35
-37        android:testOnly="true"
-38        android:theme="@style/Theme.TutronApp" >
-38-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:13:9-47
-39        <activity
-39-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:15:9-17:40
-40            android:name="com.example.tutronapp.ManageComplaintsActivity"
-40-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:16:13-53
-41            android:exported="false" />
-41-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:17:13-37
-42        <activity
-42-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:19:9-27:20
-43            android:name="com.example.tutronapp.StudentInfoActivity"
-43-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:20:13-48
-44            android:exported="true" >
-44-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:21:13-36
-45            <intent-filter>
-45-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:22:13-26:29
-46                <action android:name="android.intent.action.STUDENT_INFO" />
-46-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:23:17-77
-46-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:23:25-74
-47
-48                <category android:name="android.intent.category.DEFAULT" />
-48-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:17-76
-48-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:27-73
-49            </intent-filter>
-50        </activity>
-51        <activity
-51-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:28:9-36:20
-52            android:name="com.example.tutronapp.TutorInfoActivity"
-52-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:29:13-46
-53            android:exported="true" >
-53-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:30:13-36
-54            <intent-filter>
-54-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:31:13-35:29
-55                <action android:name="android.intent.action.TUTOR_INFO" />
-55-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:32:17-75
-55-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:32:25-72
-56
-57                <category android:name="android.intent.category.DEFAULT" />
-57-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:17-76
-57-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:25:27-73
-58            </intent-filter>
-59        </activity>
-60        <activity
-60-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:37:9-39:40
-61            android:name="com.example.tutronapp.WelcomeActivity"
-61-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:38:13-44
-62            android:exported="false" />
-62-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:39:13-37
-63        <activity
-63-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:40:9-48:20
-64            android:name="com.example.tutronapp.MainActivity"
-64-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:41:13-41
-65            android:exported="true" >
-65-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:42:13-36
-66            <intent-filter>
-66-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:43:13-47:29
-67                <action android:name="android.intent.action.MAIN" />
-67-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:44:17-69
-67-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:44:25-66
-68
-69                <category android:name="android.intent.category.LAUNCHER" />
-69-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:46:17-77
-69-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:46:27-74
-70            </intent-filter>
-71        </activity>
-72        <activity
-72-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:49:9-52:37
-73            android:name="com.example.tutronapp.LoginActivity"
-73-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:50:13-42
-74            android:exported="true"
-74-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:51:13-36
-75            android:label="Login" />
-75-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:52:13-34
-76        <activity
-76-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:53:9-56:38
-77            android:name="com.example.tutronapp.SignupActivity"
-77-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:54:13-43
-78            android:exported="true"
-78-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:55:13-36
-79            android:label="Signup" />
-79-->C:\Users\Abhay\AndroidStudioProjects\TutronApp\app\src\main\AndroidManifest.xml:56:13-35
-80
-81        <service
-81-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:28:9-34:19
-82            android:name="com.google.firebase.components.ComponentDiscoveryService"
-82-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:29:13-84
-83            android:directBootAware="true"
-83-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
-84            android:exported="false" >
-84-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:30:13-37
-85            <meta-data
-85-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:31:13-33:85
-86                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-86-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:32:17-109
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-database:20.2.2] C:\Users\Abhay\.gradle\caches\transforms-3\40faadea4a43f39bd550ffaf83f22890\transformed\firebase-database-20.2.2\AndroidManifest.xml:33:17-82
-88        </service>
-89
-90        <provider
-90-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
-91            android:name="com.google.firebase.provider.FirebaseInitProvider"
-91-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
-92            android:authorities="com.example.tutronapp.firebaseinitprovider"
-92-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
-93            android:directBootAware="true"
-93-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
-94            android:exported="false"
-94-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
-95            android:initOrder="100" />
-95-->[com.google.firebase:firebase-common:20.3.2] C:\Users\Abhay\.gradle\caches\transforms-3\288bf810de59cc065860d68235fbfb02\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
-96
-97        <activity
-97-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\33d84011d146c583d3fa8b99ad8b03ea\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-101
-102        <meta-data
-102-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-103            android:name="com.google.android.gms.version"
-103-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-104            android:value="@integer/google_play_services_version" />
-104-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Abhay\.gradle\caches\transforms-3\71741ee02155cc94bbdaa771324b175c\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
-105
-106        <provider
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-107            android:name="androidx.startup.InitializationProvider"
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-108            android:authorities="com.example.tutronapp.androidx-startup"
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-109            android:exported="false" >
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-110            <meta-data
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-112                android:value="androidx.startup" />
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Abhay\.gradle\caches\transforms-3\b882d7fcfdd8b126fdb7bb50bb74d6a6\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-113            <meta-data
-113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-115                android:value="androidx.startup" />
-115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Abhay\.gradle\caches\transforms-3\fcabc9f15e051d64ceae90302af05324\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-116        </provider>
-117    </application>
-118
-119</manifest>
+36-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:12:9-35
+37        android:theme="@style/Theme.TutronApp" >
+37-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:13:9-47
+38        <activity
+38-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:15:9-17:40
+39            android:name="com.example.tutronapp.ManageComplaintsActivity"
+39-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:16:13-53
+40            android:exported="false" />
+40-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:17:13-37
+41        <activity
+41-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:19:9-27:20
+42            android:name="com.example.tutronapp.StudentInfoActivity"
+42-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:20:13-48
+43            android:exported="true" >
+43-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:21:13-36
+44            <intent-filter>
+44-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:22:13-26:29
+45                <action android:name="android.intent.action.STUDENT_INFO" />
+45-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:23:17-77
+45-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:23:25-74
+46
+47                <category android:name="android.intent.category.DEFAULT" />
+47-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:25:17-76
+47-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:25:27-73
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:28:9-36:20
+51            android:name="com.example.tutronapp.TutorInfoActivity"
+51-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:29:13-46
+52            android:exported="true" >
+52-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:30:13-36
+53            <intent-filter>
+53-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:31:13-35:29
+54                <action android:name="android.intent.action.TUTOR_INFO" />
+54-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:32:17-75
+54-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:32:25-72
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:25:17-76
+56-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:25:27-73
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:37:9-39:40
+60            android:name="com.example.tutronapp.WelcomeActivity"
+60-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:38:13-44
+61            android:exported="false" />
+61-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:39:13-37
+62        <activity
+62-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:40:9-48:20
+63            android:name="com.example.tutronapp.MainActivity"
+63-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:41:13-41
+64            android:exported="true" >
+64-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:42:13-36
+65            <intent-filter>
+65-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:43:13-47:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:44:17-69
+66-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:44:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:46:17-77
+68-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:46:27-74
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:49:9-52:37
+72            android:name="com.example.tutronapp.LoginActivity"
+72-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:50:13-42
+73            android:exported="true"
+73-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:51:13-36
+74            android:label="Login" />
+74-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:52:13-34
+75        <activity
+75-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:53:9-56:38
+76            android:name="com.example.tutronapp.SignupActivity"
+76-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:54:13-43
+77            android:exported="true"
+77-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:55:13-36
+78            android:label="Signup" />
+78-->/Users/shuail/GitHub/ProjectGroupCapn/app/src/main/AndroidManifest.xml:56:13-35
+79
+80        <service
+80-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:28:9-34:19
+81            android:name="com.google.firebase.components.ComponentDiscoveryService"
+81-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:29:13-84
+82            android:directBootAware="true"
+82-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:34:13-43
+83            android:exported="false" >
+83-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:30:13-37
+84            <meta-data
+84-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:31:13-33:85
+85                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+85-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:32:17-109
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-database:20.2.2] /Users/shuail/.gradle/caches/transforms-3/8ff6d464ef48d33f380f122507a069c0/transformed/firebase-database-20.2.2/AndroidManifest.xml:33:17-82
+87        </service>
+88
+89        <provider
+89-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:25:9-30:39
+90            android:name="com.google.firebase.provider.FirebaseInitProvider"
+90-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:26:13-77
+91            android:authorities="com.example.tutronapp.firebaseinitprovider"
+91-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:27:13-72
+92            android:directBootAware="true"
+92-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:28:13-43
+93            android:exported="false"
+93-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:29:13-37
+94            android:initOrder="100" />
+94-->[com.google.firebase:firebase-common:20.3.2] /Users/shuail/.gradle/caches/transforms-3/9d870b2bd5f53401080dcb97a3aedb98/transformed/firebase-common-20.3.2/AndroidManifest.xml:30:13-36
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:18.1.0] /Users/shuail/.gradle/caches/transforms-3/4b66ab764ffa6372b2d21041186b000b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:18.1.0] /Users/shuail/.gradle/caches/transforms-3/4b66ab764ffa6372b2d21041186b000b/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:18.1.0] /Users/shuail/.gradle/caches/transforms-3/4b66ab764ffa6372b2d21041186b000b/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:18.1.0] /Users/shuail/.gradle/caches/transforms-3/4b66ab764ffa6372b2d21041186b000b/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:18.1.0] /Users/shuail/.gradle/caches/transforms-3/f9ca43b3391d6d6a27c8a72a65ddbbde/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:18.1.0] /Users/shuail/.gradle/caches/transforms-3/f9ca43b3391d6d6a27c8a72a65ddbbde/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:18.1.0] /Users/shuail/.gradle/caches/transforms-3/f9ca43b3391d6d6a27c8a72a65ddbbde/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+104
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+107            android:authorities="com.example.tutronapp.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] /Users/shuail/.gradle/caches/transforms-3/29e0c20583c1b9ae90500555002328ae/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/shuail/.gradle/caches/transforms-3/5464971ea8637a01baf5cd403e76a44d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/shuail/.gradle/caches/transforms-3/5464971ea8637a01baf5cd403e76a44d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/shuail/.gradle/caches/transforms-3/5464971ea8637a01baf5cd403e76a44d/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+115        </provider>
+116    </application>
+117
+118</manifest>

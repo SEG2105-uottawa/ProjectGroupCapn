@@ -4,7 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\27d5c873fbf9c31f17e0b18dee0978ab\\transformed\\appcompat-1.6.1\\res\\values-v25\\values-v25.xml",
+                    "source": "/Users/shuail/.gradle/caches/transforms-3/a904403f019d43c68e5375274cdc7d0e/transformed/appcompat-1.6.1/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

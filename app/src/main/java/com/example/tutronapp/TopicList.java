@@ -9,9 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> {
+public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> implements Serializable {
 
     private List<Topic> topicList;
 

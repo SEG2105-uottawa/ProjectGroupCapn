@@ -1,6 +1,8 @@
 package com.example.tutronapp;
 
-public class Topic {
+import java.io.Serializable;
+
+public class Topic implements Serializable {
 
     private String title;
     private String tutorDatabaseID;

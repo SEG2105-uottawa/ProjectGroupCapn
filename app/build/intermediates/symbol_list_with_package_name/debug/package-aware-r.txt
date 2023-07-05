@@ -2536,6 +2536,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_background_topic
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2643,6 +2644,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddTopic
 id btnClose
 id btnDismiss
 id btnLogin
@@ -2685,6 +2687,7 @@ id compress
 id confirm_button
 id constraint
 id constraintLayout
+id constraintLayout2
 id contact
 id container
 id content
@@ -2922,6 +2925,8 @@ id radio
 id ratio
 id rectangles
 id recyclerViewComplaints
+id recyclerViewOfferedTopics
+id recyclerViewTopics
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3047,6 +3052,8 @@ id toggle
 id toolbar
 id top
 id topPanel
+id topicDescriptionTextView
+id topicNameTextView
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3084,6 +3091,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yourTopicsTextView
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
@@ -3176,6 +3184,7 @@ layout activity_main
 layout activity_manage_complaints
 layout activity_signup
 layout activity_student_info
+layout activity_tutor_homepage
 layout activity_tutor_info
 layout activity_welcome
 layout custom_dialog
@@ -3197,6 +3206,7 @@ layout design_text_input_start_icon
 layout layout_complaint_item
 layout layout_complaint_options
 layout layout_suspend_options
+layout layout_topic_item
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

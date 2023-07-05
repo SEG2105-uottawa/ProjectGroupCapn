@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         
         // set Click listener to `btnLogin` (direct to LoginActivity.class if clicked)
         btnLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            Intent intent = new Intent(MainActivity.this, TutorHomepageActivity.class);
             startActivity(intent);
         });
 

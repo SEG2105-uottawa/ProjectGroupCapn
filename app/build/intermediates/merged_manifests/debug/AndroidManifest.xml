@@ -37,6 +37,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.TutronApp" >
         <activity
+            android:name="com.example.tutronapp.TutorHomepageActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.tutronapp.ManageComplaintsActivity"
             android:exported="false" />
         <activity

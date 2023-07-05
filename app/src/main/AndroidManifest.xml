@@ -13,9 +13,11 @@
         android:theme="@style/Theme.TutronApp"
         tools:targetApi="31">
         <activity
+            android:name=".TutorHomepageActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManageComplaintsActivity"
             android:exported="false" />
-
         <activity
             android:name=".StudentInfoActivity"
             android:exported="true">

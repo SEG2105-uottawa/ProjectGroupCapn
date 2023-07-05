@@ -4,24 +4,7 @@
             "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/0818ff07b86b2cbde223954a8905b754/transformed/play-services-basement-18.1.0/res/values-ca/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "130",
-                        "endOffsets": "325"
-                    },
-                    "to": {
-                        "startLines": "45",
-                        "startColumns": "4",
-                        "startOffsets": "4406",
-                        "endColumns": "134",
-                        "endOffsets": "4536"
-                    }
-                },
-                {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/f3de4c8ab8072037c051ecfe05ada2bc/transformed/material-1.5.0/res/values-ca/values-ca.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\0e339c099c49c18dfbe7b4d24fc5ca3f\\transformed\\material-1.5.0\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/e340f5e9ea53714c52f099ac533aedd4/transformed/appcompat-1.6.1/res/values-ca/values-ca.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\a904403f019d43c68e5375274cdc7d0e\\transformed\\appcompat-1.6.1\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -57,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/589724cb8b0c41cd43c5c3988aa929d3/transformed/play-services-base-18.1.0/res/values-ca/values.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\4b66ab764ffa6372b2d21041186b000b\\transformed\\play-services-base-18.1.0\\res\\values-ca\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -74,7 +57,24 @@
                     }
                 },
                 {
-                    "source": "/Users/shuail/.gradle/caches/transforms-3/cbe02908f12999d675c4592683b3b0e2/transformed/core-1.9.0/res/values-ca/values-ca.xml",
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\f9ca43b3391d6d6a27c8a72a65ddbbde\\transformed\\play-services-basement-18.1.0\\res\\values-ca\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "130",
+                        "endOffsets": "325"
+                    },
+                    "to": {
+                        "startLines": "45",
+                        "startColumns": "4",
+                        "startOffsets": "4406",
+                        "endColumns": "134",
+                        "endOffsets": "4536"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\89bfae7af68dd9814b73a8c2eaf0eb0f\\transformed\\core-1.9.0\\res\\values-ca\\values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

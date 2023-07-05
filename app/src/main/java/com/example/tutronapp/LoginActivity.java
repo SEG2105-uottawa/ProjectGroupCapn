@@ -71,22 +71,10 @@ public class LoginActivity extends AppCompatActivity {
                             if (user.getPassword().equals(password)) {
                                 if (user.getRole().equals("Tutor")) {
                                     Tutor tutor = userSample.getValue(Tutor.class);
-                                    if (tutor.getSuspensionEndDate() == null){
-                                        sendUser(user, userSample);
-                                    }
-                                    else if (tutor.getSuspensionEndDate() < System.currentTimeMillis()){
+                                    if (!checkSuspended(tutor)){
                                         tutor.setSuspensionEndDate(null);
                                         dataToCheck.child(tutor.getDataBaseID()).setValue(tutor);
                                         sendUser(user, userSample);
-
-                                    }
-                                    else if (tutor.getSuspensionEndDate() > System.currentTimeMillis()){
-                                        Date suspensionEndDate = new Date(tutor.getSuspensionEndDate());
-                                        Toast.makeText(getApplicationContext(), "Your account is suspended until " + suspensionEndDate,Toast.LENGTH_SHORT).show();
-                                    }
-                                    else if (tutor.getSuspensionEndDate() == -1){
-                                        Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
-                                                Toast.LENGTH_SHORT).show();
                                     }
                                 }
                                 else {
@@ -117,6 +105,33 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
+     * Checks if a tutor is suspended
+     * If they are, displays an appropriate toast
+     * returns a boolean
+     * @param tutor
+     * @return boolean whether the tutor is suspended
+     */
+    private boolean checkSuspended(Tutor tutor){
+        if (tutor.getSuspensionEndDate() == null){
+            return false;
+        }
+        else if (tutor.getSuspensionEndDate() < System.currentTimeMillis()){
+            return false;
+        }
+        else if (tutor.getSuspensionEndDate() > System.currentTimeMillis()){
+            Date suspensionEndDate = new Date(tutor.getSuspensionEndDate());
+            Toast.makeText(getApplicationContext(), "Your account is suspended until " + suspensionEndDate,Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        else if (tutor.getSuspensionEndDate() == -1){
+            Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
+                    Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Accepts a bundle with a Specific User data, calls the WelcomeActivity
      * send the bundle to it.
      * @param bundle a bundle with user data to be sent in an intent to WelcomeActivity
@@ -127,6 +142,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 
     /**Sends a user from a sample of users to the WelcomeActivity
      * @param user to be sent
@@ -156,6 +172,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    //redundant but may be useful
     private void checkComplaintStatus(Tutor tutor, User user, DataSnapshot userSample) {
 
 

@@ -94,6 +94,15 @@ public class StudentInfoActivity extends AppCompatActivity {
 
 
     }
+
+    /**
+     * Redundant now that Serializable interface is implemented by CreditCard and Address <br>
+     * Accepts an intent and adds CreditCard and Address info into the intent for it to be sent
+     * in String format. <br>
+     * Requires unpacking at end location.
+     * @param resultIntent Intent to be packed
+     * @return Intent with CreditCard info and Address Info
+     */
     public Intent intentPacker(Intent resultIntent){
         resultIntent.putExtra("CardHolder", cardHolder.getText().toString());
         resultIntent.putExtra("CardNumber", Long.parseLong(cardNumber.getText().toString()));

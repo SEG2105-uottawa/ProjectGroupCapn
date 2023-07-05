@@ -4,6 +4,10 @@
         "source": "com.example.tutronapp-main-34:/mipmap-hdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-32:/drawable_rounded_background_topic.xml.flat",
+        "source": "com.example.tutronapp-main-34:/drawable/rounded_background_topic.xml"
+    },
+    {
         "merged": "com.example.tutronapp-merged_res-32:/layout_layout_suspend_options.xml.flat",
         "source": "com.example.tutronapp-main-34:/layout/layout_suspend_options.xml"
     },
@@ -30,6 +34,10 @@
     {
         "merged": "com.example.tutronapp-merged_res-32:/drawable_logo.png.flat",
         "source": "com.example.tutronapp-main-34:/drawable/logo.png"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-32:/layout_activity_tutor_homepage.xml.flat",
+        "source": "com.example.tutronapp-main-34:/layout/activity_tutor_homepage.xml"
     },
     {
         "merged": "com.example.tutronapp-merged_res-32:/drawable_tutor_profile.xml.flat",
@@ -66,6 +74,10 @@
     {
         "merged": "com.example.tutronapp-merged_res-32:/layout_activity_student_info.xml.flat",
         "source": "com.example.tutronapp-main-34:/layout/activity_student_info.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-32:/layout_layout_topic_item.xml.flat",
+        "source": "com.example.tutronapp-main-34:/layout/layout_topic_item.xml"
     },
     {
         "merged": "com.example.tutronapp-merged_res-32:/layout_layout_complaint_item.xml.flat",

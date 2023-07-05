@@ -8,13 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import java.util.List;
 
 public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> {
 
-    private List<String> topicList;
+    private List<Topic> topicList;
 
-    public TopicList(List<String> topicList) {
+    public TopicList(List<Topic> topicList) {
         this.topicList = topicList;
     }
 
@@ -28,8 +29,8 @@ public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull TopicViewHolder holder, int position) {
-        String topicName = topicList.get(position);
-        holder.bind(topicName);
+        Topic topic = topicList.get(position);
+        holder.bind(topic);
     }
 
     @Override
@@ -40,15 +41,17 @@ public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> {
     public class TopicViewHolder extends RecyclerView.ViewHolder {
 
         private TextView topicNameTextView;
+        private TextView yearsOfExperienceTextView;
+        private TextView descriptionTextView;
 
         public TopicViewHolder(@NonNull View itemView) {
             super(itemView);
             topicNameTextView = itemView.findViewById(R.id.topicNameTextView);
+
         }
 
-        public void bind(String topicName) {
-            topicNameTextView.setText(topicName);
+        public void bind(Topic topic) {
+            topicNameTextView.setText(topic.getTitle());
         }
     }
 }
-

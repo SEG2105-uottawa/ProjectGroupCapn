@@ -1,6 +1,7 @@
 package com.example.tutronapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -20,9 +21,13 @@ public class TutorHomepageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tutor_homepage);
 
         recyclerViewOfferedTopics = findViewById(R.id.recyclerViewOfferedTopics);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerViewOfferedTopics.setLayoutManager(layoutManager);
 
-        List<String> offeredTopics = new ArrayList<>();
-        offeredTopics.add("Jim");
+        List<Topic> offeredTopics = new ArrayList<>();
+        offeredTopics.add(new Topic("Alchemy", "7", 1700,
+                "Learn to convert metals to gold"));
+
         adapterForOfferedTopicsRecycler = new TopicList(offeredTopics);
 
         recyclerViewOfferedTopics.setAdapter(adapterForOfferedTopicsRecycler);

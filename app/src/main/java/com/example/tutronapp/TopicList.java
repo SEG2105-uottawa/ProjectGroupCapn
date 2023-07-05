@@ -47,11 +47,13 @@ public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> {
         public TopicViewHolder(@NonNull View itemView) {
             super(itemView);
             topicNameTextView = itemView.findViewById(R.id.topicNameTextView);
+            descriptionTextView = itemView.findViewById(R.id.topicDescriptionTextView);
 
         }
 
         public void bind(Topic topic) {
             topicNameTextView.setText(topic.getTitle());
+            descriptionTextView.setText(topic.getDescription());
         }
     }
 }

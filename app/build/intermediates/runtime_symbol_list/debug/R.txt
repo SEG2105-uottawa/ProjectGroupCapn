@@ -3049,6 +3049,7 @@ int id toggle 0x7f0901f8
 int id toolbar 0x7f0901f9
 int id top 0x7f0901fa
 int id topPanel 0x7f0901fb
+int id topicDescriptionTextView 0x7f090223
 int id topicNameTextView 0x7f0901fc
 int id touch_outside 0x7f0901fd
 int id transitionToEnd 0x7f0901fe

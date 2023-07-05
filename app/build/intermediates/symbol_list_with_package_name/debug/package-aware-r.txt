@@ -3050,6 +3050,7 @@ id toggle
 id toolbar
 id top
 id topPanel
+id topicDescriptionTextView
 id topicNameTextView
 id touch_outside
 id transitionToEnd

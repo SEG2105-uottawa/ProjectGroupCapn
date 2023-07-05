@@ -26,7 +26,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
         List<Topic> offeredTopics = new ArrayList<>();
         offeredTopics.add(new Topic("Alchemy", "7", 1700,
-                "Learn to convert metals to gold"));
+                "Learn to convert metals to gold "));
 
         adapterForOfferedTopicsRecycler = new TopicList(offeredTopics);
 

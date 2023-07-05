@@ -212,8 +212,8 @@ public class SignupActivity extends AppCompatActivity {
         String shortDescription = intent.getStringExtra("Short Description");
 
         Tutor tutor = (Tutor) user;
-        tutor.setEducation_level(educationLevel);
-        tutor.setNative_languages(nativeLanguages);
+        tutor.setEducationLevel(educationLevel);
+        tutor.setNativeLanguages(nativeLanguages);
         tutor.setShortDescription(shortDescription);
         user = (User) tutor;
     }

@@ -6,15 +6,17 @@
 
 package com.example.tutronapp;
 
-import java.time.LocalDate;
+import java.util.List;
 
 public class Tutor extends User {
 
     private final String role = "Tutor";
     private String shortDescription;
-    private String native_languages;
-    private String education_level;
+    private String nativeLanguages;
+    private String educationLevel;
     private Long suspensionEndDate;
+    private List<Topic> offeredTopics;
+    private List<Topic> topics;
 
     public Tutor() {
 
@@ -24,11 +26,11 @@ public class Tutor extends User {
         super(firstName, lastName, emailAddress, password, "Tutor");
     }
 
-    public Tutor(String firstName, String lastName, String emailAddress, String password, String education_level, String native_languages, String shortDescription) {
+    public Tutor(String firstName, String lastName, String emailAddress, String password, String educationLevel, String native_languages, String shortDescription) {
         super(firstName, lastName, emailAddress, password, "Tutor");
-        this.education_level = education_level;
+        this.educationLevel = educationLevel;
 
-        this.native_languages = native_languages;
+        this.nativeLanguages = native_languages;
 
         this.shortDescription = shortDescription;
     }
@@ -38,20 +40,20 @@ public class Tutor extends User {
     }
 
 
-    public String getEducation_level() {
-        return education_level;
+    public String getEducationLevel() {
+        return educationLevel;
     }
 
-    public void setEducation_level(String education_level) {
-        this.education_level = education_level;
+    public void setEducationLevel(String educationLevel) {
+        this.educationLevel = educationLevel;
     }
 
-    public String getNative_languages() {
-        return native_languages;
+    public String getNativeLanguages() {
+        return nativeLanguages;
     }
 
-    public void setNative_languages(String native_languages) {
-        this.native_languages = native_languages;
+    public void setNativeLanguages(String nativeLanguages) {
+        this.nativeLanguages = nativeLanguages;
     }
 
     public String getShortDescription() {
@@ -69,6 +71,22 @@ public class Tutor extends User {
 
     public void setSuspensionEndDate(Long suspensionEndDate) {
         this.suspensionEndDate = suspensionEndDate;
+    }
+
+    public List<Topic> getOfferedTopics() {
+        return offeredTopics;
+    }
+
+    public void setOfferedTopics(List<Topic> offeredTopics) {
+        this.offeredTopics = offeredTopics;
+    }
+
+    public List<Topic> getTopics() {
+        return topics;
+    }
+
+    public void setTopics(List<Topic> topics) {
+        this.topics = topics;
     }
 }
 

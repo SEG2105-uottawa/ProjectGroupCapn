@@ -2644,6 +2644,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAddTopic
 id btnClose
 id btnDismiss
 id btnLogin
@@ -2925,6 +2926,7 @@ id ratio
 id rectangles
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewTopics
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3089,6 +3091,7 @@ id wrap_content
 id wrap_content_constrained
 id x_left
 id x_right
+id yourTopicsTextView
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur

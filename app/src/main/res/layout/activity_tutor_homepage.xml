@@ -20,12 +20,10 @@
             android:layout_width="396dp"
             android:layout_height="200dp"
             android:layout_marginTop="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleText"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -49,18 +47,51 @@
 
         <TextView
             android:id="@+id/titleText"
-            android:layout_width="158dp"
-            android:layout_height="27dp"
+            android:layout_width="225dp"
+            android:layout_height="30dp"
             android:layout_marginTop="4dp"
             android:lineSpacingExtra="20sp"
-            android:text="Topics Offered"
+            android:text="Topics Offered By You"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            tools:text="Topics Offered" />
+            tools:text="Topics Offered By You" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTopics"
+            android:layout_width="396dp"
+            android:layout_height="383dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/yourTopicsTextView"
+            tools:layout_editor_absoluteX="7dp" />
+
+        <TextView
+            android:id="@+id/yourTopicsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginTop="4dp"
+            android:text="Your Topics"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewOfferedTopics"
+            tools:layout_editor_absoluteX="7dp"
+            tools:text="Your Topics" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="332dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="@+id/recyclerViewTopics"
+            app:layout_constraintTop_toBottomOf="@+id/yourTopicsTextView"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -12,7 +12,9 @@ import java.util.List;
 public class TutorHomepageActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewOfferedTopics;
+    private RecyclerView recyclerViewTopics;
     private TopicList adapterForOfferedTopicsRecycler;
+    private TopicList adapterForTopicsRecycler;
 
 
     @Override
@@ -20,17 +22,22 @@ public class TutorHomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_homepage);
 
+        LinearLayoutManager layoutManagerForOfferedTopics = new LinearLayoutManager(this);
+        LinearLayoutManager layoutManagerForTopics = new LinearLayoutManager(this);
+        recyclerViewTopics = findViewById(R.id.recyclerViewTopics);
         recyclerViewOfferedTopics = findViewById(R.id.recyclerViewOfferedTopics);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerViewOfferedTopics.setLayoutManager(layoutManager);
+        recyclerViewTopics.setLayoutManager(layoutManagerForTopics);
+        recyclerViewOfferedTopics.setLayoutManager(layoutManagerForOfferedTopics);
 
         List<Topic> offeredTopics = new ArrayList<>();
         offeredTopics.add(new Topic("Alchemy", "7", 1700,
                 "Learn to convert metals to gold "));
 
         adapterForOfferedTopicsRecycler = new TopicList(offeredTopics);
+        adapterForTopicsRecycler = new TopicList(offeredTopics);
 
         recyclerViewOfferedTopics.setAdapter(adapterForOfferedTopicsRecycler);
+        recyclerViewTopics.setAdapter(adapterForTopicsRecycler);
 
 
 

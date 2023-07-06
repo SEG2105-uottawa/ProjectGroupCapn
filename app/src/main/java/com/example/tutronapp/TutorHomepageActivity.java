@@ -4,24 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.os.Bundle;
-import android.widget.Button;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TutorHomepageActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewOfferedTopics;
     private RecyclerView recyclerViewTopics;
-    private TopicList adapterForOfferedTopicsRecycler;
+    private OfferedTopicList adapterForOfferedTopicsRecycler;
     private TopicList adapterForTopicsRecycler;
+
     private FloatingActionButton btnAddTopic;
     private Tutor loggedInTutor;
 
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +51,8 @@ public class TutorHomepageActivity extends AppCompatActivity {
         List<Topic> offeredTopics = loggedInTutor.getOfferedTopics();
         List<Topic> yourTopics = loggedInTutor.getTopics();
 
-        adapterForOfferedTopicsRecycler = new TopicList(offeredTopics);
+
+        adapterForOfferedTopicsRecycler = new OfferedTopicList(offeredTopics);
         adapterForTopicsRecycler = new TopicList(yourTopics);
 
         recyclerViewOfferedTopics.setAdapter(adapterForOfferedTopicsRecycler);
@@ -54,6 +61,62 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
 
 
+        btnAddTopic.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(TutorHomepageActivity.this);
+            View dialogView = LayoutInflater.from(TutorHomepageActivity.this).inflate(R.layout.dialog_add_topic, null);
+            builder.setView(dialogView)
+                    .setPositiveButton("Add", (dialog, which) -> {
+                        EditText editTextTitle = dialogView.findViewById(R.id.editTextTitle);
+                        EditText editTextDescription = dialogView.findViewById(R.id.editTextDescription);
+                        EditText editTextExperience = dialogView.findViewById(R.id.editTextExperience);
 
+                        String title = editTextTitle.getText().toString();
+                        String description = editTextDescription.getText().toString();
+                        int experience = Integer.parseInt(editTextExperience.getText().toString());
+
+                        Topic topicToAdd = new Topic(title, loggedInTutor.getDataBaseID(), experience,
+                                description);
+                        yourTopics.add(topicToAdd);
+                        loggedInTutor.setTopics(yourTopics);
+                        adapterForTopicsRecycler.notifyDataSetChanged();
+                        updateDatabase(loggedInTutor);
+                        dialog.dismiss();
+                    })
+                    .setNegativeButton("Cancel", null)
+                    .show();
+        });
+
+
+
+
+
+
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    public void removeTopic(Topic topic) {
+        loggedInTutor.getTopics().remove(topic);
+        loggedInTutor.getOfferedTopics().remove(topic);
+        updateDatabase(loggedInTutor);
+
+        adapterForOfferedTopicsRecycler.notifyDataSetChanged();
+        adapterForTopicsRecycler.notifyDataSetChanged();
+    }
+
+    private void updateDatabase(Tutor loggedInTutor) {
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    public void offerTopic(Topic topic) {
+        List<Topic> currentlyOffered = loggedInTutor.getOfferedTopics();
+        if (!currentlyOffered.contains(topic)){
+            loggedInTutor.getOfferedTopics().add(topic);
+            adapterForOfferedTopicsRecycler.notifyDataSetChanged();
+            updateDatabase(loggedInTutor);
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "Invalid Attempt",
+                Toast.LENGTH_SHORT).show();
+        }
     }
 }

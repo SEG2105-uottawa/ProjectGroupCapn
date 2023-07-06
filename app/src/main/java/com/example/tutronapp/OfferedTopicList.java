@@ -1,5 +1,6 @@
 package com.example.tutronapp;
 
+import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,8 +57,17 @@ public class OfferedTopicList extends RecyclerView.Adapter<OfferedTopicList.Topi
             topicNameTextView.setText(topic.getTitle());
             descriptionTextView.setText(topic.getDescription());
             itemView.setOnClickListener(v -> {
-                // Handle the item click here
-                // You can access the complaint object if needed
+                AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
+                builder.setTitle(topic.getTitle())
+                        .setItems(new CharSequence[]{"Stop Offering", "Close"}, (dialog, which) -> {
+                            if (which == 0) {
+                                TutorHomepageActivity activity = (TutorHomepageActivity) v.getContext();
+                                activity.stopOffering(topic);
+                            } else if (which == 1) {
+                                dialog.dismiss();
+                            }
+                        })
+                        .show();
             });
         }
 }}

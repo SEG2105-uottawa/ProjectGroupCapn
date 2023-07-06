@@ -119,4 +119,10 @@ public class TutorHomepageActivity extends AppCompatActivity {
                 Toast.LENGTH_SHORT).show();
         }
     }
+
+    public void stopOffering(Topic topic) {
+        loggedInTutor.getOfferedTopics().remove(topic);
+        adapterForOfferedTopicsRecycler.notifyDataSetChanged();
+        updateDatabase(loggedInTutor);
+    }
 }

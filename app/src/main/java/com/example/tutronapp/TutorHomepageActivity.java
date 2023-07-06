@@ -13,6 +13,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.List;
 
@@ -22,9 +24,9 @@ public class TutorHomepageActivity extends AppCompatActivity {
     private RecyclerView recyclerViewTopics;
     private OfferedTopicList adapterForOfferedTopicsRecycler;
     private TopicList adapterForTopicsRecycler;
-
     private FloatingActionButton btnAddTopic;
     private Tutor loggedInTutor;
+    private DatabaseReference users;
 
 
     @SuppressLint("NotifyDataSetChanged")
@@ -32,6 +34,8 @@ public class TutorHomepageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_homepage);
+
+        FirebaseDatabase.getInstance().getReference("users");
 
         Bundle bundle = getIntent().getExtras();
 
@@ -104,6 +108,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
     }
 
     private void updateDatabase(Tutor loggedInTutor) {
+        users.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
     }
 
     @SuppressLint("NotifyDataSetChanged")

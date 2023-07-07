@@ -31,6 +31,9 @@ public class TutorHomepageActivity extends AppCompatActivity {
     private FloatingActionButton btnAddTopic;
     private Tutor loggedInTutor;
     private DatabaseReference users;
+    private OfferedTopicList recyclerViewAdapter;
+
+    private static List<Topic> offeredTopicList;
 
 
     @SuppressLint("NotifyDataSetChanged")
@@ -80,6 +83,13 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
                         String title = editTextTitle.getText().toString();
                         String description = editTextDescription.getText().toString();
+                        String experienceText = editTextExperience.getText().toString();
+
+                        if (title.isEmpty() || description.isEmpty() || experienceText.isEmpty()) {
+                            Toast.makeText(getApplicationContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         int experience = Integer.parseInt(editTextExperience.getText().toString());
 
                         if (adapterForTopicsRecycler.getItemCount() < 20) {
@@ -164,5 +174,9 @@ public class TutorHomepageActivity extends AppCompatActivity {
         loggedInTutor.getOfferedTopics().remove(topic);
         adapterForOfferedTopicsRecycler.notifyDataSetChanged();
         updateDatabaseForTutor(loggedInTutor);
+    }
+
+    public static void setOfferedTopicList(List<Topic> topics) {
+        offeredTopicList = topics;
     }
 }

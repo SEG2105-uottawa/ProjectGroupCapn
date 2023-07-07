@@ -27,7 +27,10 @@ id constraintLayout2
 id contact
 id creditCardDetailsText
 id detailsText
+id editTextDescription
 id editTextDuration
+id editTextExperience
+id editTextTitle
 id education
 id education_options
 id emailAddress
@@ -87,6 +90,7 @@ layout activity_student_info
 layout activity_tutor_homepage
 layout activity_tutor_info
 layout activity_welcome
+layout dialog_add_topic
 layout layout_complaint_item
 layout layout_complaint_options
 layout layout_suspend_options

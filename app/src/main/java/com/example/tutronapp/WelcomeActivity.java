@@ -64,9 +64,11 @@ public class WelcomeActivity extends AppCompatActivity {
 
         btnProceedHome.setOnClickListener(v -> {
             if (bundle != null && bundle.containsKey("Administrator")) {
-                Intent intent = new Intent(WelcomeActivity.this, ManageComplaintsActivity.class);
-                startActivity(intent);
-                finish();
+                sendAdministratorToHomepage();
+            }
+            else if (bundle != null && bundle.containsKey("Tutor")){
+                Tutor tutor = (Tutor) bundle.getSerializable("Tutor");
+                sendTutorToHomepage(tutor);
             }
         });
 
@@ -78,6 +80,21 @@ public class WelcomeActivity extends AppCompatActivity {
             Toast.makeText(WelcomeActivity.this, "Successfully logged out", Toast.LENGTH_SHORT).show();
         });
 
+    }
+
+    private void sendTutorToHomepage(Tutor tutor) {
+        Bundle tutorBundle = new Bundle();
+        tutorBundle.putSerializable("Tutor", tutor);
+        Intent intent = new Intent(WelcomeActivity.this, TutorHomepageActivity.class);
+        intent.putExtras(tutorBundle);
+        startActivity(intent);
+        finish();
+    }
+
+    private void sendAdministratorToHomepage(){
+        Intent intent = new Intent(WelcomeActivity.this, ManageComplaintsActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 

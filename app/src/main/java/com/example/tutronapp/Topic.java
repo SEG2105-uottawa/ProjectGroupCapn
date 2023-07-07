@@ -1,11 +1,14 @@
 package com.example.tutronapp;
 
-public class Topic {
+import java.io.Serializable;
+
+public class Topic implements Serializable {
 
     private String title;
     private String tutorDatabaseID;
     private int yearsOfExperience;
     private String description;
+
 
 
 
@@ -18,6 +21,17 @@ public class Topic {
         this.tutorDatabaseID = tutorDatabaseID;
         this.yearsOfExperience = yearsOfExperience;
         this.description = description;
+    }
+
+    @Override
+    public boolean equals(Object object){
+        if (object == null || object.getClass() != this.getClass()){
+            return false;
+        }
+        if (((Topic) object).getTitle().equals(this.title)){
+            return true;
+        }
+        return false;
     }
 
     public String getTitle() {

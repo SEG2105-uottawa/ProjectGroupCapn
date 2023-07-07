@@ -15,6 +15,9 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
+            //tutorHomepageTest();
         });
 
         // set Click listener to `btnSignup` (direct to SignupActivity.class if clicked)
@@ -40,6 +44,23 @@ public class MainActivity extends AppCompatActivity {
 
         // Add complaints to the database
         //addComplaintsToDatabase(); // uncomment if u want to add a test complain
+    }
+
+    private void tutorHomepageTest() {
+        Topic alchemy = new Topic("Alchemy", "71", 5, "Learn to convert metals to gold");
+        List<Topic> offeredCourses = new ArrayList<>();
+        List<Topic> allCourses = new ArrayList<>();
+        allCourses.add(alchemy);
+        offeredCourses.add(alchemy);
+
+        Tutor tutor = new Tutor("James", "Jones", "jimmyjohn@email.com", "Jimmy", "Universty", "Native Lang", "Hi");
+        tutor.setTopics(allCourses);
+        tutor.setOfferedTopics(offeredCourses);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("Tutor",tutor);
+        Intent intent = new Intent(MainActivity.this, TutorHomepageActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     private void addComplaintsToDatabase() {
@@ -56,4 +77,6 @@ public class MainActivity extends AppCompatActivity {
         String complaintKey1 = complaintsRef.push().getKey();
         complaintsRef.child(complaintKey1).setValue(complaint1);
     }
+
 }
+

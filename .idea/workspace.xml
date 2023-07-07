@@ -9,10 +9,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Completed all local functionality for Both offered and other">
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Added database functionality too">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/Tutor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +63,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/androidx/coordinatorlayout/widget/CoordinatorLayout.java_SELECTED&quot;: &quot;CoordinatorLayout&quot;,
-    &quot;android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED&quot;: &quot;RecyclerView&quot;,
-    &quot;android-custom-viewC:/Users/Abhay/AppData/Local/Android/Sdk/sources/android-33/android/view/View.java_SELECTED&quot;: &quot;View&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/androidx.coordinatorlayout/coordinatorlayout/1.1.0/a15529ac349d76a872ae5ef42b84c320c456cd7f/coordinatorlayout-1.1.0-sources.jar!/androidx/coordinatorlayout/widget/CoordinatorLayout.java_SELECTED": "CoordinatorLayout",
+    "android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED": "RecyclerView",
+    "android-custom-viewC:/Users/Abhay/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.5.0/8d3b87c7463f55053836b805e014cb238f64757a/material-1.5.0-sources.jar!/com/google/android/material/button/MaterialButton.java_SELECTED": "MaterialButton",
+    "android-custom-viewC:/Users/Abhay/AppData/Local/Android/Sdk/sources/android-33/android/view/View.java_SELECTED": "View",
+    "cidr.known.project.marker": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="android.template.-700101385">
       <recent name="com.example.tutronapp" />
@@ -231,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688684894805</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added database functionality too">
+      <created>1688685412078</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688685412078</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +288,8 @@
     <MESSAGE value="Updated to receive Intent" />
     <MESSAGE value="Completed all local Functionality for Topics" />
     <MESSAGE value="Completed all local functionality for Both offered and other" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed all local functionality for Both offered and other" />
+    <MESSAGE value="Added database functionality too" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added database functionality too" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -332,44 +350,19 @@
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LoginActivity.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
           <line>42</line>
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="142" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="145" />
+          <line>111</line>
+          <option name="timeStamp" value="201" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
@@ -378,22 +371,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>55</line>
-          <properties class="com.example.tutronapp.TopicList.TopicViewHolder" method="bind">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java</url>
-          <line>99</line>
-          <properties class="com.example.tutronapp.TutorHomepageActivity" method="removeTopic">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

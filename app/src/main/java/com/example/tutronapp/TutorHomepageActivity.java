@@ -35,7 +35,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor_homepage);
 
-        FirebaseDatabase.getInstance().getReference("users");
+        users = FirebaseDatabase.getInstance().getReference("users");
 
         Bundle bundle = getIntent().getExtras();
 

@@ -6,17 +6,19 @@
 
 package com.example.tutronapp;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Tutor extends User {
+public class Tutor extends User implements Serializable {
 
     private final String role = "Tutor";
     private String shortDescription;
     private String nativeLanguages;
     private String educationLevel;
     private Long suspensionEndDate;
-    private List<Topic> offeredTopics;
-    private List<Topic> topics;
+    private List<Topic> offeredTopics = new ArrayList<>();
+    private List<Topic> topics = new ArrayList<>();
 
     public Tutor() {
 

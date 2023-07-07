@@ -1,4 +1,8 @@
 package com.example.tutronapp;
+/**
+ * An Activity for managing Topics Offered and added by a tutor
+ * @author Abhay Aryiappillil
+ */
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -83,7 +87,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
                         yourTopics.add(topicToAdd);
                         loggedInTutor.setTopics(yourTopics);
                         adapterForTopicsRecycler.notifyDataSetChanged();
-                        updateDatabase(loggedInTutor);
+                        updateDatabaseForTutor(loggedInTutor);
                         dialog.dismiss();
                     })
                     .setNegativeButton("Cancel", null)
@@ -97,27 +101,41 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Removes a topic from both Offered Topic and Your topic
+     * @param topic Topic to be removed
+     */
     @SuppressLint("NotifyDataSetChanged")
     public void removeTopic(Topic topic) {
         loggedInTutor.getTopics().remove(topic);
         loggedInTutor.getOfferedTopics().remove(topic);
-        updateDatabase(loggedInTutor);
+        updateDatabaseForTutor(loggedInTutor);
 
         adapterForOfferedTopicsRecycler.notifyDataSetChanged();
         adapterForTopicsRecycler.notifyDataSetChanged();
     }
 
-    private void updateDatabase(Tutor loggedInTutor) {
+    /**
+     * Takes a tutor as an input, assumed to be up to date with all information locally
+     * and updates that information to the database
+     * @param loggedInTutor Tutor up to date with local information
+     */
+    private void updateDatabaseForTutor(Tutor loggedInTutor) {
         users.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
     }
 
+
+    /**
+     * Takes a topic from Your Topics and adds them to Offered Topics if its not already present.
+     * @param topic Topic to be offered
+     */
     @SuppressLint("NotifyDataSetChanged")
     public void offerTopic(Topic topic) {
         List<Topic> currentlyOffered = loggedInTutor.getOfferedTopics();
         if (!currentlyOffered.contains(topic)){
             loggedInTutor.getOfferedTopics().add(topic);
             adapterForOfferedTopicsRecycler.notifyDataSetChanged();
-            updateDatabase(loggedInTutor);
+            updateDatabaseForTutor(loggedInTutor);
         }
         else {
             Toast.makeText(getApplicationContext(), "Invalid Attempt",
@@ -125,9 +143,13 @@ public class TutorHomepageActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Removes a topic from Offered Topics
+     * @param topic Topic to be removed from Offered
+     */
     public void stopOffering(Topic topic) {
         loggedInTutor.getOfferedTopics().remove(topic);
         adapterForOfferedTopicsRecycler.notifyDataSetChanged();
-        updateDatabase(loggedInTutor);
+        updateDatabaseForTutor(loggedInTutor);
     }
 }

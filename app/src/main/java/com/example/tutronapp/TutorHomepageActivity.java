@@ -82,13 +82,21 @@ public class TutorHomepageActivity extends AppCompatActivity {
                         String description = editTextDescription.getText().toString();
                         int experience = Integer.parseInt(editTextExperience.getText().toString());
 
-                        Topic topicToAdd = new Topic(title, loggedInTutor.getDataBaseID(), experience,
-                                description);
-                        yourTopics.add(topicToAdd);
-                        loggedInTutor.setTopics(yourTopics);
-                        adapterForTopicsRecycler.notifyDataSetChanged();
-                        updateDatabaseForTutor(loggedInTutor);
-                        dialog.dismiss();
+                        if (adapterForTopicsRecycler.getItemCount() < 20) {
+                            Topic topicToAdd = new Topic(title, loggedInTutor.getDataBaseID(), experience,
+                                    description);
+                            yourTopics.add(topicToAdd);
+                            loggedInTutor.setTopics(yourTopics);
+                            adapterForTopicsRecycler.notifyDataSetChanged();
+                            updateDatabaseForTutor(loggedInTutor);
+                            dialog.dismiss();
+                        }
+                        else{
+                            Toast.makeText(getApplicationContext(), "List Full, " +
+                                            "Please retry after removing a topic",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+
                     })
                     .setNegativeButton("Cancel", null)
                     .show();
@@ -132,14 +140,19 @@ public class TutorHomepageActivity extends AppCompatActivity {
     @SuppressLint("NotifyDataSetChanged")
     public void offerTopic(Topic topic) {
         List<Topic> currentlyOffered = loggedInTutor.getOfferedTopics();
-        if (!currentlyOffered.contains(topic)){
-            loggedInTutor.getOfferedTopics().add(topic);
-            adapterForOfferedTopicsRecycler.notifyDataSetChanged();
-            updateDatabaseForTutor(loggedInTutor);
+        if (adapterForOfferedTopicsRecycler.getItemCount() < 5) {
+            if (!currentlyOffered.contains(topic)) {
+                loggedInTutor.getOfferedTopics().add(topic);
+                adapterForOfferedTopicsRecycler.notifyDataSetChanged();
+                updateDatabaseForTutor(loggedInTutor);
+            } else {
+                Toast.makeText(getApplicationContext(), "Invalid Attempt",
+                        Toast.LENGTH_SHORT).show();
+            }
         }
-        else {
-            Toast.makeText(getApplicationContext(), "Invalid Attempt",
-                Toast.LENGTH_SHORT).show();
+        else{
+            Toast.makeText(getApplicationContext(), "List full, please retry after removing a topic",
+                    Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -1,5 +1,5 @@
 /**
- * @author Abhay Ariyappillil
+ * @author Abhay A
  * Student is a subclass of User class that represents a student in the application.
  * The class provides constructors to initialize the student object, including name, email,
  * password, credit card and address. The class also includes a constant field "role" that specifies

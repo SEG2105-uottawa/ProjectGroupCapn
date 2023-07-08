@@ -2,7 +2,7 @@ package com.example.tutronapp;
 /**
  * A ComplaintList to use as the adapter for the recycler view to be used to show the admin
  * the list of complaints.
- * @author Abhay Ariyappillil
+ * @author Abhay A
  * @author Sum Yan Wan
  */
 

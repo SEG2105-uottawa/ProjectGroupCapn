@@ -1,5 +1,5 @@
 /**
- * @author Abhay Ariyappillil
+ * @author Abhay A
  *
  * CreditCard is an associated class of Student that stores credit card information from a student
  */

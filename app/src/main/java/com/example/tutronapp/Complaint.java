@@ -1,7 +1,7 @@
 package com.example.tutronapp;
 /**
  * Represents a complaint against a Tutor by a Student
- * @author Abhay Ariyappillil
+ * @author Abhay A
  * @author Sum Yan Wan
  */
 

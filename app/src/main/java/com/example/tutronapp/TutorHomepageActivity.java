@@ -1,7 +1,7 @@
 package com.example.tutronapp;
 /**
  * An Activity for managing Topics Offered and added by a tutor
- * @author Abhay Aryiappillil
+ * @author Abhay A
  */
 
 import androidx.appcompat.app.AppCompatActivity;

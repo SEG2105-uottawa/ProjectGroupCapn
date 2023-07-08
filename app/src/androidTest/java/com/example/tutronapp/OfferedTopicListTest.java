@@ -1,74 +1,75 @@
 package com.example.tutronapp;
 
-import androidx.test.core.app.ActivityScenario;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.assertion.ViewAssertions;
 import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
-import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.example.tutronapp.OfferedTopicList;
 import com.example.tutronapp.R;
 import com.example.tutronapp.Topic;
-import com.example.tutronapp.TutorHomepageActivity;
 
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
-
-@RunWith(AndroidJUnit4.class)
 public class OfferedTopicListTest {
 
     @Rule
-    public ActivityScenarioRule<TutorHomepageActivity> activityScenarioRule =
-            new ActivityScenarioRule<>(TutorHomepageActivity.class);
+    public ActivityScenarioRule<TutorHomepageActivity> activityRule = new ActivityScenarioRule<>(TutorHomepageActivity.class);
+
+    private List<Topic> offeredTopicList;
+
+    @Before
+    public void setup() {
+        // Prepare the data for testing
+        offeredTopicList = new ArrayList<>();
+        offeredTopicList.add(new Topic("Mathematics", "tutor1", 5, "Algebra and Calculus"));
+        offeredTopicList.add(new Topic("Physics", "tutor1", 3, "Mechanics and Thermodynamics"));
+        // Set the data to the adapter
+        OfferedTopicList adapter = new OfferedTopicList(offeredTopicList);
+        activityRule.getScenario().onActivity(activity -> activity.setOfferedTopicsAdapter(adapter));
+    }
 
     @Test
-    public void clickOnTopic_DisplaysAlertDialog() {
-        // Create a list of offered topics
-        List<Topic> offeredTopics = new ArrayList<>();
-        Topic topic1 = new Topic("Mathematics", "Tutor1", 5, "Math topic description");
-        Topic topic2 = new Topic("Science", "Tutor1", 3, "Science topic description");
-        offeredTopics.add(topic1);
-        offeredTopics.add(topic2);
+    public void verifyTopicItemDisplayed() {
+        // Verify if the topic items are displayed correctly in the RecyclerView
+        Espresso.onView(ViewMatchers.withId(R.id.recyclerViewOfferedTopics))
+                .perform(RecyclerViewActions.scrollToPosition(0))
+                .check(ViewAssertions.matches(ViewMatchers.hasDescendant(ViewMatchers.withText("Mathematics"))))
+                .check(ViewAssertions.matches(ViewMatchers.hasDescendant(ViewMatchers.withText("Algebra and Calculus"))));
 
-        // Get the activity instance
-        TutorHomepageActivity activity = getActivityInstance();
+        Espresso.onView(ViewMatchers.withId(R.id.recyclerViewOfferedTopics))
+                .perform(RecyclerViewActions.scrollToPosition(1))
+                .check(ViewAssertions.matches(ViewMatchers.hasDescendant(ViewMatchers.withText("Physics"))))
+                .check(ViewAssertions.matches(ViewMatchers.hasDescendant(ViewMatchers.withText("Mechanics and Thermodynamics"))));
+    }
 
-        // Set the offered topics in the adapter
-        OfferedTopicList offeredTopicList = new OfferedTopicList(offeredTopics);
-
-        // Set the adapter to the RecyclerView in TutorHomepageActivity
-        activity.setOfferedTopicsAdapter(offeredTopicList);
-
-        // Perform a click on the first topic in the list
+    @Test
+    public void verifyStopOfferingTopic() {
+        // Perform a click on the first topic item to stop offering it
         Espresso.onView(ViewMatchers.withId(R.id.recyclerViewOfferedTopics))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(0, ViewActions.click()));
 
-        // Verify that the AlertDialog is displayed
-        Espresso.onView(withText("Mathematics"))
-                .check(matches(isDisplayed()));
-    }
+        // Verify if the stop offering dialog is displayed
+        Espresso.onView(ViewMatchers.withText("Mathematics"))
+                .check(ViewAssertions.matches(ViewMatchers.isDisplayed()));
 
-    private TutorHomepageActivity getActivityInstance() {
-        final TutorHomepageActivity[] activity = new TutorHomepageActivity[1];
-        activityScenarioRule.getScenario().onActivity(new ActivityScenario.ActivityAction<TutorHomepageActivity>() {
-            @Override
-            public void perform(TutorHomepageActivity activityInstance) {
-                activity[0] = activityInstance;
-            }
-        });
-        return activity[0];
+        // Choose the "Stop Offering" option
+        Espresso.onView(ViewMatchers.withText("Stop Offering"))
+                .perform(ViewActions.click());
+
+        // Verify if the topic item is removed from the RecyclerView
+        Espresso.onView(ViewMatchers.withId(R.id.recyclerViewOfferedTopics))
+                .check(ViewAssertions.doesNotExist());
     }
 }
+
 
 
 

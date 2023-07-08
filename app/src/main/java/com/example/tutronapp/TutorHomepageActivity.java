@@ -184,4 +184,5 @@ public class TutorHomepageActivity extends AppCompatActivity {
         recyclerViewOfferedTopics.setAdapter(adapter);
     }
 
+
 }

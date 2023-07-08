@@ -48,6 +48,10 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
         if (bundle != null && bundle.containsKey("Tutor")){
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
+        } else{
+            Toast.makeText(getApplicationContext(), "Error: Tutor data not found",
+                    Toast.LENGTH_SHORT).show();
+            return;
         }
 
         btnAddTopic = findViewById(R.id.btnAddTopic);
@@ -176,7 +180,8 @@ public class TutorHomepageActivity extends AppCompatActivity {
         updateDatabaseForTutor(loggedInTutor);
     }
 
-    public static void setOfferedTopicList(List<Topic> topics) {
-        offeredTopicList = topics;
+    public void setOfferedTopicsAdapter(OfferedTopicList adapter) {
+        recyclerViewOfferedTopics.setAdapter(adapter);
     }
+
 }

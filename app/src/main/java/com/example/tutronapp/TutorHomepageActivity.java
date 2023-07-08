@@ -31,6 +31,9 @@ public class TutorHomepageActivity extends AppCompatActivity {
     private FloatingActionButton btnAddTopic;
     private Tutor loggedInTutor;
     private DatabaseReference users;
+    private OfferedTopicList recyclerViewAdapter;
+
+    private static List<Topic> offeredTopicList;
 
 
     @SuppressLint("NotifyDataSetChanged")
@@ -45,6 +48,10 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
         if (bundle != null && bundle.containsKey("Tutor")){
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
+        } else{
+            Toast.makeText(getApplicationContext(), "Error: Tutor data not found",
+                    Toast.LENGTH_SHORT).show();
+            return;
         }
 
         btnAddTopic = findViewById(R.id.btnAddTopic);
@@ -80,6 +87,13 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
                         String title = editTextTitle.getText().toString();
                         String description = editTextDescription.getText().toString();
+                        String experienceText = editTextExperience.getText().toString();
+
+                        if (title.isEmpty() || description.isEmpty() || experienceText.isEmpty()) {
+                            Toast.makeText(getApplicationContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         int experience = Integer.parseInt(editTextExperience.getText().toString());
 
                         if (adapterForTopicsRecycler.getItemCount() < 20) {
@@ -165,4 +179,10 @@ public class TutorHomepageActivity extends AppCompatActivity {
         adapterForOfferedTopicsRecycler.notifyDataSetChanged();
         updateDatabaseForTutor(loggedInTutor);
     }
+
+    public void setOfferedTopicsAdapter(OfferedTopicList adapter) {
+        recyclerViewOfferedTopics.setAdapter(adapter);
+    }
+
+
 }

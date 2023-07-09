@@ -132,9 +132,18 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
                 if (editTextDuration != null) {
                     String durationStr = editTextDuration.getText().toString().trim();
                     if (!durationStr.isEmpty()) {
-                        int duration = Integer.parseInt(durationStr);
-                        // Suspend the complaint for the specified duration
-                        suspendComplaintForDuration(complaint, duration, dialog);
+                        try{
+                            int duration = Integer.parseInt(durationStr);
+                            if(duration >= 0){
+                                // Suspend the complaint for the specified duration
+                                suspendComplaintForDuration(complaint, duration, dialog);
+                            } else{
+                                Toast.makeText(ManageComplaintsActivity.this, "Duration must be a positive value", Toast.LENGTH_SHORT).show();
+                            }
+                        } catch(NumberFormatException e){
+                            Toast.makeText(ManageComplaintsActivity.this, "Invalid duration format", Toast.LENGTH_SHORT).show();
+                        }
+
                     } else {
                         Toast.makeText(ManageComplaintsActivity.this,
                                 "Please fill the suspend date.", Toast.LENGTH_SHORT).show();

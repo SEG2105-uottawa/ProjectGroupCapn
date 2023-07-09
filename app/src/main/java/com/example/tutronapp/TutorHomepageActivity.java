@@ -94,7 +94,20 @@ public class TutorHomepageActivity extends AppCompatActivity {
                             return;
                         }
 
-                        int experience = Integer.parseInt(editTextExperience.getText().toString());
+                        //handles experience input errors
+                        int experience;
+
+                        try {
+                            experience = Integer.parseInt(experienceText);
+                        } catch (NumberFormatException e) {
+                            Toast.makeText(getApplicationContext(), "Invalid experience value", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
+                        if (experience < 0) {
+                            Toast.makeText(getApplicationContext(), "Experience cannot be negative", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
 
                         if (adapterForTopicsRecycler.getItemCount() < 20) {
                             Topic topicToAdd = new Topic(title, loggedInTutor.getDataBaseID(), experience,

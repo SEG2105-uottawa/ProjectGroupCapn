@@ -82,6 +82,16 @@ public class WelcomeActivity extends AppCompatActivity {
 
     }
 
+
+    private void sendStudentToHomepage(Student student){
+        Bundle studentBundle = new Bundle();
+        studentBundle.putSerializable("Student", student);
+        Intent intent = new Intent(WelcomeActivity.this, StudentHomepageActivity.class);
+        intent.putExtras(studentBundle);
+        startActivity(intent);
+        finish();
+    }
+
     private void sendTutorToHomepage(Tutor tutor) {
         Bundle tutorBundle = new Bundle();
         tutorBundle.putSerializable("Tutor", tutor);

@@ -1,6 +1,8 @@
 package com.example.tutronapp;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Topic implements Serializable {
 
@@ -9,6 +11,11 @@ public class Topic implements Serializable {
     private String tutorDatabaseID;
     private int yearsOfExperience;
     private String description;
+    private String offeredInLanguages = "";
+    private double hourlyRate;
+    private String tutorLastName = "";
+
+
 
 
 
@@ -23,6 +30,18 @@ public class Topic implements Serializable {
         this.yearsOfExperience = yearsOfExperience;
         this.description = description;
     }
+
+
+    public Topic(String title, String tutorDatabaseID, int yearsOfExperience, String description, String offeredInLanguages, double hourlyRate, String tutorLastName) {
+        this.title = title;
+        this.tutorDatabaseID = tutorDatabaseID;
+        this.yearsOfExperience = yearsOfExperience;
+        this.description = description;
+        this.offeredInLanguages = offeredInLanguages;
+        this.hourlyRate = hourlyRate;
+        this.tutorLastName = tutorLastName;
+    }
+
 
     @Override
     public boolean equals(Object object){
@@ -73,5 +92,30 @@ public class Topic implements Serializable {
 
     public void setDatabaseID(String databaseID) {
         this.databaseID = databaseID;
+    }
+
+
+    public double getHourlyRate() {
+        return hourlyRate;
+    }
+
+    public void setHourlyRate(double hourlyRate) {
+        this.hourlyRate = hourlyRate;
+    }
+
+    public String getOfferedInLanguages() {
+        return offeredInLanguages;
+    }
+
+    public void setOfferedInLanguages(String offeredInLanguages) {
+        this.offeredInLanguages = offeredInLanguages;
+    }
+
+    public String getTutorLastName() {
+        return tutorLastName;
+    }
+
+    public void setTutorLastName(String tutorLastName) {
+        this.tutorLastName = tutorLastName;
     }
 }

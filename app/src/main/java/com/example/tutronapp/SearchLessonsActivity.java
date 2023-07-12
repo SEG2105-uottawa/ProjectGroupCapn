@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.google.firebase.database.DatabaseReference;
+
 public class SearchLessonsActivity extends AppCompatActivity {
+
+    private DatabaseReference allOfferedTopics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

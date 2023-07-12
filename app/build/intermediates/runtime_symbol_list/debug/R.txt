@@ -2741,6 +2741,7 @@ int id east 0x7f0900c2
 int id editTextDescription 0x7f0900c3
 int id editTextDuration 0x7f0900c4
 int id editTextExperience 0x7f0900c5
+int id editTextHourlyRate 0x7f090231
 int id editTextTitle 0x7f0900c6
 int id edit_query 0x7f0900c7
 int id education 0x7f0900c8
@@ -2930,7 +2931,6 @@ int id ratio 0x7f09017f
 int id rectangles 0x7f090180
 int id recyclerViewComplaints 0x7f090181
 int id recyclerViewOfferedTopics 0x7f090182
-int id recyclerViewPurchasedTopics 0x7f09022c
 int id recyclerViewTopics 0x7f090183
 int id recyclerViewYourLessons 0x7f090230
 int id reverseSawtooth 0x7f090184
@@ -3190,6 +3190,7 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_manage_complaints 0x7f0c001e
+int layout activity_search_lessons 0x7f0c0082
 int layout activity_signup 0x7f0c001f
 int layout activity_student_homepage 0x7f0c0080
 int layout activity_student_info 0x7f0c0020

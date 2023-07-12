@@ -2742,6 +2742,7 @@ id east
 id editTextDescription
 id editTextDuration
 id editTextExperience
+id editTextHourlyRate
 id editTextTitle
 id edit_query
 id education
@@ -2931,7 +2932,6 @@ id ratio
 id rectangles
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
-id recyclerViewPurchasedTopics
 id recyclerViewTopics
 id recyclerViewYourLessons
 id reverseSawtooth
@@ -3191,6 +3191,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_manage_complaints
+layout activity_search_lessons
 layout activity_signup
 layout activity_student_homepage
 layout activity_student_info

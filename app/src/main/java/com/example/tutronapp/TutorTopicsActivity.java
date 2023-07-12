@@ -87,10 +87,12 @@ public class TutorTopicsActivity extends AppCompatActivity {
                         EditText editTextTitle = dialogView.findViewById(R.id.editTextTitle);
                         EditText editTextDescription = dialogView.findViewById(R.id.editTextDescription);
                         EditText editTextExperience = dialogView.findViewById(R.id.editTextExperience);
+                        EditText editTextHourlyRate = dialogView.findViewById(R.id.editTextHourlyRate);
 
                         String title = editTextTitle.getText().toString();
                         String description = editTextDescription.getText().toString();
                         String experienceText = editTextExperience.getText().toString();
+                        String hourlyRate = editTextHourlyRate.getText().toString();
 
                         if (title.isEmpty() || description.isEmpty() || experienceText.isEmpty()) {
                             Toast.makeText(getApplicationContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
@@ -107,14 +109,27 @@ public class TutorTopicsActivity extends AppCompatActivity {
                             return;
                         }
 
+                        double hourlyRateDouble;
+                        try{
+                            hourlyRateDouble = Double.parseDouble(hourlyRate);
+                        } catch (NumberFormatException e) {
+                            Toast.makeText(getApplicationContext(), "Invalid hourly rate", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         if (experience < 0) {
                             Toast.makeText(getApplicationContext(), "Experience cannot be negative", Toast.LENGTH_SHORT).show();
                             return;
                         }
 
+                        if (hourlyRateDouble < 0) {
+                            Toast.makeText(getApplicationContext(), "Hourly rate cannot be negative", Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         if (adapterForTopicsRecycler.getItemCount() < 20) {
                             Topic topicToAdd = new Topic(title, loggedInTutor.getDataBaseID(), experience,
-                                    description);
+                                    description, loggedInTutor.getNativeLanguages(), hourlyRateDouble, loggedInTutor.getLastName());
                             yourTopics.add(topicToAdd);
                             loggedInTutor.setTopics(yourTopics);
                             adapterForTopicsRecycler.notifyDataSetChanged();

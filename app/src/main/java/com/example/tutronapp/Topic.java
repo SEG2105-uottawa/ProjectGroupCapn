@@ -14,6 +14,10 @@ public class Topic implements Serializable {
     private String offeredInLanguages = "";
     private double hourlyRate;
     private String tutorLastName = "";
+    private double rating = -1;
+    private int cumulativeRating = 0;
+    private int numberOfRatings = 0;
+    private List<Review> reviews;
 
 
 
@@ -21,7 +25,6 @@ public class Topic implements Serializable {
 
 
     public Topic(){
-
     }
 
     public Topic(String title, String tutorDatabaseID, int yearsOfExperience, String description) {
@@ -117,5 +120,38 @@ public class Topic implements Serializable {
 
     public void setTutorLastName(String tutorLastName) {
         this.tutorLastName = tutorLastName;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void addRating(int rating){
+        if (rating < 6 && rating > 0) {
+            numberOfRatings++;
+            cumulativeRating = cumulativeRating + rating;
+            double newRating = (((double) cumulativeRating) / ((double) numberOfRatings));
+            if (newRating < 6 && newRating > 0) {
+                setRating(newRating);
+            }
+        }
+    }
+
+    public void changeCurrentRating(int currentRating, int newRating){
+        numberOfRatings --;
+        cumulativeRating = cumulativeRating - currentRating;
+        addRating(newRating);
+    }
+
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
     }
 }

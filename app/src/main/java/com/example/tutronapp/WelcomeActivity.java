@@ -66,6 +66,10 @@ public class WelcomeActivity extends AppCompatActivity {
                 Tutor tutor = (Tutor) bundle.getSerializable("Tutor");
                 sendTutorToHomepage(tutor);
             }
+            else if (bundle != null && bundle.containsKey("Student")) {
+                Student student = (Student) bundle.getSerializable("Student");
+                sendStudentToHomepage(student);
+            }
         });
 
         // Set Click listener to `logout` (direct to MainActivity.class if clicked)

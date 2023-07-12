@@ -2650,9 +2650,11 @@ int id btnLogin 0x7f090069
 int id btnLoginLoginPage 0x7f09006a
 int id btnProceed 0x7f09006b
 int id btnProceedHome 0x7f09006c
+int id btnSearchLesson 0x7f09022a
 int id btnSignUp2 0x7f09006d
 int id btnSignup 0x7f09006e
 int id btnSuspend 0x7f09006f
+int id btnViewPurchaseStatus 0x7f09022b
 int id buttonPanel 0x7f090070
 int id buttonTutor 0x7f090071
 int id cache_measures 0x7f090072
@@ -2928,6 +2930,7 @@ int id ratio 0x7f09017f
 int id rectangles 0x7f090180
 int id recyclerViewComplaints 0x7f090181
 int id recyclerViewOfferedTopics 0x7f090182
+int id recyclerViewPurchasedTopics 0x7f09022c
 int id recyclerViewTopics 0x7f090183
 int id reverseSawtooth 0x7f090184
 int id right 0x7f090185
@@ -3035,6 +3038,7 @@ int id textViewComplaintBy 0x7f0901ea
 int id textViewContent 0x7f0901eb
 int id textViewStatus 0x7f0901ec
 int id textViewTitle 0x7f0901ed
+int id textViewYourLessons 0x7f09022d
 int id text_input_end_icon 0x7f0901ee
 int id text_input_error_icon 0x7f0901ef
 int id text_input_start_icon 0x7f0901f0
@@ -3053,6 +3057,7 @@ int id title_template 0x7f0901fc
 int id toggle 0x7f0901fd
 int id toolbar 0x7f0901fe
 int id top 0x7f0901ff
+int id topBar 0x7f09022e
 int id topPanel 0x7f090200
 int id topicDescriptionTextView 0x7f090201
 int id topicNameTextView 0x7f090202
@@ -3185,9 +3190,11 @@ int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_manage_complaints 0x7f0c001e
 int layout activity_signup 0x7f0c001f
+int layout activity_student_homepage 0x7f0c0080
 int layout activity_student_info 0x7f0c0020
 int layout activity_tutor_homepage 0x7f0c0021
 int layout activity_tutor_info 0x7f0c0022
+int layout activity_tutor_topics 0x7f0c0081
 int layout activity_welcome 0x7f0c0023
 int layout custom_dialog 0x7f0c0024
 int layout design_bottom_navigation_item 0x7f0c0025

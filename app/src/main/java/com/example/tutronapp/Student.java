@@ -10,11 +10,13 @@
 package com.example.tutronapp;
 
 import java.io.Serializable;
+import java.util.List;
 
-public class Student extends User{
+public class Student extends User implements Serializable{
 
     private CreditCard creditCard;
     private Address address;
+    private List<Topic> purchasedLessons;
 
 
     public Student(String firstName, String lastName, String emailAddress, String password){
@@ -47,5 +49,13 @@ public class Student extends User{
 
     public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public List<Topic> getPurchasedLessons() {
+        return purchasedLessons;
+    }
+
+    public void setPurchasedLessons(List<Topic> purchasedLessons) {
+        this.purchasedLessons = purchasedLessons;
     }
 }

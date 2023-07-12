@@ -2651,9 +2651,11 @@ id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
+id btnSearchLesson
 id btnSignUp2
 id btnSignup
 id btnSuspend
+id btnViewPurchaseStatus
 id buttonPanel
 id buttonTutor
 id cache_measures
@@ -2929,6 +2931,7 @@ id ratio
 id rectangles
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewPurchasedTopics
 id recyclerViewTopics
 id reverseSawtooth
 id right
@@ -3036,6 +3039,7 @@ id textViewComplaintBy
 id textViewContent
 id textViewStatus
 id textViewTitle
+id textViewYourLessons
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3054,6 +3058,7 @@ id title_template
 id toggle
 id toolbar
 id top
+id topBar
 id topPanel
 id topicDescriptionTextView
 id topicNameTextView
@@ -3186,9 +3191,11 @@ layout activity_login
 layout activity_main
 layout activity_manage_complaints
 layout activity_signup
+layout activity_student_homepage
 layout activity_student_info
 layout activity_tutor_homepage
 layout activity_tutor_info
+layout activity_tutor_topics
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item

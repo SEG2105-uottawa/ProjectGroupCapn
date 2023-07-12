@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Topic implements Serializable {
 
     private String title;
+    private String databaseID;
     private String tutorDatabaseID;
     private int yearsOfExperience;
     private String description;
@@ -64,5 +65,13 @@ public class Topic implements Serializable {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getDatabaseID() {
+        return databaseID;
+    }
+
+    public void setDatabaseID(String databaseID) {
+        this.databaseID = databaseID;
     }
 }

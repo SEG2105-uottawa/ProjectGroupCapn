@@ -31,6 +31,8 @@ public class TutorTopicsActivity extends AppCompatActivity {
     private FloatingActionButton btnAddTopic;
     private Tutor loggedInTutor;
     private DatabaseReference users;
+    private DatabaseReference currentlyOfferedTopics;
+
     private OfferedTopicList recyclerViewAdapter;
 
     private static List<Topic> offeredTopicList;
@@ -43,6 +45,7 @@ public class TutorTopicsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tutor_topics);
 
         users = FirebaseDatabase.getInstance().getReference("users");
+        currentlyOfferedTopics = FirebaseDatabase.getInstance().getReference("topics");
 
         Bundle bundle = getIntent().getExtras();
 
@@ -170,6 +173,7 @@ public class TutorTopicsActivity extends AppCompatActivity {
         if (adapterForOfferedTopicsRecycler.getItemCount() < 5) {
             if (!currentlyOffered.contains(topic)) {
                 loggedInTutor.getOfferedTopics().add(topic);
+                addTopicToDatabase(topic);
                 adapterForOfferedTopicsRecycler.notifyDataSetChanged();
                 updateDatabaseForTutor(loggedInTutor);
             } else {
@@ -189,12 +193,24 @@ public class TutorTopicsActivity extends AppCompatActivity {
      */
     public void stopOffering(Topic topic) {
         loggedInTutor.getOfferedTopics().remove(topic);
+        removeTopicFromDatabase(topic);
         adapterForOfferedTopicsRecycler.notifyDataSetChanged();
         updateDatabaseForTutor(loggedInTutor);
     }
 
     public void setOfferedTopicsAdapter(OfferedTopicList adapter) {
         recyclerViewOfferedTopics.setAdapter(adapter);
+    }
+
+    private void addTopicToDatabase(Topic topic){
+        DatabaseReference newNode = currentlyOfferedTopics.push();
+        String nodeKey = newNode.getKey();
+        topic.setDatabaseID(nodeKey);
+        newNode.setValue(topic);
+    }
+
+    private void removeTopicFromDatabase(Topic topic){
+        currentlyOfferedTopics.child(topic.getDatabaseID()).removeValue();
     }
 
 

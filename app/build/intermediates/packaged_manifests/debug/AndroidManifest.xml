@@ -40,6 +40,12 @@
             android:name="com.example.tutronapp.TutorHomepageActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.tutronapp.TutorTopicsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tutronapp.StudentHomepageActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.tutronapp.ManageComplaintsActivity"
             android:exported="false" />
         <activity

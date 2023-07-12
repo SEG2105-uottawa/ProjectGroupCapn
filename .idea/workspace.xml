@@ -9,15 +9,19 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Changed RecyclerView colour for Topic Lists">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorTopicsActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_student_homepage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_topics.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Added new Activities to be implemented">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/tutronapp/OfferedTopicListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/tutronapp/OfferedTopicListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/tutronapp/TopicListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/tutronapp/TopicListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/OfferedTopicList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/OfferedTopicList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorHomepageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorTopicsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorTopicsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/WelcomeActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/WelcomeActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_homepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_homepage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_topics.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tutor_topics.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="topicListFeature" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -360,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689111702905</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added new Activities to be implemented">
+      <created>1689115046340</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1689115046340</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +416,8 @@
     <MESSAGE value="Enforces List sizes now" />
     <MESSAGE value="Javadoc changes" />
     <MESSAGE value="Changed RecyclerView colour for Topic Lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed RecyclerView colour for Topic Lists" />
+    <MESSAGE value="Added new Activities to be implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new Activities to be implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

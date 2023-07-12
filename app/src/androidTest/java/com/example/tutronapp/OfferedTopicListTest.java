@@ -7,10 +7,6 @@ import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 
-import com.example.tutronapp.OfferedTopicList;
-import com.example.tutronapp.R;
-import com.example.tutronapp.Topic;
-
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -21,7 +17,7 @@ import java.util.List;
 public class OfferedTopicListTest {
 
     @Rule
-    public ActivityScenarioRule<TutorHomepageActivity> activityRule = new ActivityScenarioRule<>(TutorHomepageActivity.class);
+    public ActivityScenarioRule<TutorTopicsActivity> activityRule = new ActivityScenarioRule<>(TutorTopicsActivity.class);
 
     private List<Topic> offeredTopicList;
 

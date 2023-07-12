@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.FirebaseApp;
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         tutor.setOfferedTopics(offeredCourses);
         Bundle bundle = new Bundle();
         bundle.putSerializable("Tutor",tutor);
-        Intent intent = new Intent(MainActivity.this, TutorHomepageActivity.class);
+        Intent intent = new Intent(MainActivity.this, TutorTopicsActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
     }

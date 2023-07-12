@@ -62,10 +62,10 @@ public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> i
                 builder.setTitle(topic.getTitle())
                         .setItems(new CharSequence[]{"De-list Topic", "Offer Topic", "Close"}, (dialog, which) -> {
                             if (which == 0) {
-                                TutorHomepageActivity activity = (TutorHomepageActivity) v.getContext();
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.removeTopic(topic);
                             } else if (which == 1) {
-                                TutorHomepageActivity activity = (TutorHomepageActivity) v.getContext();
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.offerTopic(topic);
                             } else if (which == 2) {
                                 // Handle close option

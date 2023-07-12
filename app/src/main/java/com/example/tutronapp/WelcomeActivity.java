@@ -9,13 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -95,7 +91,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private void sendTutorToHomepage(Tutor tutor) {
         Bundle tutorBundle = new Bundle();
         tutorBundle.putSerializable("Tutor", tutor);
-        Intent intent = new Intent(WelcomeActivity.this, TutorHomepageActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this, TutorTopicsActivity.class);
         intent.putExtras(tutorBundle);
         startActivity(intent);
         finish();

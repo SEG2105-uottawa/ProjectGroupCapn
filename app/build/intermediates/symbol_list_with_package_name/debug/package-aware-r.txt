@@ -2651,7 +2651,7 @@ id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
-id btnSearchLesson
+id btnPurchaseLesson
 id btnSignUp2
 id btnSignup
 id btnSuspend
@@ -2933,6 +2933,7 @@ id recyclerViewComplaints
 id recyclerViewOfferedTopics
 id recyclerViewPurchasedTopics
 id recyclerViewTopics
+id recyclerViewYourLessons
 id reverseSawtooth
 id right
 id rightToLeft

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -22,13 +21,6 @@
             android:src="@drawable/logo" />
     </LinearLayout>
 
-    <!-- TextView "Your Lessons" -->
-
-    <!-- RecyclerView for Purchased Topics -->
-
-    <!-- Button to View Lesson Purchase Status -->
-
-    <!-- Button to Search for a Lesson -->
 
     <TextView
         android:id="@+id/textViewYourLessons"
@@ -45,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@id/topBar" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewPurchasedTopics"
+        android:id="@+id/recyclerViewYourLessons"
         android:layout_width="405dp"
         android:layout_height="457dp"
         android:layout_marginTop="8dp"
@@ -62,10 +54,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recyclerViewPurchasedTopics" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewYourLessons" />
 
     <Button
-        android:id="@+id/btnSearchLesson"
+        android:id="@+id/btnPurchaseLesson"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"

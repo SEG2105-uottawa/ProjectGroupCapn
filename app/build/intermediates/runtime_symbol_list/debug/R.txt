@@ -2650,7 +2650,7 @@ int id btnLogin 0x7f090069
 int id btnLoginLoginPage 0x7f09006a
 int id btnProceed 0x7f09006b
 int id btnProceedHome 0x7f09006c
-int id btnSearchLesson 0x7f09022a
+int id btnPurchaseLesson 0x7f09022f
 int id btnSignUp2 0x7f09006d
 int id btnSignup 0x7f09006e
 int id btnSuspend 0x7f09006f
@@ -2932,6 +2932,7 @@ int id recyclerViewComplaints 0x7f090181
 int id recyclerViewOfferedTopics 0x7f090182
 int id recyclerViewPurchasedTopics 0x7f09022c
 int id recyclerViewTopics 0x7f090183
+int id recyclerViewYourLessons 0x7f090230
 int id reverseSawtooth 0x7f090184
 int id right 0x7f090185
 int id rightToLeft 0x7f090186

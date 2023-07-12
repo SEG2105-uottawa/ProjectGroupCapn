@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -18,6 +18,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class SearchLessonsActivity extends AppCompatActivity {
@@ -65,14 +67,44 @@ public class SearchLessonsActivity extends AppCompatActivity {
             EditText editTextLanguageSpoken = findViewById(R.id.editTextLanguageSpoken);
             EditText editTextTopic = findViewById(R.id.editTextTopic);
 
-            String tutorName = editTextTutorName.getText().toString();
-            String languageSpoken = editTextLanguageSpoken.getText().toString();
-            String topic = editTextTopic.getText().toString();
+            CheckBox checkBoxYearsOfExperience = findViewById(R.id.checkBoxYearsOfExperience);
+            CheckBox checkBoxUserRatings = findViewById(R.id.checkBoxUserRatings);
+            CheckBox checkBoxHourlyRate = findViewById(R.id.checkBoxHourlyRate);
 
-            List<Topic> sortedList = search(listOfTopics, tutorName, languageSpoken, topic);
+            String tutorName = editTextTutorName.getText().toString().trim();
+            String languageSpoken = editTextLanguageSpoken.getText().toString().trim();
+            String topic = editTextTopic.getText().toString().trim();
 
-            adapterForRecyclerViewSearchResults = new SearchResultList(sortedList);
-            recyclerViewSearchResults.setAdapter(adapterForRecyclerViewSearchResults);
+            boolean verifyOnlyOneCheckBox = (checkBoxYearsOfExperience.isChecked() ? 1 : 0) +
+                                            (checkBoxUserRatings.isChecked() ? 1 : 0) +
+                                            (checkBoxHourlyRate.isChecked() ? 1 : 0) < 2;
+
+            if (verifyOnlyOneCheckBox){
+
+                List<Topic> searchList = search(listOfTopics, tutorName, languageSpoken, topic);
+                List<Topic> sortedList = new ArrayList<>();
+                if (checkBoxHourlyRate.isChecked()) {
+                    sortedList = sortByHourlyRate(searchList);
+                }
+                if (checkBoxUserRatings.isChecked()){
+                    sortedList = sortByUserRatings(searchList);
+                }
+                if (checkBoxYearsOfExperience.isChecked()){
+                    sortedList = sortByYearsOfExperience(searchList);
+                }
+                if (sortedList.isEmpty()){
+                    sortedList = searchList;
+                }
+
+                adapterForRecyclerViewSearchResults = new SearchResultList(sortedList);
+                recyclerViewSearchResults.setAdapter(adapterForRecyclerViewSearchResults);
+
+            }
+            else{
+                Toast.makeText(this, "Please select only one sorting option", Toast.LENGTH_SHORT).show();
+            }
+
+
         });
 
 
@@ -83,6 +115,23 @@ public class SearchLessonsActivity extends AppCompatActivity {
 
 
     }
+
+    private List<Topic> sortByYearsOfExperience(List<Topic> searchList) {
+        Collections.sort(searchList, (topic1, topic2) -> topic2.getYearsOfExperience() - topic1.getYearsOfExperience());
+        return searchList;
+    }
+
+    private List<Topic> sortByUserRatings(List<Topic> searchList) {
+        Collections.sort(searchList, (t1, t2) -> Double.compare(t2.getRating(), t1.getRating()));
+        return searchList;
+    }
+
+    private List<Topic> sortByHourlyRate(List<Topic> searchList) {
+        Collections.sort(searchList, Comparator.comparingDouble(Topic::getHourlyRate));
+        return searchList;
+    }
+
+
 
 
     private List<Topic> search(List<Topic> listOfTopics, String name, String languages, String topic){

@@ -2653,12 +2653,12 @@ id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
 id btnPurchaseLesson
+id btnSearch
 id btnSignUp2
 id btnSignup
 id btnSuspend
 id btnViewPurchaseStatus
 id buttonPanel
-id buttonSearch
 id buttonTutor
 id cache_measures
 id callMeasure

@@ -18,11 +18,11 @@ id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
 id btnPurchaseLesson
+id btnSearch
 id btnSignUp2
 id btnSignup
 id btnSuspend
 id btnViewPurchaseStatus
-id buttonSearch
 id buttonTutor
 id cardHolder
 id cardNumber

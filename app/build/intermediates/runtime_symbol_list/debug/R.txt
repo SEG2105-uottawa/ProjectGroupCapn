@@ -2652,12 +2652,12 @@ int id btnLoginLoginPage 0x7f09006a
 int id btnProceed 0x7f09006b
 int id btnProceedHome 0x7f09006c
 int id btnPurchaseLesson 0x7f09022f
+int id btnSearch 0x7f09023d
 int id btnSignUp2 0x7f09006d
 int id btnSignup 0x7f09006e
 int id btnSuspend 0x7f09006f
 int id btnViewPurchaseStatus 0x7f09022b
 int id buttonPanel 0x7f090070
-int id buttonSearch 0x7f090232
 int id buttonTutor 0x7f090071
 int id cache_measures 0x7f090072
 int id callMeasure 0x7f090073

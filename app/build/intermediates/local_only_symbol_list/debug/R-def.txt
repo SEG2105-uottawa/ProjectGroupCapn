@@ -9,6 +9,7 @@ drawable rounded_background_topic
 drawable tutor_profile
 id addressText
 id againstTextView
+id appbar
 id btnAddTopic
 id btnClose
 id btnDismiss
@@ -21,9 +22,13 @@ id btnSignUp2
 id btnSignup
 id btnSuspend
 id btnViewPurchaseStatus
+id buttonSearch
 id buttonTutor
 id cardHolder
 id cardNumber
+id checkBoxHourlyRate
+id checkBoxUserRatings
+id checkBoxYearsOfExperience
 id constraintLayout
 id constraintLayout2
 id contact
@@ -33,7 +38,10 @@ id editTextDescription
 id editTextDuration
 id editTextExperience
 id editTextHourlyRate
+id editTextLanguageSpoken
 id editTextTitle
+id editTextTopic
+id editTextTutorName
 id education
 id education_options
 id emailAddress
@@ -43,6 +51,7 @@ id firstName
 id imageView
 id imageView2
 id imageView3
+id imageViewLogo
 id imgLogo
 id languages
 id lastName
@@ -60,6 +69,7 @@ id profile_photo
 id profile_photo1
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewSearchResults
 id recyclerViewTopics
 id recyclerViewYourLessons
 id roleMentionText
@@ -70,6 +80,7 @@ id short_description1
 id signUpPicker
 id streetName
 id streetNumber
+id textView
 id textViewAgainst
 id textViewComplaintBy
 id textViewContent

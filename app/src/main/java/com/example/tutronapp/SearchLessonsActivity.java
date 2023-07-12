@@ -11,6 +11,7 @@ public class SearchLessonsActivity extends AppCompatActivity {
 
     private DatabaseReference allOfferedTopics;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

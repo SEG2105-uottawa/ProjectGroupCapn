@@ -2626,6 +2626,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appbar
 id arc
 id asConfigured
 id async
@@ -2657,6 +2658,7 @@ id btnSignup
 id btnSuspend
 id btnViewPurchaseStatus
 id buttonPanel
+id buttonSearch
 id buttonTutor
 id cache_measures
 id callMeasure
@@ -2670,6 +2672,9 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBoxHourlyRate
+id checkBoxUserRatings
+id checkBoxYearsOfExperience
 id checkbox
 id checked
 id chip
@@ -2743,7 +2748,10 @@ id editTextDescription
 id editTextDuration
 id editTextExperience
 id editTextHourlyRate
+id editTextLanguageSpoken
 id editTextTitle
+id editTextTopic
+id editTextTutorName
 id edit_query
 id education
 id education_options
@@ -2796,6 +2804,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageViewLogo
 id imgLogo
 id immediateStop
 id included
@@ -2932,6 +2941,7 @@ id ratio
 id rectangles
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewSearchResults
 id recyclerViewTopics
 id recyclerViewYourLessons
 id reverseSawtooth
@@ -3035,6 +3045,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textViewAgainst
 id textViewComplaintBy
 id textViewContent

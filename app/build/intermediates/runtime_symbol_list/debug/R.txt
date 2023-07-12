@@ -2625,6 +2625,7 @@ int id animateToEnd 0x7f090050
 int id animateToStart 0x7f090051
 int id antiClockwise 0x7f090052
 int id anticipate 0x7f090053
+int id appbar 0x7f09023a
 int id arc 0x7f090054
 int id asConfigured 0x7f090055
 int id async 0x7f090056
@@ -2650,9 +2651,12 @@ int id btnLogin 0x7f090069
 int id btnLoginLoginPage 0x7f09006a
 int id btnProceed 0x7f09006b
 int id btnProceedHome 0x7f09006c
+int id btnPurchaseLesson 0x7f09022f
+int id btnSearch 0x7f09023d
 int id btnSignUp2 0x7f09006d
 int id btnSignup 0x7f09006e
 int id btnSuspend 0x7f09006f
+int id btnViewPurchaseStatus 0x7f09022b
 int id buttonPanel 0x7f090070
 int id buttonTutor 0x7f090071
 int id cache_measures 0x7f090072
@@ -2667,6 +2671,9 @@ int id center_vertical 0x7f09007a
 int id chain 0x7f09007b
 int id chain2 0x7f09007c
 int id chains 0x7f09007d
+int id checkBoxHourlyRate 0x7f090233
+int id checkBoxUserRatings 0x7f090234
+int id checkBoxYearsOfExperience 0x7f090235
 int id checkbox 0x7f09007e
 int id checked 0x7f09007f
 int id chip 0x7f090080
@@ -2739,7 +2746,11 @@ int id east 0x7f0900c2
 int id editTextDescription 0x7f0900c3
 int id editTextDuration 0x7f0900c4
 int id editTextExperience 0x7f0900c5
+int id editTextHourlyRate 0x7f090231
+int id editTextLanguageSpoken 0x7f090236
 int id editTextTitle 0x7f0900c6
+int id editTextTopic 0x7f090237
+int id editTextTutorName 0x7f090238
 int id edit_query 0x7f0900c7
 int id education 0x7f0900c8
 int id education_options 0x7f0900c9
@@ -2792,6 +2803,7 @@ int id image 0x7f0900f7
 int id imageView 0x7f0900f8
 int id imageView2 0x7f0900f9
 int id imageView3 0x7f0900fa
+int id imageViewLogo 0x7f09023b
 int id imgLogo 0x7f0900fb
 int id immediateStop 0x7f0900fc
 int id included 0x7f0900fd
@@ -2928,7 +2940,9 @@ int id ratio 0x7f09017f
 int id rectangles 0x7f090180
 int id recyclerViewComplaints 0x7f090181
 int id recyclerViewOfferedTopics 0x7f090182
+int id recyclerViewSearchResults 0x7f090239
 int id recyclerViewTopics 0x7f090183
+int id recyclerViewYourLessons 0x7f090230
 int id reverseSawtooth 0x7f090184
 int id right 0x7f090185
 int id rightToLeft 0x7f090186
@@ -3030,11 +3044,13 @@ int id textSpacerNoButtons 0x7f0901e5
 int id textSpacerNoTitle 0x7f0901e6
 int id textStart 0x7f0901e7
 int id textTop 0x7f0901e8
+int id textView 0x7f09023c
 int id textViewAgainst 0x7f0901e9
 int id textViewComplaintBy 0x7f0901ea
 int id textViewContent 0x7f0901eb
 int id textViewStatus 0x7f0901ec
 int id textViewTitle 0x7f0901ed
+int id textViewYourLessons 0x7f09022d
 int id text_input_end_icon 0x7f0901ee
 int id text_input_error_icon 0x7f0901ef
 int id text_input_start_icon 0x7f0901f0
@@ -3053,6 +3069,7 @@ int id title_template 0x7f0901fc
 int id toggle 0x7f0901fd
 int id toolbar 0x7f0901fe
 int id top 0x7f0901ff
+int id topBar 0x7f09022e
 int id topPanel 0x7f090200
 int id topicDescriptionTextView 0x7f090201
 int id topicNameTextView 0x7f090202
@@ -3184,10 +3201,13 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_login 0x7f0c001c
 int layout activity_main 0x7f0c001d
 int layout activity_manage_complaints 0x7f0c001e
+int layout activity_search_lessons 0x7f0c0082
 int layout activity_signup 0x7f0c001f
+int layout activity_student_homepage 0x7f0c0080
 int layout activity_student_info 0x7f0c0020
 int layout activity_tutor_homepage 0x7f0c0021
 int layout activity_tutor_info 0x7f0c0022
+int layout activity_tutor_topics 0x7f0c0081
 int layout activity_welcome 0x7f0c0023
 int layout custom_dialog 0x7f0c0024
 int layout design_bottom_navigation_item 0x7f0c0025

@@ -2626,6 +2626,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appbar
 id arc
 id asConfigured
 id async
@@ -2651,9 +2652,12 @@ id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
+id btnPurchaseLesson
+id btnSearch
 id btnSignUp2
 id btnSignup
 id btnSuspend
+id btnViewPurchaseStatus
 id buttonPanel
 id buttonTutor
 id cache_measures
@@ -2668,6 +2672,9 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBoxHourlyRate
+id checkBoxUserRatings
+id checkBoxYearsOfExperience
 id checkbox
 id checked
 id chip
@@ -2740,7 +2747,11 @@ id east
 id editTextDescription
 id editTextDuration
 id editTextExperience
+id editTextHourlyRate
+id editTextLanguageSpoken
 id editTextTitle
+id editTextTopic
+id editTextTutorName
 id edit_query
 id education
 id education_options
@@ -2793,6 +2804,7 @@ id image
 id imageView
 id imageView2
 id imageView3
+id imageViewLogo
 id imgLogo
 id immediateStop
 id included
@@ -2929,7 +2941,9 @@ id ratio
 id rectangles
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewSearchResults
 id recyclerViewTopics
+id recyclerViewYourLessons
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3031,11 +3045,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textViewAgainst
 id textViewComplaintBy
 id textViewContent
 id textViewStatus
 id textViewTitle
+id textViewYourLessons
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3054,6 +3070,7 @@ id title_template
 id toggle
 id toolbar
 id top
+id topBar
 id topPanel
 id topicDescriptionTextView
 id topicNameTextView
@@ -3185,10 +3202,13 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_manage_complaints
+layout activity_search_lessons
 layout activity_signup
+layout activity_student_homepage
 layout activity_student_info
 layout activity_tutor_homepage
 layout activity_tutor_info
+layout activity_tutor_topics
 layout activity_welcome
 layout custom_dialog
 layout design_bottom_navigation_item

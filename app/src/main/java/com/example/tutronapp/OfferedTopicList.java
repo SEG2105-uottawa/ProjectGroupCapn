@@ -61,7 +61,7 @@ public class OfferedTopicList extends RecyclerView.Adapter<OfferedTopicList.Topi
                 builder.setTitle(topic.getTitle())
                         .setItems(new CharSequence[]{"Stop Offering", "Close"}, (dialog, which) -> {
                             if (which == 0) {
-                                TutorHomepageActivity activity = (TutorHomepageActivity) v.getContext();
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.stopOffering(topic);
                             } else if (which == 1) {
                                 dialog.dismiss();

@@ -2658,6 +2658,7 @@ id btnSignUp2
 id btnSignup
 id btnSuspend
 id btnViewPurchaseStatus
+id button
 id buttonPanel
 id buttonTutor
 id cache_measures
@@ -2665,6 +2666,8 @@ id callMeasure
 id cancel_button
 id cardHolder
 id cardNumber
+id cardView
+id cardView2
 id carryVelocity
 id center
 id center_horizontal
@@ -2831,6 +2834,7 @@ id linearLayout2
 id linearLayout3
 id linearLayout4
 id linearLayout5
+id linearLayout6
 id listMode
 id list_item
 id logo
@@ -3046,11 +3050,20 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView6
+id textView8
 id textViewAgainst
 id textViewComplaintBy
 id textViewContent
+id textViewHourlyRate
 id textViewStatus
 id textViewTitle
+id textViewTopicDescription
+id textViewTopicRating
+id textViewTopicTitle
+id textViewTutorName
+id textViewYearsOfExperience
 id textViewYourLessons
 id text_input_end_icon
 id text_input_error_icon
@@ -3206,6 +3219,7 @@ layout activity_search_lessons
 layout activity_signup
 layout activity_student_homepage
 layout activity_student_info
+layout activity_topic_information
 layout activity_tutor_homepage
 layout activity_tutor_info
 layout activity_tutor_topics

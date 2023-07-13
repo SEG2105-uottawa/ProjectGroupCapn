@@ -2657,6 +2657,7 @@ int id btnSignUp2 0x7f09006d
 int id btnSignup 0x7f09006e
 int id btnSuspend 0x7f09006f
 int id btnViewPurchaseStatus 0x7f09022b
+int id button 0x7f09023e
 int id buttonPanel 0x7f090070
 int id buttonTutor 0x7f090071
 int id cache_measures 0x7f090072
@@ -2664,6 +2665,8 @@ int id callMeasure 0x7f090073
 int id cancel_button 0x7f090074
 int id cardHolder 0x7f090075
 int id cardNumber 0x7f090076
+int id cardView 0x7f09023f
+int id cardView2 0x7f090240
 int id carryVelocity 0x7f090077
 int id center 0x7f090078
 int id center_horizontal 0x7f090079
@@ -2830,6 +2833,7 @@ int id linearLayout2 0x7f090111
 int id linearLayout3 0x7f090112
 int id linearLayout4 0x7f090113
 int id linearLayout5 0x7f090114
+int id linearLayout6 0x7f090241
 int id listMode 0x7f090115
 int id list_item 0x7f090116
 int id logo 0x7f090117
@@ -3045,11 +3049,20 @@ int id textSpacerNoTitle 0x7f0901e6
 int id textStart 0x7f0901e7
 int id textTop 0x7f0901e8
 int id textView 0x7f09023c
+int id textView10 0x7f090242
+int id textView6 0x7f090243
+int id textView8 0x7f090244
 int id textViewAgainst 0x7f0901e9
 int id textViewComplaintBy 0x7f0901ea
 int id textViewContent 0x7f0901eb
+int id textViewHourlyRate 0x7f090245
 int id textViewStatus 0x7f0901ec
 int id textViewTitle 0x7f0901ed
+int id textViewTopicDescription 0x7f090246
+int id textViewTopicRating 0x7f090247
+int id textViewTopicTitle 0x7f090248
+int id textViewTutorName 0x7f090249
+int id textViewYearsOfExperience 0x7f09024a
 int id textViewYourLessons 0x7f09022d
 int id text_input_end_icon 0x7f0901ee
 int id text_input_error_icon 0x7f0901ef
@@ -3205,6 +3218,7 @@ int layout activity_search_lessons 0x7f0c0082
 int layout activity_signup 0x7f0c001f
 int layout activity_student_homepage 0x7f0c0080
 int layout activity_student_info 0x7f0c0020
+int layout activity_topic_information 0x7f0c0083
 int layout activity_tutor_homepage 0x7f0c0021
 int layout activity_tutor_info 0x7f0c0022
 int layout activity_tutor_topics 0x7f0c0081

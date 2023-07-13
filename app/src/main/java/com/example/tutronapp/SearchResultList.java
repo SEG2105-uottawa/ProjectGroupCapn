@@ -53,6 +53,12 @@ public class SearchResultList extends RecyclerView.Adapter<SearchResultList.Sear
         public void bind(Topic topic) {
             topicNameTextView.setText(topic.getTitle());
             descriptionTextView.setText(topic.getDescription());
+
+            itemView.setOnClickListener(v -> {
+                SearchLessonsActivity activity = (SearchLessonsActivity) v.getContext();
+                activity.moreInfo(topic);
+            });
+
         }
     }
 }

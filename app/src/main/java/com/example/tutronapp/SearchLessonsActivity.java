@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -191,5 +192,11 @@ public class SearchLessonsActivity extends AppCompatActivity {
     }
 
 
-
+    public void moreInfo(Topic topic) {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("Topic", topic);
+        Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 }

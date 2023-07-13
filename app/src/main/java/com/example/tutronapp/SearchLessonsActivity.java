@@ -29,12 +29,21 @@ public class SearchLessonsActivity extends AppCompatActivity {
     private List<Topic> listOfTopics;
     private RecyclerView recyclerViewSearchResults;
     private SearchResultList adapterForRecyclerViewSearchResults;
+    private DatabaseReference users;
+    private Student loggedInStudent;
     private Button btnSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_lessons);
+
+        Bundle inwardBundle = getIntent().getExtras();
+        if (inwardBundle != null && inwardBundle.containsKey("Student")){
+            loggedInStudent = (Student) inwardBundle.getSerializable("Student");
+        }
+
+        users = FirebaseDatabase.getInstance().getReference().child("users");
 
         btnSearch = findViewById(R.id.btnSearch);
 
@@ -193,10 +202,25 @@ public class SearchLessonsActivity extends AppCompatActivity {
 
 
     public void moreInfo(Topic topic) {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable("Topic", topic);
-        Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
-        intent.putExtras(bundle);
-        startActivity(intent);
+        final Tutor[] selectedLessonTutor = new Tutor[1];
+        DatabaseReference tutorValue = users.child(topic.getTutorDatabaseID());
+        tutorValue.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                selectedLessonTutor[0] = snapshot.getValue(Tutor.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("Topic", topic);
+                bundle.putSerializable("Student", loggedInStudent);
+                bundle.putSerializable("Tutor", selectedLessonTutor[0]);
+
+                Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
+
     }
 }

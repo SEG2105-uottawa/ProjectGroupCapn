@@ -32,7 +32,10 @@ public class StudentHomepageActivity extends AppCompatActivity {
 
 
         btnPurchaseLesson.setOnClickListener(v -> {
+            Bundle outwardBundle = new Bundle();
+            outwardBundle.putSerializable("Student", loggedInStudent);
             Intent intent = new Intent(StudentHomepageActivity.this, SearchLessonsActivity.class);
+            intent.putExtras(outwardBundle);
             startActivity(intent);
         });
 

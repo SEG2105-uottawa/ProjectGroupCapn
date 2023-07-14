@@ -9,6 +9,7 @@ public class Lesson implements Serializable {
     private Long dateOfLesson;
     private Tutor tutorTeaching;
     private String studentDatabaseID;
+    private String studentName;
 
     public Lesson() {
 
@@ -19,6 +20,14 @@ public class Lesson implements Serializable {
         this.dateOfLesson = dateOfLesson;
         this.tutorTeaching = tutorTeaching;
         this.studentDatabaseID = studentDatabaseID;
+    }
+
+    public Lesson(Topic topicToBeTaught, Long dateOfLesson, Tutor tutorTeaching, String studentDatabaseID, String studentName) {
+        this.topicToBeTaught = topicToBeTaught;
+        this.dateOfLesson = dateOfLesson;
+        this.tutorTeaching = tutorTeaching;
+        this.studentDatabaseID = studentDatabaseID;
+        this.studentName = studentName;
     }
 
     public Topic getTopicToBeTaught() {
@@ -59,5 +68,13 @@ public class Lesson implements Serializable {
 
     public void setTutorTeaching(Tutor tutorTeaching) {
         this.tutorTeaching = tutorTeaching;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 }

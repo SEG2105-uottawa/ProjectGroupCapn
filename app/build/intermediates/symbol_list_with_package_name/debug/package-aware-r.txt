@@ -3074,9 +3074,12 @@ id textViewEducation
 id textViewHourlyRate
 id textViewLanguages
 id textViewLessonDate
+id textViewLessonFor
 id textViewLessonTitle
 id textViewNew
 id textViewPendingLessonRequestsTitle
+id textViewPurchaseDate
+id textViewPurchaseTitle
 id textViewRating
 id textViewStatus
 id textViewTitle
@@ -3271,6 +3274,8 @@ layout item_lesson
 layout item_review
 layout layout_complaint_item
 layout layout_complaint_options
+layout layout_item_purchase
+layout layout_item_tutor_lesson
 layout layout_suspend_options
 layout layout_topic_item
 layout m3_alert_dialog

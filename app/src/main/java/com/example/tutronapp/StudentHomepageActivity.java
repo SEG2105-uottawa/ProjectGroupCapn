@@ -46,6 +46,7 @@ public class StudentHomepageActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 loggedInStudent = snapshot.getValue(Student.class);
+                listOfLessons = loggedInStudent.getPurchasedLessons();
                 adapterForRecyclerViewYourLessons.notifyDataSetChanged();
             }
 

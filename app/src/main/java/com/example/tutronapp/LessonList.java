@@ -71,10 +71,13 @@ public class LessonList extends RecyclerView.Adapter<LessonList.LessonViewHolder
                                 activity.getLessonInformation(lesson);
                             }
                             else if (which == 1){
-
+                                //add review dialog here
+                                //call a rate method in StudentHomepageActivity
+                                //Rate method should - modify rating, cumulative ratings and numberOfRatings in both Topic
+                                //and Tutor. It should also be added to the List<Review> of a topic.
                             }
                             else if (which == 2){
-
+                                //add Complaint dialog here
                             }
                             else if (which == 3){
                                 dialog.dismiss();

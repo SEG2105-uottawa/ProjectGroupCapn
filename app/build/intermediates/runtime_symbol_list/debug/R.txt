@@ -3073,9 +3073,12 @@ int id textViewEducation 0x7f090210
 int id textViewHourlyRate 0x7f090211
 int id textViewLanguages 0x7f090212
 int id textViewLessonDate 0x7f090213
+int id textViewLessonFor 0x7f09025e
 int id textViewLessonTitle 0x7f090214
 int id textViewNew 0x7f090215
 int id textViewPendingLessonRequestsTitle 0x7f090216
+int id textViewPurchaseDate 0x7f09025f
+int id textViewPurchaseTitle 0x7f090260
 int id textViewRating 0x7f090217
 int id textViewStatus 0x7f090218
 int id textViewTitle 0x7f090219
@@ -3270,6 +3273,8 @@ int layout item_lesson 0x7f0c003d
 int layout item_review 0x7f0c003e
 int layout layout_complaint_item 0x7f0c003f
 int layout layout_complaint_options 0x7f0c0040
+int layout layout_item_purchase 0x7f0c008a
+int layout layout_item_tutor_lesson 0x7f0c008b
 int layout layout_suspend_options 0x7f0c0041
 int layout layout_topic_item 0x7f0c0042
 int layout m3_alert_dialog 0x7f0c0043

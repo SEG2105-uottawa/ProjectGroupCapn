@@ -95,7 +95,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private void sendTutorToHomepage(Tutor tutor) {
         Bundle tutorBundle = new Bundle();
         tutorBundle.putSerializable("Tutor", tutor);
-        Intent intent = new Intent(WelcomeActivity.this, TutorTopicsActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this, TutorHomepageActivity.class);
         intent.putExtras(tutorBundle);
         startActivity(intent);
         finish();

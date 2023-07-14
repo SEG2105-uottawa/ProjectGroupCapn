@@ -13,6 +13,7 @@ id appbar
 id btnAddTopic
 id btnClose
 id btnDismiss
+id btnLessons
 id btnLogin
 id btnLoginLoginPage
 id btnProceed
@@ -26,6 +27,7 @@ id btnSuspend
 id btnTutorSchedule
 id btnUserReviews
 id btnViewPurchaseStatus
+id btnYourTopics
 id buttonTutor
 id calendarView
 id cardHolder
@@ -67,6 +69,7 @@ id linearLayout3
 id linearLayout4
 id linearLayout5
 id linearLayout6
+id linearLayout7
 id logo
 id logout
 id native_languages
@@ -90,6 +93,7 @@ id streetName
 id streetNumber
 id textView
 id textView10
+id textView2
 id textView3
 id textView5
 id textView6

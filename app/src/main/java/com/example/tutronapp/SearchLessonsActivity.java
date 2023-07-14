@@ -62,15 +62,36 @@ public class SearchLessonsActivity extends AppCompatActivity {
                 listOfTopics = new ArrayList<>();
                 for (DataSnapshot topicSnapshot : dataSnapshot.getChildren()) {
                     Topic topic = topicSnapshot.getValue(Topic.class);
-                    listOfTopics.add(topic);
+
+                    // Check if the tutor's suspendedTill is null, 0, or less than the current time (excluding -1 for permanent suspension)
+                    DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(topic.getTutorDatabaseID());
+                    tutorRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot tutorSnapshot) {
+                            Tutor tutor = tutorSnapshot.getValue(Tutor.class);
+                            if (tutor != null && (tutor.getSuspensionEndDate() == null || tutor.getSuspensionEndDate() <= System.currentTimeMillis() || tutor.getSuspensionEndDate() == -1)) {
+                                // Tutor is not suspended, add the topic to the list
+                                listOfTopics.add(topic);
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            // Handle the error
+                        }
+                    });
                 }
+
+                // Perform any further processing with the listOfTopics
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(getApplicationContext(), "Database Failure", Toast.LENGTH_SHORT).show();
+                // Handle the error
             }
         });
+
+
 
         btnSearch.setOnClickListener(v -> {
             EditText editTextTutorName = findViewById(R.id.editTextTutorName);

@@ -60,15 +60,21 @@ public class TopicList extends RecyclerView.Adapter<TopicList.TopicViewHolder> i
             itemView.setOnClickListener(v -> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
                 builder.setTitle(topic.getTitle())
-                        .setItems(new CharSequence[]{"De-list Topic", "Offer Topic", "Close"}, (dialog, which) -> {
-                            if (which == 0) {
+                        .setItems(new CharSequence[]{"De-list Topic", "Offer Topic","View Reviews","Close"}, (dialog, which) -> {
+                            if (which == 0){
                                 TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.removeTopic(topic);
-                            } else if (which == 1) {
+                            }
+                            else if (which == 1){
                                 TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.offerTopic(topic);
-                            } else if (which == 2) {
-                                // Handle close option
+                            }
+                            else if (which == 2){
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
+                                activity.openReviewsDialogFragment(topic);
+                            }
+                            else if (which == 3){
+                                dialog.dismiss();
                             }
                         })
                         .show();

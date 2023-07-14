@@ -229,4 +229,8 @@ public class TutorTopicsActivity extends AppCompatActivity {
     }
 
 
+    public void openReviewsDialogFragment(Topic topic) {
+        ReviewsDialogFragment dialogFragment = new ReviewsDialogFragment(topic.getReviews());
+        dialogFragment.show(getSupportFragmentManager(), "ReviewsDialogFragment");
+    }
 }

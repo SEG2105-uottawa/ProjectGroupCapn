@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -82,13 +83,20 @@ public class TopicInformationActivity extends AppCompatActivity {
             View dialogView = getLayoutInflater().inflate(R.layout.dialog_tutor_available_schedule, null);
             builder.setView(dialogView);
             CalendarView calendarView = dialogView.findViewById(R.id.calendarView);
+            calendarView.setOnDateChangeListener((view, year, month, dayOfMonth) -> {
+                Calendar selectedCalendar = Calendar.getInstance();
+                selectedCalendar.set(year, month, dayOfMonth, 0, 0, 0);
+                selectedCalendar.set(Calendar.MILLISECOND, 0);
+                selectedDate = selectedCalendar.getTimeInMillis();
+            });
             builder.setPositiveButton("Select", (dialog, which) -> {
-                selectedDate = calendarView.getDate();
+                dialog.dismiss();
             });
             builder.setNegativeButton("Cancel", (dialog, which) -> dialog.dismiss());
             AlertDialog dialog = builder.create();
             dialog.show();
         });
+
 
         btnUserReviews = findViewById(R.id.btnUserReviews);
         btnUserReviews.setOnClickListener(v -> {

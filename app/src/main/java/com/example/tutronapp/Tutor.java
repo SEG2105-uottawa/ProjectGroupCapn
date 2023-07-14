@@ -19,6 +19,10 @@ public class Tutor extends User implements Serializable {
     private Long suspensionEndDate;
     private List<Topic> offeredTopics = new ArrayList<>();
     private List<Topic> topics = new ArrayList<>();
+    private List<Purchase> topicPurchases = new ArrayList<>();
+    private double rating = -1;
+    private int cumulativeRating = 0;
+    private int numberOfRatings = 0;
 
     public Tutor() {
 
@@ -89,6 +93,55 @@ public class Tutor extends User implements Serializable {
 
     public void setTopics(List<Topic> topics) {
         this.topics = topics;
+    }
+
+    public List<Purchase> getTopicPurchases() {
+        return topicPurchases;
+    }
+
+    public void setTopicPurchases(List<Purchase> topicPurchases) {
+        this.topicPurchases = topicPurchases;
+    }
+
+    public int getCumulativeRating() {
+        return cumulativeRating;
+    }
+
+    public void setCumulativeRating(int cumulativeRating) {
+        this.cumulativeRating = cumulativeRating;
+    }
+
+    public int getNumberOfRatings() {
+        return numberOfRatings;
+    }
+
+    public void setNumberOfRatings(int numberOfRatings) {
+        this.numberOfRatings = numberOfRatings;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
+    }
+
+    public void addRating(int rating){
+        if (rating < 6 && rating > 0) {
+            numberOfRatings++;
+            cumulativeRating = cumulativeRating + rating;
+            double newRating = (((double) cumulativeRating) / ((double) numberOfRatings));
+            if (newRating < 6 && newRating > 0) {
+                setRating(newRating);
+            }
+        }
+    }
+
+    public void changeCurrentRating(int currentRating, int newRating){
+        numberOfRatings --;
+        cumulativeRating = cumulativeRating - currentRating;
+        addRating(newRating);
     }
 }
 

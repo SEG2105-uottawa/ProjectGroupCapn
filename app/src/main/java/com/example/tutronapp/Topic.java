@@ -17,7 +17,7 @@ public class Topic implements Serializable {
     private double rating = -1;
     private int cumulativeRating = 0;
     private int numberOfRatings = 0;
-    private List<Review> reviews;
+    private List<Review> reviews = new ArrayList<>();
 
 
 
@@ -153,5 +153,21 @@ public class Topic implements Serializable {
 
     public void setReviews(List<Review> reviews) {
         this.reviews = reviews;
+    }
+
+    public int getCumulativeRating() {
+        return cumulativeRating;
+    }
+
+    public void setCumulativeRating(int cumulativeRating) {
+        this.cumulativeRating = cumulativeRating;
+    }
+
+    public int getNumberOfRatings() {
+        return numberOfRatings;
+    }
+
+    public void setNumberOfRatings(int numberOfRatings) {
+        this.numberOfRatings = numberOfRatings;
     }
 }

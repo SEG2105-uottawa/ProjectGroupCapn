@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -28,12 +29,21 @@ public class SearchLessonsActivity extends AppCompatActivity {
     private List<Topic> listOfTopics;
     private RecyclerView recyclerViewSearchResults;
     private SearchResultList adapterForRecyclerViewSearchResults;
+    private DatabaseReference users;
+    private Student loggedInStudent;
     private Button btnSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_lessons);
+
+        Bundle inwardBundle = getIntent().getExtras();
+        if (inwardBundle != null && inwardBundle.containsKey("Student")){
+            loggedInStudent = (Student) inwardBundle.getSerializable("Student");
+        }
+
+        users = FirebaseDatabase.getInstance().getReference().child("users");
 
         btnSearch = findViewById(R.id.btnSearch);
 
@@ -52,15 +62,36 @@ public class SearchLessonsActivity extends AppCompatActivity {
                 listOfTopics = new ArrayList<>();
                 for (DataSnapshot topicSnapshot : dataSnapshot.getChildren()) {
                     Topic topic = topicSnapshot.getValue(Topic.class);
-                    listOfTopics.add(topic);
+
+                    // Check if the tutor's suspendedTill is null, 0, or less than the current time (excluding -1 for permanent suspension)
+                    DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(topic.getTutorDatabaseID());
+                    tutorRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot tutorSnapshot) {
+                            Tutor tutor = tutorSnapshot.getValue(Tutor.class);
+                            if (tutor != null && (tutor.getSuspensionEndDate() == null || tutor.getSuspensionEndDate() <= System.currentTimeMillis() || tutor.getSuspensionEndDate() == -1)) {
+                                // Tutor is not suspended, add the topic to the list
+                                listOfTopics.add(topic);
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            // Handle the error
+                        }
+                    });
                 }
+
+                // Perform any further processing with the listOfTopics
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(getApplicationContext(), "Database Failure", Toast.LENGTH_SHORT).show();
+                // Handle the error
             }
         });
+
+
 
         btnSearch.setOnClickListener(v -> {
             EditText editTextTutorName = findViewById(R.id.editTextTutorName);
@@ -191,5 +222,32 @@ public class SearchLessonsActivity extends AppCompatActivity {
     }
 
 
+    public void moreInfo(Topic topic) {
+        DatabaseReference tutorValue = users.child(topic.getTutorDatabaseID());
+        tutorValue.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Tutor selectedLessonTutor = snapshot.getValue(Tutor.class);
+                if (selectedLessonTutor != null) {
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("Topic", topic);
+                    bundle.putSerializable("Student", loggedInStudent);
+                    bundle.putSerializable("Tutor", selectedLessonTutor);
+
+                    Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(SearchLessonsActivity.this, "Tutor not found", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(SearchLessonsActivity.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
 
 }

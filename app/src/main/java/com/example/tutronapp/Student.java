@@ -10,13 +10,15 @@
 package com.example.tutronapp;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student extends User implements Serializable{
 
     private CreditCard creditCard;
     private Address address;
-    private List<Topic> purchasedLessons;
+    private List<Topic> purchasedLessons = new ArrayList<>();
+    private List<Purchase> pendingPurchases = new ArrayList<>();
 
 
     public Student(String firstName, String lastName, String emailAddress, String password){
@@ -57,5 +59,13 @@ public class Student extends User implements Serializable{
 
     public void setPurchasedLessons(List<Topic> purchasedLessons) {
         this.purchasedLessons = purchasedLessons;
+    }
+
+    public List<Purchase> getPendingPurchases() {
+        return pendingPurchases;
+    }
+
+    public void setPendingPurchases(List<Purchase> pendingPurchases) {
+        this.pendingPurchases = pendingPurchases;
     }
 }

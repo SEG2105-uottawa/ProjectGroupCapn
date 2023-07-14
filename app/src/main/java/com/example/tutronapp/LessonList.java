@@ -1,5 +1,6 @@
 package com.example.tutronapp;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,10 +63,26 @@ public class LessonList extends RecyclerView.Adapter<LessonList.LessonViewHolder
             textViewTutorName.setText("By " + lesson.getTutorTeaching().getName());
 
             itemView.setOnClickListener(v ->{
-                StudentHomepageActivity activity = (StudentHomepageActivity) v.getContext();
-                activity.getLessonInformation(lesson);
+                AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
+                builder.setTitle(lesson.getTopicToBeTaught().getTitle())
+                        .setItems(new CharSequence[]{"More Information","Submit Review","File Complaint","Close"}, (dialog, which) -> {
+                            if (which == 0){
+                                StudentHomepageActivity activity = (StudentHomepageActivity) v.getContext();
+                                activity.getLessonInformation(lesson);
+                            }
+                            else if (which == 1){
 
-            });
+                            }
+                            else if (which == 2){
+
+                            }
+                            else if (which == 3){
+                                dialog.dismiss();
+                            }
+                        })
+                        .show();
+                });
+
         }
     }
 }

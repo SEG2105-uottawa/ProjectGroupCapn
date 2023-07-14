@@ -2948,8 +2948,10 @@ int id progress_horizontal 0x7f090190
 int id radio 0x7f090191
 int id ratio 0x7f090192
 int id rectangles 0x7f090193
+int id recyclerViewAcceptedLessonRequests 0x7f090258
 int id recyclerViewComplaints 0x7f090194
 int id recyclerViewOfferedTopics 0x7f090195
+int id recyclerViewPendingLessonRequests 0x7f090259
 int id recyclerViewReviews 0x7f090196
 int id recyclerViewSearchResults 0x7f090197
 int id recyclerViewTopics 0x7f090198
@@ -3062,6 +3064,7 @@ int id textView3 0x7f090201
 int id textView5 0x7f090202
 int id textView6 0x7f090203
 int id textView8 0x7f090204
+int id textViewAcceptedLessonRequestsTitle 0x7f09025a
 int id textViewAgainst 0x7f090205
 int id textViewComplaintBy 0x7f090206
 int id textViewContent 0x7f090207
@@ -3069,6 +3072,7 @@ int id textViewDescription 0x7f090208
 int id textViewEducation 0x7f090209
 int id textViewHourlyRate 0x7f09020a
 int id textViewLanguages 0x7f09020b
+int id textViewPendingLessonRequestsTitle 0x7f09025b
 int id textViewRating 0x7f09020c
 int id textViewStatus 0x7f09020d
 int id textViewTitle 0x7f09020e
@@ -3234,6 +3238,7 @@ int layout activity_signup 0x7f0c0020
 int layout activity_student_homepage 0x7f0c0021
 int layout activity_student_info 0x7f0c0022
 int layout activity_topic_information 0x7f0c0023
+int layout activity_tutor_engagements 0x7f0c0087
 int layout activity_tutor_homepage 0x7f0c0024
 int layout activity_tutor_info 0x7f0c0025
 int layout activity_tutor_topics 0x7f0c0026

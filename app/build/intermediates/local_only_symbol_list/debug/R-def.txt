@@ -77,8 +77,10 @@ id password
 id postCode
 id profile_photo
 id profile_photo1
+id recyclerViewAcceptedLessonRequests
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
+id recyclerViewPendingLessonRequests
 id recyclerViewReviews
 id recyclerViewSearchResults
 id recyclerViewTopics
@@ -98,6 +100,7 @@ id textView3
 id textView5
 id textView6
 id textView8
+id textViewAcceptedLessonRequestsTitle
 id textViewAgainst
 id textViewComplaintBy
 id textViewContent
@@ -105,6 +108,7 @@ id textViewDescription
 id textViewEducation
 id textViewHourlyRate
 id textViewLanguages
+id textViewPendingLessonRequestsTitle
 id textViewRating
 id textViewStatus
 id textViewTitle
@@ -135,6 +139,7 @@ layout activity_signup
 layout activity_student_homepage
 layout activity_student_info
 layout activity_topic_information
+layout activity_tutor_engagements
 layout activity_tutor_homepage
 layout activity_tutor_info
 layout activity_tutor_topics

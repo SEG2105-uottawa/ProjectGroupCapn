@@ -53,7 +53,11 @@ public class TutorHomepageActivity extends AppCompatActivity {
         });
 
         btnLessons.setOnClickListener(v ->{
-
+            Intent intent = new Intent(TutorHomepageActivity.this, TutorEngagementsActivity.class);
+            Bundle outwardBundle = new Bundle();
+            outwardBundle.putSerializable("Tutor", loggedInTutor);
+            intent.putExtras(outwardBundle);
+            startActivity(intent);
         });
 
 

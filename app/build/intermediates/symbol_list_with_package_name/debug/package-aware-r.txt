@@ -2652,6 +2652,7 @@ id btnLogin
 id btnLoginLoginPage
 id btnProceed
 id btnProceedHome
+id btnPurchase
 id btnPurchaseLesson
 id btnSearch
 id btnSignUp2
@@ -2660,7 +2661,6 @@ id btnSuspend
 id btnTutorSchedule
 id btnUserReviews
 id btnViewPurchaseStatus
-id button
 id buttonPanel
 id buttonTutor
 id cache_measures

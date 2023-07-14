@@ -202,25 +202,31 @@ public class SearchLessonsActivity extends AppCompatActivity {
 
 
     public void moreInfo(Topic topic) {
-        final Tutor[] selectedLessonTutor = new Tutor[1];
         DatabaseReference tutorValue = users.child(topic.getTutorDatabaseID());
-        tutorValue.addValueEventListener(new ValueEventListener() {
+        tutorValue.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                selectedLessonTutor[0] = snapshot.getValue(Tutor.class);
-                Bundle bundle = new Bundle();
-                bundle.putSerializable("Topic", topic);
-                bundle.putSerializable("Student", loggedInStudent);
-                bundle.putSerializable("Tutor", selectedLessonTutor[0]);
+                Tutor selectedLessonTutor = snapshot.getValue(Tutor.class);
+                if (selectedLessonTutor != null) {
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("Topic", topic);
+                    bundle.putSerializable("Student", loggedInStudent);
+                    bundle.putSerializable("Tutor", selectedLessonTutor);
 
-                Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
-                intent.putExtras(bundle);
-                startActivity(intent);
+                    Intent intent = new Intent(SearchLessonsActivity.this, TopicInformationActivity.class);
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(SearchLessonsActivity.this, "Tutor not found", Toast.LENGTH_SHORT).show();
+                }
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(SearchLessonsActivity.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+
 }

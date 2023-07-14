@@ -19,6 +19,7 @@ public class Tutor extends User implements Serializable {
     private Long suspensionEndDate;
     private List<Topic> offeredTopics = new ArrayList<>();
     private List<Topic> topics = new ArrayList<>();
+    private List<Purchase> topicPurchases = new ArrayList<>();
 
     public Tutor() {
 
@@ -89,6 +90,14 @@ public class Tutor extends User implements Serializable {
 
     public void setTopics(List<Topic> topics) {
         this.topics = topics;
+    }
+
+    public List<Purchase> getTopicPurchases() {
+        return topicPurchases;
+    }
+
+    public void setTopicPurchases(List<Purchase> topicPurchases) {
+        this.topicPurchases = topicPurchases;
     }
 }
 

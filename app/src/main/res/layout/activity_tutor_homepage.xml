@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".TutorHomepageActivity">
 
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#171E60"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="39dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

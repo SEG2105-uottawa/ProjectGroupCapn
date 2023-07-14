@@ -26,6 +26,9 @@ public class TutorEngagementsActivity extends AppCompatActivity {
     private TutorLessonList adapterForRecyclerViewAcceptedLessonRequests;
     private List<Purchase> listOfPendingPurchases;
     private List<Lesson> listOfAcceptedLessonRequests;
+    DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+    DatabaseReference purchasesRef = FirebaseDatabase.getInstance().getReference().child("purchases");
+    DatabaseReference topicsRef = FirebaseDatabase.getInstance().getReference().child("topics");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
 
-        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
         loggedInTutorRef.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
@@ -75,4 +78,13 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
     }
 
+    public void approvePurchase(Purchase purchase) {
+
+
+
+
+    }
+
+    public void rejectPurchase(Purchase purchase) {
+    }
 }

@@ -1,5 +1,6 @@
 package com.example.tutronapp;
 
+import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,7 +59,25 @@ public class PurchaseList extends RecyclerView.Adapter<PurchaseList.PurchaseView
             textViewPurchaseDate.setText("On " + formattedDate);
 
             itemView.setOnClickListener(v -> {
-
+                AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
+                builder.setTitle("Purchase Options")
+                        .setItems(new CharSequence[]{"Approve Purchase", "Reject Purchase", "Close"}, (dialog, which) -> {
+                            TutorEngagementsActivity activity = (TutorEngagementsActivity) v.getContext();
+                            switch (which) {
+                                case 0: // Approve Purchase
+                                    activity.approvePurchase(purchase);
+                                    dialog.dismiss();
+                                    break;
+                                case 1: // Reject Purchase
+                                    activity.rejectPurchase(purchase);
+                                    break;
+                                case 2: // Close Dialog
+                                    dialog.dismiss();
+                                    break;
+                            }
+                        });
+                AlertDialog dialog = builder.create();
+                dialog.show();
             });
         }
     }

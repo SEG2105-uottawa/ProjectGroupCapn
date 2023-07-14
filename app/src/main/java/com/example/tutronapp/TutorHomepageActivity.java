@@ -11,7 +11,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
 
     private Tutor loggedInTutor;
     private TextView textViewTutorName, textViewTutorDescription, textViewLanguages, textViewEducation, textViewRating;
-    private Button btnYourTopics;
+    private Button btnYourTopics, btnLessons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class TutorHomepageActivity extends AppCompatActivity {
         textViewEducation = findViewById(R.id.textViewEducation);
         textViewRating = findViewById(R.id.textViewRating);
         btnYourTopics = findViewById(R.id.btnYourTopics);
+        btnLessons = findViewById(R.id.btnLessons);
 
         textViewTutorName.setText(loggedInTutor.getName());
         textViewTutorDescription.setText(loggedInTutor.getShortDescription());
@@ -49,6 +50,10 @@ public class TutorHomepageActivity extends AppCompatActivity {
             outwardBundle.putSerializable("Tutor", loggedInTutor);
             intent.putExtras(outwardBundle);
             startActivity(intent);
+        });
+
+        btnLessons.setOnClickListener(v ->{
+
         });
 
 

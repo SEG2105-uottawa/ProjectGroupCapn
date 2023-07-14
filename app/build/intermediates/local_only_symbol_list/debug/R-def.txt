@@ -108,6 +108,9 @@ id textViewDescription
 id textViewEducation
 id textViewHourlyRate
 id textViewLanguages
+id textViewLessonDate
+id textViewLessonTitle
+id textViewNew
 id textViewPendingLessonRequestsTitle
 id textViewRating
 id textViewStatus
@@ -131,6 +134,7 @@ id welcomePageLogo
 id welcomePageTitle
 id welcomeTitle
 id yourTopicsTextView
+layout activity_lesson_information
 layout activity_login
 layout activity_main
 layout activity_manage_complaints
@@ -147,6 +151,7 @@ layout activity_welcome
 layout dialog_add_topic
 layout dialog_reviews
 layout dialog_tutor_available_schedule
+layout item_lesson
 layout item_review
 layout layout_complaint_item
 layout layout_complaint_options

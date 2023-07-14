@@ -11,6 +11,7 @@ public class Purchase implements Serializable {
     private Long dateForLesson;
     private Long dateOfPurchase;
     private boolean tutorApproved;
+    private boolean tutorRejected;
 
     public Purchase() {
     }
@@ -78,5 +79,13 @@ public class Purchase implements Serializable {
 
     public void setTutorApproved(boolean tutorApproved) {
         this.tutorApproved = tutorApproved;
+    }
+
+    public boolean isTutorRejected() {
+        return tutorRejected;
+    }
+
+    public void setTutorRejected(boolean tutorRejected) {
+        this.tutorRejected = tutorRejected;
     }
 }

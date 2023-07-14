@@ -17,7 +17,7 @@ public class Student extends User implements Serializable{
 
     private CreditCard creditCard;
     private Address address;
-    private List<Topic> purchasedLessons = new ArrayList<>();
+    private List<Lesson> purchasedLessons = new ArrayList<>();
     private List<Purchase> pendingPurchases = new ArrayList<>();
 
 
@@ -53,11 +53,11 @@ public class Student extends User implements Serializable{
         this.address = address;
     }
 
-    public List<Topic> getPurchasedLessons() {
+    public List<Lesson> getPurchasedLessons() {
         return purchasedLessons;
     }
 
-    public void setPurchasedLessons(List<Topic> purchasedLessons) {
+    public void setPurchasedLessons(List<Lesson> purchasedLessons) {
         this.purchasedLessons = purchasedLessons;
     }
 

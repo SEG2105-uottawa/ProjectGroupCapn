@@ -16,12 +16,12 @@
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_tutor_topics.xml"
     },
     {
-        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_signup.xml"
-    },
-    {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_signup.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_signup.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_layout_complaint_options.xml.flat",
@@ -50,10 +50,6 @@
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_topic_information.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_topic_information.xml"
-    },
-    {
-        "merged": "com.example.tutronapp-merged_res-32:/layout_activity_tutor_engagements.xml.flat",
-        "source": "com.example.tutronapp-main-34:/layout/activity_tutor_engagements.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -92,8 +88,20 @@
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_student_homepage.xml"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-32:/layout_layout_item_purchase.xml.flat",
+        "source": "com.example.tutronapp-main-34:/layout/layout_item_purchase.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_layout_item_purchase.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_item_purchase.xml"
+    },
+    {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_layout_complaint_item.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_complaint_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_item_lesson.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\item_lesson.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_tutor_engagements.xml.flat",
@@ -110,6 +118,10 @@
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_layout_item_tutor_lesson.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_item_tutor_lesson.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\drawable_rounded_background_topic.xml.flat",
@@ -142,6 +154,10 @@
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_manage_complaints.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_manage_complaints.xml"
+    },
+    {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_lesson_information.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\activity_lesson_information.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",

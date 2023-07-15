@@ -20,6 +20,7 @@ public class Tutor extends User implements Serializable {
     private List<Topic> offeredTopics = new ArrayList<>();
     private List<Topic> topics = new ArrayList<>();
     private List<Purchase> topicPurchases = new ArrayList<>();
+    private List<Lesson> lessonPurchases = new ArrayList<>();
     private double rating = -1;
     private int cumulativeRating = 0;
     private int numberOfRatings = 0;
@@ -142,6 +143,14 @@ public class Tutor extends User implements Serializable {
         numberOfRatings --;
         cumulativeRating = cumulativeRating - currentRating;
         addRating(newRating);
+    }
+
+    public List<Lesson> getLessonPurchases() {
+        return lessonPurchases;
+    }
+
+    public void setLessonPurchases(List<Lesson> lessonPurchases) {
+        this.lessonPurchases = lessonPurchases;
     }
 }
 

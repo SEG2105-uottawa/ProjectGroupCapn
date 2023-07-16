@@ -154,13 +154,9 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
 
         String purchaseId = purchase.getDatabaseID();
-
         DatabaseReference purchaseRef =
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
-
-        DatabaseReference userTopicPurchasesRef = usersRef.child(loggedInTutor.getDataBaseID()).child("topicPurchases").child(purchaseId);
-        userTopicPurchasesRef.setValue(purchase);
 
         Log.d("FirebaseData", "purchase.tutorApproved: " + purchase.isTutorApproved());
 
@@ -171,14 +167,9 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         purchase.setTutorRejected(true);
 
         String purchaseId = purchase.getDatabaseID();
-
         DatabaseReference purchaseRef =
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
-
-        DatabaseReference userTopicPurchasesRef =
-                usersRef.child(loggedInTutor.getDataBaseID()).child("topicPurchases").child(purchaseId);
-        userTopicPurchasesRef.setValue(purchase);
 
         Toast.makeText(this, "Rejected purchase successfully", Toast.LENGTH_LONG).show();
     }

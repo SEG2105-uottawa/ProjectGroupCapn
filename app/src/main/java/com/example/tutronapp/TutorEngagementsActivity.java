@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,16 +24,11 @@ import java.util.List;
 public class TutorEngagementsActivity extends AppCompatActivity {
 
     private Tutor loggedInTutor;
-    private RecyclerView recyclerViewAcceptedLessonRequests;
-    private RecyclerView recyclerViewPendingLessonRequests;
-    private PurchaseList adapterForRecyclerViewPendingLessonRequests;
-    private TutorLessonList adapterForRecyclerViewAcceptedLessonRequests;
-    private List<Purchase> listOfPendingPurchases;
-    private List<Lesson> listOfAcceptedLessonRequests;
+    private List<String> acceptedLessonInfoList;
+    private List<String> pendingLessonInfoList;
 
-    DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
-    DatabaseReference purchasesRef = FirebaseDatabase.getInstance().getReference().child("purchases");
-    DatabaseReference topicsRef = FirebaseDatabase.getInstance().getReference().child("topics");
+    private DatabaseReference usersRef;
+    private DatabaseReference purchaseRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,123 +39,93 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         if (bundle != null && bundle.containsKey("Tutor")) {
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
-        recyclerViewAcceptedLessonRequests = findViewById(R.id.recyclerViewAcceptedLessonRequests);
-        recyclerViewPendingLessonRequests = findViewById(R.id.recyclerViewPendingLessonRequests);
 
-        listOfPendingPurchases = loggedInTutor.getTopicPurchases();
-        listOfAcceptedLessonRequests = loggedInTutor.getLessonPurchases();
+        usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+        purchaseRef = FirebaseDatabase.getInstance().getReference().child("purchases");
 
-        adapterForRecyclerViewPendingLessonRequests = new PurchaseList(listOfPendingPurchases);
-        adapterForRecyclerViewAcceptedLessonRequests = new TutorLessonList(listOfAcceptedLessonRequests);
-
-        recyclerViewPendingLessonRequests.setLayoutManager(new LinearLayoutManager(TutorEngagementsActivity.this));
-        recyclerViewPendingLessonRequests.setAdapter(adapterForRecyclerViewPendingLessonRequests);
-
-        recyclerViewAcceptedLessonRequests.setLayoutManager(new LinearLayoutManager(TutorEngagementsActivity.this));
-        recyclerViewAcceptedLessonRequests.setAdapter(adapterForRecyclerViewAcceptedLessonRequests);
-
-
-        DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
-
-        loggedInTutorRef.addValueEventListener(new ValueEventListener() {
-            @SuppressLint("NotifyDataSetChanged")
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                loggedInTutor = snapshot.getValue(Tutor.class);
-                //adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-                //adapterForRecyclerViewPendingLessonRequests.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
-        });
+        acceptedLessonInfoList = new ArrayList<>();
+        pendingLessonInfoList = new ArrayList<>();
 
         handleData();
+
     }
 
     private void handleData() {
-        listOfAcceptedLessonRequests = loggedInTutor.getLessonPurchases();
-
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
         loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                // Log.d("FirebaseData", "Snapshot value: " + snapshot.getValue());
+                acceptedLessonInfoList.clear();
+                pendingLessonInfoList.clear();
 
-                listOfAcceptedLessonRequests.clear();
-
+                Log.d("FirebaseSnapshot", "snapshot" + snapshot.getValue());
                 for (DataSnapshot purchaseSnapshot : snapshot.getChildren()) {
-                    Log.d("FirebaseData", "Purchase Snapshot" + purchaseSnapshot.getValue());
                     try {
                         Purchase purchase = purchaseSnapshot.getValue(Purchase.class);
-                        Log.d("FirebaseData", "purchase.isTutorApproved: " + purchase.isTutorApproved());
+                        Log.d("FirebaseSnapshot", "purchaseSnapshot" + purchase);
+
                         if (purchase.isTutorApproved()) {
-                            Log.d("FirebaseLooping", "Purchase " + purchase);
+                            String lessonInfo = purchase.getTopicName()
+                                    + " - " + purchase.getDateForLesson()
+                                    + " - " + purchase.getStudentName();
 
-                            Lesson acceptedLesson = new Lesson();
-                            acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
+                            acceptedLessonInfoList.add(lessonInfo);
+                        } else {
+                            String lessonInfo = purchase.getTopicName()
+                                    + " - " + purchase.getDateForLesson()
+                                    + " - " + purchase.getStudentName();
 
-                            Topic topicToBeTaught = new Topic();
-                            topicToBeTaught.setTitle(purchase.getTopicName());
-                            acceptedLesson.setTopicToBeTaught(topicToBeTaught);
-
-                            acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
-
-                            Tutor tutorTeaching = new Tutor();
-                            tutorTeaching.setDataBaseID(purchase.getTutorTeachingDatabaseID());
-                            acceptedLesson.setTutorTeaching(tutorTeaching);
-
-                            acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
-                            acceptedLesson.setStudentName(purchase.getStudentName());
-
-                            listOfAcceptedLessonRequests.add(acceptedLesson);
-
+                            pendingLessonInfoList.add(lessonInfo);
                         }
                     } catch (Exception e) {
                         Log.e("FirebaseError", "Error parsing Purchase data: " + e.getMessage());
                     }
                 }
 
-                adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-
+                updateUIAccpetedLesson();
+                updateUIPendingLesson();
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("FirebaseError", "Error reading topicPurchases: " + error.getMessage());
             }
         });
+    }
+
+    private void updateUIPendingLesson() {
+        TextView textViewAcceptedLessonRequests = findViewById(R.id.textViewAcceptedLessonRequests);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String lessonInfo : acceptedLessonInfoList) {
+            stringBuilder.append(lessonInfo).append("\n");
+        }
+
+        textViewAcceptedLessonRequests.setText(stringBuilder.toString());
+    }
+
+    private void updateUIAccpetedLesson() {
+        TextView textViewPendingLessonRequests = findViewById(R.id.textViewPendingLessonRequests);
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String lessonInfo : pendingLessonInfoList) {
+            stringBuilder.append(lessonInfo).append("\n");
+        }
+
+        textViewPendingLessonRequests.setText(stringBuilder.toString());
     }
 
 
     public void approvePurchase(Purchase purchase) {
         purchase.setTutorApproved(true);
 
-        Lesson acceptedLesson = new Lesson();
-        acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
-
-        Topic topicToBeTaught = new Topic();
-        topicToBeTaught.setTitle(purchase.getTopicName());
-
-        acceptedLesson.setTopicToBeTaught(topicToBeTaught);
-
-        acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
-
-        acceptedLesson.setTutorTeaching(loggedInTutor);
-
-        acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
-        acceptedLesson.setStudentName(purchase.getStudentName());
-
-        listOfAcceptedLessonRequests.add(acceptedLesson);
-
-        adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-
         String purchaseId = purchase.getDatabaseID();
         DatabaseReference purchaseRef =
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
 
-        Log.d("FirebaseData", "purchase.tutorApproved: " + purchase.isTutorApproved());
+        updateUIAccpetedLesson();
+        updateUIPendingLesson();
 
         Toast.makeText(this, "Approved purchase successfully", Toast.LENGTH_LONG).show();
     }
@@ -170,6 +137,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         DatabaseReference purchaseRef =
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
+
+        updateUIPendingLesson();
 
         Toast.makeText(this, "Rejected purchase successfully", Toast.LENGTH_LONG).show();
     }

@@ -7,58 +7,48 @@
     tools:context=".TutorEngagementsActivity">
 
     <LinearLayout
-        android:layout_width="378dp"
-        android:layout_height="575dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textViewAcceptedLessonRequestsTitle"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Accepted Lesson Requests"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewAcceptedLessonRequestsTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Accepted Lesson Requests"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewAcceptedLessonRequests"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewAcceptedLessonRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="46dp" />
+            android:layout_height="8dp" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textViewPendingLessonRequestsTitle"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Pending Lesson Requests"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewPendingLessonRequestsTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pending Lesson Requests"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewPendingLessonRequests"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewPendingLessonRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 
@@ -68,8 +58,6 @@
         android:layout_height="56dp"
         android:background="#171E60"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
@@ -77,9 +65,5 @@
             android:layout_height="39dp"
             android:src="@drawable/logo" />
     </LinearLayout>
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

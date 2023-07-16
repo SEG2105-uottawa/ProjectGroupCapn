@@ -27,7 +27,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
     private PurchaseList adapterForRecyclerViewPendingLessonRequests;
     private TutorLessonList adapterForRecyclerViewAcceptedLessonRequests;
     private List<Purchase> listOfPendingPurchases;
-    private List<Lesson> listOfAcceptedLessonRequests;
+    private List<Lesson> listOfAcceptedLessonRequests; 
     DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
     DatabaseReference purchasesRef = FirebaseDatabase.getInstance().getReference().child("purchases");
     DatabaseReference topicsRef = FirebaseDatabase.getInstance().getReference().child("topics");

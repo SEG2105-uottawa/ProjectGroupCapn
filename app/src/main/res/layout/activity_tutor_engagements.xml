@@ -16,49 +16,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textViewAcceptedLessonRequestsTitle"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:text="Accepted Lesson Requests"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewAcceptedLessonRequestsTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Accepted Lesson Requests"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewAcceptedLessonRequests"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewAcceptedLessonRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No accepted lesson requests yet"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textSize="16sp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="46dp" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textViewPendingLessonRequestsTitle"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:text="Pending Lesson Requests"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textViewPendingLessonRequestsTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pending Lesson Requests"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewPendingLessonRequests"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPendingLessonRequests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 
@@ -77,9 +67,4 @@
             android:layout_height="39dp"
             android:src="@drawable/logo" />
     </LinearLayout>
-
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

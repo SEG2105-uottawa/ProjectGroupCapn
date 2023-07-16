@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Javadoc changes">
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Stuff im working on">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/RatingDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_rate_lesson.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
@@ -18,20 +20,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_0/graph.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_1/graph.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_2/graph.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/desugar_graph/debug/out/currentProject/dirs_bucket_3/graph.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/local_only_symbol_list/debug/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/local_only_symbol_list/debug/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/out/single/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/output-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/output-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_background_topic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_background_topic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LessonList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/LessonList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicInformationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicInformationActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorEngagementsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorEngagementsActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +54,29 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="topicListFeature" />
+        <entry key="$PROJECT_DIR$" value="Purchases-accept-reject" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +95,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -87,7 +108,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.tutronapp" />
+    </key>
     <key name="android.template.-700101385">
+      <recent name="com.example.tutronapp" />
+    </key>
+    <key name="android.template.-1949752109">
+      <recent name="com.example.tutronapp" />
+    </key>
+    <key name="android.template.260730975">
+      <recent name="com.example.tutronapp" />
+    </key>
+    <key name="android.template.-2021883004">
       <recent name="com.example.tutronapp" />
     </key>
   </component>
@@ -228,6 +261,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TopicTest" />
+        <item itemvalue="Android Instrumented Tests.OfferedTopicListTest" />
         <item itemvalue="Android Instrumented Tests.OfferedTopicListTest" />
         <item itemvalue="Gradle.TopicTest" />
       </list>
@@ -361,7 +396,168 @@
       <option name="project" value="LOCAL" />
       <updated>1688819171971</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changed RecyclerView colour for Topic Lists">
+      <created>1689111702905</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689111702905</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added new Activities to be implemented">
+      <created>1689115046340</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1689115046340</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactored a few classes">
+      <created>1689168318703</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1689168318703</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Lot of Stuff&#10;&#10;&#10;&#10;-Added DBID for topic&#10;-Made new Topic child in DB&#10;-Offering a topic will add it to the child&#10;-Made layout for StudentHomepageActivity&#10;-Added a purchasedLessons attribute to Student&#10;-Student now implements Serializable">
+      <created>1689171839479</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1689171839479</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updated StudentHomepageActivity&#10;Added SearchLessonsActivity">
+      <created>1689173329678</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1689173329678</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Changed Topic, TutorTopicsActivity and SearchLessonsActivity">
+      <created>1689177797290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1689177797290</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Changes to topic and SearchLessonsActivity">
+      <created>1689181205387</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1689181205387</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Completed the Layout of the Search Page">
+      <created>1689183139502</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1689183139502</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Search has been implemented, ranking has not">
+      <created>1689188767508</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1689188767508</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Completed Sorting functionality">
+      <created>1689191878974</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1689191878974</updated>
+    </task>
+    <task id="LOCAL-00028" summary="New Brach">
+      <created>1689193199462</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1689193199462</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Completed Topic Information Class, Can be mostly reused except the purchase button">
+      <created>1689284109144</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1689284109144</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Partial Sandwich of a lot of stuff will complete tomorrow">
+      <created>1689294001973</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1689294001973</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Completed Purchase Functionality">
+      <created>1689294212746</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1689294212746</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Fixed Suspended Tutor Search Bug">
+      <created>1689295339228</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1689295339228</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Minor work on TutorHomepageActivity layout">
+      <created>1689297235979</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1689297235979</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added Tutor Profile and button to topics">
+      <created>1689299861068</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1689299861068</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Button listener added">
+      <created>1689300105514</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1689300105514</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Updated TutorEngagementsActivity &amp; activity_tutor_engagements.xml">
+      <created>1689301514408</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1689301514408</updated>
+    </task>
+    <task id="LOCAL-00037" summary="New Branch">
+      <created>1689342179670</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1689342179670</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added Adapter for StudentHomepageActivity &#10;-added lesson information">
+      <created>1689348386975</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1689348386975</updated>
+    </task>
+    <task id="LOCAL-00039" summary="New Dialog for student homepage &#10;-needs more dialogs for complaint registration and review submission">
+      <created>1689352130867</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1689352130867</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Tutor can now view pending and accepted lessons">
+      <created>1689357315113</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1689357315113</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,95 +584,101 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Reverted back to Long for suspensionEndDate&#10;Changed Login Suspension check to be more efficient" />
-    <MESSAGE value="Compartmentalized Login Suspension Check" />
-    <MESSAGE value="Added new Activity for tutor homepage" />
-    <MESSAGE value="Added some new XML layouts for TopicsList" />
-    <MESSAGE value="Redirected login for easy testing&#10;added TopicList" />
-    <MESSAGE value="Offered List Layout is now complete" />
-    <MESSAGE value="Updated Topic Item to include a short description" />
-    <MESSAGE value="Minor Updates" />
-    <MESSAGE value="Added the second list for all topics" />
-    <MESSAGE value="Minor Layout Fix" />
-    <MESSAGE value="Updated to receive Intent" />
-    <MESSAGE value="Completed all local Functionality for Topics" />
-    <MESSAGE value="Completed all local functionality for Both offered and other" />
-    <MESSAGE value="Added database functionality too" />
-    <MESSAGE value="Errors Fixed, fully functioning version" />
     <MESSAGE value="Enforces List sizes now" />
     <MESSAGE value="Javadoc changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc changes" />
+    <MESSAGE value="Changed RecyclerView colour for Topic Lists" />
+    <MESSAGE value="Added new Activities to be implemented" />
+    <MESSAGE value="Refactored a few classes" />
+    <MESSAGE value="Lot of Stuff&#10;&#10;&#10;&#10;-Added DBID for topic&#10;-Made new Topic child in DB&#10;-Offering a topic will add it to the child&#10;-Made layout for StudentHomepageActivity&#10;-Added a purchasedLessons attribute to Student&#10;-Student now implements Serializable" />
+    <MESSAGE value="Updated StudentHomepageActivity&#10;Added SearchLessonsActivity" />
+    <MESSAGE value="Changed Topic, TutorTopicsActivity and SearchLessonsActivity" />
+    <MESSAGE value="Changes to topic and SearchLessonsActivity" />
+    <MESSAGE value="Completed the Layout of the Search Page" />
+    <MESSAGE value="Search has been implemented, ranking has not" />
+    <MESSAGE value="Completed Sorting functionality" />
+    <MESSAGE value="New Brach" />
+    <MESSAGE value="Completed Topic Information Class, Can be mostly reused except the purchase button" />
+    <MESSAGE value="Partial Sandwich of a lot of stuff will complete tomorrow" />
+    <MESSAGE value="Completed Purchase Functionality" />
+    <MESSAGE value="Fixed Suspended Tutor Search Bug" />
+    <MESSAGE value="Minor work on TutorHomepageActivity layout" />
+    <MESSAGE value="Added Tutor Profile and button to topics" />
+    <MESSAGE value="Button listener added" />
+    <MESSAGE value="Updated TutorEngagementsActivity &amp; activity_tutor_engagements.xml" />
+    <MESSAGE value="New Branch" />
+    <MESSAGE value="Added Adapter for StudentHomepageActivity &#10;-added lesson information" />
+    <MESSAGE value="New Dialog for student homepage &#10;-needs more dialogs for complaint registration and review submission" />
+    <MESSAGE value="Tutor can now view pending and accepted lessons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tutor can now view pending and accepted lessons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/SignupActivity.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>180</line>
+          <line>189</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>181</line>
+          <line>190</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ManageComplaintsActivity.java</url>
-          <line>185</line>
+          <line>194</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="134" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ReviewsDialogFragment.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TutorEngagementsActivity.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/StudentHomepageActivity.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="202" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/TopicList.java</url>
-          <line>49</line>
-          <properties class="com.example.tutronapp.TopicList.TopicViewHolder" method="&lt;init&gt;">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ReviewsDialogFragment.java</url>
+          <line>20</line>
+          <properties class="com.example.tutronapp.ReviewsDialogFragment" method="&lt;init&gt;">
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="131" />
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/tutronapp/ReviewsDialogFragment.java</url>
+          <line>26</line>
+          <properties class="com.example.tutronapp.ReviewsDialogFragment" method="onCreateDialog">
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="187" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
@@ -487,6 +689,7 @@
     <watches-manager>
       <configuration name="AndroidRunConfigurationType">
         <watch expression="((ChildrenNode)dataSnapshot.node.node).children" custom="com.google.firebase.database.snapshot.ChildrenNode" />
+        <watch expression="loggedInTutor" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -16,7 +16,6 @@ public class Purchase implements Serializable {
     private boolean tutorApproved;
     private boolean tutorRejected;
 
-
     public Purchase() {
     }
 

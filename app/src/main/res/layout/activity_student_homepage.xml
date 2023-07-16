@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -23,59 +22,51 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/linearLayoutButtonLayout"
+    <TextView
+        android:id="@+id/textViewYourLessons"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Your Lessons"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewYourLessons"
+        android:layout_width="405dp"
+        android:layout_height="457dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYourLessons" />
+
+    <Button
+        android:id="@+id/btnViewPurchaseStatus"
         android:layout_width="190dp"
-        android:layout_height="121dp"
-        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="View Purchase Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewYourLessons" />
+
+    <Button
+        android:id="@+id/btnPurchaseLesson"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Purchase Lesson"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
-        app:layout_constraintVertical_bias="0.625">
-
-        <Button
-            android:id="@+id/btnViewPurchaseStatus"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="View Purchase Status" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
-        <Button
-            android:id="@+id/btnPurchaseLesson"
-            android:layout_width="190dp"
-            android:layout_height="55dp"
-            android:text="Purchase Lesson" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="390dp"
-        android:layout_height="493dp"
-        android:layout_marginTop="12dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBar">
-
-        <TextView
-            android:id="@+id/textViewYourLessons"
-            android:layout_width="138dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="16dp"
-            android:text="Your Lessons"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewYourLessons"
-            android:layout_width="match_parent"
-            android:layout_height="425dp"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPurchaseStatus"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

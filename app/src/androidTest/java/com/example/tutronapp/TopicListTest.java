@@ -9,8 +9,6 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.espresso.idling.CountingIdlingResource;
 
-import com.example.tutronapp.R;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -29,8 +27,8 @@ import static org.junit.Assert.fail;
 public class TopicListTest {
 
     @Rule
-    public ActivityScenarioRule<TutorHomepageActivity> activityRule =
-            new ActivityScenarioRule<>(TutorHomepageActivity.class);
+    public ActivityScenarioRule<TutorTopicsActivity> activityRule =
+            new ActivityScenarioRule<>(TutorTopicsActivity.class);
 
     /* IdlingResource used to resolve IllegalStateException
     * CountingIdlingResource used to track the completion of background tasks

@@ -59,11 +59,16 @@ public class OfferedTopicList extends RecyclerView.Adapter<OfferedTopicList.Topi
             itemView.setOnClickListener(v -> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
                 builder.setTitle(topic.getTitle())
-                        .setItems(new CharSequence[]{"Stop Offering", "Close"}, (dialog, which) -> {
-                            if (which == 0) {
-                                TutorHomepageActivity activity = (TutorHomepageActivity) v.getContext();
+                        .setItems(new CharSequence[]{"Stop Offering","View Reviews","Close"}, (dialog, which) -> {
+                            if (which == 0){
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
                                 activity.stopOffering(topic);
-                            } else if (which == 1) {
+                            }
+                            else if (which == 1){
+                                TutorTopicsActivity activity = (TutorTopicsActivity) v.getContext();
+                                activity.openReviewsDialogFragment(topic);
+                            }
+                            else if (which == 2){
                                 dialog.dismiss();
                             }
                         })

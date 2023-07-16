@@ -13,7 +13,25 @@
         android:theme="@style/Theme.TutronApp"
         tools:targetApi="31">
         <activity
+            android:name=".LessonInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TutorEngagementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopicInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchLessonsActivity"
+            android:exported="false" />
+        <activity
             android:name=".TutorHomepageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TutorTopicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomepageActivity"
             android:exported="false" />
         <activity
             android:name=".ManageComplaintsActivity"

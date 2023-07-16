@@ -67,10 +67,6 @@ public class StudentHomepageActivity extends AppCompatActivity {
         recyclerViewYourLessons.setAdapter(adapterForRecyclerViewYourLessons);
 
 
-
-
-
-
         btnPurchaseLesson.setOnClickListener(v -> {
             Bundle outwardBundle = new Bundle();
             outwardBundle.putSerializable("Student", loggedInStudent);

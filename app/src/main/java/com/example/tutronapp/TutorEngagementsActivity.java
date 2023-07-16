@@ -41,7 +41,6 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         if (bundle != null && bundle.containsKey("Tutor")){
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
-
         recyclerViewAcceptedLessonRequests = findViewById(R.id.recyclerViewAcceptedLessonRequests);
         recyclerViewPendingLessonRequests = findViewById(R.id.recyclerViewPendingLessonRequests);
 
@@ -56,38 +55,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
         recyclerViewAcceptedLessonRequests.setLayoutManager(new LinearLayoutManager(TutorEngagementsActivity.this));
         recyclerViewAcceptedLessonRequests.setAdapter(adapterForRecyclerViewAcceptedLessonRequests);
-        // TODO It is not finished
-        /**
-        for (Purchase purchase : loggedInTutor.getTopicPurchases()) {
 
-            if (purchase.isTutorApproved()) {
-                Lesson acceptedLesson = new Lesson();
-                acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
-
-                Topic topicToBeTaught = new Topic();
-                topicToBeTaught.setTitle(purchase.getTopicName());
-
-                acceptedLesson.setTopicToBeTaught(topicToBeTaught);
-
-                acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
-
-                Tutor tutorTeaching = new Tutor();
-
-                acceptedLesson.setTutorTeaching(tutorTeaching);
-
-                acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
-                acceptedLesson.setStudentName(purchase.getStudentName());
-
-
-                listOfAcceptedLessonRequests.add(acceptedLesson);
-            }
-        }
-
-        // Notify the adapter about the data change
-        adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-        **/
-
-        //processAcceptedPurchases();
+        handleData();
 
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
         loggedInTutorRef.addValueEventListener(new ValueEventListener() {
@@ -95,6 +64,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 loggedInTutor = snapshot.getValue(Tutor.class);
+
                 //adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
                 //adapterForRecyclerViewPendingLessonRequests.notifyDataSetChanged();
             }
@@ -105,38 +75,54 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         });
     }
 
-    private void processAcceptedPurchases() {
-        //TODO sth like in approvePurchase
-        listOfAcceptedLessonRequests.clear();
+    private void handleData() {
+        listOfAcceptedLessonRequests.clear(); // Clear the list before adding the approved lessons
 
-        for (Purchase purchase : loggedInTutor.getTopicPurchases()) {
-            if (purchase.isTutorApproved()) {
-                Lesson acceptedLesson = new Lesson();
-                acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
+        DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+        loggedInTutorRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Log.d("FirebaseData", "Snapshot value: " + snapshot.getValue());
 
-                Topic topicToBeTaught = new Topic();
-                topicToBeTaught.setTitle(purchase.getTopicName());
+                for (DataSnapshot purchaseSnapshot : snapshot.getChildren()) {
+                    try {
+                        Purchase purchase = purchaseSnapshot.getValue(Purchase.class);
+                        if (purchase != null && purchase.isTutorApproved()) {
+                            /**
+                            Lesson acceptedLesson = new Lesson();
+                            acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
 
-                acceptedLesson.setTopicToBeTaught(topicToBeTaught);
+                            Topic topicToBeTaught = new Topic();
+                            topicToBeTaught.setTitle(purchase.getTopicName());
+                            acceptedLesson.setTopicToBeTaught(topicToBeTaught);
 
-                acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
+                            acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
 
-                Tutor tutorTeaching = new Tutor();
+                            Tutor tutorTeaching = new Tutor();
+                            tutorTeaching.setDataBaseID(purchase.getTutorTeachingDatabaseID());
+                            acceptedLesson.setTutorTeaching(tutorTeaching);
 
-                acceptedLesson.setTutorTeaching(tutorTeaching);
+                            acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
+                            acceptedLesson.setStudentName(purchase.getStudentName());
 
-                acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
-                acceptedLesson.setStudentName(purchase.getStudentName());
+                            listOfAcceptedLessonRequests.add(acceptedLesson);
+                             **/
+                        }
+                    } catch (Exception e) {
+                        Log.e("FirebaseError", "Error parsing Purchase data: " + e.getMessage());
+                    }
+                }
 
+                adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
 
-                listOfAcceptedLessonRequests.add(acceptedLesson);
             }
-        }
 
-        // Notify the adapter about the data change
-        adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+            }
+        });
     }
+
 
     public void approvePurchase(Purchase purchase) {
         purchase.setTutorApproved(true);
@@ -151,9 +137,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
         acceptedLesson.setDateOfLesson(purchase.getDateForLesson());
 
-        Tutor tutorTeaching = new Tutor();
-
-        acceptedLesson.setTutorTeaching(tutorTeaching);
+        acceptedLesson.setTutorTeaching(loggedInTutor);
 
         acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
         acceptedLesson.setStudentName(purchase.getStudentName());

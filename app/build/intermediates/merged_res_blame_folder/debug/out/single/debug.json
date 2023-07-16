@@ -28,10 +28,6 @@
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_complaint_options.xml"
     },
     {
-        "merged": "com.example.tutronapp-merged_res-32:/layout_layout_item_tutor_lesson.xml.flat",
-        "source": "com.example.tutronapp-main-34:/layout/layout_item_tutor_lesson.xml"
-    },
-    {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\mipmap-hdpi\\ic_launcher.webp"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-32:/layout_item_pending_purchase.xml.flat",
+        "source": "com.example.tutronapp-main-34:/layout/item_pending_purchase.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_topic_information.xml.flat",
@@ -100,8 +100,16 @@
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_complaint_item.xml"
     },
     {
+        "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_layout_complaint_dialog.xml.flat",
+        "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\layout_complaint_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_item_lesson.xml.flat",
         "source": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-main-34:\\layout\\item_lesson.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-32:/layout_fragment_pending_purchases_dialog.xml.flat",
+        "source": "com.example.tutronapp-main-34:/layout/fragment_pending_purchases_dialog.xml"
     },
     {
         "merged": "C:\\Users\\Abhay\\.gradle\\daemon\\8.0\\com.example.tutronapp-merged_res-32:\\layout_activity_tutor_engagements.xml.flat",

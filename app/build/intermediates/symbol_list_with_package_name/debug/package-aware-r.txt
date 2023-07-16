@@ -2752,6 +2752,8 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextComplaintContent
+id editTextComplaintTitle
 id editTextDescription
 id editTextDuration
 id editTextExperience
@@ -2841,6 +2843,8 @@ id linearLayout4
 id linearLayout5
 id linearLayout6
 id linearLayout7
+id linearLayout8
+id linearLayoutButtonLayout
 id listMode
 id list_item
 id logo
@@ -2953,6 +2957,7 @@ id recyclerViewAcceptedLessonRequests
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
 id recyclerViewPendingLessonRequests
+id recyclerViewPendingPurchases
 id recyclerViewReviews
 id recyclerViewSearchResults
 id recyclerViewTopics
@@ -3079,6 +3084,7 @@ id textViewLessonTitle
 id textViewNew
 id textViewPendingLessonRequestsTitle
 id textViewPurchaseDate
+id textViewPurchaseStatus
 id textViewPurchaseTitle
 id textViewRating
 id textViewStatus
@@ -3270,8 +3276,11 @@ layout design_text_input_start_icon
 layout dialog_add_topic
 layout dialog_reviews
 layout dialog_tutor_available_schedule
+layout fragment_pending_purchases_dialog
 layout item_lesson
+layout item_pending_purchase
 layout item_review
+layout layout_complaint_dialog
 layout layout_complaint_item
 layout layout_complaint_options
 layout layout_item_purchase

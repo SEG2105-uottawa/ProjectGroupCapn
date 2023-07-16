@@ -4,7 +4,9 @@ import android.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -77,7 +79,44 @@ public class LessonList extends RecyclerView.Adapter<LessonList.LessonViewHolder
                                 //and Tutor. It should also be added to the List<Review> of a topic.
                             }
                             else if (which == 2){
-                                //add Complaint dialog here
+                                dialog.dismiss();
+                                //register complaint
+                                StudentHomepageActivity activity = (StudentHomepageActivity) v.getContext();
+                                AlertDialog.Builder builderOne = new AlertDialog.Builder(itemView.getContext());
+                                View dialogView = LayoutInflater.from(itemView.getContext()).inflate(R.layout.layout_complaint_dialog, null);
+                                builderOne.setView(dialogView);
+
+                                EditText editTextComplaintTitle = dialogView.findViewById(R.id.editTextComplaintTitle);
+                                EditText editTextComplaintContent = dialogView.findViewById(R.id.editTextComplaintContent);
+
+
+                                builderOne.setPositiveButton("Submit", (dialogOne, whichOne) -> {
+                                    String title = editTextComplaintTitle.getText().toString().trim();
+                                    String content = editTextComplaintContent.getText().toString().trim();
+
+                                    if (title.isEmpty() || content.isEmpty()){
+                                        Toast.makeText(itemView.getContext(), "Please fill in all fields.", Toast.LENGTH_SHORT).show();
+                                    }
+                                    else if (title.split("\\s+").length > 20) {
+                                        Toast.makeText(itemView.getContext(), "Complaint title should have 20 words or less.", Toast.LENGTH_SHORT).show();
+                                    }
+                                    else if (content.split("\\s+").length > 80) {
+                                        Toast.makeText(itemView.getContext(), "Complaint content should have 80 words or less.", Toast.LENGTH_SHORT).show();
+                                    }
+                                    else {
+                                        Complaint complaint = new Complaint(lesson.getTutorTeaching(),
+                                                activity.getLoggedInStudent(), title, content, "open");
+
+                                        activity.addComplaintToDatabase(complaint);
+
+                                        dialogOne.dismiss();
+                                    }
+                                });
+
+                                builderOne.setNegativeButton("Cancel", (dialogOne, whichOne) -> dialog.dismiss());
+
+                                AlertDialog dialogOne = builderOne.create();
+                                dialogOne.show();
                             }
                             else if (which == 3){
                                 dialog.dismiss();
@@ -87,5 +126,9 @@ public class LessonList extends RecyclerView.Adapter<LessonList.LessonViewHolder
                 });
 
         }
+
+
+
+
     }
 }

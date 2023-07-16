@@ -2751,6 +2751,8 @@ int id easeIn 0x7f0900ce
 int id easeInOut 0x7f0900cf
 int id easeOut 0x7f0900d0
 int id east 0x7f0900d1
+int id editTextComplaintContent 0x7f090261
+int id editTextComplaintTitle 0x7f090262
 int id editTextDescription 0x7f0900d2
 int id editTextDuration 0x7f0900d3
 int id editTextExperience 0x7f0900d4
@@ -2840,6 +2842,8 @@ int id linearLayout4 0x7f090127
 int id linearLayout5 0x7f090128
 int id linearLayout6 0x7f090129
 int id linearLayout7 0x7f09012a
+int id linearLayout8 0x7f090264
+int id linearLayoutButtonLayout 0x7f090263
 int id listMode 0x7f09012b
 int id list_item 0x7f09012c
 int id logo 0x7f09012d
@@ -2952,6 +2956,7 @@ int id recyclerViewAcceptedLessonRequests 0x7f090197
 int id recyclerViewComplaints 0x7f090198
 int id recyclerViewOfferedTopics 0x7f090199
 int id recyclerViewPendingLessonRequests 0x7f09019a
+int id recyclerViewPendingPurchases 0x7f090265
 int id recyclerViewReviews 0x7f09019b
 int id recyclerViewSearchResults 0x7f09019c
 int id recyclerViewTopics 0x7f09019d
@@ -3078,6 +3083,7 @@ int id textViewLessonTitle 0x7f090215
 int id textViewNew 0x7f090216
 int id textViewPendingLessonRequestsTitle 0x7f090217
 int id textViewPurchaseDate 0x7f090218
+int id textViewPurchaseStatus 0x7f090266
 int id textViewPurchaseTitle 0x7f090219
 int id textViewRating 0x7f09021a
 int id textViewStatus 0x7f09021b
@@ -3269,8 +3275,11 @@ int layout design_text_input_start_icon 0x7f0c0039
 int layout dialog_add_topic 0x7f0c003a
 int layout dialog_reviews 0x7f0c003b
 int layout dialog_tutor_available_schedule 0x7f0c003c
+int layout fragment_pending_purchases_dialog 0x7f0c008d
 int layout item_lesson 0x7f0c003d
+int layout item_pending_purchase 0x7f0c008e
 int layout item_review 0x7f0c003e
+int layout layout_complaint_dialog 0x7f0c008c
 int layout layout_complaint_item 0x7f0c003f
 int layout layout_complaint_options 0x7f0c0040
 int layout layout_item_purchase 0x7f0c0041

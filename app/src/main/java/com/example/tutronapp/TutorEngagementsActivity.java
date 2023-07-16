@@ -124,6 +124,10 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
 
+        DatabaseReference userTopicPurchasesRef =
+                usersRef.child(loggedInTutor.getDataBaseID()).child("topicPurchases").child(purchaseId);
+        userTopicPurchasesRef.setValue(purchase);
+
         updateUIAccpetedLesson();
         updateUIPendingLesson();
 

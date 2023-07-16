@@ -25,27 +25,19 @@ public class PurchaseList extends RecyclerView.Adapter<PurchaseList.PurchaseView
     @NonNull
     @Override
     public PurchaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        try{
+
             View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_item_purchase, parent, false);
             return new PurchaseViewHolder(itemView);
-        } catch (Exception e){
-            e.printStackTrace();
-            throw new IllegalArgumentException("Error inflating the item view.");
-        }
 
     }
 
     @Override
     public void onBindViewHolder(@NonNull PurchaseViewHolder holder, int position) {
-        try{
             if(holder == null){
                 throw new IllegalArgumentException("Invalid ViewHolder.");
             }
             Purchase purchase = purchaseList.get(position);
             holder.bind(purchase);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
 
     }
 
@@ -61,63 +53,47 @@ public class PurchaseList extends RecyclerView.Adapter<PurchaseList.PurchaseView
 
         public PurchaseViewHolder(@NonNull View itemView) {
             super(itemView);
-            try {
-                textViewPurchaseTitle = itemView.findViewById(R.id.textViewPurchaseTitle);
-                textViewPurchaseDate = itemView.findViewById(R.id.textViewPurchaseDate);
-            } catch (Exception e) {
-                e.printStackTrace();
-                throw new IllegalArgumentException("Error");
-            }
+            textViewPurchaseTitle = itemView.findViewById(R.id.textViewPurchaseTitle);
+            textViewPurchaseDate = itemView.findViewById(R.id.textViewPurchaseDate);
+
+
         }
 
         public void bind(Purchase purchase) {
-            try {
-                if (purchase == null) {
-                    throw new IllegalArgumentException("Invalid Purchase.");
-                }
-                textViewPurchaseTitle.setText(purchase.getTopicName());
-                long dateInMillis = purchase.getDateForLesson();
-                SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
-                String formattedDate = dateFormat.format(new Date(dateInMillis));
-                textViewPurchaseDate.setText("On " + formattedDate);
 
-                itemView.setOnClickListener(v -> {
-                    try {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
-                        builder.setTitle("Purchase Options")
-                                .setItems(new CharSequence[]{"Approve Purchase", "Reject Purchase", "Close"}, (dialog, which) -> {
-                                    TutorEngagementsActivity activity = (TutorEngagementsActivity) v.getContext();
-                                    switch (which) {
-                                        case 0: // Approve Purchase
-                                            activity.approvePurchase(purchase);
-                                            dialog.dismiss();
-                                            break;
-                                        case 1: // Reject Purchase
-                                            activity.rejectPurchase(purchase);
-                                            break;
-                                        case 2: // Close Dialog
-                                            dialog.dismiss();
-                                            break;
-                                    }
-                                });
-                        AlertDialog dialog = builder.create();
-                        dialog.show();
-                    } catch (ClassCastException e) {
-                        e.printStackTrace();
-                        throw new IllegalArgumentException("The context of the item view is not an instance of TutorEngagementActivity.");
-                    }
-                });
-            } catch (Exception e) {
-                e.printStackTrace();
+            if (purchase == null) {
+                throw new IllegalArgumentException("Invalid Purchase.");
             }
-        }
+            textViewPurchaseTitle.setText(purchase.getTopicName());
+            long dateInMillis = purchase.getDateForLesson();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+            String formattedDate = dateFormat.format(new Date(dateInMillis));
+            textViewPurchaseDate.setText("On " + formattedDate);
 
-        public TextView getTextViewPurchaseTitle() {
-            return textViewPurchaseTitle;
-        }
+            itemView.setOnClickListener(v -> {
 
-        public TextView getTextViewPurchaseDate(){
-            return textViewPurchaseDate;
+                AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
+                builder.setTitle("Purchase Options")
+                        .setItems(new CharSequence[]{"Approve Purchase", "Reject Purchase", "Close"}, (dialog, which) -> {
+                            TutorEngagementsActivity activity = (TutorEngagementsActivity) v.getContext();
+                            switch (which) {
+                                case 0: // Approve Purchase
+                                    activity.approvePurchase(purchase);
+                                    dialog.dismiss();
+                                    break;
+                                case 1: // Reject Purchase
+                                    activity.rejectPurchase(purchase);
+                                    break;
+                                case 2: // Close Dialog
+                                    dialog.dismiss();
+                                    break;
+                            }
+                        });
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+            });
         }
     }
+
 }
+

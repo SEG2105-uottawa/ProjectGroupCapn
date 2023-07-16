@@ -77,6 +77,8 @@ public class LessonList extends RecyclerView.Adapter<LessonList.LessonViewHolder
                                 //call a rate method in StudentHomepageActivity
                                 //Rate method should - modify rating, cumulative ratings and numberOfRatings in both Topic
                                 //and Tutor. It should also be added to the List<Review> of a topic.
+                                StudentHomepageActivity activity = (StudentHomepageActivity) v.getContext();
+                                activity.rate(lesson);
                             }
                             else if (which == 2){
                                 dialog.dismiss();

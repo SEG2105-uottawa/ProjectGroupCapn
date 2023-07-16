@@ -40,6 +40,15 @@ public class Purchase implements Serializable {
         this.dateOfPurchase = dateOfPurchase;
     }
 
+    public boolean equals(Object object){
+        if (object == null || object.getClass() != this.getClass()){
+            return false;
+        }
+        if (((Purchase) object).getDatabaseID().equals(this.databaseID)){
+            return true;
+        }
+        return false;
+    }
     public String getDatabaseID() {
         return databaseID;
     }

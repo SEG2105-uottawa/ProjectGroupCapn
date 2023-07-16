@@ -32,6 +32,7 @@ public class StudentHomepageActivity extends AppCompatActivity {
     private LessonList adapterForRecyclerViewYourLessons;
     private List<Lesson> listOfLessons;
     private List<Purchase> listOfPendingPurchases;
+    private DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
 
 
     @Override
@@ -119,5 +120,45 @@ public class StudentHomepageActivity extends AppCompatActivity {
         newNode.setValue(complaint);
         Toast.makeText(this, "Complaint Registration Successful", Toast.LENGTH_SHORT).show();
 
+    }
+
+    public void rate(Lesson lesson) {
+        if (lesson.getTopicToBeTaught().getReviews() != null) {
+            String loggedInStudentId = loggedInStudent.getDataBaseID();
+            List<Review> reviews = lesson.getTopicToBeTaught().getReviews();
+
+            for (Review review : reviews) {
+                if (review.getReviewBy() != null && review.getReviewBy().getDataBaseID().equals(loggedInStudentId)) {
+                    return;
+                }
+            }
+        }
+        RatingDialogFragment dialogFragment = new RatingDialogFragment();
+        dialogFragment.setOnRatingCompleteListener((rating, title, description) -> {
+
+            Review review = new Review();
+            review.setRating((int) rating);
+            review.setTitle(title);
+            review.setDescription(description);
+            review.setReviewBy(loggedInStudent);
+
+            loggedInStudent.getPurchasedLessons().remove(lesson);
+
+            lesson.getTopicToBeTaught().getReviews().add(review);
+            lesson.getTopicToBeTaught().addRating((int) rating);
+            lesson.getTutorTeaching().addRating((int) rating);
+
+            loggedInStudent.getPurchasedLessons().add(lesson);
+
+            DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(lesson.getTutorTeaching().getDataBaseID());
+            DatabaseReference studentRef = FirebaseDatabase.getInstance().getReference().child("users").child(loggedInStudent.getDataBaseID());
+
+            databaseReference.child("users").child(lesson.getTutorTeaching().getDataBaseID()).setValue(lesson.getTutorTeaching());
+            //databaseReference.child("users").child(loggedInStudent.getDataBaseID()).setValue(loggedInStudent);
+            //databaseReference.child("topics").child(lesson.getTopicToBeTaught().getDatabaseID()).setValue(lesson.getTopicToBeTaught());
+
+
+        });
+        dialogFragment.show(getSupportFragmentManager(), "RatingDialogFragment");
     }
 }

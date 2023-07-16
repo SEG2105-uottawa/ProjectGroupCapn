@@ -22,14 +22,29 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
     @NonNull
     @Override
     public ReviewViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_review, parent, false);
-        return new ReviewViewHolder(itemView);
+        try{
+            View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_review, parent, false);
+            return new ReviewViewHolder(itemView);
+        } catch(Exception e){
+            e.printStackTrace();
+            throw new IllegalArgumentException("Error inflating the item view. Please check the layout resource.");
+        }
+
     }
 
     @Override
     public void onBindViewHolder(@NonNull ReviewViewHolder holder, int position) {
-        Review review = reviews.get(position);
-        holder.bind(review);
+        try{
+            if(holder == null){
+                throw new IllegalArgumentException("Invalid ViewHolder");
+            }
+            Review review = reviews.get(position);
+            holder.bind(review);
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
     @Override
@@ -45,16 +60,30 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
 
         public ReviewViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewRating = itemView.findViewById(R.id.textViewRating);
-            textViewTitle = itemView.findViewById(R.id.textViewTitle);
-            textViewDescription = itemView.findViewById(R.id.textViewDescription);
+            try{
+                textViewRating = itemView.findViewById(R.id.textViewRating);
+                textViewTitle = itemView.findViewById(R.id.textViewTitle);
+                textViewDescription = itemView.findViewById(R.id.textViewDescription);
+            } catch(Exception e){
+                e.printStackTrace();
+                throw new IllegalArgumentException("Error");
+            }
+
         }
 
         @SuppressLint("SetTextI18n")
         public void bind(Review review) {
-            textViewRating.setText(String.valueOf(review.getRating()) + " Stars");
-            textViewTitle.setText(review.getTitle());
-            textViewDescription.setText(review.getDescription());
+            try{
+                if(review == null){
+                    throw new IllegalArgumentException("Invalid Input");
+                }
+                textViewRating.setText(String.valueOf(review.getRating()) + " Stars");
+                textViewTitle.setText(review.getTitle());
+                textViewDescription.setText(review.getDescription());
+            } catch(Exception e){
+                e.printStackTrace();
+            }
+
         }
     }
 }

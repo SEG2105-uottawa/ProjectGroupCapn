@@ -1,40 +1,115 @@
 package com.example.tutronapp;
 
-import static org.junit.Assert.*;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 public class ReviewTest {
 
     @Test
-    public void testGettersAndSetters() {
-        // Create a sample student
-        Student student = new Student("John", "Doe", "john@example.com", "password");
+    public void testGetRating() {
+        int expectedRating = 5;
+        Review review = new Review(expectedRating);
 
+        int actualRating = review.getRating();
 
-        // Create a review
+        Assert.assertEquals(expectedRating, actualRating);
+    }
+
+    @Test
+    public void testSetRating() {
+        int expectedRating = 3;
         Review review = new Review();
-        review.setRating(5);
-        review.setTitle("Great course");
-        review.setDescription("I really enjoyed taking this course from this tutor");
-        review.setReviewBy(student);
 
-        // Verify the getters
-        assertEquals(5, review.getRating());
-        assertEquals("Great course", review.getTitle());
-        assertEquals("I really enjoyed taking this course from this tutor", review.getDescription());
-        assertEquals(student, review.getReviewBy());
+        review.setRating(expectedRating);
+        int actualRating = review.getRating();
 
-        // Update the review
-        review.setRating(4);
-        review.setTitle("Good course");
-        review.setDescription("It was exciting to learn this course.");
-        review.setReviewBy(null);
+        Assert.assertEquals(expectedRating, actualRating);
+    }
 
-        // Verify the updated values
-        assertEquals(4, review.getRating());
-        assertEquals("Good course", review.getTitle());
-        assertEquals("It was exciting to learn this course.", review.getDescription());
-        assertNull(review.getReviewBy());
+    @Test
+    public void testGetTitle() {
+        String expectedTitle = "Sample Title";
+        Review review = new Review(4, expectedTitle, "Sample Description");
+
+        String actualTitle = review.getTitle();
+
+        Assert.assertEquals(expectedTitle, actualTitle);
+    }
+
+    @Test
+    public void testSetTitle() {
+        String expectedTitle = "New Title";
+        Review review = new Review();
+
+        review.setTitle(expectedTitle);
+        String actualTitle = review.getTitle();
+
+        Assert.assertEquals(expectedTitle, actualTitle);
+    }
+
+    @Test
+    public void testGetDescription() {
+        String expectedDescription = "Sample Description";
+        Review review = new Review(4, "Sample Title", expectedDescription);
+
+        String actualDescription = review.getDescription();
+
+        Assert.assertEquals(expectedDescription, actualDescription);
+    }
+
+    @Test
+    public void testSetDescription() {
+        String expectedDescription = "New Description";
+        Review review = new Review();
+
+        review.setDescription(expectedDescription);
+        String actualDescription = review.getDescription();
+
+        Assert.assertEquals(expectedDescription, actualDescription);
+    }
+
+    @Test
+    public void testGetReviewBy() {
+        String expectedReviewBy = "John Doe";
+        Review review = new Review(4, "Sample Title", "Sample Description");
+        review.setReviewBy(expectedReviewBy);
+
+        String actualReviewBy = review.getReviewBy();
+
+        Assert.assertEquals(expectedReviewBy, actualReviewBy);
+    }
+
+    @Test
+    public void testSetReviewBy() {
+        String expectedReviewBy = "Jane Smith";
+        Review review = new Review();
+
+        review.setReviewBy(expectedReviewBy);
+        String actualReviewBy = review.getReviewBy();
+
+        Assert.assertEquals(expectedReviewBy, actualReviewBy);
+    }
+
+    @Test
+    public void testGetReviewByDatabaseID() {
+        String expectedReviewByDatabaseID = "12345";
+        Review review = new Review(4, "Sample Title", "Sample Description");
+        review.setReviewByDatabaseID(expectedReviewByDatabaseID);
+
+        String actualReviewByDatabaseID = review.getReviewByDatabaseID();
+
+        Assert.assertEquals(expectedReviewByDatabaseID, actualReviewByDatabaseID);
+    }
+
+    @Test
+    public void testSetReviewByDatabaseID() {
+        String expectedReviewByDatabaseID = "67890";
+        Review review = new Review();
+
+        review.setReviewByDatabaseID(expectedReviewByDatabaseID);
+        String actualReviewByDatabaseID = review.getReviewByDatabaseID();
+
+        Assert.assertEquals(expectedReviewByDatabaseID, actualReviewByDatabaseID);
     }
 }
+

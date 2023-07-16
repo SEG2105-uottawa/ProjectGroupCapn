@@ -79,7 +79,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         listOfAcceptedLessonRequests.clear(); // Clear the list before adding the approved lessons
 
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
-        loggedInTutorRef.addValueEventListener(new ValueEventListener() {
+        loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Log.d("FirebaseData", "Snapshot value: " + snapshot.getValue());

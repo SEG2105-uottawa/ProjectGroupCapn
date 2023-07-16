@@ -107,7 +107,7 @@ public class TopicInformationActivity extends AppCompatActivity {
         btnPurchase = findViewById(R.id.btnPurchase);
         btnPurchase.setOnClickListener(v -> {
             Purchase purchase = new Purchase(loggedInStudent.getName(), topicToDisplay.getTitle(), tutorTeaching.getName(),
-                                            loggedInStudent.getDataBaseID(), tutorTeaching.getDataBaseID(), topicToDisplay.getDatabaseID(),
+                                            loggedInStudent.getDataBaseID(), tutorTeaching.getDataBaseID(), topicToDisplay.getTutorDatabaseID(),
                                             selectedDate, System.currentTimeMillis());
 
             if (!checkSpamPurchase(purchase) && selectedDate > System.currentTimeMillis()) {

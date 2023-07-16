@@ -61,6 +61,8 @@ public class TutorLessonList extends RecyclerView.Adapter<TutorLessonList.TutorL
             String formattedDate = dateFormat.format(new Date(dateInMillis));
             textViewLessonDate.setText("On " + formattedDate);
             textViewLessonFor.setText("For " + lesson.getStudentName());
+
+
         }
     }
 }

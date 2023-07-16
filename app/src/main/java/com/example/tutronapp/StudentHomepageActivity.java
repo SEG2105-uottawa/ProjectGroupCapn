@@ -152,10 +152,11 @@ public class StudentHomepageActivity extends AppCompatActivity {
 
             DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(lesson.getTutorTeaching().getDataBaseID());
             DatabaseReference studentRef = FirebaseDatabase.getInstance().getReference().child("users").child(loggedInStudent.getDataBaseID());
+            DatabaseReference topicRef = FirebaseDatabase.getInstance().getReference().child("topics").child(lesson.getTopicToBeTaught().getDatabaseID());
 
-            databaseReference.child("users").child(lesson.getTutorTeaching().getDataBaseID()).setValue(lesson.getTutorTeaching());
-            //databaseReference.child("users").child(loggedInStudent.getDataBaseID()).setValue(loggedInStudent);
-            //databaseReference.child("topics").child(lesson.getTopicToBeTaught().getDatabaseID()).setValue(lesson.getTopicToBeTaught());
+            tutorRef.setValue(lesson.getTutorTeaching());
+            studentRef.setValue(loggedInStudent);
+            topicRef.setValue(lesson.getTopicToBeTaught());
 
 
         });

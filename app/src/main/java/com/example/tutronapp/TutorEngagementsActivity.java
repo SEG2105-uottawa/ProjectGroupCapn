@@ -28,6 +28,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
     private TutorLessonList adapterForRecyclerViewAcceptedLessonRequests;
     private List<Purchase> listOfPendingPurchases;
     private List<Lesson> listOfAcceptedLessonRequests;
+
     DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
     DatabaseReference purchasesRef = FirebaseDatabase.getInstance().getReference().child("purchases");
     DatabaseReference topicsRef = FirebaseDatabase.getInstance().getReference().child("topics");
@@ -38,7 +39,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tutor_engagements);
 
         Bundle bundle = getIntent().getExtras();
-        if (bundle != null && bundle.containsKey("Tutor")){
+        if (bundle != null && bundle.containsKey("Tutor")) {
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
         recyclerViewAcceptedLessonRequests = findViewById(R.id.recyclerViewAcceptedLessonRequests);
@@ -56,15 +57,14 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         recyclerViewAcceptedLessonRequests.setLayoutManager(new LinearLayoutManager(TutorEngagementsActivity.this));
         recyclerViewAcceptedLessonRequests.setAdapter(adapterForRecyclerViewAcceptedLessonRequests);
 
-        handleData();
 
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+
         loggedInTutorRef.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 loggedInTutor = snapshot.getValue(Tutor.class);
-
                 //adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
                 //adapterForRecyclerViewPendingLessonRequests.notifyDataSetChanged();
             }
@@ -73,22 +73,29 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
+
+        handleData();
     }
 
     private void handleData() {
-        listOfAcceptedLessonRequests.clear(); // Clear the list before adding the approved lessons
+        listOfAcceptedLessonRequests = loggedInTutor.getLessonPurchases();
 
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
         loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                Log.d("FirebaseData", "Snapshot value: " + snapshot.getValue());
+                // Log.d("FirebaseData", "Snapshot value: " + snapshot.getValue());
+
+                listOfAcceptedLessonRequests.clear();
 
                 for (DataSnapshot purchaseSnapshot : snapshot.getChildren()) {
+                    Log.d("FirebaseData", "Purchase Snapshot" + purchaseSnapshot.getValue());
                     try {
                         Purchase purchase = purchaseSnapshot.getValue(Purchase.class);
-                        if (purchase != null && purchase.isTutorApproved()) {
-                            /**
+                        Log.d("FirebaseData", "purchase.isTutorApproved: " + purchase.isTutorApproved());
+                        if (purchase.isTutorApproved()) {
+                            Log.d("FirebaseLooping", "Purchase " + purchase);
+
                             Lesson acceptedLesson = new Lesson();
                             acceptedLesson.setDatabaseID(purchase.getLessonTaughtDatabaseID());
 
@@ -106,7 +113,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                             acceptedLesson.setStudentName(purchase.getStudentName());
 
                             listOfAcceptedLessonRequests.add(acceptedLesson);
-                             **/
+
                         }
                     } catch (Exception e) {
                         Log.e("FirebaseError", "Error parsing Purchase data: " + e.getMessage());
@@ -142,17 +149,16 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         acceptedLesson.setStudentDatabaseID(purchase.getStudentPurchasingDatabaseID());
         acceptedLesson.setStudentName(purchase.getStudentName());
 
-
         listOfAcceptedLessonRequests.add(acceptedLesson);
 
-
         adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();
-
 
         String purchaseId = purchase.getDatabaseID();
         DatabaseReference purchaseRef =
                 FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
+
+        Log.d("FirebaseData", "purchase.tutorApproved: " + purchase.isTutorApproved());
 
         Toast.makeText(this, "Approved purchase successfully", Toast.LENGTH_LONG).show();
     }

@@ -27,14 +27,11 @@ public class TutorEngagementsActivity extends AppCompatActivity {
     // Initialize
     private Tutor loggedInTutor;
     //TODO what is the type of acceptedPurchasesList
-    private List<Lesson> acceptedPurchasesList;
+    private List<String> acceptedPurchasesList;
     private List<Purchase> pendingPurchasesList;
 
     private RecyclerView recyclerViewPending;
-    private RecyclerView recyclerViewAccepted;
-
     private PurchaseList pendingListAdapter;
-    private TutorLessonList acceptedListAdapter;
 
     // Database
     DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
@@ -63,7 +60,50 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         recyclerViewPending.setLayoutManager(new LinearLayoutManager(TutorEngagementsActivity.this));
         recyclerViewPending.setAdapter(pendingListAdapter);
 
+        // For accepted
+        TextView textViewAccepted = findViewById(R.id.textViewAcceptedLessonRequests);
+        textViewAccepted.setMovementMethod(new ScrollingMovementMethod());
+        StringBuilder acceptedBuilder = new StringBuilder();
+
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+
+        loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                acceptedPurchasesList.clear();
+                pendingPurchasesList.clear();
+
+                for (DataSnapshot purchaseSnapshot : snapshot.getChildren()) {
+                    try {
+                        Purchase purchase = purchaseSnapshot.getValue(Purchase.class);
+                        Log.d("FirebaseDatabase", "Snapshot: " + purchase);
+
+                        if (purchase.isTutorApproved()) {
+                            String lessonString = purchase.getTopicName() +
+                                    " - " + purchase.getDateForLesson() +
+                                    " - " + purchase.getStudentName();
+                            acceptedPurchasesList.add(lessonString);
+                        }
+                        else if (!purchase.isTutorRejected()) {
+                            //TODO not sure is it pendingPurchasesList.add is fine
+                            pendingPurchasesList.add(purchase);
+                        }
+                    }
+                    catch (Exception e) {
+                        Log.e ("FirebaseError", "Error looping the purchase: " + e.getMessage());
+                    }
+                }
+
+                pendingListAdapter.notifyDataSetChanged();
+                updateUIAccepted();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e ("FirebaseError", "DatabaseError: " + error.getMessage());
+            }
+        });
 
         /*loggedInTutorRef.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
@@ -80,8 +120,17 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
          */
 
+    }
 
+    private void updateUIAccepted() {
+        TextView textViewAccepted = findViewById(R.id.textViewAcceptedLessonRequests);
 
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String lessonString : acceptedPurchasesList) {
+            stringBuilder.append(lessonString).append("\n");
+        }
+
+        textViewAccepted.setText(stringBuilder.toString());
     }
 
     private void handleData() {

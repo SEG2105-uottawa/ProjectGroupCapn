@@ -3084,6 +3084,7 @@ id textViewLessonTitle
 id textViewNew
 id textViewPendingLessonRequestsTitle
 id textViewPurchaseDate
+id textViewPurchaseLessonDate
 id textViewPurchaseStatus
 id textViewPurchaseTitle
 id textViewRating

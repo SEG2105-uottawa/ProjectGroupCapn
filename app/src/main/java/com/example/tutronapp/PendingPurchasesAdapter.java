@@ -44,12 +44,14 @@ public class PendingPurchasesAdapter extends RecyclerView.Adapter<PendingPurchas
         private TextView textViewPurchaseTitle;
         private TextView textViewPurchaseDate;
         private TextView textViewPurchaseStatus;
+        private TextView textViewPurchaseLessonDate;
 
         public PendingPurchaseViewHolder(@NonNull View itemView) {
             super(itemView);
             textViewPurchaseTitle = itemView.findViewById(R.id.textViewPurchaseTitle);
             textViewPurchaseDate = itemView.findViewById(R.id.textViewPurchaseDate);
             textViewPurchaseStatus = itemView.findViewById(R.id.textViewPurchaseStatus);
+            textViewPurchaseLessonDate = itemView.findViewById(R.id.textViewPurchaseLessonDate);
         }
 
         @SuppressLint("SetTextI18n")
@@ -59,6 +61,12 @@ public class PendingPurchasesAdapter extends RecyclerView.Adapter<PendingPurchas
             SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
             String formattedDate = dateFormat.format(new Date(dateInMillis));
             textViewPurchaseDate.setText("On " + formattedDate);
+
+            long dateInMillisOne = purchase.getDateForLesson();
+            SimpleDateFormat dateFormatOne = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+            String formattedDateOne = dateFormatOne.format(new Date(dateInMillisOne));
+            textViewPurchaseLessonDate.setText("Lesson Date : " + formattedDateOne);
+
 
             boolean tutorApproved = purchase.isTutorApproved();
             boolean tutorRejected = purchase.isTutorRejected();

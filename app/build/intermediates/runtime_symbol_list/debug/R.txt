@@ -3083,6 +3083,7 @@ int id textViewLessonTitle 0x7f090215
 int id textViewNew 0x7f090216
 int id textViewPendingLessonRequestsTitle 0x7f090217
 int id textViewPurchaseDate 0x7f090218
+int id textViewPurchaseLessonDate 0x7f090267
 int id textViewPurchaseStatus 0x7f090266
 int id textViewPurchaseTitle 0x7f090219
 int id textViewRating 0x7f09021a

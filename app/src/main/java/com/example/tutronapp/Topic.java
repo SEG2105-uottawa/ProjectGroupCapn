@@ -19,11 +19,6 @@ public class Topic implements Serializable {
     private int numberOfRatings = 0;
     private List<Review> reviews = new ArrayList<>();
 
-
-
-
-
-
     public Topic(){
     }
 

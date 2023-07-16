@@ -2651,6 +2651,7 @@ id btnDismiss
 id btnLessons
 id btnLogin
 id btnLoginLoginPage
+id btnOk
 id btnProceed
 id btnProceedHome
 id btnPurchase
@@ -2757,6 +2758,8 @@ id editTextDuration
 id editTextExperience
 id editTextHourlyRate
 id editTextLanguageSpoken
+id editTextReviewDescription
+id editTextReviewTitle
 id editTextTitle
 id editTextTopic
 id editTextTutorName
@@ -2947,6 +2950,7 @@ id profile_photo1
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id ratio
 id rectangles
 id recyclerViewAcceptedLessonRequests
@@ -3268,6 +3272,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_add_topic
+layout dialog_rate_lesson
 layout dialog_reviews
 layout dialog_tutor_available_schedule
 layout item_lesson

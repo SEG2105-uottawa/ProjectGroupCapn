@@ -16,6 +16,7 @@ id btnDismiss
 id btnLessons
 id btnLogin
 id btnLoginLoginPage
+id btnOk
 id btnProceed
 id btnProceedHome
 id btnPurchase
@@ -47,6 +48,8 @@ id editTextDuration
 id editTextExperience
 id editTextHourlyRate
 id editTextLanguageSpoken
+id editTextReviewDescription
+id editTextReviewTitle
 id editTextTitle
 id editTextTopic
 id editTextTutorName
@@ -77,6 +80,7 @@ id password
 id postCode
 id profile_photo
 id profile_photo1
+id ratingBar
 id recyclerViewAcceptedLessonRequests
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
@@ -152,6 +156,7 @@ layout activity_tutor_info
 layout activity_tutor_topics
 layout activity_welcome
 layout dialog_add_topic
+layout dialog_rate_lesson
 layout dialog_reviews
 layout dialog_tutor_available_schedule
 layout item_lesson

@@ -159,7 +159,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         acceptedLesson.setStudentName(purchase.getStudentName());
 
 
-        listOfAcceptedLessonRequests.add(acceptedLesson);
+        //listOfAcceptedLessonRequests.add(acceptedLesson);
+
 
 
         adapterForRecyclerViewAcceptedLessonRequests.notifyDataSetChanged();

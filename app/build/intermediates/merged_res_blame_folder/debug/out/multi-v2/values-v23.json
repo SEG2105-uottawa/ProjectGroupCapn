@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-v23/values-v23.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-31:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\7908818b9807686ac2f60f4f7656e12d\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

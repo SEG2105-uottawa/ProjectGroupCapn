@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-hr/values-hr.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-31:/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\43e3d7da2550826683deaad880241c87\\transformed\\appcompat-1.6.1\\res\\values-hr\\values-hr.xml",

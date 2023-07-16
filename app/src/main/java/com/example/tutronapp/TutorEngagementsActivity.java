@@ -19,8 +19,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class TutorEngagementsActivity extends AppCompatActivity {
 
@@ -52,7 +55,11 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         pendingPurchasesList = new ArrayList<>();
         acceptedPurchasesList = new ArrayList<>();
 
-        pendingPurchasesList = loggedInTutor.getTopicPurchases();
+        for (Purchase purchase : loggedInTutor.getTopicPurchases()) {
+            if (!purchase.isTutorApproved() && !purchase.isTutorRejected()) {
+                pendingPurchasesList.add(purchase);
+            }
+        }
 
         //For pending
         recyclerViewPending = findViewById(R.id.recyclerViewPendingLessonRequests);
@@ -66,6 +73,13 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         StringBuilder acceptedBuilder = new StringBuilder();
 
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+
+        updateUIAccepted();
+
+
+
+
+        /*
 
         loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
@@ -105,6 +119,10 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             }
         });
 
+         */
+
+
+
         /*loggedInTutorRef.addValueEventListener(new ValueEventListener() {
             @SuppressLint("NotifyDataSetChanged")
             @Override
@@ -123,6 +141,19 @@ public class TutorEngagementsActivity extends AppCompatActivity {
     }
 
     private void updateUIAccepted() {
+        for (Purchase purchase : loggedInTutor.getTopicPurchases()) {
+            if (purchase.isTutorApproved()) {
+                long dateInMillisOne = purchase.getDateForLesson();
+                SimpleDateFormat dateFormatOne = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+                String formattedDateOne = dateFormatOne.format(new Date(dateInMillisOne));
+                String lessonString = purchase.getTopicName() +
+                        " - " + formattedDateOne +
+                        " - " + purchase.getStudentName();
+                if (!acceptedPurchasesList.contains(lessonString)) {
+                    acceptedPurchasesList.add(lessonString);
+                }
+            }
+        }
         TextView textViewAccepted = findViewById(R.id.textViewAcceptedLessonRequests);
 
         StringBuilder stringBuilder = new StringBuilder();
@@ -132,6 +163,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
         textViewAccepted.setText(stringBuilder.toString());
     }
+
+
 
     private void handleData() {
         DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
@@ -202,6 +235,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                         pendingPurchasesList.remove(purchase);
                         pendingListAdapter.notifyDataSetChanged();
                         loggedInTutor.getTopicPurchases().remove(purchase);
+                        loggedInTutor.getTopicPurchases().add(purchase);
+                        updateUIAccepted();
 
                         usersRef.child(studentDatabaseID).setValue(student);
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);

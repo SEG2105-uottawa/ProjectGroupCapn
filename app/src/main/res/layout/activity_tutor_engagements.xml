@@ -16,26 +16,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topBar">
 
-        <TextView
-            android:id="@+id/textViewAcceptedLessonRequestsTitle"
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Accepted Lesson Requests"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_height="176dp"
+            android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/textViewAcceptedLessonRequests"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No accepted lesson requests yet"
-            android:gravity="center"
-            android:padding="16dp"
-            android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="46dp" />
+                <TextView
+                    android:id="@+id/textViewAcceptedLessonRequestsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted Lesson Requests"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewAcceptedLessonRequests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="No accepted lesson requests yet"
+                    android:textSize="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
 
         <TextView
             android:id="@+id/textViewPendingLessonRequestsTitle"

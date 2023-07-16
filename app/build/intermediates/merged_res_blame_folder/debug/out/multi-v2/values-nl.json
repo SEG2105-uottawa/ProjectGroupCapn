@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-nl/values-nl.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-31:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\d55bbe52f9d4a60bee221d0d41cf0142\\transformed\\play-services-basement-18.1.0\\res\\values-nl\\values.xml",

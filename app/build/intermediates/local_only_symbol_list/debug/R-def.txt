@@ -83,7 +83,6 @@ id postCode
 id profile_photo
 id profile_photo1
 id ratingBar
-id recyclerViewAcceptedLessonRequests
 id recyclerViewComplaints
 id recyclerViewOfferedTopics
 id recyclerViewPendingLessonRequests
@@ -107,6 +106,7 @@ id textView3
 id textView5
 id textView6
 id textView8
+id textViewAcceptedLessonRequests
 id textViewAcceptedLessonRequestsTitle
 id textViewAgainst
 id textViewComplaintBy

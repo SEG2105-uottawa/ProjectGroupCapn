@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tutronapp-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.tutronapp-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhay\\.gradle\\caches\\transforms-3\\7fd704f2ce269cd91172d7d54452b4c5\\transformed\\material-1.5.0\\res\\values-night-v8\\values-night-v8.xml",

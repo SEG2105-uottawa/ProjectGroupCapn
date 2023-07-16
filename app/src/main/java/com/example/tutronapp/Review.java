@@ -7,7 +7,8 @@ public class Review implements Serializable {
     private int rating;
     private String title;
     private String description;
-    private Student reviewBy;
+    private String reviewBy;
+    private String reviewByDatabaseID;
 
     public Review() {
     }
@@ -22,11 +23,12 @@ public class Review implements Serializable {
         this.description = description;
     }
 
-    public Review(int rating, String title, String description, Student reviewBy) {
+    public Review(int rating, String title, String description, String reviewBy, String reviewByDatabaseID) {
         this.rating = rating;
         this.title = title;
         this.description = description;
         this.reviewBy = reviewBy;
+        this.reviewByDatabaseID = reviewByDatabaseID;
     }
 
     public int getRating() {
@@ -53,11 +55,19 @@ public class Review implements Serializable {
         this.description = description;
     }
 
-    public Student getReviewBy() {
+    public String getReviewBy() {
         return reviewBy;
     }
 
-    public void setReviewBy(Student reviewBy) {
+    public void setReviewBy(String reviewBy) {
         this.reviewBy = reviewBy;
+    }
+
+    public String getReviewByDatabaseID() {
+        return reviewByDatabaseID;
+    }
+
+    public void setReviewByDatabaseID(String reviewByDatabaseID) {
+        this.reviewByDatabaseID = reviewByDatabaseID;
     }
 }

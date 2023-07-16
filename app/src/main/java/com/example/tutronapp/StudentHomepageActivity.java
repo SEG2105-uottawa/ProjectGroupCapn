@@ -128,7 +128,7 @@ public class StudentHomepageActivity extends AppCompatActivity {
             List<Review> reviews = lesson.getTopicToBeTaught().getReviews();
 
             for (Review review : reviews) {
-                if (review.getReviewBy() != null && review.getReviewBy().getDataBaseID().equals(loggedInStudentId)) {
+                if (review.getReviewBy() != null && review.getReviewByDatabaseID().equals(loggedInStudentId)) {
                     return;
                 }
             }
@@ -140,13 +140,18 @@ public class StudentHomepageActivity extends AppCompatActivity {
             review.setRating((int) rating);
             review.setTitle(title);
             review.setDescription(description);
-            review.setReviewBy(loggedInStudent);
+            review.setReviewBy(loggedInStudent.getName());
+            review.setReviewByDatabaseID(loggedInStudent.getDataBaseID());
 
             loggedInStudent.getPurchasedLessons().remove(lesson);
 
             lesson.getTopicToBeTaught().getReviews().add(review);
             lesson.getTopicToBeTaught().addRating((int) rating);
             lesson.getTutorTeaching().addRating((int) rating);
+            lesson.getTutorTeaching().getOfferedTopics().remove(lesson.getTopicToBeTaught());
+            lesson.getTutorTeaching().getOfferedTopics().add(lesson.getTopicToBeTaught());
+            lesson.getTutorTeaching().getTopics().remove(lesson.getTopicToBeTaught());
+            lesson.getTutorTeaching().getTopics().add(lesson.getTopicToBeTaught());
 
             loggedInStudent.getPurchasedLessons().add(lesson);
 
@@ -155,8 +160,9 @@ public class StudentHomepageActivity extends AppCompatActivity {
             DatabaseReference topicRef = FirebaseDatabase.getInstance().getReference().child("topics").child(lesson.getTopicToBeTaught().getDatabaseID());
 
             tutorRef.setValue(lesson.getTutorTeaching());
-            studentRef.setValue(loggedInStudent);
             topicRef.setValue(lesson.getTopicToBeTaught());
+            studentRef.setValue(loggedInStudent);
+
 
 
         });

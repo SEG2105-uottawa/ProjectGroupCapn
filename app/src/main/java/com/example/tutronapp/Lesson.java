@@ -1,6 +1,7 @@
 package com.example.tutronapp;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Lesson implements Serializable {
 
@@ -29,6 +30,21 @@ public class Lesson implements Serializable {
         this.studentDatabaseID = studentDatabaseID;
         this.studentName = studentName;
     }
+
+    public boolean equals(Object object) {
+        if (object == null || object.getClass() != this.getClass()) {
+            return false;
+        }
+        Lesson otherLesson = (Lesson) object;
+
+        if (otherLesson.getDateOfLesson() == (this.dateOfLesson) && otherLesson.studentDatabaseID.equals(this.studentDatabaseID)){
+            return true;
+        }
+
+        return false;
+    }
+
+
 
     public Topic getTopicToBeTaught() {
         return topicToBeTaught;

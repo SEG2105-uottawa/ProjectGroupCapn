@@ -28,6 +28,10 @@
         "source": "com.example.tutronapp-main-35:/layout/item_lesson.xml"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-33:/drawable-hdpi_ic_notification.png.flat",
+        "source": "com.example.tutronapp-main-35:/drawable-hdpi/ic_notification.png"
+    },
+    {
         "merged": "com.example.tutronapp-merged_res-33:/drawable_logo.png.flat",
         "source": "com.example.tutronapp-main-35:/drawable/logo.png"
     },
@@ -116,6 +120,10 @@
         "source": "com.example.tutronapp-main-35:/layout/activity_tutor_info.xml"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-33:/drawable-anydpi_ic_notification.xml.flat",
+        "source": "com.example.tutronapp-main-35:/drawable-anydpi/ic_notification.xml"
+    },
+    {
         "merged": "com.example.tutronapp-merged_res-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.example.tutronapp-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -136,6 +144,10 @@
         "source": "com.example.tutronapp-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-33:/drawable-xhdpi_ic_notification.png.flat",
+        "source": "com.example.tutronapp-main-35:/drawable-xhdpi/ic_notification.png"
+    },
+    {
         "merged": "com.example.tutronapp-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.tutronapp-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
@@ -146,6 +158,10 @@
     {
         "merged": "com.example.tutronapp-merged_res-33:/layout_layout_complaint_item.xml.flat",
         "source": "com.example.tutronapp-main-35:/layout/layout_complaint_item.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-33:/drawable-mdpi_ic_notification.png.flat",
+        "source": "com.example.tutronapp-main-35:/drawable-mdpi/ic_notification.png"
     },
     {
         "merged": "com.example.tutronapp-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -166,6 +182,10 @@
     {
         "merged": "com.example.tutronapp-merged_res-33:/layout_item_pending_purchase.xml.flat",
         "source": "com.example.tutronapp-main-35:/layout/item_pending_purchase.xml"
+    },
+    {
+        "merged": "com.example.tutronapp-merged_res-33:/drawable-xxhdpi_ic_notification.png.flat",
+        "source": "com.example.tutronapp-main-35:/drawable-xxhdpi/ic_notification.png"
     },
     {
         "merged": "com.example.tutronapp-merged_res-33:/layout_activity_welcome.xml.flat",

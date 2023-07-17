@@ -4,6 +4,7 @@ array education_level
 array roles
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_notification
 drawable logo
 drawable rounded_background_topic
 drawable tutor_profile

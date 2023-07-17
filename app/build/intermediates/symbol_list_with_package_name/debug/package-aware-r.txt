@@ -2499,6 +2499,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_notification
 drawable logo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay

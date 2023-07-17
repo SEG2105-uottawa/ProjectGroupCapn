@@ -143,26 +143,27 @@ public class StudentHomepageActivity extends AppCompatActivity {
             review.setReviewBy(loggedInStudent.getName());
             review.setReviewByDatabaseID(loggedInStudent.getDataBaseID());
 
+            if (loggedInStudent.getPurchasedLessons().contains(lesson)){
+                loggedInStudent.getPurchasedLessons().remove(lesson);
+                lesson.getTopicToBeTaught().getReviews().add(review);
+                lesson.getTopicToBeTaught().addRating((int) rating);
+                lesson.getTutorTeaching().addRating((int) rating);
+                lesson.getTutorTeaching().getOfferedTopics().remove(lesson.getTopicToBeTaught());
+                lesson.getTutorTeaching().getOfferedTopics().add(lesson.getTopicToBeTaught());
+                lesson.getTutorTeaching().getTopics().remove(lesson.getTopicToBeTaught());
+                lesson.getTutorTeaching().getTopics().add(lesson.getTopicToBeTaught());
+                loggedInStudent.getPurchasedLessons().add(lesson);
 
 
-            lesson.getTopicToBeTaught().getReviews().add(review);
-            lesson.getTopicToBeTaught().addRating((int) rating);
-            lesson.getTutorTeaching().addRating((int) rating);
-            lesson.getTutorTeaching().getOfferedTopics().remove(lesson.getTopicToBeTaught());
-            lesson.getTutorTeaching().getOfferedTopics().add(lesson.getTopicToBeTaught());
-            lesson.getTutorTeaching().getTopics().remove(lesson.getTopicToBeTaught());
-            lesson.getTutorTeaching().getTopics().add(lesson.getTopicToBeTaught());
+                DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(lesson.getTutorTeaching().getDataBaseID());
+                DatabaseReference studentRef = FirebaseDatabase.getInstance().getReference().child("users").child(loggedInStudent.getDataBaseID());
+                DatabaseReference topicRef = FirebaseDatabase.getInstance().getReference().child("topics").child(lesson.getTopicToBeTaught().getDatabaseID());
 
+                tutorRef.setValue(lesson.getTutorTeaching());
+                topicRef.setValue(lesson.getTopicToBeTaught());
+                studentRef.setValue(loggedInStudent);
 
-            DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(lesson.getTutorTeaching().getDataBaseID());
-            DatabaseReference studentRef = FirebaseDatabase.getInstance().getReference().child("users").child(loggedInStudent.getDataBaseID());
-            DatabaseReference topicRef = FirebaseDatabase.getInstance().getReference().child("topics").child(lesson.getTopicToBeTaught().getDatabaseID());
-
-            tutorRef.setValue(lesson.getTutorTeaching());
-            topicRef.setValue(lesson.getTopicToBeTaught());
-            studentRef.setValue(loggedInStudent);
-
-
+            }
 
         });
         dialogFragment.show(getSupportFragmentManager(), "RatingDialogFragment");

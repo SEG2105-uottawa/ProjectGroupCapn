@@ -31,14 +31,20 @@ public class Lesson implements Serializable {
         this.studentName = studentName;
     }
 
+
+    @Override
     public boolean equals(Object object) {
         if (object == null || object.getClass() != this.getClass()) {
             return false;
         }
         Lesson otherLesson = (Lesson) object;
 
-        if (otherLesson.getDateOfLesson() == (this.dateOfLesson) && otherLesson.studentDatabaseID.equals(this.studentDatabaseID)){
-            return true;
+        if (otherLesson.getDateOfLesson().longValue() == (this.dateOfLesson.longValue())){
+            if (otherLesson.studentDatabaseID.equals(this.studentDatabaseID)){
+                if (otherLesson.getTopicToBeTaught().getTitle().equals(this.topicToBeTaught.getTitle())){
+                    return true;
+                }
+            }
         }
 
         return false;

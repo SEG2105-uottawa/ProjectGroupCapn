@@ -66,6 +66,9 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             }
         });
 
+        updateTutor();
+
+
         // Initialize for null exception
         pendingPurchasesList = new ArrayList<>();
         acceptedPurchasesList = new ArrayList<>();
@@ -274,6 +277,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                         usersRef.child(studentDatabaseID).setValue(student);
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
 
+                        updateTutor();
+
 
                     }
 
@@ -292,5 +297,21 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         pendingListAdapter.notifyDataSetChanged();
 
         Toast.makeText(this, "Rejected purchase successfully", Toast.LENGTH_LONG).show();
+    }
+
+    public void updateTutor(){
+        DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+        loggedInTutorRef.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                loggedInTutor = (Tutor) snapshot.getValue(Tutor.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e ("FirebaseError", "DatabaseError: " + error.getMessage());
+            }
+        });
     }
 }

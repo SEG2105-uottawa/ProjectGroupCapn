@@ -1,11 +1,20 @@
 package com.example.tutronapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class TutorHomepageActivity extends AppCompatActivity {
 
@@ -23,6 +32,9 @@ public class TutorHomepageActivity extends AppCompatActivity {
         if (bundle != null && bundle.containsKey("Tutor")) {
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
+
+
+
 
         textViewTutorName = findViewById(R.id.textViewTutorName);
         textViewTutorDescription = findViewById(R.id.textViewTutorDescripction);
@@ -53,11 +65,26 @@ public class TutorHomepageActivity extends AppCompatActivity {
         });
 
         btnLessons.setOnClickListener(v ->{
-            Intent intent = new Intent(TutorHomepageActivity.this, TutorEngagementsActivity.class);
-            Bundle outwardBundle = new Bundle();
-            outwardBundle.putSerializable("Tutor", loggedInTutor);
-            intent.putExtras(outwardBundle);
-            startActivity(intent);
+            DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+            DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+            loggedInTutorRef.addValueEventListener(new ValueEventListener() {
+                @SuppressLint("NotifyDataSetChanged")
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    loggedInTutor = (Tutor) snapshot.getValue(Tutor.class);
+                    Intent intent = new Intent(TutorHomepageActivity.this, TutorEngagementsActivity.class);
+                    Bundle outwardBundle = new Bundle();
+                    outwardBundle.putSerializable("Tutor", loggedInTutor);
+                    intent.putExtras(outwardBundle);
+                    startActivity(intent);
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Log.e ("FirebaseError", "DatabaseError: " + error.getMessage());
+                }
+            });
+
         });
 
 

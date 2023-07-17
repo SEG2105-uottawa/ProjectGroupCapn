@@ -214,6 +214,11 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                         loggedInTutor.getTopicPurchases().add(purchase);
                         updateUIAccepted();
 
+                        PurchaseNotification notification = new PurchaseNotification(studentDatabaseID,
+                                "Purchase of " + topic.getTitle() + " was successful");
+
+                        addNotificationToDatabase(notification);
+
                         usersRef.child(studentDatabaseID).setValue(student);
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
 
@@ -236,6 +241,13 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         pendingListAdapter.notifyDataSetChanged();
 
         Toast.makeText(this, "Approved purchase successfully", Toast.LENGTH_LONG).show();
+    }
+
+    private void addNotificationToDatabase(PurchaseNotification notification) {
+        DatabaseReference newNode = FirebaseDatabase.getInstance().getReference().child("notifications").push();
+        String nodeKey = newNode.getKey();
+        notification.setDatabaseID(nodeKey);
+        newNode.setValue(notification);
     }
 
     public void rejectPurchase(Purchase purchase) {

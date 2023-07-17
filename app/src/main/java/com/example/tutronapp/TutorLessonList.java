@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -55,12 +56,28 @@ public class TutorLessonList extends RecyclerView.Adapter<TutorLessonList.TutorL
 
         @SuppressLint("SetTextI18n")
         public void bind(Lesson lesson) {
-            textViewLessonTitle.setText(lesson.getTopicToBeTaught().getTitle());
+
+            if (lesson.getTopicToBeTaught() != null) {
+                textViewLessonTitle.setText(lesson.getTopicToBeTaught().getTitle());
+            } else {
+                textViewLessonTitle.setText("Invalid Topic");
+                Toast.makeText(itemView.getContext(), "Error: Invalid topic for the lesson", Toast.LENGTH_SHORT).show();
+            }
+
+            //textViewLessonTitle.setText(lesson.getTopicToBeTaught().getTitle());
             long dateInMillis = lesson.getDateOfLesson();
             SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
             String formattedDate = dateFormat.format(new Date(dateInMillis));
             textViewLessonDate.setText("On " + formattedDate);
-            textViewLessonFor.setText("For " + lesson.getStudentName());
+
+            if (lesson.getStudentName() != null) {
+                textViewLessonFor.setText("For " + lesson.getStudentName());
+            } else {
+                textViewLessonFor.setText("Unknown Student");
+                Toast.makeText(itemView.getContext(), "Error: Unknown student for the lesson", Toast.LENGTH_SHORT).show();
+            }
+
+            //textViewLessonFor.setText("For " + lesson.getStudentName());
 
 
         }

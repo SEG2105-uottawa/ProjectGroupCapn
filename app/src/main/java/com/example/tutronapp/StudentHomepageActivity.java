@@ -143,7 +143,7 @@ public class StudentHomepageActivity extends AppCompatActivity {
             review.setReviewBy(loggedInStudent.getName());
             review.setReviewByDatabaseID(loggedInStudent.getDataBaseID());
 
-            loggedInStudent.getPurchasedLessons().remove(lesson);
+
 
             lesson.getTopicToBeTaught().getReviews().add(review);
             lesson.getTopicToBeTaught().addRating((int) rating);
@@ -153,7 +153,6 @@ public class StudentHomepageActivity extends AppCompatActivity {
             lesson.getTutorTeaching().getTopics().remove(lesson.getTopicToBeTaught());
             lesson.getTutorTeaching().getTopics().add(lesson.getTopicToBeTaught());
 
-            loggedInStudent.getPurchasedLessons().add(lesson);
 
             DatabaseReference tutorRef = FirebaseDatabase.getInstance().getReference().child("users").child(lesson.getTutorTeaching().getDataBaseID());
             DatabaseReference studentRef = FirebaseDatabase.getInstance().getReference().child("users").child(loggedInStudent.getDataBaseID());

@@ -51,6 +51,21 @@ public class TutorEngagementsActivity extends AppCompatActivity {
             loggedInTutor = (Tutor) bundle.getSerializable("Tutor");
         }
 
+        DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
+
+        loggedInTutorRef.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                loggedInTutor = (Tutor) snapshot.getValue(Tutor.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e ("FirebaseError", "DatabaseError: " + error.getMessage());
+            }
+        });
+
         // Initialize for null exception
         pendingPurchasesList = new ArrayList<>();
         acceptedPurchasesList = new ArrayList<>();
@@ -69,57 +84,16 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
         // For accepted
         TextView textViewAccepted = findViewById(R.id.textViewAcceptedLessonRequests);
-        textViewAccepted.setMovementMethod(new ScrollingMovementMethod());
-        StringBuilder acceptedBuilder = new StringBuilder();
-
-        DatabaseReference loggedInTutorRef = usersRef.child(loggedInTutor.getDataBaseID());
 
         updateUIAccepted();
 
 
 
 
-        /*
 
-        loggedInTutorRef.child("topicPurchases").addValueEventListener(new ValueEventListener() {
-            @SuppressLint("NotifyDataSetChanged")
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                acceptedPurchasesList.clear();
-                pendingPurchasesList.clear();
 
-                for (DataSnapshot purchaseSnapshot : snapshot.getChildren()) {
-                    try {
-                        Purchase purchase = purchaseSnapshot.getValue(Purchase.class);
-                        Log.d("FirebaseDatabase", "Snapshot: " + purchase);
 
-                        if (purchase.isTutorApproved()) {
-                            String lessonString = purchase.getTopicName() +
-                                    " - " + purchase.getDateForLesson() +
-                                    " - " + purchase.getStudentName();
-                            acceptedPurchasesList.add(lessonString);
-                        }
-                        else if (!purchase.isTutorRejected()) {
-                            //TODO not sure is it pendingPurchasesList.add is fine
-                            pendingPurchasesList.add(purchase);
-                        }
-                    }
-                    catch (Exception e) {
-                        Log.e ("FirebaseError", "Error looping the purchase: " + e.getMessage());
-                    }
-                }
 
-                pendingListAdapter.notifyDataSetChanged();
-                updateUIAccepted();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Log.e ("FirebaseError", "DatabaseError: " + error.getMessage());
-            }
-        });
-
-         */
 
 
 
@@ -163,7 +137,6 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
         textViewAccepted.setText(stringBuilder.toString());
     }
-
 
 
     private void handleData() {
@@ -229,7 +202,7 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         Student student = dataSnapshot.getValue(Student.class);
-                        Lesson lesson = new Lesson(topic, purchase.getDateForLesson(),loggedInTutor, studentDatabaseID, student.getName());
+                        Lesson lesson = new Lesson(topic, purchase.getDateForLesson(), loggedInTutor, studentDatabaseID, student.getName());
                         student.getPurchasedLessons().add(lesson);
                         student.getPendingPurchases().remove(purchase);
                         pendingPurchasesList.remove(purchase);
@@ -240,7 +213,6 @@ public class TutorEngagementsActivity extends AppCompatActivity {
 
                         usersRef.child(studentDatabaseID).setValue(student);
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
-
 
 
                     }
@@ -258,7 +230,6 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         });
 
 
-
         pendingListAdapter.notifyDataSetChanged();
 
         Toast.makeText(this, "Approved purchase successfully", Toast.LENGTH_LONG).show();
@@ -268,15 +239,57 @@ public class TutorEngagementsActivity extends AppCompatActivity {
         purchase.setTutorRejected(true);
 
         String purchaseId = purchase.getDatabaseID();
-        DatabaseReference purchaseRef =
-                FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
+        DatabaseReference purchaseRef = FirebaseDatabase.getInstance().getReference().child("purchases").child(purchaseId);
         purchaseRef.setValue(purchase);
 
-        DatabaseReference userTopicPurchasesRef =
-                usersRef.child(loggedInTutor.getDataBaseID()).child("topicPurchases").child(purchaseId);
-        userTopicPurchasesRef.setValue(purchase);
+        // Get the topicDatabaseID and studentDatabaseID from the purchase
+        String topicDatabaseID = purchase.getLessonTaughtDatabaseID();
+        String studentDatabaseID = purchase.getStudentPurchasingDatabaseID();
 
-        pendingPurchasesList.remove(purchase);
+        // Reference to topics node
+        DatabaseReference topicsRef = FirebaseDatabase.getInstance().getReference().child("topics");
+
+        // Reference to users node
+        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+
+        // Query for getting the Topic
+        Query topicQuery = topicsRef.child(topicDatabaseID);
+        topicQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Topic topic = dataSnapshot.getValue(Topic.class);
+                Query studentQuery = usersRef.child(studentDatabaseID);
+                studentQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        Student student = dataSnapshot.getValue(Student.class);
+                        student.getPendingPurchases().remove(purchase);
+                        student.getPendingPurchases().add(purchase);
+                        pendingPurchasesList.remove(purchase);
+                        pendingListAdapter.notifyDataSetChanged();
+                        loggedInTutor.getTopicPurchases().remove(purchase);
+                        loggedInTutor.getTopicPurchases().add(purchase);
+                        updateUIAccepted();
+
+                        usersRef.child(studentDatabaseID).setValue(student);
+                        usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
+
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+
+
+        pendingListAdapter.notifyDataSetChanged();
 
         Toast.makeText(this, "Rejected purchase successfully", Toast.LENGTH_LONG).show();
     }

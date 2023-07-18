@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -56,7 +57,12 @@ public class SearchResultList extends RecyclerView.Adapter<SearchResultList.Sear
 
             itemView.setOnClickListener(v -> {
                 SearchLessonsActivity activity = (SearchLessonsActivity) v.getContext();
-                activity.moreInfo(topic);
+
+                if (activity != null) {
+                    activity.moreInfo(topic);
+                } else {
+                    Toast.makeText(itemView.getContext(), "Error: Unable to get activity", Toast.LENGTH_SHORT).show();
+                }
             });
 
         }

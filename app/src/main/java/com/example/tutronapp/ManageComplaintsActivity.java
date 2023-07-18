@@ -173,14 +173,14 @@ public class ManageComplaintsActivity extends AppCompatActivity implements Compl
         if (duration == 0) {
             complaint.setStatus("suspended 0");
             suspendedTillAsALongInMillis = Long.valueOf(-1);
-
+            complaint.getComplaintAgainst().setSuspensionEndDate(suspendedTillAsALongInMillis);
         }
         else {
             LocalDate currentDate = LocalDate.now();
             suspensionEndDate = currentDate.plusDays(duration);
 
             //max value of Long Storage
-            if (duration < 106751991167.301){
+            if (duration < 106751991167.301 && duration > 0){
                 suspendedTillAsALongInMillis = System.currentTimeMillis() + (long) duration * 86400000;
             }
             else {

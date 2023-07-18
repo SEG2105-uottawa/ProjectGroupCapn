@@ -115,6 +115,11 @@ public class LoginActivity extends AppCompatActivity {
         if (tutor.getSuspensionEndDate() == null){
             return false;
         }
+        if (tutor.getSuspensionEndDate() == (long) -1) {
+            Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
+                    Toast.LENGTH_SHORT).show();
+            return true;
+        }
         else if (tutor.getSuspensionEndDate() < System.currentTimeMillis()){
             return false;
         }
@@ -123,11 +128,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Your account is suspended until " + suspensionEndDate,Toast.LENGTH_SHORT).show();
             return true;
         }
-        else if (tutor.getSuspensionEndDate() == -1){
-            Toast.makeText(getApplicationContext(), "Your account is permanently suspended",
-                    Toast.LENGTH_SHORT).show();
-            return true;
-        }
+
         return false;
     }
 

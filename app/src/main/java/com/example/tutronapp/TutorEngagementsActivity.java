@@ -222,6 +222,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                         usersRef.child(studentDatabaseID).setValue(student);
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
 
+                        finish();
+
 
                     }
 
@@ -290,6 +292,8 @@ public class TutorEngagementsActivity extends AppCompatActivity {
                         usersRef.child(loggedInTutor.getDataBaseID()).setValue(loggedInTutor);
 
                         updateTutor();
+
+                        finish();
 
 
                     }

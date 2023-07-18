@@ -69,9 +69,10 @@ public class SearchLessonsActivity extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot tutorSnapshot) {
                             Tutor tutor = tutorSnapshot.getValue(Tutor.class);
-                            if (tutor != null && (tutor.getSuspensionEndDate() == null || tutor.getSuspensionEndDate() <= System.currentTimeMillis() || tutor.getSuspensionEndDate() == -1)) {
-                                // Tutor is not suspended, add the topic to the list
-                                listOfTopics.add(topic);
+                            if (tutor != null){
+                                if (tutor.getSuspensionEndDate() == null || (tutor.getSuspensionEndDate() <= System.currentTimeMillis() && tutor.getSuspensionEndDate() != (long)-1)) {
+                                    listOfTopics.add(topic);
+                                }
                             }
                         }
 

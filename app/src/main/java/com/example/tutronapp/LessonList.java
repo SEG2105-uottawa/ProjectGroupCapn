@@ -1,3 +1,14 @@
+/**
+ * Adapter for a recyclerView of Lessons
+ * Currently shows Title, Date and Tutor
+ * OnClick gives options to file a complaint, make a review or to be directed to
+ * LessonInformationActivity
+ *
+ * @author Abhay A
+ */
+
+
+
 package com.example.tutronapp;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;

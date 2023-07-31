@@ -1,3 +1,10 @@
+/**
+ * Representation of a Lesson
+ * A lesson is a Topic which has been purchased by a
+ * student
+ * @author Abhay A
+ */
+
 package com.example.tutronapp;
 
 import java.io.Serializable;

@@ -3,6 +3,10 @@
  * Start WelcomeActivity if login successfully.
  * Unknown email address -> show "No such account found"
  * Wrong password -> show "Incorrect Password"
+ *
+ * @author Abhay A
+ * @author Sum Yan W
+ * @author Nalan K
  */
 
 package com.example.tutronapp;

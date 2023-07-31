@@ -1,3 +1,8 @@
+/**
+ * Activity that shows the Information associated with a lesson
+ * Highly volatile class, modifications may affect outside elements
+ * @author Abhay A
+ */
 package com.example.tutronapp;
 
 import androidx.appcompat.app.AppCompatActivity;

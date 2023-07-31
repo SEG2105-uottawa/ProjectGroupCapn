@@ -1,3 +1,8 @@
+/**
+ * Representation of an Address used by a Student
+ * @author Abhay A
+ */
+
 package com.example.tutronapp;
 
 import java.io.Serializable;

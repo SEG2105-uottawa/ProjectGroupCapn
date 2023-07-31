@@ -1,3 +1,10 @@
+/**
+ * RecyclerView Adapter for Topics which are offered by a tutor
+ *
+ * @author Abhay A
+ * @author Sum Yan Wan
+ */
+
 package com.example.tutronapp;
 
 import android.app.AlertDialog;

@@ -3,6 +3,10 @@
  * initialize the person object, including first name and last name.
  *
  * Getting and setter methods are provided for the person object.
+ *
+ * @author Abhay A
+ * @author Sum Yan W
+ * @author Nalan K
  */
 
 package com.example.tutronapp;

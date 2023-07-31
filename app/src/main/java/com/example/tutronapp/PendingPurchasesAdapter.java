@@ -1,3 +1,9 @@
+/**
+ * Adapter for Purchases which have not been approved by a tutor
+ *
+ * @author Abhay A
+ */
+
 package com.example.tutronapp;
 
 import android.annotation.SuppressLint;

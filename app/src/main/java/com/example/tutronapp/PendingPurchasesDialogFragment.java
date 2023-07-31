@@ -1,3 +1,9 @@
+/**
+ * Pop Up Dialog which shows a PendingPurchasesAdapter
+ *
+ * @author Abhay A
+ */
+
 package com.example.tutronapp;
 
 import android.os.Bundle;

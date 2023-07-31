@@ -1,3 +1,11 @@
+/**
+ * An activity for managing complaints filed by students against a tutor
+ * Only accessible by users logged in as Administrator
+ *
+ * @author Abhay A
+ * @author Sum Yan W
+ */
+
 package com.example.tutronapp;
 
 import androidx.annotation.NonNull;

@@ -1,3 +1,8 @@
+/**
+ * Representation of an Administrator account for the App
+ * @author Abhay A
+ */
+
 package com.example.tutronapp;
 
 public class Administrator extends User {

@@ -1,6 +1,10 @@
 /**
  * MainActivity is the entry of the application, it initialize firebase and provides two functions,
  * login(button) and signup(button), which navigate to LoginActivity and SignupActivity respectively.
+ *
+ * @author Abhay A
+ * @author Nalan K
+ * @author Sum Yan W
  */
 package com.example.tutronapp;
 

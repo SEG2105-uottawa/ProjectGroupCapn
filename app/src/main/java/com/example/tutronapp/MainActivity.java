@@ -12,9 +12,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +28,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    private boolean disclaimerAcknowledged = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -32,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
         super.onCreate(savedInstanceState);
+
+        disclaimerAcknowledged = false;
         setContentView(R.layout.activity_main);
         FirebaseApp.initializeApp(this); // Initialize Firebase
 
@@ -40,19 +47,81 @@ public class MainActivity extends AppCompatActivity {
         
         // set Click listener to `btnLogin` (direct to LoginActivity.class if clicked)
         btnLogin.setOnClickListener(v -> {
+            disclaimerAcknowledged = false;
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_disclaimer, null);
+
+            // Set the custom view for the dialog
+            builder.setView(dialogView);
+
+            TextView textViewDisclaimer = dialogView.findViewById(R.id.textViewDisclaimer);
+            Button btnAccept = dialogView.findViewById(R.id.btnAccept);
+
+            AlertDialog dialog = builder.create();
+
+            // Set a click listener for the Accept button
+            btnAccept.setOnClickListener(v1 -> {
+                disclaimerAcknowledged = true;
+                dialog.dismiss();
+                if (disclaimerAcknowledged){
+                    startActivity(intent);
+                }
+            });
+            dialog.show();
+
             //tutorHomepageTest();
         });
 
         // set Click listener to `btnSignup` (direct to SignupActivity.class if clicked)
         btnSignup.setOnClickListener(v -> {
+            disclaimerAcknowledged = false;
             Intent intent = new Intent(MainActivity.this, SignupActivity.class);
-            startActivity(intent);
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            View dialogView = getLayoutInflater().inflate(R.layout.dialog_disclaimer, null);
+
+            // Set the custom view for the dialog
+            builder.setView(dialogView);
+
+            TextView textViewDisclaimer = dialogView.findViewById(R.id.textViewDisclaimer);
+            Button btnAccept = dialogView.findViewById(R.id.btnAccept);
+
+            AlertDialog dialog = builder.create();
+
+            // Set a click listener for the Accept button
+            btnAccept.setOnClickListener(v1 -> {
+                disclaimerAcknowledged = true;
+                dialog.dismiss();
+                if (disclaimerAcknowledged){
+                    startActivity(intent);
+                }
+            });
+            dialog.show();
         });
 
         // Add complaints to the database
         //addComplaintsToDatabase(); // uncomment if u want to add a test complain
+    }
+
+    private void showDisclaimerDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View dialogView = getLayoutInflater().inflate(R.layout.dialog_disclaimer, null);
+
+        // Set the custom view for the dialog
+        builder.setView(dialogView);
+
+        TextView textViewDisclaimer = dialogView.findViewById(R.id.textViewDisclaimer);
+        Button btnAccept = dialogView.findViewById(R.id.btnAccept);
+
+        AlertDialog dialog = builder.create();
+
+        // Set a click listener for the Accept button
+        btnAccept.setOnClickListener(v -> {
+            disclaimerAcknowledged = true;
+            dialog.dismiss();
+        });
+        dialog.show();
     }
 
     private void tutorHomepageTest() {

@@ -62,4 +62,9 @@ This app was built by a team as an academic exercise at the University of Ottawa
 </ol>
 </p>
 
+<p>
+  <h3>Screenshots of the Application</h3>
+  
+</p>
+
 

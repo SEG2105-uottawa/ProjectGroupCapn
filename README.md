@@ -28,7 +28,7 @@ This app was built by a team as an academic exercise at the University of Ottawa
     section of the repository
   </li>
   <li>
-    Download the latest or topmost release
+    Download the apk from the latest or topmost release
   </li>
   <li>
     Use the Following Credentials to test the application

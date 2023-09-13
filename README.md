@@ -23,7 +23,9 @@ This app was built by a team as an academic exercise at the University of Ottawa
 <p>
 <ol>
   <li>
-    Check the releases section of the repository
+    Check the 
+    <a href = "https://github.com/SEG2105-uottawa/ProjectGroupCapn/releases"> releases </a>
+    section of the repository
   </li>
   <li>
     Download the latest or topmost release

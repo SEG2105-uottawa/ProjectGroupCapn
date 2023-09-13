@@ -11,6 +11,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -48,8 +49,13 @@ public class PurchaseListTest {
                     if (viewHolder != null && viewHolder instanceof PurchaseList.PurchaseViewHolder) {
                         PurchaseList.PurchaseViewHolder purchaseViewHolder = (PurchaseList.PurchaseViewHolder) viewHolder;
                         // Assert the expected values of the first item in the RecyclerView
-                        assert purchaseViewHolder.getTextViewPurchaseDate().getText().toString().equals("Purchase 1");
-                        assert purchaseViewHolder.getTextViewPurchaseDate().getText().toString().equals("On " + purchaseList.get(0).getFormattedDate());
+
+                        long dateInMillis = purchaseList.get(0).getDateForLesson();
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("MMM dd, yyyy", Locale.getDefault());
+                        String formattedDate = dateFormat.format(new Date(dateInMillis));
+
+                        assert purchaseViewHolder.getTextViewPurchaseTitle().getText().toString().equals("Purchase 1");
+                        assert purchaseViewHolder.getTextViewPurchaseDate().getText().toString().equals("On " + formattedDate);
                     }
                 });
     }

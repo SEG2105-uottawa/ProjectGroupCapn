@@ -11,6 +11,7 @@ drawable tutor_profile
 id addressText
 id againstTextView
 id appbar
+id btnAccept
 id btnAddTopic
 id btnClose
 id btnDismiss
@@ -104,8 +105,10 @@ id textView
 id textView10
 id textView2
 id textView3
+id textView4
 id textView5
 id textView6
+id textView7
 id textView8
 id textViewAcceptedLessonRequests
 id textViewAcceptedLessonRequestsTitle
@@ -113,6 +116,7 @@ id textViewAgainst
 id textViewComplaintBy
 id textViewContent
 id textViewDescription
+id textViewDisclaimer
 id textViewEducation
 id textViewHourlyRate
 id textViewLanguages
@@ -162,6 +166,7 @@ layout activity_tutor_info
 layout activity_tutor_topics
 layout activity_welcome
 layout dialog_add_topic
+layout dialog_disclaimer
 layout dialog_rate_lesson
 layout dialog_reviews
 layout dialog_tutor_available_schedule

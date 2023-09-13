@@ -28,6 +28,10 @@
         "source": "com.example.tutronapp-main-35:/layout/item_lesson.xml"
     },
     {
+        "merged": "com.example.tutronapp-merged_res-33:/layout_dialog_disclaimer.xml.flat",
+        "source": "com.example.tutronapp-main-35:/layout/dialog_disclaimer.xml"
+    },
+    {
         "merged": "com.example.tutronapp-merged_res-33:/drawable-hdpi_ic_notification.png.flat",
         "source": "com.example.tutronapp-main-35:/drawable-hdpi/ic_notification.png"
     },

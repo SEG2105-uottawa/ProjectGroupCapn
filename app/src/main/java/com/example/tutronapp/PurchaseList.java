@@ -48,6 +48,14 @@ public class PurchaseList extends RecyclerView.Adapter<PurchaseList.PurchaseView
 
     public class PurchaseViewHolder extends RecyclerView.ViewHolder {
 
+        public TextView getTextViewPurchaseTitle() {
+            return textViewPurchaseTitle;
+        }
+
+        public TextView getTextViewPurchaseDate() {
+            return textViewPurchaseDate;
+        }
+
         private TextView textViewPurchaseTitle;
         private TextView textViewPurchaseDate;
 

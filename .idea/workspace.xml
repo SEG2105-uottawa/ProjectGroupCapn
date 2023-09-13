@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Added Java Doc Class comments to a lot of classes">
+    <list default="true" id="6a1637f0-0bc2-43f8-8a3c-15f55b5a6680" name="Changes" comment="Refersh Commit">
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/fileHashes.bin" afterDir="false" />
@@ -101,7 +101,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Purchases-accept-reject" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -305,13 +305,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686144549479</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Offered List Layout is now complete">
-      <created>1688582641142</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1688582641142</updated>
     </task>
     <task id="LOCAL-00007" summary="Updated Topic Item to include a short description">
       <created>1688583320396</created>
@@ -649,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690766697297</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Refersh Commit">
+      <created>1694574056411</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1694574056412</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -676,7 +676,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Partial Sandwich of a lot of stuff will complete tomorrow" />
     <MESSAGE value="Completed Purchase Functionality" />
     <MESSAGE value="Fixed Suspended Tutor Search Bug" />
     <MESSAGE value="Minor work on TutorHomepageActivity layout" />
@@ -701,7 +700,8 @@
     <MESSAGE value="Minor Changes Before Demonstration" />
     <MESSAGE value="App now enforces Light Mode" />
     <MESSAGE value="Added Java Doc Class comments to a lot of classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Java Doc Class comments to a lot of classes" />
+    <MESSAGE value="Refersh Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refersh Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
